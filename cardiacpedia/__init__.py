@@ -34,5 +34,9 @@ login_manager.init_app(app)
 login_manager.login_view = "users.login"
 
 ##########################################################
-##################Blueprint configs#########################
+##################Blueprint configs#######################
 ##########################################################
+
+from cardiacpedia.core.views import core
+
+app.register_blueprint(core)
