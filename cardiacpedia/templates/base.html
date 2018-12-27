@@ -1,31 +1,66 @@
-{% extends "bootstrap/base.html" %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>{{page_title}}</title>
+  {{ bootstrap.load_css() }}
+  </head>
+  <body>
+    {% for mess in get_flashed_messages() %}
+      <div class="alert alert-success alert-dismissible fade show" role="alert">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <strong>Well done!</strong> {{mess}}
+      </div>
+    {% endfor %}
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="{{ url_for('core.index') }}">CardiacPedia</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('core.about') }}">About Us</a>
+          </li>
+          {% if current_user.has_roles('Admin') %}
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Admin
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="{{ user_manager.USER_MANAGE_EMAILS_URL }}">Manage Emails</a>
+                <a class="dropdown-item" href="{{ user_manager.USER_INVITE_USER_URL }}">Invite Users</a>
+              </div>
+            </li>
+          {% endif %}
+        </ul>
+        <ul class="navbar-nav ml-auto">
+            {% if current_user.is_authenticated %}
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                {{current_user.email}}
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="{{ user_manager.USER_EDIT_USER_PROFILE_URL }}">Profile</a>
+                <a class="dropdown-item" href="{{ user_manager.USER_LOGOUT_URL }}">Log Out</a>
+              </div>
+            </li>
+            {% else %}
+            <li class="nav-item"><a class="nav-link" href="{{ user_manager.USER_LOGIN_URL }}">Log In</a></li>
+            <li class="nav-item"><a class="nav-link" href="{{ user_manager.USER_REGISTER_URL }}">Register</a></li>
+            {% endif %}
+        </ul>
+      </div>
+    </nav>
+    {% block content %}
 
-{% block navbar %}
-{{nav.mynavbar.render()}}
-{% endblock %}
-
-{% block head %}
-{{super()}}
-{% for mess in get_flashed_messages() %}
-  <div class="alert alert-success alert-dismissible" role="alert">
-    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-    <strong>Well done!</strong> {{mess}}
-  </div>
-{% endfor %}
-
-{% endblock %}
-
-
-{% block body %}
-{{super()}}
-<footer class='footer mt-auto py-3'>
-  <div class="container">
-    <span class="text-muted">  &copy; 2018 DeepMedSolutions Inc.</span>
-  </div>
-</footer>
-{% endblock %}
-
-{% block styles %}
-{{super()}}
-<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-{% endblock styles %}
+    {% endblock %}
+    <footer class='footer bottom'>
+      <div class="container">
+        <span class="text-muted">  &copy; 2018 DeepMedSolutions Inc.</span>
+      </div>
+    </footer>
+  </body>
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+  {{ bootstrap.load_js() }}
+</html>

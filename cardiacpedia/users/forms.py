@@ -9,8 +9,9 @@ from cardiacpedia.models import User
 def check_password(form, field):
     user = User.query.filter_by(email=form.email.data).first()
     #check to see if the password is correct
-    if not user.check_password(field.data):
-        raise ValidationError('The entered password did not match our records')
+    if not user or not user.check_password(field.data):
+        raise ValidationError('The entered information did not match our records')
+
 
 def validate_password(form, field):
     #check to see if the password is correct

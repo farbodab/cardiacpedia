@@ -1,16 +1,16 @@
 {% extends "base.html" %}
-{% import "bootstrap/wtf.html" as wtf %}
+{% from 'bootstrap/form.html' import render_field %}
 
 {% block content %}
 
   <div class="container">
     <form method="POST">
         {{ form.hidden_tag() }}
-        {{ wtf.form_field(form.email) }}
-        {{ wtf.form_field(form.username) }}
-        {{ wtf.form_field(form.curr_pass) }}
-        {{ wtf.form_field(form.password) }}
-        {{ wtf.form_field(form.pass_confirm) }}
+        {{ render_field(form.email) }}
+        {{ render_field(form.username) }}
+        {{ render_field(form.curr_pass) }}
+        {{ render_field(form.password) }}
+        {{ render_field(form.pass_confirm) }}
         <div class="form-group">
           {{ form.submit(class="btn btn-primary") }}
         </div>
