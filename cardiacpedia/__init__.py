@@ -2,11 +2,14 @@ import os
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
-from flask_login import LoginManager
+from flask_login import LoginManager, current_user
 from flask_bootstrap import Bootstrap
+from flask_nav import Nav
+from flask_nav.elements import Navbar, View
 
 app = Flask(__name__)
 Bootstrap(app)
+
 
 ##########################################################
 ##################CONFIGURATIONS##########################
@@ -33,6 +36,35 @@ Migrate(app,db)
 login_manager = LoginManager()
 login_manager.init_app(app)
 login_manager.login_view = "users.login"
+
+
+##########################################################
+##################Navigation CONFIGS#########################
+##########################################################
+
+nav = Nav()
+
+@nav.navigation()
+def mynavbar():
+    if current_user.is_authenticated:
+        return Navbar(
+            'CardiacPedia',
+            View('Home', 'core.index'),
+            View('About', 'core.about'),
+            View('Logout', 'users.logout'),
+        )
+    else:
+        return Navbar(
+            'CardiacPedia',
+            View('Home', 'core.index'),
+            View('About', 'core.about'),
+            View('Register', 'users.register'),
+            View('Login', 'users.login'),
+        )
+
+
+nav.init_app(app)
+
 
 ##########################################################
 ##################Blueprint configs#######################

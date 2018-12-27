@@ -1,44 +1,57 @@
 {% extends "base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
 
 {% block content %}
+
   <div class="container">
     <form method="POST">
         {{ form.hidden_tag() }}
-        <div class="form-group">
-          {{ form.email.label(class="form-group") }} {{ form.email(class="form-control") }}
-          {% if form.email.errors %}
-            <div class="invalid-feedback">
-              {{form.email.errors}}
-            </div>
-          { % endif %}
-        </div>
-        <div class="form-group">
-          {{ form.username.label(class="form-group") }} {{ form.username(class="form-control") }}
-          {% if form.username.errors %}
-            <div class="invalid-feedback">
-              {{ form.username.errors }}
-            </div>
-          { % endif %}
-        </div>
-        <div class="form-group">
-          {{ form.password.label(class="form-group") }} {{ form.password(class="form-control") }}
-          {% if form.password.errors %}
-            <div class="invalid-feedback">
-              {{ form.password.errors }}
-            </div>
-          { % endif %}
-        </div>
-        <div class="form-group">
-          {{ form.pass_confirm.label(class="form-group") }} {{ form.pass_confirm(class="form-control") }}
-          {% if form.pass_confirm.errors %}
-            <div class="invalid-feedback">
-              {{ form.pass_confirm.errors }}
-            </div>
-          { % endif %}
-        </div>
+        {{ wtf.form_field(form.email) }}
+        {{ wtf.form_field(form.username) }}
+        {{ wtf.form_field(form.password) }}
+        {{ wtf.form_field(form.pass_confirm) }}
         <div class="form-group">
           {{ form.submit(class="btn btn-primary") }}
         </div>
-    </form>
   </div>
+
 {% endblock %}
+
+
+
+<!-- <div class="form-group">
+  {{ form.email.label(class="form-group") }} {{ form.email(class="form-control") }}
+  <div class="invalid-feedback">
+    {% if form.email.errors %}
+      {{form.email.errors}}
+    {% endif %}
+  </div>
+</div>
+<div class="form-group">
+  {{ form.username.label(class="form-group") }} {{ form.username(class="form-control") }}
+  <div class="invalid-feedback">
+    {% if form.username.errors %}
+      {{ form.username.errors }}
+    {% endif %}
+  </div>
+</div>
+<div class="form-group">
+  {{ form.password.label(class="form-group") }} {{ form.password(class="form-control") }}
+  <div class="invalid-feedback">
+    {% if form.password.errors %}
+      {{ form.password.errors }}
+    {% endif %}
+  </div>
+</div>
+<div class="form-group">
+  {{ form.pass_confirm.label(class="form-group") }} {{ form.pass_confirm(class="form-control") }}
+  <div class="invalid-feedback">
+    {% if form.pass_confirm.errors %}
+      {{ form.pass_confirm.errors }}
+    {% endif %}
+  </div>
+</div>
+<div class="form-group">
+  {{ form.submit(class="btn btn-primary") }}
+</div>
+</form> -->
