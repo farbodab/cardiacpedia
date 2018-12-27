@@ -3,9 +3,10 @@ from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
 from flask_login import LoginManager
+from flask_bootstrap import Bootstrap
 
 app = Flask(__name__)
-
+Bootstrap(app)
 
 ##########################################################
 ##################CONFIGURATIONS##########################
@@ -38,5 +39,9 @@ login_manager.login_view = "users.login"
 ##########################################################
 
 from cardiacpedia.core.views import core
+from cardiacpedia.error_pages.handlers import error_pages
+from cardiacpedia.users.view import users
 
 app.register_blueprint(core)
+app.register_blueprint(error_pages)
+app.register_blueprint(users)
