@@ -22,13 +22,14 @@
           <li class="nav-item">
             <a class="nav-link" href="{{ url_for('core.about') }}">About Us</a>
           </li>
-          {% if current_user.has_roles('Admin') %}
+          {% if current_user.is_authenticated and current_user.has_roles('Admin') %}
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Admin
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="{{ user_manager.USER_MANAGE_EMAILS_URL }}">Manage Emails</a>
+                <a class="dropdown-item" href="{{ url_for('users.admin_users') }}">View Users</a>
+                <a class="dropdown-item" href="{{ url_for('users.admin_users') }}">Change User Roles</a>
                 <a class="dropdown-item" href="{{ user_manager.USER_INVITE_USER_URL }}">Invite Users</a>
               </div>
             </li>
@@ -52,9 +53,12 @@
         </ul>
       </div>
     </nav>
-    {% block content %}
+    <div class="container">
+      {% block content %}
 
-    {% endblock %}
+      {% endblock %}
+    </div>
+
     <footer class='footer bottom'>
       <div class="container">
         <span class="text-muted">  &copy; 2018 DeepMedSolutions Inc.</span>

@@ -10,12 +10,9 @@ users = Blueprint('users', __name__)
 
 
 # The Admin page requires an 'Admin' role.
-@users.route('/admin')
+@users.route('/admin/users')
 @roles_required('Admin')    # Use of @roles_required decorator
-def admin_page():
-    return render_template_string("""
-            {% extends "base.html" %}
-            {% block content %}
-                <h2>{%trans%}Admin Page{%endtrans%}</h2>
-            {% endblock %}
-            """)
+def admin_users():
+    users = User.query.order_by(User.id, User.email, User.first_name, User.last_name).all()
+    print(users)
+    return render_template('admin_users.html', users=users)
