@@ -60,12 +60,12 @@ def account():
     form = UpdateUserForm()
 
     if form.validate_on_submit():
-
         current_user.username = form.username.data
         current_user.email = form.email.data
+        if form.password.data:
+            current_user.password_hash = generate_password_hash(form.password.data)
         db.session.commit()
         flash('User Account Updated')
-        return redirect(url_for('users.account'))
 
     elif request.method == 'GET':
         form.username.data = current_user.username

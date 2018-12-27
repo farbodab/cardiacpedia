@@ -5,7 +5,7 @@ from flask_migrate import Migrate
 from flask_login import LoginManager, current_user
 from flask_bootstrap import Bootstrap
 from flask_nav import Nav
-from flask_nav.elements import Navbar, View
+from flask_nav.elements import *
 
 app = Flask(__name__)
 Bootstrap(app)
@@ -51,8 +51,11 @@ def mynavbar():
             'CardiacPedia',
             View('Home', 'core.index'),
             View('About', 'core.about'),
-            View('Logout', 'users.logout'),
-        )
+            Subgroup('Account',
+                    View('Logout', 'users.logout'),
+                    View('Change Profile Settings', 'users.account'),
+                    )
+            )
     else:
         return Navbar(
             'CardiacPedia',

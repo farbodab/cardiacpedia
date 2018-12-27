@@ -4,6 +4,28 @@
 {{nav.mynavbar.render()}}
 {% endblock %}
 
-{% block content %}
+{% block head %}
+{{super()}}
+{% for mess in get_flashed_messages() %}
+  <div class="alert alert-success alert-dismissible" role="alert">
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+    <strong>Well done!</strong> {{mess}}
+  </div>
+{% endfor %}
 
 {% endblock %}
+
+
+{% block body %}
+{{super()}}
+<footer class='footer mt-auto py-3'>
+  <div class="container">
+    <span class="text-muted">  &copy; 2018 DeepMedSolutions Inc.</span>
+  </div>
+</footer>
+{% endblock %}
+
+{% block styles %}
+{{super()}}
+<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+{% endblock styles %}
