@@ -2,14 +2,14 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>{{page_title}}</title>
+    <title>{% block title %}{% endblock %}</title>
   {{ bootstrap.load_css() }}
   </head>
   <body>
     {% for mess in get_flashed_messages() %}
-      <div class="alert alert-success alert-dismissible fade show" role="alert">
+      <div class="alert alert-info alert-dismissible fade show" role="alert">
         <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <strong>Well done!</strong> {{mess}}
+        {{mess}}
       </div>
     {% endfor %}
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -28,8 +28,12 @@
                 Admin
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="{{ url_for('users.admin_users') }}">View Users</a>
-                <a class="dropdown-item" href="{{ url_for('users.admin_users') }}">Change User Roles</a>
+                <a class="dropdown-item" href="{{ url_for('users.admin_users_view_users') }}">View Users</a>
+                <a class="dropdown-item" href="{{ url_for('users.admin_users_view_roles') }}">View Roles</a>
+                <a class="dropdown-item" href="{{ url_for('users.admin_users_add_roles') }}">Add Roles</a>
+                <a class="dropdown-item" href="{{ url_for('users.admin_users_remove_roles') }}">Remove Roles</a>
+                <a class="dropdown-item" href="{{ url_for('users.admin_users_add_user_roles') }}">Add User-Roles</a>
+                <a class="dropdown-item" href="{{ url_for('users.admin_users_remove_user_roles') }}">Remove User-Roles</a>
                 <a class="dropdown-item" href="{{ user_manager.USER_INVITE_USER_URL }}">Invite Users</a>
               </div>
             </li>

@@ -22,8 +22,6 @@ class User(db.Model, UserMixin):
         # Define the relationship to Role via UserRoles
         roles = db.relationship('Role', secondary='user_roles')
 
-
-
 # Define the Role data-model
 class Role(db.Model):
     __tablename__ = 'roles'
