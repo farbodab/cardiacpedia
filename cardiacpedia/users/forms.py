@@ -24,3 +24,7 @@ class Add_Roles(FlaskForm):
 class Remove_Roles(FlaskForm):
     role_id = IntegerField('Role ID', validators=[DataRequired(message='Role name cannot be left blank')])
     submit = SubmitField('Remove Role')
+
+class Remove_Users(FlaskForm):
+    user_id = IntegerField('User ID', validators=[DataRequired(message='Role name cannot be left blank')])
+    submit = SubmitField('Remove Role')
