@@ -1,5 +1,5 @@
 from flask import render_template
-from cardiacpedia import db, app
+from cardiacpedia import db, app, template_dir
 from datetime import datetime
 from werkzeug.security import generate_password_hash, check_password_hash
 from flask_user import current_user, login_required, roles_required, UserManager, UserMixin

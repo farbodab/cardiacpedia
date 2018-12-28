@@ -7,6 +7,8 @@ from flask_bootstrap import Bootstrap
 
 app = Flask(__name__)
 Bootstrap(app)
+basedir = os.path.abspath(os.path.dirname(__file__))
+template_dir = os.path.join(os.path.sep, basedir, 'templates','flask_user')
 
 ##########################################################
 ##################Flask Config Setup#######################

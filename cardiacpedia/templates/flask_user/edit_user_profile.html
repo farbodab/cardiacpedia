@@ -2,16 +2,19 @@
 
 {% block content %}
 {% from "flask_user/_macros.html" import render_field, render_checkbox_field, render_submit_field %}
+{% from 'bootstrap/form.html' import render_field %}
+
+
 <h1>{%trans%}User profile{%endtrans%}</h1>
 
-<form action="" method="POST" class="form" role="form">
+<form action="" method="POST" class="form-group" role="form">
     {{ form.hidden_tag() }}
     {% for field in form %}
         {% if not field.flags.hidden %}
             {% if field.type=='SubmitField' %}
-                {{ render_submit_field(field, tabindex=loop.index*10) }}
+                {{ render_submit_field(field) }}
             {% else %}
-                {{ render_field(field, tabindex=loop.index*10) }}
+                {{ render_field(field) }}
             {% endif %}
         {% endif %}
     {% endfor %}
