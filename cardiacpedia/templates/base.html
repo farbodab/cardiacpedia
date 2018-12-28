@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>{% block title %}{% endblock %}</title>
+    <title>{{page_title}}</title>
   {{ bootstrap.load_css() }}
   </head>
   <body>
@@ -22,7 +22,11 @@
           <li class="nav-item">
             <a class="nav-link" href="{{ url_for('core.about') }}">About Us</a>
           </li>
-          {% if current_user.is_authenticated and current_user.has_roles('Admin') %}
+          {% if current_user.is_authenticated %}
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('devices.main_table') }}">Devices</a>
+          </li>
+          {% if current_user.has_roles('Admin') %}
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Admin
@@ -38,6 +42,9 @@
                 <a class="dropdown-item" href="{{ user_manager.USER_INVITE_USER_URL }}">Invite Users</a>
               </div>
             </li>
+          {% endif %}
+
+
           {% endif %}
         </ul>
         <ul class="navbar-nav ml-auto">

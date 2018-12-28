@@ -20,7 +20,7 @@ def admin_users_view_users():
     Allows the admin to view all users in the system
     """
     users = User.query.order_by(User.id, User.email, User.first_name, User.last_name).all()
-    return render_template('/Admin/view_users.html', users=users)
+    return render_template('/Admin/view_users.html', users=users, page_title='View Users')
 
 ################################################################################
 ##############################Remove Users########################################
@@ -32,12 +32,12 @@ def admin_users_remove_users():
     form = Remove_Users()
 
     if form.validate_on_submit():
-        User.query.filter_by(user_id=form.user_id.data).delete()
+        User.query.filter_by(id=form.user_id.data).delete()
         db.session.commit()
         flash('User has been removed from the database.')
         return redirect(url_for('users.admin_users_view_users'))
 
-    return render_template('/Admin/remove_users.html', form=form)
+    return render_template('/Admin/remove_users.html', form=form, page_title='Remove Users')
 
 ################################################################################
 ##############################View Roles########################################
@@ -50,7 +50,7 @@ def admin_users_view_roles():
     Allows the admin to view all roles in the system
     """
     roles = Role.query.order_by(Role.id, Role.name).all()
-    return render_template('/Admin/view_roles.html', roles=roles)
+    return render_template('/Admin/view_roles.html', roles=roles, page_title='View Roles')
 
 
 ################################################################################
@@ -73,7 +73,7 @@ def admin_users_add_roles():
         flash('Roles have been added.')
         return redirect(url_for('users.admin_users_view_roles'))
 
-    return render_template('/Admin/add_roles.html', form=form)
+    return render_template('/Admin/add_roles.html', form=form, page_title='Add Roles')
 
 ################################################################################
 ##############################Remve Roles########################################
@@ -90,7 +90,7 @@ def admin_users_remove_roles():
         flash('Roles has been removed.')
         return redirect(url_for('users.admin_users_view_roles'))
 
-    return render_template('/Admin/remove_roles.html', form=form)
+    return render_template('/Admin/remove_roles.html', form=form, page_title='Remove Roles')
 
 
 ################################################################################
@@ -113,7 +113,7 @@ def admin_users_add_user_roles():
         flash('Roles have been added to the user.')
         return redirect(url_for('users.admin_users_view_users'))
 
-    return render_template('/Admin/add_user_roles.html', form=form)
+    return render_template('/Admin/add_user_roles.html', form=form, page_title='Add User Roles')
 
 
 
@@ -133,4 +133,4 @@ def admin_users_remove_user_roles():
         flash('Roles has been removed from the user.')
         return redirect(url_for('users.admin_users_view_users'))
 
-    return render_template('/Admin/remove_user_roles.html', form=form)
+    return render_template('/Admin/remove_user_roles.html', form=form, page_title='Remove User Roles')
