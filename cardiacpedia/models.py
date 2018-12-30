@@ -74,5 +74,68 @@ class CRTP(db.Model):
     eri_behaviour = db.Column(db.String(255, collation='NOCASE'), nullable=True)
     longevity = db.Column(db.String(255, collation='NOCASE'), nullable=True)
 
+class ICD(db.Model):
+    __tablename__ = 'icd'
+    id = db.Column(db.Integer(), primary_key=True)
+    manufacturer = db.Column(db.String(255, collation='NOCASE'), nullable=False)
+    model_number = db.Column(db.String(255, collation='NOCASE'), nullable=True)
+    name = db.Column(db.String(255, collation='NOCASE'),nullable=True)
+    nbg_code = db.Column(db.String(255, collation='NOCASE'),nullable=True)
+    x_ray = db.Column(db.String(255, collation='NOCASE'), nullable=True)
+    serial = db.Column(db.String(255, collation='NOCASE'), nullable=True)
+    ra = db.Column(db.String(255, collation='NOCASE'), nullable=True)
+    rv = db.Column(db.String(255, collation='NOCASE'), nullable=True)
+    hv = db.Column(db.String(255, collation='NOCASE'), nullable=True)
+    detach = db.Column(db.String(255, collation='NOCASE'), nullable=True)
+    wave = db.Column(db.String(255, collation='NOCASE'), nullable=True)
+    replacement = db.Column(db.String(255, collation='NOCASE'), nullable=True)
+
+class CRTD(db.Model):
+    __tablename__ = 'crtd'
+    id = db.Column(db.Integer(), primary_key=True)
+    manufacturer = db.Column(db.String(255, collation='NOCASE'), nullable=False)
+    model_number = db.Column(db.String(255, collation='NOCASE'), nullable=True)
+    name = db.Column(db.String(255, collation='NOCASE'),nullable=True)
+    nbg_code = db.Column(db.String(255, collation='NOCASE'),nullable=True)
+    x_ray = db.Column(db.String(255, collation='NOCASE'), nullable=True)
+    serial = db.Column(db.String(255, collation='NOCASE'), nullable=True)
+    ra = db.Column(db.String(255, collation='NOCASE'), nullable=True)
+    rv = db.Column(db.String(255, collation='NOCASE'), nullable=True)
+    lv = db.Column(db.String(255, collation='NOCASE'), nullable=True)
+    hv = db.Column(db.String(255, collation='NOCASE'), nullable=True)
+    detach = db.Column(db.String(255, collation='NOCASE'), nullable=True)
+    wave = db.Column(db.String(255, collation='NOCASE'), nullable=True)
+    replacement = db.Column(db.String(255, collation='NOCASE'), nullable=True)
+
+class LV(db.Model):
+    __tablename__ = 'lv'
+    id = db.Column(db.Integer(), primary_key=True)
+    manufacturer = db.Column(db.String(255, collation='NOCASE'), nullable=False)
+    model_number = db.Column(db.String(255, collation='NOCASE'), nullable=True)
+    name = db.Column(db.String(255, collation='NOCASE'),nullable=True)
+    serial = db.Column(db.String(255, collation='NOCASE'), nullable=True)
+    sense = db.Column(db.String(255, collation='NOCASE'), nullable=True)
+    polarity = db.Column(db.String(255, collation='NOCASE'), nullable=True)
+    fixation = db.Column(db.String(255, collation='NOCASE'), nullable=True)
+    placement = db.Column(db.String(255, collation='NOCASE'), nullable=True)
+    insulation = db.Column(db.String(255, collation='NOCASE'), nullable=True)
+    location = db.Column(db.String(255, collation='NOCASE'), nullable=True)
+
+
+class HV(db.Model):
+    __tablename__ = 'hv'
+    id = db.Column(db.Integer(), primary_key=True)
+    manufacturer = db.Column(db.String(255, collation='NOCASE'), nullable=False)
+    model_number = db.Column(db.String(255, collation='NOCASE'), nullable=True)
+    name = db.Column(db.String(255, collation='NOCASE'),nullable=True)
+    serial = db.Column(db.String(255, collation='NOCASE'), nullable=True)
+    sense = db.Column(db.String(255, collation='NOCASE'), nullable=True)
+    high = db.Column(db.String(255, collation='NOCASE'), nullable=True)
+    sensing = db.Column(db.String(255, collation='NOCASE'), nullable=True)
+    lead = db.Column(db.String(255, collation='NOCASE'), nullable=True)
+    placement = db.Column(db.String(255, collation='NOCASE'), nullable=True)
+    fixation = db.Column(db.String(255, collation='NOCASE'), nullable=True)
+    insulation = db.Column(db.String(255, collation='NOCASE'), nullable=True)
+
 
 user_manager = UserManager(app, db, User)
