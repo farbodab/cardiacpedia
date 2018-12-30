@@ -54,5 +54,25 @@ class IPG(db.Model):
     rrt_behaviour = db.Column(db.String(255, collation='NOCASE'), nullable=True)
     rrt_longevity = db.Column(db.String(255, collation='NOCASE'), nullable=True)
 
+class CRTP(db.Model):
+    __tablename__ = 'crtp'
+    id = db.Column(db.Integer(), primary_key=True)
+    manufacturer = db.Column(db.String(255, collation='NOCASE'), nullable=False)
+    model_number = db.Column(db.String(255, collation='NOCASE'), nullable=True)
+    name = db.Column(db.String(255, collation='NOCASE'),nullable=True)
+    nbg_code = db.Column(db.String(255, collation='NOCASE'),nullable=True)
+    x_ray = db.Column(db.String(255, collation='NOCASE'), nullable=True)
+    ra = db.Column(db.String(255, collation='NOCASE'), nullable=True)
+    la = db.Column(db.String(255, collation='NOCASE'), nullable=True)
+    rv = db.Column(db.String(255, collation='NOCASE'), nullable=True)
+    lv = db.Column(db.String(255, collation='NOCASE'), nullable=True)
+    detach = db.Column(db.String(255, collation='NOCASE'), nullable=True)
+    n_bol = db.Column(db.String(255, collation='NOCASE'), nullable=True)
+    n_eri = db.Column(db.String(255, collation='NOCASE'), nullable=True)
+    m_bol = db.Column(db.String(255, collation='NOCASE'), nullable=True)
+    m_eri = db.Column(db.String(255, collation='NOCASE'), nullable=True)
+    eri_behaviour = db.Column(db.String(255, collation='NOCASE'), nullable=True)
+    longevity = db.Column(db.String(255, collation='NOCASE'), nullable=True)
+
 
 user_manager = UserManager(app, db, User)

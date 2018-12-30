@@ -17,39 +17,19 @@
   <table class="table table-striped">
     <thead>
         <tr>
+          <th scope="col">ID</th>
           <th scope="col">Manufacturer</th>
           <th scope="col">Model Number</th>
           <th scope="col">Name</th>
-          <th scope="col">NBG Code</th>
-          <th scope="col">X-ray/Serial ID</th>
-          <th scope="col">Sense / Pace Connector RA</th>
-          <th scope="col">Sense / Pace Connector RV</th>
-          <th scope="col">Detach Tools</th>
-          <th scope="col">Non MAG Rate BOS</th>
-          <th scope="col">Non MAG Rate RRT/EOS</th>
-          <th scope="col">MAG Rate BOS</th>
-          <th scope="col">MAG Rate RRT/EOS</th>
-          <th scope="col">RRT/EOS Behavior</th>
-          <th scope="col">RRT/EOS Longevity</th>
         </tr>
       </thead>
       <tbody>
         {% for device in devices.items %}
         <tr>
-          <td style ="word-break:break-all;">{{device.manufacturer}}</td>
-          <td style ="word-break:break-all;">{{device.model_number}}</td>
-          <td style ="word-break:break-all;">{{device.name}}</td>
-          <td style ="word-break:break-all;">{{device.nbg_code}}</td>
-          <td style ="word-break:break-all;">{{device.x_ray}}</td>
-          <td style ="word-break:break-all;">{{device.ra}}</td>
-          <td style ="word-break:break-all;">{{device.rv}}</td>
-          <td style ="word-break:break-all;">{{device.detach}}</td>
-          <td style ="word-break:break-all;">{{device.n_bos}}</td>
-          <td style ="word-break:break-all;">{{device.n_rrt}}</td>
-          <td style ="word-break:break-all;">{{device.m_bos}}</td>
-          <td style ="word-break:break-all;">{{device.m_rrt}}</td>
-          <td style ="word-break:break-all;">{{device.rrt_behaviour}}</td>
-          <td style ="word-break:break-all;">{{device.rrt_longevity}}</td>
+          <td><a href="/devices/ipg/{{device.id}}">{{device.id}}</a></td>
+          <td>{{device.manufacturer}}</td>
+          <td>{{device.model_number}}</td>
+          <td>{{device.name}}</td>
         </tr>
         {% endfor %}
       </tbody>

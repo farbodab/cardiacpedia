@@ -1,0 +1,35 @@
+Manufacturer,Model Number,Model Name,NBG Code,X-ray ID,Sense/Pace Connectors RA,Sense/Pace Connectors LA,Sense/Pace Connectors RV,Sense/Pace Connectors LV,Detach Tool,Non MAG Rate BOL,Non MAG Rate ERI/EOL,MAG Rate BOL,MAG Rate ERI/EOL,ERI EOL Behavior,Longetivity
+"Biotronick, Inc.",112 541,Triplos LV,DDDRV,LE,IS-1 UNI/BI,None,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,PR-11%,90,80,Mag Rate 80 ppm (cycles 1-10) ,
+"Biotronick, Inc.",112 594,Triplos LV,DDDRV,LE,IS-1 UNI/BI,None,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,PR-11%,90,80,Mag Rate 80 ppm (cycles 1-10) ,
+"Biotronick, Inc.",338 200,Stratos LV,DDDRV,SV,IS-1 UNI/BI,None,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,PR-11%,90,80,Mag Rate 80 ppm (cycles 1-10) ,
+"Biotronick, Inc.",338 201,Stratos LV,DDDRV,SV,IS-1 UNI/BI,None,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,PR-11%,90,80,Mag Rate 80 ppm (cycles 1-10) ,
+"Biotronick, Inc.",338 206,Stratos LA,DDDRA,SV,IS-1 UNI/BI,IS-1 UNI/BI,IS-1 UNI/BI,None,#2,PR,PR-11%,90,80,Mag Rate 80 ppm (cycles 1-10),
+"Biotronick, Inc.",338 207,Stratos LA,DDDRA,SV,IS-1 UNI/BI,IS-1 UNI/BI,IS-1 UNI/BI,None,#2,PR,PR-11%,90,80,Mag Rate 80 ppm (cycles 1-10),
+"Biotronick, Inc.",341 458,Triplos LV-T,DDDRV,LE,IS-1 UNI/BI,None,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,PR-11%,90,80,Mag Rate 80 ppm (cycles 1-10) ,
+"Biotronick, Inc.",341 459,Triplos LV-T,DDDRV,LE,IS-1 UNI/BI,None,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,PR-11%,90,80,Mag Rate 80 ppm (cycles 1-10) ,
+"ELA Medical, Inc.",353,Talent 3 MSP,DDDR,ela 353,IS-1 UNI/BI,None,IS-1 UNI/BI,IS-1 UNI,#2,PR,VVI 70,96,80,"C, Mode and rate change to VVI-70",
+"ELA Medical, Inc.",363,Talent 3 MSP,DDDR,ela 363,IS-1 UNI/BI,None,IS-1 UNI/BI,IS-1 UNI,#2,PR,VVI 70,96,80,"C, Mode and rate change to VVI-70",
+"ELA Medical, Inc.",343,Talent AF MSP,DDDR,ela 343,IS-1 UNI/BI,None,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,VVI 70,96,80,"C, Mode and rate change to VVI-70",
+"ELA Medical, Inc.",313,Talent MSP,DDDR,ela 313,IS-1 UNI/BI,None,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,VVI 70,96,80,"C, Mode and rate change to VVI-70",
+"ELA Medical, Inc.",7336,Chorum MSP,DDDR,ela 7336,IS-1 UNI/BI,None,IS-1 UNI,IS-1 UNI,#2,PR,VVI 70,96,80,"C, Mode and rate change to VVI-70",
+"ELA Medical, Inc.",7337,Chorum MSP,DDDR,ela 7337,IS-1 UNI/BI,IS-1 UNI,IS-1 UNI,None,#2,PR,VVI 70,96,80,"C, Mode and rate change to VVI-70",
+Guidant Corp.,1241,Contak TR,DDDR,GDT 201,"3.2 mm LP UNI/BI IS-1 Comp., Programmable
+",None,"3.2 mm LP UNI/BI IS-1 Comp., Programmable
+",LV-1 UNI/EXTBI,#2,PR,PR,100,85,"Single step drop in mag rate
+",5.1
+Guidant Corp.,H120,CONTAK RENEWAL TR,DDDR,GDT 204,IS-1 UNI/BI,None,IS-1 UNI/BI,IS-1 UNI/EXTBI,#2,PR,PR,100,85,"Single step drop in mag rate
+",6.1
+Guidant Corp.,H125,CONTAK RENEWAL TR,DDDR,GDT 204,IS-1 UNI/BI,None,IS-1 UNI/BI,IS-1 UNI/EXTBI,#2,PR,PR,100,85,"Single step drop in mag rate
+",6.1
+Guidant Corp.,H140,CONTAK RENEWAL TR2,DDDR,GDT 204,IS-1 UNI/BI,None,IS-1 UNI/BI,IS-1 UNI/EXTBI,#2,PR,PR,100,85,"Single step drop in mag rate
+",6.1
+Guidant Corp.,H145,CONTAK RENEWAL TR2,DDDR,GDT 204,IS-1 UNI/BI,None,IS-1 UNI/BI,IS-1 UNI/EXTBI,#2,PR,PR,100,85,"Single step drop in mag rate
+",6.1
+"Medtronic, Inc.",8040,InSync,DDDR,PIN PIN,IS-1 UNI/BI,None,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,65 (VVI),85,65,Single step drop in mag rate,
+"Medtronic, Inc.",8042,InSync III,DDDR,PKF PKF,IS-1 UNI/BI,None,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,65 (VVI),85,65,Single step drop in mag rate,
+"Medtronic, Inc.",C2TR01,Syncra CRT-P,DDDR,PVX PVX,IS-1 UNI/BI,None,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,65 (VVI),85,65,RRT is battery voltage ?2.77 V on 3 consecutive daily measurements. Magnet rate VOO 65 ppm,
+"Medtronic, Inc.",C3TR01,Consulta CRT-P,DDDR,PVX PZI,IS-1 UNI/BI,None,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,65 (VVI),85,65,RRT is battery voltage ?2.77 V on 3 consecutive daily measurements. Magnet rate VOO 65 ppm,
+"Medtronic, Inc.",C4TR01,Consulta CRT-P,DDDR,PVX PVX,IS-1 UNI/BI,None,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,65 (VVI),85,65,RRT is battery voltage ?2.77 V on 3 consecutive daily measurements. Magnet rate VOO 65 ppm,
+St. Jude Medical,5508,Frontier 3x2,DDDRV,VT,3.2 mm LP UNI/BI (IS-1 Compatible) Programmable,None,3.2 mm LP UNI/BI (IS-1 Compatible) Programmable,3.2 mm LP UNI/BI (IS-1 Compatible) Programmable,QL,PR,PI+100,98.6,86.3,Gradual Magnet Rate change,
+St. Jude Medical,5510,Frontier 3x2,DDDRV,VT,3.2 mm LP UNI/BI (IS-1 Compatible) Programmable,None,3.2 mm LP UNI/BI (IS-1 Compatible) Programmable,3.2 mm LP UNI/BI (IS-1 Compatible) Programmable,QL,PR,PI+100,98.6,86.3,Gradual Magnet Rate change,
+"Vitatron (Medtronic, Inc.)",CRT8000  ,CRT8000,DDDRV,VE,IS-1 UNI/BI None    ,IS-1 UNI/BI   ,IS-1 ,UNI/BI  ,#2,PR,PI+100 ms ,100,95/86,"A, F",6.6 @ 2.5 V
