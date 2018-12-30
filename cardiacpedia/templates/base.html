@@ -30,10 +30,10 @@
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
               <a class="dropdown-item" href="{{ url_for('devices.ipg') }}">IPG Low-Voltage Devices</a>
               <a class="dropdown-item" href="{{ url_for('devices.crtp') }}">CRT-P Low-Voltage Devices</a>
-              <a class="dropdown-item" href="{{ url_for('devices.ipg') }}">IPG Low-Voltage Devices</a>
-              <a class="dropdown-item" href="{{ url_for('devices.ipg') }}">IPG Low-Voltage Devices</a>
-              <a class="dropdown-item" href="{{ url_for('devices.ipg') }}">IPG Low-Voltage Devices</a>
-              <a class="dropdown-item" href="{{ url_for('devices.ipg') }}">IPG Low-Voltage Devices</a>
+              <a class="dropdown-item" href="{{ url_for('devices.icd') }}">ICD High-Voltage Devices</a>
+              <a class="dropdown-item" href="{{ url_for('devices.crtd') }}">CRT-D High-Voltage Devices</a>
+              <a class="dropdown-item" href="{{ url_for('devices.lv') }}">LV Low-Voltage Devices</a>
+              <a class="dropdown-item" href="{{ url_for('devices.hv') }}">HV High-Voltage Devices</a>
             </div>
           </li>
           {% if current_user.has_roles('Admin') %}
