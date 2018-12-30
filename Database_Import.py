@@ -92,6 +92,25 @@ def CRTD_m():
     db.session.commit()
     print(CRTD.query.all()[:10])
 
+def LV_m():
+    df = pd.read_csv('Devices/LV.csv', encoding = "ISO-8859-1")
+    for index, row in df.iterrows():
+        device = LV(
+        manufacturer=row['Manufacturer'],
+        model_number=row['Model Number'],
+        name=row['Model Name'],
+        serial=row['Serial ID'],
+        sense=row['Connectors Sense/Pace'],
+        polarity=row['Polarity'],
+        fixation=row['Fixation'],
+        placement=row['Placement'],
+        insulation=row['Outer Insulation'],
+        location=row['Location'],
+        )
+        db.session.add(device)
+    db.session.commit()
+    print(LV.query.all()[:10])
+
 
 
 
@@ -115,4 +134,4 @@ def CRTD_m():
 
 
 if __name__ == '__main__':
-    CRTD_m()
+    LV_m()
