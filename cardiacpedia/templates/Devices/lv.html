@@ -2,7 +2,7 @@
 {% from 'bootstrap/form.html' import render_field %}
 
 {% block content %}
-<h1>IPG Low-Voltage Devices</h1>
+<h1>LV Low-Voltage Devices</h1>
 
 <form class="form-group" method="POST">
      {{ form.hidden_tag() }}
@@ -42,10 +42,10 @@
           <li class="page-item disabled"><a class="page-link" href="#">...</a></li>
          {% elif devices.page == page_num %}
          <li class="page-item disabled">
-           <a class="page-link" href="{{ url_for('devices.ipg', page=page_num) }}">{{ page_num }}</a></li>
+           <a class="page-link" href="{{ url_for('devices.lv', page=page_num) }}">{{ page_num }}</a></li>
          </li>
          {% else %}
-           <li class="page-item"><a class="page-link" href="{{ url_for('devices.ipg', page=page_num) }}">{{ page_num }}</a></li>
+           <li class="page-item"><a class="page-link" href="{{ url_for('devices.lv', page=page_num) }}">{{ page_num }}</a></li>
          {% endif %}
      {% endfor %}
    </nav>
