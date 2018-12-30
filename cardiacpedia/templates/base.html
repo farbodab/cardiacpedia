@@ -23,8 +23,18 @@
             <a class="nav-link" href="{{ url_for('core.about') }}">About Us</a>
           </li>
           {% if current_user.is_authenticated %}
-          <li class="nav-item">
-            <a class="nav-link" href="{{ url_for('devices.main_table') }}">Devices</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Devices
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="{{ url_for('devices.ipg') }}">IPG Low-Voltage Devices</a>
+              <a class="dropdown-item" href="{{ url_for('devices.ipg') }}">IPG Low-Voltage Devices</a>
+              <a class="dropdown-item" href="{{ url_for('devices.ipg') }}">IPG Low-Voltage Devices</a>
+              <a class="dropdown-item" href="{{ url_for('devices.ipg') }}">IPG Low-Voltage Devices</a>
+              <a class="dropdown-item" href="{{ url_for('devices.ipg') }}">IPG Low-Voltage Devices</a>
+              <a class="dropdown-item" href="{{ url_for('devices.ipg') }}">IPG Low-Voltage Devices</a>
+            </div>
           </li>
           {% if current_user.has_roles('Admin') %}
             <li class="nav-item dropdown">

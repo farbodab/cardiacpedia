@@ -4,7 +4,7 @@ import datetime
 
 
 if __name__ == '__main__':
-    # Create 'admin@example.com' user with 'Admin' and 'Agent' roles
+    #Create 'admin@example.com' user with 'Admin' and 'Agent' roles
     if not User.query.filter(User.email == 'admin@example.com').first():
         user = User(
             email='admin@example.com',
@@ -15,4 +15,5 @@ if __name__ == '__main__':
         user.roles.append(Role(name='Agent'))
         db.session.add(user)
         db.session.commit()
+
     app.run(debug=True)

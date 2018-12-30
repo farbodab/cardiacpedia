@@ -1,0 +1,85 @@
+Manufacturer,Model Number,Model Name,NBD Code,X-ray ID,Serial ID,Connectors RA,Connectors RV,Connectors LV,Connectors HV,Detach Tool,HV Waveform,Replacement Indicator,,,,,,,,
+"Biotronick, Inc.",334 344,Tupos LV/ATx,VVED,EV,,IS-1 BI          ,IS-1 BI,IS-1 UNI,DF-1 (2 ports) ,#2,Biphasic               ,"Battery voltage <= 5.70 V
+Programmer indicates ERI",,,,,,,,
+"Biotronick, Inc.",347 406,Kronos LV-T,VVED,FL,,IS-1 BI           ,IS-1 BI,IS-1 UNI,DF-1 (2 ports),#2,Biphasic               ,"Battery voltage <= 5.70 V
+Programmer indicates ERI",,,,,,,,
+"ELA Medical, Inc.",617,Alto MSP,VVED,ela617,,IS-1 BI,IS-1 BI,IS-1 UNI,DF-1 (2 ports),#2,Biphasic,Battery Voltage ? 4.86 V Magnet Rate ? 80 ppm Programmer Indicates ERI,,,,,,,,
+"ELA Medical, Inc.",627,Alto 2 MSP,VVED,ela627,,IS-1 BI,IS-1 BI,IS-1 UNI,DF-1 (2 ports),#2,Biphasic,Battery Voltage ? 4.86 V Magnet Rate ? 80 ppm Programmer Indicates ERI,,,,,,,,
+Guidant Corp.,1823,CONTAK CD,VVED,GDT 200,,IS-1 BI,IS-1 BI,LV-1 Programmable,DF-1 (2 ports),#2,Mono/Biphasic,2nd Charge Time ? 18 sec.Or Battery Voltage ? 4.90 VProgrammer Indicates ERI,,,,,,,,
+Guidant Corp.,H115,Contak CD 2,VVED,GDT 104,,IS-1 BI,IS-1 BI,LV-1 Programmable,DF-1 (2 ports),#2,Mono/Biphasic,2nd Charge Time ? 20 sec.Or Battery Voltage ? 2.45 VProgrammer Indicates ERI,,,,,,,,
+Guidant Corp.,H119,Contak CD 2 HE,VVED,GDT 104,,IS-1 BI,IS-1 BI,LV-1 Programmable,DF-1 (2 ports),#2,Mono/Biphasic,2nd Charge Time ? 20 sec.Or Battery Voltage ? 2.45 VProgrammer Indicates ERI,,,,,,,,
+Guidant Corp.,H135,Contak Renewal,VVED,GDT 202,,IS-1 BI,IS-1 BI,LV-1 Programmable,DF-1 (2 ports),#2,Mono/Biphasic,2nd Charge Time ? 18 sec.Or Battery Voltage ? 2.45 VProgrammer Indicates ERI,,,,,,,,
+Guidant Corp.,H155,Contak Renewal 2,VVED,GDT 202,,IS-1 BI,IS-1 BI,LV-1 Programmable,DF-1 (2 ports),#2,Mono/Biphasic,2nd Charge Time ? 18 sec.Or Battery Voltage ? 2.45 VProgrammer Indicates ERI,,,,,,,,
+Guidant Corp.,H170,Contak Renewal 3,VVED,GDT 202,,IS-1 BI,IS-1 BI,IS-1 Programmable,DF-1 (2 ports),#2,Mono/Biphasic,2nd Charge Time ? 12 sec.Or Battery Voltage ? 2.48 VProgrammer Indicates ERI,,,,,,,,
+Guidant Corp.,H175,Contak Renewal 3,VVED,GDT 202,,IS-1 BI,IS-1 BI,LV-1 Programmable,DF-1 (2 ports),#2,Mono/Biphasic,2nd Charge Time ? 12 sec.Or Battery Voltage ? 2.48 VProgrammer Indicates ERI,,,,,,,,
+Guidant Corp.,H177,Contak Renewal 3 HE,VVED,GDT 202,,IS-1 BI,IS-1 BI,IS-1 Programmable,DF-1 (2 ports),#2,Mono/Biphasic,2nd Charge Time ? 13 sec.Or Battery Voltage ? 2.50 VProgrammer Indicates ERI,,,,,,,,
+Guidant Corp.,H179,Contak Renewal 3 HE,VVED,GDT 202,,IS-1 BI,IS-1 BI,LV-1 Programmable,DF-1 (2 ports),#2,Mono/Biphasic,2nd Charge Time ? 13 sec.Or Battery Voltage ? 2.50 VProgrammer Indicates ERI,,,,,,,,
+Guidant Corp.,H190,Contak Renewal 4,VVED,GDT 202,,IS-1 BI,IS-1 BI,IS-1 Programmable,DF-1 (2 ports),#2,Mono/Biphasic,2nd Charge Time ? 12 sec.Or Battery Voltage ? 2.48 VProgrammer Indicates ERI,,,,,,,,
+Guidant Corp.,H195,Contak Renewal 4,VVED,GDT 202,,IS-1 BI,IS-1 BI,LV-1 Programmable,DF-1 (2 ports),#2,Mono/Biphasic,2nd Charge Time ? 12 sec.Or Battery Voltage ? 2.48VProgrammer Indicates ERI,,,,,,,,
+Guidant Corp.,H197,Contak Renewal 4 HE,VVED,GDT 202,,IS-1 BI,IS-1 BI,IS-1 Programmable,DF-1 (2 ports),#2,Mono/Biphasic,2nd Charge Time ? 13 sec.Or Battery Voltage ? 2.50 VProgrammer Indicates ERI,,,,,,,,
+Guidant Corp.,H199,Contak Renewal 4 HE,VVED,GDT 202,,IS-1 BI,IS-1 BI,LV-1 Programmable,DF-1 (2 ports),#2,Mono/Biphasic,2nd Charge Time ? 13 sec.Or Battery Voltage ? 2.50 VProgrammer Indicates ERI,,,,,,,,
+Guidant Corp.,H210,Renewal 3 RF,VVED,GDT 203,,IS-1 BI,IS-1 BI,IS-1 Programmable,DF-1 (2 ports),#2,Mono/Biphasic,2nd Charge Time ? 15 sec.Or Battery Voltage ? 2.50VProgrammer Indicates ERI,,,,,,,,
+Guidant Corp.,H215,Renewal 3 RF,VVED,GDT 203,,IS-1 BI,IS-1 BI,"LV-1
+Programmable",DF-1 (2 ports),#2,Mono/ Biphasic,2nd Charge Time ? 15 sec. Or Battery Voltage ? 2.50V Programmer Indicates ERI,,,,,,,,
+Guidant Corp.,H217,Renewal 3 HE RF,VVED,GDT 203,,IS-1 BI,IS-1 BI,"IS-1
+Programmable",DF-1 (2 ports),#2,Mono/ Biphasic,2nd Charge Time ? 20 sec. Or Battery Voltage ? 2.50V Programmer Indicates ERI,,,,,,,,
+Guidant Corp.,H219,Renewal 3 HE RF,VVED,GDT 203,,IS-1 BI,IS-1 BI,"LV-1
+Programmable",DF-1 (2 ports),#2,Mono/ Biphasic,2nd Charge Time ? 20 sec. Or Battery Voltage ? 2.50V Programmer Indicates ERI,,,,,,,,
+"Medtronic, Inc.",7272,InSync ICD,VVE-DDDR,PJP,PJP,IS-1 BI,IS-1 UNI,IS-1 UNI,DF-1 (2 ports),#2,Biphasic,Battery Voltage ? 4.91 V,,,,,,,,
+"Medtronic, Inc.",7277,InSync Marquis,VVE-DDDR,PLT,PLT,IS-1 BI,IS-1 UNI,IS-1 UNI,DF-1 (2 ports),#2,Biphasic,Battery Voltage ? 2.62 V,,,,,,,,
+"Medtronic, Inc.",7279,InSync III Marquis,VVE-DDDR,PLU,PLU,IS-1 BI,IS-1 BI,IS-1 Programmable,DF-1 (2 ports),#2,Biphasic,Battery Voltage ? 2.62 V,,,,,,,,
+"Medtronic, Inc.",7285,InSync III Protect,VVE-DDDR,PPC,PPC,IS-1 BI,IS-1 BI,IS-1 Programmable,DF-1 (2 ports),#2,Biphasic,Battery Voltage ? 2.62 V,,,,,,,,
+"Medtronic, Inc.",7289,InSync II Marquis,VVE-DDDR,PRJ,PRJ,IS-1 BI,IS-1 BI,IS-1 Programmable,DF-1 (2 ports),#2,Biphasic,Battery Voltage ? 2.62 V,,,,,,,,
+"Medtronic, Inc.",7295,InSync II Protect,VVE-DDDR,PRH,PRH,IS-1 BI,IS-1 BI,IS-1 Programmable,DF-1 (2 ports),#2,Biphasic,Battery Voltage ? 2.62 V,,,,,,,,
+"Medtronic, Inc.",7297,InSync Sentry,VVE-DDDR,PRK,PRK,IS-1 BI,IS-1 BI,IS-1 Programmable,DF-1 (2 ports),#2,Biphasic,Battery Voltage ? 2.62 V,,,,,,,,
+"Medtronic, Inc.",7298,InSync Sentry,VVE-DDDR,PRK,PRK,IS-1 BI,IS-1 BI,IS-1 Programmable,DF-1 (2 ports),#2,Biphasic,Battery Voltage ? 2.62 V,,,,,,,,
+"Medtronic, Inc.",7299,InSync Sentry,VVE-DDDR,PRK,PRK,IS-1 BI,IS-1 BI,IS-1 Programmable,DF-1 (2 ports),#2,Biphasic,Battery Voltage ? 2.62 V,,,,,,,,
+"Medtronic, Inc.",7303,InSync Maximo,VVE-DDDR,PRL,PRL,IS-1 BI,IS-1 BI,IS-1 Programmable,DF-1 (2 ports),#2,Biphasic,Battery Voltage ? 2.62 V,,,,,,,,
+"Medtronic, Inc.",7304,InSync Maximo,VVE-DDDR,PRL,PRL,IS-1 BI,IS-1 BI,IS-1 Programmable,DF-1 (2 ports),#2,Biphasic,Battery Voltage ? 2.62 V,,,,,,,,
+"Medtronic, Inc.",C154DWK,Concerto,DDE-DDDR,PVR,PVR,IS-1 BI,IS-1 BI,IS-1 Programmable,DF-1 (2 ports),#2,Biphasic,Battery Voltage ? 2.62 V,,,,,,,,
+"Medtronic, Inc.",C164AWK,Concerto,DDE-DDDR,PVR,PVR,IS-1 BI,IS-1 BI,IS-1 Programmable,DF-1 (2 ports),#2,Biphasic,Battery Voltage ? 2.62 V,,,,,,,,
+"Medtronic, Inc.",C174AWK,Concerto,DDE-DDDR,PVR,PVR,IS-1 BI,IS-1 BI,IS-1 Programmable,DF-1 (2 ports),#2,Biphasic,Battery Voltage ? 2.62 V,,,,,,,,
+"Medtronic, Inc.",D204TRM,Consulta CRT-D,DDE-DDDR,PUG,PUC,IS-1 BI,DF4-LLH,IS-1 Programmable,DF4-LLHH,#2,Biphasic,Battery Voltage ? 2.63 V on 3 consecutive daily measurements,,,,,,,,
+"Medtronic, Inc.",D214TRM,Consulta CRT-D,DDE-DDDR,PUG,PZA,IS-1 BI,DF4-LLH,IS-1 Programmable,DF4-LLHH,#2,Biphasic,Battery Voltage ? 2.63 V on 3 consecutive daily measurements,,,,,,,,
+"Medtronic, Inc.",D224TRK,Consulta CRT-D,DDE-DDDR,PUG,PUD,IS-1 BI,IS-1 BI,IS-1 Programmable,DF-1 (2 ports),#2,Biphasic,Battery Voltage ? 2.63 V on 3 consecutive daily measurements,,,,,,,,
+"Medtronic, Inc.",D234TRK,Consulta CRT-D,DDE-DDDR,PUG,PyZ,IS-1 BI,IS-1 BI,IS-1 Programmable,DF-1 (2 ports),#2,Biphasic,Battery Voltage ? 2.63 V on 3 consecutive daily measurements,,,,,,,,
+"Medtronic, Inc.",D264TRM,Maximo II CRT-D,VVE-DDDR,PUG,PZO,"IS-1 Programmable
+",DF4-LLHH,IS-1 Programmable,DF4-LLHH,#2,Biphasic,Battery Voltage ? 2.63 V on 3 consecutive daily measurements,,,,,,,,
+"Medtronic, Inc.",D274TRK,Concerto II CRT-D,DDE-DDDR  ,PUG,PZV,IS-1 BI,IS-1 BI,"IS-1 Programmable
+",DF-1 (2 ports),#2,Biphasic,Battery Voltage ? 2.63 V on 3 consecutive daily measurements,,,,,,,,
+"Medtronic, Inc.",D284TRK,Maximo II CRT-D,DDE-DDDR,PUG,PZP,IS-1 BI,IS-1 BI,"IS-1 Programmable
+",DF-1 (2 ports),#2,Biphasic,Battery Voltage ? 2.63 V on 3 consecutive daily measurements,,,,,,,,
+"Medtronic, Inc.",D294TRK,Concerto II CRT-D,DDE-DDDR,PUG,PZU,IS-1 BI,IS-1 BI,"IS-1 Programmable
+",DF-1 (2 ports),#2,Biphasic,Battery Voltage ? 2.63 V on 3 consecutive daily measurements,,,,,,,,
+"Medtronic, Inc.",D314TRG,Protecta XT CRT-D,DDE-DDDR,PSI,PFS,IS-1 BI,IS-1 BI,"IS-1 Programmable
+",DF-1 (2 ports),2,Biphasic,Battery Voltage ? 2.63 V on 3 consecutive daily measurements,,,,,,,,
+"Medtronic, Inc.",D314TRM,Protecta XT CRT-D,DDE-DDDR,PSI,PSI,IS-1 BI,DF4-LLHH,"IS-1 Programmable
+",DF4-LLHH,2,Biphasic,Battery Voltage ? 2.63 V on 3 consecutive daily measurements,,,,,,,,
+"Medtronic, Inc.",D334TRG,Protecta CRT-D,DDE-DDDR,PSI,PSO,IS-1 BI,IS-1 BI,"IS-1 Programmable
+",DF-1 (2 ports),2,Biphasic,Battery Voltage ? 2.63 V on 3 consecutive daily measurements,,,,,,,,
+"Medtronic, Inc.",D334TRM,Protecta CRT-D,DDE-DDDR,PSI,PSL,IS-1 BI,DF4-LLHH,"IS-1 Programmable
+",DF4-LLHH,2,Biphasic,Battery Voltage ? 2.63 V on 3 consecutive daily measurements,,,,,,,,
+"Medtronic, Inc.",D354TRG,Protecta XT CRT-D,DDE-DDDR,PSI,PSF,IS-1 BI,IS-1 BI,"IS-1 Programmable
+",DF-1 (2 ports),2,Biphasic,Battery Voltage ? 2.63 V on 3 consecutive daily measurements,,,,,,,,
+"Medtronic, Inc.",D354TRM,Protecta XT CRT-D,DDE-DDDR,PSI,PSE,IS-1 BI,DF4-LLHH,"IS-1 Programmable
+",DF4-LLHH,2,Biphasic,Battery Voltage ? 2.63 V on 3 consecutive daily measurements,,,,,,,,
+"Medtronic, Inc.",D364TRG,Protecta CRT-D,DDE-DDDR,PSI,PTE,IS-1 BI,IS-1 BI,"IS-1 Programmable
+",DF-1 (2 ports),2,Biphasic,Battery Voltage ? 2.63 V on 3 consecutive daily measurements,,,,,,,,
+"Medtronic, Inc.",D364TRM,Protecta CRT-D,DDE-DDDR,PSI,PTB,IS-1 BI,DF4-LLHH,"IS-1 Programmable
+",DF4-LLHH,2,Biphasic,Battery Voltage ? 2.63 V on 3 consecutive daily measurements,,,,,,,,
+"Medtronic, Inc.",D384TRG,Cardia CRT-D,DDE-DDDR,PSI,PXI,IS-1 BI,IS-1 BI,"IS-1 Programmable
+",DF-1 (2 ports),2,Biphasic,Battery Voltage ? 2.63 V on 3 consecutive daily measurements,,,,,,,,
+"Medtronic, Inc.",D384TRM,Cardia CRT-D,DDE-DDDR,PSI,PXN,IS-1 BI,DF4-LLHH,"IS-1 Programmable
+",DF4-LLHH,2,Biphasic,Battery Voltage ? 2.63 V on 3 consecutive daily measurements,,,,,,,,
+"Medtronic, Inc.",D394TRG,Egida CRT-D,DDE-DDDR,PSI,PXJ,IS-1 BI,IS-1 BI,"IS-1 Programmable
+",DF-1 (2 ports),2,Biphasic,Battery Voltage ? 2.63 V on 3 consecutive daily measurements,,,,,,,,
+"Medtronic, Inc.",D394TRM,Egida CRT-D,DDE-DDDR,PSI,PXL,IS-1 BI,DF4-LLHH,"IS-1 Programmable
+",DF4-LLHH,2,Biphasic,Battery Voltage ? 2.63 V on 3 consecutive daily measurements,,,,,,,,
+St. Jude Medical,V-337,Epic HF,VVED,,,IS-1 BI ,IS-1 BI ,IS-1 Programmable,DF-1 (2 ports),#2,Mono/Biphasic,Battery Voltage ? 2.45 V,,,,,,,,
+St. Jude Medical,V-338,Epic HF,VVED,SJM Jy,,IS-1 BI ,IS-1 BI ,IS-1 Programmable,DF-1 (2 ports),#2,Mono/Biphasic,Battery Voltage ? 2.45 V,,,,,,,,
+St. Jude Medical,V-340,Atlas + HF,VVED,SJM JX,,IS-1 BI ,IS-1 BI ,IS-1 Programmable,DF-1 (2 ports),#2,Mono/Biphasic,Battery Voltage ? 2.45 V,,,,,,,,
+St. Jude Medical,V-343,Atlas Plus HF,VVED,SJM JX,,IS-1 BI ,IS-1 BI ,IS-1 Programmable,DF-1 (2 ports),#2,Mono/Biphasic,Battery Voltage ? 2.45 V,,,,,,,,
+St. Jude Medical,V-344,Atlas Plus HF,VVED,SJM JX,,IS-1 BI ,IS-1 BI ,IS-1 Programmable,DF-1 (2 ports),#2,Mono/Biphasic,Battery Voltage ? 2.45 V,,,,,,,,
+St. Jude Medical,V-352 ,Epic HF,VVED,SJM Jy,,IS-1 BI ,IS-1 BI ,IS-1 Programmable,DF-1 (2 ports),#2,Mono/Biphasic,Battery Voltage ? 2.45 V,,,,,,,,
+St. Jude Medical,V-355 ,Epic II HF,VVED,,,IS-1 BI ,IS-1 BI ,IS-1 Programmable,DF-1 (2 ports),#2,Mono/Biphasic,Battery Voltage ? 2.45 V,,,,,,,,
+St. Jude Medical,V-365,Atlas II HF,VVED,,,IS-1 BI ,IS-1 BI ,IS-1 Programmable,DF-1 (2 ports),#2,Mono/Biphasic,Battery Voltage ? 2.45 V,,,,,,,,

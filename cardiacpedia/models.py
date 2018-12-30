@@ -35,4 +35,24 @@ class UserRoles(db.Model):
     user_id = db.Column(db.Integer(), db.ForeignKey('users.id', ondelete='CASCADE'))
     role_id = db.Column(db.Integer(), db.ForeignKey('roles.id', ondelete='CASCADE'))
 
+# Define the UserRoles association table
+class IPG(db.Model):
+    __tablename__ = 'ipg'
+    id = db.Column(db.Integer(), primary_key=True)
+    manufacturer = db.Column(db.String(255, collation='NOCASE'), nullable=False)
+    model_number = db.Column(db.String(255, collation='NOCASE'), nullable=True)
+    name = db.Column(db.String(255, collation='NOCASE'),nullable=True)
+    nbg_code = db.Column(db.String(255, collation='NOCASE'),nullable=True)
+    x_ray = db.Column(db.String(255, collation='NOCASE'), nullable=True)
+    ra = db.Column(db.String(255, collation='NOCASE'), nullable=True)
+    rv = db.Column(db.String(255, collation='NOCASE'), nullable=True)
+    detach = db.Column(db.String(255, collation='NOCASE'), nullable=True)
+    n_bos = db.Column(db.String(255, collation='NOCASE'), nullable=True)
+    n_rrt = db.Column(db.String(255, collation='NOCASE'), nullable=True)
+    m_bos = db.Column(db.String(255, collation='NOCASE'), nullable=True)
+    m_rrt = db.Column(db.String(255, collation='NOCASE'), nullable=True)
+    rrt_behaviour = db.Column(db.String(255, collation='NOCASE'), nullable=True)
+    rrt_longevity = db.Column(db.String(255, collation='NOCASE'), nullable=True)
+
+
 user_manager = UserManager(app, db, User)

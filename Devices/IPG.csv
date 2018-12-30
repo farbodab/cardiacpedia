@@ -1,0 +1,1728 @@
+Manufacturer,Model Number,Name,NBG Code,X-ray/Serial ID,Sense / Pace Connector RA,Sense / Pace Connector RV,Detach Tools,Non MAG Rate BOS,Non MAG Rate RRT/EOS,MAG Rate BOS,MAG Rate RRT/EOS,RRT/EOS Behavior,RRT/EOS Longetivity
+"Biotronik, Inc.",—,Axios DR-B DDDR,,ER,6 mm Programmable,6 mm Programmable,#2,PR,PR-11% (VDD),PR,PR-11% (VOO),"B, 11%, Jb",5.5
+"Biotronik, Inc.",—,Axios SR-B SSIR,,ER,None,6 mm Programmable,#2,PR,PR-11% (SI),PR,PR-11% (SOO),"B, 11%, Jb",6.7
+"Biotronik, Inc.",101,Ergos 01 UP SSIR,,None,None,IS-1 UNI,#2,PR,PR-11%,PR,PR-11%,"B, 11%",
+"Biotronik, Inc.",102,Diplos 03 DDDM,,None,5 mm UNI,5 mm UNI,#2,PR,PR-6%,PR,PR-6%,"B, 6%",
+"Biotronik, Inc.",102,Diplos 03 VVI,,None,None,5 mm UNI,#2,PR,PR-6%,PR,PR-6%,"B, 6%",
+"Biotronik, Inc.",103,Ergos 01 BP SSIR,,None,None,IS-1 BI,#2,PR,PR-11%,PR,PR-11%,"B, 11%",
+"Biotronik, Inc.",104,Kalos 03 A VVIM,,None,None,5 mm UNI,#2,PR,PR-6%,PR,PR-6%,"B, 6%, J",
+"Biotronik, Inc.",104B,Kalos 03 B VVIM,,None,None,6 mm UNI,#2,PR,PR-6%,PR,PR-6%,"B, 6%, J",
+"Biotronik, Inc.",105,Ergos 01 A SSIR,,None,None,5 mm UNI,#2,PR,PR-11%,PR,PR-11%,"B, 11%",
+"Biotronik, Inc.",107A,Leukos 03 A VVI,,None,None,5 mm UNI,#2,72,68,72,68,"B, 6%, J",
+"Biotronik, Inc.",107B,Leukos 03 B VVI,,None,None,6 mm UNI,#2,72,68,72,68,"B, 6%, J",
+"Biotronik, Inc.",111,Ergos 02 UP DDDR,,None,IS-1 UNI,IS-1 UNI,#2,PR,PR-11% (VDD),PR,PR-11% (DOO),"B, 11%",
+"Biotronik, Inc.",112 472,Gemnos 02,DDD,AA,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,PR-11% (VDD),PR,PR-11% (DOO),"La, 11%",
+"Biotronik, Inc.",112 473,Ergos 03,DDDR,AL,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,PR-11% (VDD),PR,PR-11% (DOO),"B, 11%",
+"Biotronik, Inc.",112 518,Pikos 01,SSIC,CA,None,IS-1 UNI/BI ,#2,PR,PR-11%,PR,PR-11%,"La, 11%, J",
+"Biotronik, Inc.",112 548,Metros 01,SSIR,AC,None,IS-1 UNI/BI ,#2,PR,PR-11%,PR,PR-11%,"B, 11%",
+"Biotronik, Inc.",112 622,Physios 01,DDDC,AK,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,PR-11% (VDD),PR,PR-11% (DOO),"La, 11%",
+"Biotronik, Inc.",112 651,Pikos E 01,SSIC,AE,None,IS-1 UNI/BI ,#2,PR,PR-11%,PR,PR-11%,"La, 11%, J",
+"Biotronik, Inc.",112 681,Gemnos 03,DDD,AP,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,PR-11% (VDD),PR,PR-11% (DOO),"La, 11%",
+"Biotronik, Inc.",112 961,Thermos M 02,SSI,CE,IS-1 BI,IS-1 UNI/BI ,#2,PR,PR-11%,PR,PR-11%,"B, 11%, J",
+"Biotronik, Inc.",112 961,Thermos M 02,SSIR,CE,IS-1 BI,IS-1 UNI/BI ,#2,PR,PR-11% (SSI),PR,PR-11%,"B, 11%, J",
+"Biotronik, Inc.",113,Ergos 02 BP,DDDR,None,IS-1 BI,IS-1 BI,#2,PR,PR-11% (VDD),PR,PR-11% (DOO),"B, 11%",
+"Biotronik, Inc.",113 153,Gemnos 04,DDDC,AK,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,PR-11% (VDD),PR,PR-11% (DOO),"La, 11%",
+"Biotronik, Inc.",113 403,Metros S 01,SSIR,CL,None,IS-1 UNI/BI ,#2,PR,PR-11%,PR,PR-11%,"B, 11%",
+"Biotronik, Inc.",113 714,Pikos LP 01,SSIC,EK,None,IS-1 UNI/BI ,#2,PR,PR-11%,PR,PR-11%,"La, 11%, J",
+"Biotronik, Inc.",113 716,Pikos LP E 01,SSIC,PA,None,IS-1 UNI/BI ,#2,PR,PR-11%,PR,PR-11%,"La, 11%, J",
+"Biotronik, Inc.",113 718,Pikos XLP 01,SSIC,EL,None,IS-1 UNI/BI ,#2,PR,PR-11%,PR,PR-11%,"La, 11%, J",
+"Biotronik, Inc.",113 720,Pikos XLP E 01,SSIC,EP,None,IS-1 UNI/BI ,#2,PR,PR-11%,PR,PR-11%,"La, 11%, J",
+"Biotronik, Inc.",113 850,Ergos S 03,DDDR,EA,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,PR-11% (VDD),PR,PR-11% (DOO),"B, 11%",
+"Biotronik, Inc.",113 870,Metros TC 01,SSIR,KE,None,IS-1 UNI/BI ,#2,PR,PR-11%,PR,PR-11%,"B, 11%",
+"Biotronik, Inc.",113 873,Gemnos TC 04,DDDCP KC,,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,PR-11% (VDD),PR,PR-11% (DOO),"La, 11%",
+"Biotronik, Inc.",113 875,Ergos TC 03,DDDR KA,,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,PR-11% (VDD),PR,PR-11% (DOO),"B, 11%",
+"Biotronik, Inc.",114 141,Pikos 01A,SSIC,CA,None,5 mm UNI,#2,PR,PR-11%,PR,PR-11%,"La, 11%, J",
+"Biotronik, Inc.",114 143,Gemnos 04A,DDDC,AK,5 mm UNI,5 mm UNI,#2,PR,PR-11% (VDD),PR,PR-11% (DOO),"La, 11%",
+"Biotronik, Inc.",115,Ergos 02 A,DDDR,None,5 mm UNI,5 mm UNI,#2,PR,PR-11% (VDD),PR,PR-11% (DOO),"B, 11%",
+"Biotronik, Inc.",115 186,Dromos 03,VDD,PC,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,PR-11%,PR,PR-11%,"C, 11%",
+"Biotronik, Inc.",116 488,Dromos SL,VVDC,CH,IS-1 BI,IS-1 UNI,#2,PR,PR-11%,PR,PR-11%,"C, 11%",
+"Biotronik, Inc.",116 703,Dromos DR,DDDR,LP,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,PR-11%,PR,PR-11%,"C, 11%",
+"Biotronik, Inc.",116 705,Dromos DR A,DDDR,LP,5/6 mm UNI,5/6 mm UNI,#2,PR,PR-11%,PR,PR-11%,"C, 11%",
+"Biotronik, Inc.",116 709,Dromos SR B,SSIR,LK,None,5/6 mm UNI,#2,PR,PR-11%,PR,PR-11%,"C, 11%",
+"Biotronik, Inc.",120 070,Actros SR B,SSIR,LC,None,5/6 mm UNI,#2,PR,PR-11% (SSI),PR,PR-11% (SOO),"B,  11%,   Jb",8.1
+"Biotronik, Inc.",120 082,Actros SR,SSIR,LC,None,IS-1 UNI/BI,#2,PR,PR-11% (SSI),PR,PR-11% (SOO),"B,  11%,   Jb",8.1
+"Biotronik, Inc.",120 083,Actros DR,DDDR,LC,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,PR-11% (VDD),PR,PR-11% (VOO),"B,  11%,   Jb",5.5
+"Biotronik, Inc.",120 084,Actros DR,DDDR,LC,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,PR-11% (VDD),PR,PR-11% (VOO),"B,  11%,   Jb",5.5
+"Biotronik, Inc.",120 085,Actros SLR,VDDR,LC,None,IS-1 UNI/BI,#2,PR,PR-11% (VDD),PR,PR-11% (VOO),"B,  11%,   Jb",7.4
+"Biotronik, Inc.",120 086,Actros SLR,VDDR,LC,None,IS-1 UNI/BI,#2,PR,PR-11% (VDD),PR,PR-11% (VOO),"B,  11%,   Jb",7.3
+"Biotronik, Inc.",120 741,Actros D,DDD,LC,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,PR-11% (VDD),PR,PR-11% (VOO),"B,  11%,   Jb",5.6
+"Biotronik, Inc.",120 742,Actros D,DDD,LC,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,PR-11% (VDD),PR,PR-11% (VOO),"B,  11%,   Jb",5.5
+"Biotronik, Inc.",120 744,Actros S,SSI,LC,None,IS-1 UNI/BI,#2,PR,PR-11% (SSI),PR,PR-11% (SOO),"B,  11%,   Jb",8.3
+"Biotronik, Inc.",120 745,Actros S,SSI,LC,None,IS-1 UNI/BI,#2,PR,PR-11% (SSI),PR,PR-11% (SOO),"B,  11%,   Jb",8.2
+"Biotronik, Inc.",121,Archos 06 A ,AAI,None,5 mm UNI,None,#2,72,68,72,68,"B, 6%",
+"Biotronik, Inc.",121 722,Kairos D ,DDDC,LA,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,PR-11% (VDD),PR,PR-11% (VOO),"B,  11%,   Jb",5.5
+"Biotronik, Inc.",121 723,Kairos D ,DDDC,LA,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,PR-11% (VDD),PR,PR-11% (VOO),"B,  11%,   Jb",5.5
+"Biotronik, Inc.",121 725,Kairos DR ,DDDR,LA,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,PR-11% (VDD),PR,PR-11% (VOO),"B,  11%,   Jb",5.4
+"Biotronik, Inc.",121 726,Kairos DR ,DDDR,LA,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,PR-11% (VDD),PR,PR-11% (VOO),"B,  11%,   Jb",5.4
+"Biotronik, Inc.",121 728,Kairos S ,SSIC,LA,None,IS-1 UNI/BI,#2,PR,PR-11% (SSI),PR,PR-11% (SOO),"B,  11%,   Jb",8.1
+"Biotronik, Inc.",121 729,Kairos S ,SSIC,LA,None,IS-1 UNI/BI,#2,PR,PR-11% (SSI),PR,PR-11% (SOO),"B,  11%,   Jb",8.1
+"Biotronik, Inc.",121 731,Kairos SL ,VDDC,LA,None,IS-1 UNI/BI,#2,PR,PR-11% (VDD),PR,PR-11% (VOO),"B,  11%,   Jb",7.5
+"Biotronik, Inc.",121 732,Kairos SL ,VDDC,LA,None,IS-1 UNI/BI,#2,PR,PR-11% (VDD),PR,PR-11% (VOO),"B,  11%,   Jb",7.5
+"Biotronik, Inc.",121 734,Kairos SR ,SSIR,LA,None,IS-1 UNI/BI,#2,PR,PR-11% (SSI),PR,PR-11% (SOO),"B,  11%,   Jb",8
+"Biotronik, Inc.",121 735,Kairos SR ,SSIR,LA,None,IS-1 UNI/BI,#2,PR,PR-11% (SSI),PR,PR-11% (SOO),"B,  11%,   Jb",8
+"Biotronik, Inc.",121 889,Actros D-A ,DDD,LC,5 mm UNI,5 mm UNI,#2,PR,PR-11% (VDD),PR,PR-11% (VOO),"B,  11%,   Jb",5.5
+"Biotronik, Inc.",121 891,Actros S-B ,SSI,LC,None,5/6 mm UNI,#2,PR,PR-11% (SSI),PR,PR-11% (SOO),"B,  11%,   Jb",8.1
+"Biotronik, Inc.",121 993,Kairos DR ,DDDR,LA,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,PR-11% (VDD),PR,PR-11% (VOO),"B,  11%,   Jb",5.4
+"Biotronik, Inc.",121 994,Kairos S ,VVI,LA,None,IS-1 UNI/BI,#2,PR,PR-11% (VVI),PR,PR-11% (VOO),"B,  11%,   Jb",8.1
+"Biotronik, Inc.",121 996,Kairos SR ,VVIR,LA,None,IS-1 UNI/BI,#2,PR,PR-11% (VVI),PR,PR-11% (VOO),"B,  11%,   Jb",8
+"Biotronik, Inc.",121B,Archos 06 B ,AAI,None,6 mm UNI,None,#2,72,68,72,68,"B, 6%",
+"Biotronik, Inc.",122,Eikos 04 A ,AAIM,None,5 mm UNI,None,#2,PR,PR-6%,PR,PR-6%,"B, 6%",
+"Biotronik, Inc.",122,Eikos 04 B,AAIM,None,6 mm UNI,None,#2,PR,PR-6%,PR,PR-6%,"B, 6%",
+"Biotronik, Inc.",122 069,Actros DR- A,DDDR,LC,5 mm UNI,5 mm UNI,#2,PR,PR-11% (VDD),PR,PR-11% (VOO),"B,  11%,   Jb",5.5
+"Biotronik, Inc.",122 126,BA03,DDDR,EE,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,PR-11% (VDD),PR,PR-11% (VOO),"B,  11%,   Jb",
+"Biotronik, Inc.",122 276,Actros DR- B,DDDR,LC,5/6 mm Unipolar,5/6 mm Unipolar,#2,PR,PR-11% (VDD),PR,PR-11% (VOO),"B,  11%,   Jb",5.5
+"Biotronik, Inc.",122 277,Kairos D-B,DDDC,LA,5/6 mm Unipolar,5/6 mm Unipolar,#2,PR,PR-11% (VDD),PR,PR-11% (VOO),"B,  11%,   Jb",5.5
+"Biotronik, Inc.",122 278,Kairos DR-B,DDDR,LA,5/6 mm Unipolar,5/6 mm Unipolar,#2,PR,PR-11% (VDD),PR,PR-11% (VOO),"B,  11%,   Jb",5.4
+"Biotronik, Inc.",122 311,Actros DR+,DDDR,LC,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,PR-11% (VDD),PR,PR-11% (VOO),"B,  11%,   Jb",5.5
+"Biotronik, Inc.",122 313,Actros S+,SSI,LC,None,IS-1 UNI/BI,#2,PR,PR-11% (SSI),PR,PR-11% (SOO),"B,  11%,   Jb",8.2
+"Biotronik, Inc.",122 314,Actros SR+,SSIR,LC,None,IS-1 UNI/BI,#2,PR,PR-11% (SSI),PR,PR-11% (SOO),"B,  11%,   Jb",8.1
+"Biotronik, Inc.",122 315,Actros SR+- B,SSIR,LC,None,5/6 mm UNI,#2,PR,PR-11% (SSI),PR,PR-11% (SOO),"B,  11%,   Jb",8.1
+"Biotronik, Inc.",122 390,Kairos D-A,DDDC,LA,5 mm UNI,5 mm UNI,#2,PR,PR-11% (VDD),PR,PR-11% (VOO),"B,  11%,   Jb",5.5
+"Biotronik, Inc.",122 392,Kairos DR-A,DDDR,LA,5 mm UNI,5 mm UNI,#2,PR,PR-11% (VDD),PR,PR-11% (VOO),"B,  11%,   Jb",5.4
+"Biotronik, Inc.",122 397,Kairos S-A,SSIC,LA,None,5 mm UNI,#2,PR,PR-11% (SSI),PR,PR-11% (SOO),"B,  11%,   Jb",8.1
+"Biotronik, Inc.",122 399,Kairos S-B,SSIC,LA,None,5/6 mm UNI,#2,PR,PR-11% (SSI),PR,PR-11% (SOO),"B,  11%,   Jb",8.1
+"Biotronik, Inc.",122 401,Kairos SR-A,SSIR,LA,None,5 mm UNI,#2,PR,PR-11% (SSI),PR,PR-11% (SOO),"B,  11%,   Jb",8
+"Biotronik, Inc.",122 403,Kairos SR-B,SSIR,LA,None,5/6 mm UNI,#2,PR,PR-11% (SSI),PR,PR-11% (SOO),"B,  11%,   Jb",8
+"Biotronik, Inc.",122 445,Actros DR+- B,DDDR,LC,5/6 mm Unipolar,5/6 mm Unipolar,#2,PR,PR-11% (VDD),PR,PR-11% (VOO),"B,  11%,   Jb",5.5
+"Biotronik, Inc.",122 447,Philos D,DDD,LE,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,PR-11% (VDD),PR,PR-11% (VOO),"B,  11%,   Jb",5.5
+"Biotronik, Inc.",122 448,Philos D,DDD,LE,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,PR-11% (VDD),PR,PR-11% (VOO),"B,  11%,   Jb",5.5
+"Biotronik, Inc.",122 450,Philos DR,DDDR,LE,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,PR-11% (VDD),PR,PR-11% (VOO),"B,  11%,   Jb",5.5
+"Biotronik, Inc.",122 451,Philos DR,DDDR,LE,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,PR-11% (VDD),PR,PR-11% (VOO),"B,  11%,   Jb",5.5
+"Biotronik, Inc.",122 453,Philos S,SSI,LE,None,IS-1 UNI/BI,#2,PR,PR-11% (SSI),PR,PR-11% (SOO),"B,  11%,   Jb",6.6
+"Biotronik, Inc.",122 454,Philos S,SSI,LE,None,IS-1 UNI/BI,#2,PR,PR-11% (SSI),PR,PR-11% (SOO),"B,  11%,   Jb",6.6
+"Biotronik, Inc.",122 456,Philos SLR,VDDR,LE,None,IS-1 UNI/BI,#2,PR,PR-11% (VDD),PR,PR-11% (VOO),"B,  11%,   Jb",6.8
+"Biotronik, Inc.",122 457,Philos SLR,VDDR,LE,None,IS-1 UNI/BI,#2,PR,PR-11% (VDD),PR,PR-11% (VOO),"B,  11%,   Jb",6.8
+"Biotronik, Inc.",122 459,Philos SR,SSIR,LE,None,IS-1 UNI/BI,#2,PR,PR-11% (SSI),PR,PR-11% (SOO),"B,  11%,   Jb",6.6
+"Biotronik, Inc.",122 460,Philos SR,SSIR,LE,None,IS-1 UNI/BI,#2,PR,PR-11% (SSI),PR,PR-11% (SOO),"B,  11%,   Jb",6.6
+"Biotronik, Inc.",122 544,Philos DR-T,VDDR,LE,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,PR-11% (VDD),PR,PR-11% (VOO),"B,  11%,   Jb",5.5
+"Biotronik, Inc.",124,Diplos 04,DDDM,None,5 mm UNI,5 mm UNI,#2,PR,PR-11% (VDD),PR,PR-11% (VOO),"B, 11%, Jb",
+"Biotronik, Inc.",124,Diplos 04,DVI,None,5 mm UNI,5 mm UNI,#2,PR,PR-11% (VVI),PR,PR-11% (VOO),"B, 11%, Jb",
+"Biotronik, Inc.",124,Diplos 04,VVI,None,None,5 mm UNI,#2,PR,PR-11%,PR,PR-11%,"B, 11%, Jb",
+"Biotronik, Inc.",125,Leptos A,VVI,None,None,5 mm UNI,#2,70,61,70,61,"B, 12%, J",
+"Biotronik, Inc.",126,Leptos 01 B ,VVI,None,None,6 mm UNI,#2,70,61,70,61,"B, 12%, J",
+"Biotronik, Inc.",129,Kalos 03  VVIM ,ABP,None,None,5 mm Bif BI,#2,PR,PR-6%,PR,PR-6%,"B, 6%, J",
+"Biotronik, Inc.",130,Leptos ABP ,VVI,None,,5 mm Bif BI,,70,61,70,61,"B, 12%, J",
+"Biotronik, Inc.",131,Leukos 03 ABP,VVl ,None,None,5 mm Bif BI,#2,72,68,72,68,"B, 6%, J",
+"Biotronik, Inc.",145/8,Diplos 05,DDDC ,None,5 mm UNI,5 mm UNI,#2,PR,PR-11% (VDD),PR,PR-11% (VOO),"B, 11%, Jb",
+"Biotronik, Inc.",146,Diplos 05 B,DDDC ,None,6 mm UNI,6 mm UNI,#2,PR,PR-11% (VDD),PR,PR-11% (VOO),"B, 11%, Jb",
+"Biotronik, Inc.",151,Diplos M 05 UP,DDDC,None,IS-1 UNI,IS-1 UNI,#2,PR,PR-11% (VDD),PR,PR-11% (VOO),"B, 11%, Jb",
+"Biotronik, Inc.",151,Dromos,VAT ,None,Bayonet UNI,Bayonet UNI,None,60,55,60,55,"C, 5 ppm",
+"Biotronik, Inc.",151,Dromos 02,VAT ,None,Bayonet UNI,Bayonet UNI,None,60,54,60,54,"C, 10%",
+"Biotronik, Inc.",155,Diplos M 05 A,DDDC ,None,5 mm UNI,5 mm UNI,#2,PR,PR-11% (VDD),PR,PR-11% (VOO),"B, 11%, Jb",
+"Biotronik, Inc.",160,Neos LP 01 ABP,VVIM ,None,None,5 mm Bif BI,#2,PR,PR-11%,PR,PR-11%,"B, 11%, J",
+"Biotronik, Inc.",165,Neos LP 01 A,VVIM ,None,None,5 mm UNI,#2,PR,PR-11%,PR,PR-11%,"B, 11%, J",
+"Biotronik, Inc.",166,Neos LP 01 B,VVIM ,None,None,6 mm UNI,#2,PR,PR-11%,PR,PR-11%,"B, 11%, J",
+"Biotronik, Inc.",168,Gemnos,DDDC ,None,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,PR-11% (VDD),PR,PR-11% (DOO),"La, 11%",
+"Biotronik, Inc.",178,Diplos 06,DDDCP ,None,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,PR-11% (VDD),PR,PR-11% (VOO),"B, 11%, Jb",
+"Biotronik, Inc.",200,Kalos 04 ABP,VVIM,None,None,5 mm Bif BI,#2,PR,PR-6%,PR,PR-6%,"B, 6%, J",
+"Biotronik, Inc.",205,Kalos 04 A,VVIM,None,None,5 mm UNI,#2,PR,PR-6%,PR,PR-6%,"B, 6%, J",
+"Biotronik, Inc.",206,Kalos 04 B,VVIM,None,None,6 mm UNI,#2,PR,PR-6%,PR,PR-6%,"B, 6%, J",
+"Biotronik, Inc.",211,Leios 03 A,VVI,None,None,5 mm UNI,#2,72,68,72,68,"B, 6%",
+"Biotronik, Inc.",211,Leios 03 B,VVI,None,None,6 mm UNI,#2,72,68,72,68,"B, 6%",
+"Biotronik, Inc.",211,Kalos 05 UP,VVIM,None,None,IS-1 UNI,#2,PR,PR-6%,PR,PR-6%,"B, 6%, J",
+"Biotronik, Inc.",213,Kalos 05 BP,VVIM,None,None,IS-1 BI,#2,PR,PR-6%,PR,PR-6%,"B, 6%, J",
+"Biotronik, Inc.",215,Kalos 05 A,VVIM,None,None,5 mm UNI,#2,PR,PR-6%,PR,PR-6%,"B, 6%, J",
+"Biotronik, Inc.",216,Kalos 05 B,VVIM,None,None,6 mm UNI,#2,PR,PR-6%,PR,PR-6%,"B, 6%, J",
+"Biotronik, Inc.",300,Trios M 01 ABP,VVIP,None,None,5 mm Bif BI,#2,PR,PR-11%,PR,PR-11%,"B, 11%, J",
+"Biotronik, Inc.",301,Trios M 01 UP,VVIP,None,None,IS-1 UNI,#2,PR,PR-11%,PR,PR-11%,"B, 11%, J",
+"Biotronik, Inc.",303,Trios M 01 BP,VVIP,None,None,IS-1 BI,#2,PR,PR-11%,PR,PR-11%,"B, 11%, J",
+"Biotronik, Inc.",305,Trios M 01 A VVIP,,None,None,5 mm UNI,#2,PR,PR-11%,PR,PR-11%,"B, 11%, J",
+"Biotronik, Inc.",306,Trios M 01 B VVIP,,None,None,6 mm UNI,#2,PR,PR-11%,PR,PR-11%,"B, 11%, J",
+"Biotronik, Inc.",311,Trios 02 UP VVIP,,None,None,IS-1 UNI,#2,PR,PR-11%,PR,PR-11%,"B, 11%, J",
+"Biotronik, Inc.",313,Trios 02 BP VVIP,,None,None,IS-1 BI,#2,PR,PR-11%,PR,PR-11%,"B, 11%, J",
+"Biotronik, Inc.",315,Trios 02 A VVIP,,None,None,5 mm UNI,#2,PR,PR-11%,PR,PR-11%,"B, 11%, J",
+"Biotronik, Inc.",331 443,Philos DR DDDR,,LE,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,PR-11% (VDD),PR,PR-11% (VOO),"B,  11%,   Jb",5.5
+"Biotronik, Inc.",331 445,Philos SLR,VDDR,LE,None,IS-1 UNI/BI,#2,PR,PR-11% (VDD),PR,PR-11% (VOO),"B,  11%,   Jb",6.8
+"Biotronik, Inc.",331 446,Philos SR,SSIR,LE,None,IS-1 UNI/BI,#2,PR,PR-11% (SSI),PR,PR-11% (SOO),"B,  11%,   Jb",6.6
+"Biotronik, Inc.",331 598,Philos DR-B,DDDR,LE,6 mm Unipolar,6 mm Unipolar,#2,PR,PR-11% (VDD),PR,PR-11% (VOO),"B,  11%,   Jb",5.5
+"Biotronik, Inc.",331 599,Philos SR-B,SSIR,LE,None,6 mm Unipolar,#2,PR,PR-11% (SSI),PR,PR-11% (SOO),"B,  11%,   Jb",6.6
+"Biotronik, Inc.",338 843,Axios D,DDDM,ER,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,PR-11% (VDD),PR,PR-11% (VOO),"B,  11%,   Jb",5.5
+"Biotronik, Inc.",338 845,Axios DR,DDDR,ER,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,PR-11% (VDD),PR,PR-11% (VOO),"B,  11%,   Jb",5.5
+"Biotronik, Inc.",338 849,Axios SLR,VDDR,ER,None,IS-1 UNI/BI,#2,PR,PR-11% (VDD),PR,PR-11% (VOO),"B,  11%,   Jb",6.8
+"Biotronik, Inc.",338 851,Axios S,VVIM,ER,None,IS-1 UNI/BI,#2,PR,PR-11% (VVI),PR,PR-11% (VOO),"B,  11%,   Jb",6.7
+"Biotronik, Inc.",338 851,Axios SR,SSIR,ER,None,IS-1 UNI/BI,#2,PR,PR-11% (SSI),PR,PR-11% (SOO),"B,  11%,   Jb",6.7
+"Biotronik, Inc.",343,Chronos 04,VVI,BKC5,None,Bayonet UNI,None,72,65,72,65,"C, 9%",
+"Biotronik, Inc.",343L,IDP-54L,VVI,None,None,Bayonet UNI,None,70,61,70,61,"C, 12%",
+"Biotronik, Inc.",343L,IDP-54L1,VVI,None,None,Bayonet UNI,None,72,63,72,63,"C, 12%",
+"Biotronik, Inc.",344L,IKP-53,VDT,None,Bayonet UNI,Bayonet UNI,None,70,61,70,61,"C, 12%",
+"Biotronik, Inc.",344L,IKP-51,VOO,None,None,Bayonet UNI,None,70,61,,,"C, 12%",
+"Biotronik, Inc.",344L,IDP-84,VVI,None,None,Bayonet UNI,None,70,61,70,61,"C, 12%",
+"Biotronik, Inc.",344L,IDP-94,VVI,None,None,Bayonet UNI,None,70,61,70,61,"C, 12%",
+"Biotronik, Inc.",344L,IDP-144,VVI,None,None,Bayonet UNI,None,72,63,72,63,"C, 12%",
+"Biotronik, Inc.",344L,IKP-54,VVI,None,None,Bayonet UNI,None,70,61,70,61,"C, 12%",
+"Biotronik, Inc.",344L,IKP-52,VVT,None,None,Bayonet UNI,None,70,61,70,61,"C, 12%",
+"Biotronik, Inc.",400,Neos M 01 ABP,SSIC,None,None,5 mm Bif BI,#2,PR,PR-11%,PR,PR-11%,"B, 11%, J",
+"Biotronik, Inc.",401,Neos M 01 UP,SSIC,None,None,IS-1 UNI,#2,PR,PR-11%,PR,PR-11%,"B, 11%, J",
+"Biotronik, Inc.",403,Neos M 01 BP,SSIC,None,None,IS-1 BI,#2,PR,PR-11%,PR,PR-11%,"B, 11%, J",
+"Biotronik, Inc.",405,Neos M 01 A,SSIC,None,None,5 mm UNI,#2,PR,PR-11%,PR,PR-11%,"B, 11%, J",
+"Biotronik, Inc.",406,Neos M 01 B,SSIC,None,None,6 mm UNI,#2,PR,PR-11%,PR,PR-11%,"B, 11%, J",
+"Biotronik, Inc.",500,Neos 01 ABP,SSIM,None,None,5 mm Bif BI,#2,PR,PR-11%,PR,PR-11%,"B, 11%, J",
+"Biotronik, Inc.",501,Neos 01 UP,SSIC,None,None,IS-1 UNI,#2,PR,PR-11%,PR,PR-11%,"B, 11%, J",
+"Biotronik, Inc.",503,Neos 01 BP,SSIC,None,None,IS-1 BI,#2,PR,PR-11%,PR,PR-11%,"B, 11%, J",
+"Biotronik, Inc.",505,Neos 01 A,SSIM,None,None,5 mm UNI,#2,PR,PR-11%,PR,PR-11%,"B, 11%, J",
+"Biotronik, Inc.",506,Neos 01 B,SSIC,None,None,6 mm UNI,#2,PR,PR-11%,PR,PR-11%,"B, 11%, J",
+"Biotronik, Inc.",511,Neos 02 UP,SSIC,None,None,IS-1 UNI,#2,PR,PR-11%,PR,PR-11%,"B, 11%, J",
+"Biotronik, Inc.",513,Neos 02 BP,SSIC,None,None,IS-1 BI,#2,PR,PR-11%,PR,PR-11%,"B, 11%, J",
+"Biotronik, Inc.",515,Neos 02 A,SSIC,None,None,5 mm UNI,#2,PR,PR-11%,PR,PR-11%,"B, 11%, J",
+"Biotronik, Inc.",516,Neos 02 B,SSIC,None,None,5/6 mm UNI,#2,PR,PR-11%,PR,PR-11%,"B, 11%, J",
+"Biotronik, Inc.",601,Mikros 02 UP,SSIC,None,None,IS-1 UNI,#2,PR,PR-11%,PR,PR-11%,"B, 11%, J",
+"Biotronik, Inc.",603,Mikros 02 BP,SSIC,None,,IS-1 BI,,PR,PR-11%,PR,PR-11%,"B, 11%, J",
+"Biotronik, Inc.",605,Mikros 02 A,SSIC,None,None,5 mm UNI,#2,PR,PR-11%,PR,PR-11%,"B, 11%, J",
+"Biotronik, Inc.",701,Nanos 01 UP,SSIC,None,None,VS-1/IS-1 UNI,#2,PR,PR-11%,PR,PR-11%,"B, 11%, J",
+"Biotronik, Inc.",703,Nanos 01 BP,SSIC,None,None,VS-1/IS-1 BI,#2,PR,PR-11%,PR,PR-11%,"B, 11%, J",
+"Biotronik, Inc.",705,Nanos 01 A ,SSIC,None,None,5 mm UNI,#2,PR,PR-11%,PR,PR-11%,"B, 11%, J",
+"Biotronik, Inc.",805,Thermos 01 UP,SSIR,-,None,5 mm UNI,#2,PR,PR-11%,PR,PR-11%,"B,  11%,   J",4.5
+"Biotronik, Inc.",813,Thermos 01 UP,SSI,None,None,IS-1 UNI Pace/ Sense  with BI Thermistor,#2,PR,PR-11%,PR,PR-11%,"B, 11%, J",
+"Biotronik, Inc.",813,Thermos 01 UP,SSIR,None,None,IS-1 UNI Pace/Sense with BI Thermistor,#2,PR,PR-11% (SSI),PR,PR-11%,"B, 11%, J",
+"Biotronik, Inc.",823,Thermos 02 UP,SSI,None,None,IS-1 UNI Pace/Sense with BI Thermistor,#2,PR,PR-11%,PR,PR-11%,"B, 11%, J",
+"Biotronik, Inc.",823,Thermos ,SSIR,None,None,"IS-1 UNI Pace/
+Sense with BI
+Thermistor",#2,PR,PR-11% (SSI),PR,PR-11%,"B, 11%, J",
+"ELA Medical, Inc.",60,Stilith,VVI,None,None,5 mm UNI,#6,72,67,72 (Kb),67,"C, 5 ppm, J",
+"ELA Medical, Inc.",61,Stilith,VVI,None,None,5 mm UNI,#6,72,67,72 (Kb),67,"C, 5 ppm, J",
+"ELA Medical, Inc.",112,Brio,SSIR,ELA112,None,IS-1 UNI/BI,#2,PR,70,96,80,D,
+"ELA Medical, Inc.",113,Talent,SSIR,ELA113,None,IS-1 UNI/BI,#2,PR,70,96,80,D,
+"ELA Medical, Inc.",120,Stilith,VVI,None,None,5 mm UNI,#6,72,67,72 (Kb),67,"C, 5 ppm, J",
+"ELA Medical, Inc.",128,Stilith,VVI,None,None,5 mm UNI,#6,72,67,72 (Kb),67,"C, 5 ppm, J",
+"ELA Medical, Inc.",133,Talent II SR,SSIR,ELA133,None,IS-1 UNI/BI,#2,PR,SSI 70,96,80,"C, Mode and rate change to SSI-70",
+"ELA Medical, Inc.",210,Talent D,DDD,ELA210,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,VVI 70,96,80,"C, Mode and rate change to VVI-70",
+"ELA Medical, Inc.",212,Brio,DDDR,ELA212,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,70,96,80,D,
+"ELA Medical, Inc.",213,Talent,DDDR,ELA213,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,70,96,80,D,
+"ELA Medical, Inc.",220,Brio,DDD,ELA220,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,70,96,80,D,
+"ELA Medical, Inc.",222,Brio,DDDR,ELA222,IS-1 BI,IS-1 BI,#2,PR,70,96,80,D,
+"ELA Medical, Inc.",223,Talent,DDDR,ELA223,IS-1 BI,IS-1 BI,#2,PR,70,96,80,D,
+"ELA Medical, Inc.",230,Talent II D,DDD,ELA230,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,VVI 70,96,80,"C, Mode and rate change to VVI-70",
+"ELA Medical, Inc.",233,Talent II DR,DDDR,ELA233,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,VVI 70,96,80,"C, Mode and rate change to VVI-70",
+"ELA Medical, Inc.",243,Talent AF DR,DDDR,ELA243,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,VVI 70,96,80,"C, Mode and rate change to VVI-70",
+"ELA Medical, Inc.",253,Talent 3 DR,DDDR,ELA253,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,VVI 70,96,80,"C, Mode and rate change to VVI-70",
+"ELA Medical, Inc.",263,Talent 3 VDR,VDDR,ELA263,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,VVI 70,96,80,"C, Mode and rate change to VVI-70",
+"ELA Medical, Inc.",1140,Multilith I,VVI,ELAM1,None,5 mm UNI,#6,PR,PR,86,77,"B, 9 ppm",
+"ELA Medical, Inc.",1141,Multilith I,VVI,ELAM1,None,5 mm UNI,#6,PR,PR,86,77,"B, 9 ppm",
+"ELA Medical, Inc.",1250,Multilith II,VVI,ELAM2,None,5 mm UNI,#2,PR,PR,86,77,"B, 9 ppm",
+"ELA Medical, Inc.",1251,Multilith II,VVI,ELAM2,None,5 mm UNI,#2,PR,PR,86,77,"B, 9 ppm",
+"ELA Medical, Inc.",1350,Multilith III,VVI,ELA1350,None,5 mm UNI,#2,PR,PR,86,77,"B, 9 ppm",
+"ELA Medical, Inc.",1370,Multilith III,VVI,1370,None,5 mm UNI,#2,PR,PR,86,77,"B, 9 ppm",
+"ELA Medical, Inc.",2001,Opus,SSIC,ELA2001,None,5 mm UNI,#2,PR,PR,96,80/70,"A, 96-80-70",
+"ELA Medical, Inc.",2003,Opus,SSIC,ELA2003,None,IS-1 UNI,#2,PR,PR,96,80/70,"A, 96-80-70",
+"ELA Medical, Inc.",2004,Opus,SSIC,ELA2004,None,IS-1 BI,#2,PR,PR,96,80/70,"A, 96-80-70",
+"ELA Medical, Inc.",2140,Multilith I,VVIM,ELAM1B,None,5 mm Bif BI,#6,PR,PR,86,77,"B, 9 ppm",
+"ELA Medical, Inc.",2210,Rhapsody SR,SSIR,ELA,None,IS-1 UNI/BI,#2,PR,SSI 70,96,80,"C, Mode and rate change to SSI-70",
+"ELA Medical, Inc.",2250,Multilith II,VVIM,ELAM2,None,5 mm Bif BI,#2,PR,PR,86,77,"B, 9 ppm",
+"ELA Medical, Inc.",2251,Multilith III,VVIM,ELAM2WT,None,5 mm Bif BI,#2,PR,PR,86,77,"B, 9 ppm",
+"ELA Medical, Inc.",2350,Symphony VDR,VDDR,ELA,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,VVI 70,96,80,"C, Mode and rate change to VVI-70",
+"ELA Medical, Inc.",2410,Rhapsody D,DDD,ELA,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,VVI 70,96,80,"C, Mode and rate change to VVI-70",
+"ELA Medical, Inc.",2450,Symphony D,DDD,ELA,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,VVI 70,96,80,"C, Mode and rate change to VVI-70",
+"ELA Medical, Inc.",2510,Rhapsody DR,DDDR,ELA,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,VVI 70,96,80,"C, Mode and rate change to VVI-70",
+"ELA Medical, Inc.",2530,Rhapsody+ DR,DDDR,ELA,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,VVI 70,96,80,"C, Mode and rate change to VVI-70",
+"ELA Medical, Inc.",2550,Symphony DR,DDDR,ELA,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,VVI 70,96,80,"C, Mode and rate change to VVI-70",
+"ELA Medical, Inc.",3001,Opus,SSIC,ELA3001,None,5 mm UNI,#2,PR,PR,96,80/70,"A, 96-80-70",
+"ELA Medical, Inc.",3003,Opus,SSIC,ELA3003,None,VS-1 UNI,#2,PR,PR,96,80/70,"A, 96-80-70",
+"ELA Medical, Inc.",3004,Opus,SSIC,ELA3004,None,VS-1 BI,#2,PR,PR,96,80/70,"A, 96-80-70",
+"ELA Medical, Inc.",3350,Multilith III,VVIM,ELA3350,None,VS-1A BI,#2,PR,PR,86,77,"B, 9 ppm",
+"ELA Medical, Inc.",3370,Multilith III,VVIM,ELA3370,None,VS-1A BI,#2,PR,PR,86,77,"B, 9 ppm",
+"ELA Medical, Inc.",3371,,DDDM,None,5 mm UNI,5/6 mm UNI,#2,PR,PR,90,80,"B, 90-80,  J",
+"ELA Medical, Inc.",4001,Opus,SSIC,ELA4001,None,5 mm UNI,#2,PR,PR,96,80,D,
+"ELA Medical, Inc.",4003,Opus,SSIC,ELA4003,None,VS-1 UNI,#2,PR,PR,96,80,D,
+"ELA Medical, Inc.",4004,Opus,SSIC,ELA4004,None,VS-1B UNI/BI,#2,PR,PR,96,80,D,
+"ELA Medical, Inc.",4006,Opus,SSI,ela 4006,None,6 mm BI,#2,PR,PR,96,80,D,
+"ELA Medical, Inc.",4021,Opus,SSIC,ELA4021,None,5 mm UNI,#2,PR,PR,96,80,D,
+"ELA Medical, Inc.",4023,Opus,SSIC,ELA4023,None,VS-1 UNI,#2,PR,PR,96,80,D,
+"ELA Medical, Inc.",4024,Opus,SSIC,ELA4024,None,VS-1A BI,#2,PR,PR,96,80,D,
+"ELA Medical, Inc.",4033,Opus,SSIC,ELA4033,None,VS-1 UNI,#2,PR,PR,96,80,D,
+"ELA Medical, Inc.",4034,Opus,SSIC,ELA4034,None,VS-1B UNI/BI,#2,PR,PR,96,80,D,
+"ELA Medical, Inc.",4121,Opus S,SSIC,ELA4121,None,5/6 mm UNI,#2,PR,PR,96,80,D,
+"ELA Medical, Inc.",4124,Opus S,SSIC,ELA4124,None,VS-1 UNI/BI,#2,PR,PR,96,80,D,
+"ELA Medical, Inc.",4534,Opus RM,SSIR,ELA4534,None,VS-1B UNI/BI,#2,PR,PR,96,80,D,
+"ELA Medical, Inc.",4621,Opus G,SSIR,ela 4621,None,5/6 mm UNI,#2,PR,PR,96,80,C,
+"ELA Medical, Inc.",4624,Opus G,SSIR,ela 4624,None,IS-1 UNI/BI,#2,PR,PR,96,80,C,
+"ELA Medical, Inc.",6001,Chorus,DDDC,ELA6001,5 mm UNI,5 mm UNI,#2,PR,PR,96,80,D,
+"ELA Medical, Inc.",6003,Chorus,DDDC,ELA6003,VS-1 UNI,VS-1 UNI,#2,PR,PR,96,80,D,
+"ELA Medical, Inc.",6004,Chorus,DDDC,ELA6004,VS-1B UNI/BI,VS-1B UNI/BI,#2,PR,PR,96,80,D,
+"ELA Medical, Inc.",6005,Chorus,DDDC,ELA6005,VS-1 UNI/BI,VS-1 UNI,#2,PR,PR,96,80,D,
+"ELA Medical, Inc.",6033,Chorus,DDDC,ELA6033,VS-1 UNI,VS-1 UNI,#2,PR,PR,96,80,D,
+"ELA Medical, Inc.",6034,Chorus,DDDC,ELA6034,VS-1B UNI/BI,VS-1B UNI/BI,#2,PR,PR,96,80,D,
+"ELA Medical, Inc.",6035,Chorus,DDDC,ELA6035,VS-1 UNI/BI,VS-1 UNI,#2,PR,PR,96,80,D,
+"ELA Medical, Inc.",6043,Chorus,DDD,ela 6043,IS-1 comp UNI,IS-1 comp UNI,#2,PR,PR,96,80,C,
+"ELA Medical, Inc.",6103,Chorus,DDD,ela 6103,IS-1 comp UNI,IS-1 comp UNI,#2,PR,PR,96,80,C,
+"ELA Medical, Inc.",6234,Chorus II,DDD,ela 6234,VS-1B UNI/BI,VS-1B UNI/BI,#2,PR,PR,96,80,C,
+"ELA Medical, Inc.",6244,Chorus II,DDD,ela 6244,VS-1B UNI/BI,VS-1B UNI/BI,#2,PR,PR,96,80,C,
+"ELA Medical, Inc.",7034,Chorus RM,DDDR,ELA7034,VS-1B UNI/BI,VS-1B UNI/BI,#2,PR,PR,96,80,D,
+"ELA Medical, Inc.",7134,Chorus RM,DDDR,ELA7134,VS-1B BI,VS-1B BI,#2,PR,PR,96,80,D,
+"ELA Medical, Inc.",7234,Chorum,DDDR,ela 7234,VS-1B UNI/BI,VS-1B UNI/BI,#2,PR,VVI 70,96,80,C,
+"ELA Medical, Inc.",7334,Chorum,DDDR,ela 7334,VS-1B UNI/BI,VS-1B UNI/BI,#2,PR,VVI 70,96,80,"C, Mode and rate change to VVI-70",
+"ELA Medical, Inc.",7434,Chorum,VDDR,ela 7434,VS-1B UNI/BI,VS-1B UNI/BI,#2,PR,VVI 70,96,80,"C, Mode and rate change to VVI-70",
+"ELA Medical, Inc.",7520,Unilith 2,VVIM,ELAU2,None,5 mm UNI,#6,72,66,72,66,"C, 6 ppm, J",
+"ELA Medical, Inc.",7522,Unilith 2,VVIM,ELAU2B,None,5 mm Bif BI,#2,72,66,72,66,"C, 6 ppm, J",
+"ELA Medical, Inc.",7530,Unilith,VVl,None,None,5 mm UNI,#6,72,67,72,67,"C, 5 ppm, J",
+"ELA Medical, Inc.",7532,Unilith,VVl,None,None,5 mm Bif BI,#6,72,67,72,67,"C, 5 ppm, J",
+"ELA Medical, Inc.",7540,Unilith,VVI,None,None,5 mm UNI,#6,72,67,72,67,"C, 7.5 ppm, J",
+"ELA Medical, Inc.",7542,Unilith,VVI,None,None,5 mm Bif BI,#6,72,67,72,67,"C, 7.5 ppm, J",
+"ELA Medical, Inc.",7550,Unilith,VVIM,ELAU2,None,5 mm UNI,#2,72,68,72,68,"C, J",
+"ELA Medical, Inc.",7552,Unilith,VVIM,ELAU2B,None,5 mm Bif BI,#2,72,68,72,68,"C, J",
+"ELA Medical, Inc.",7580,Unilith 3,VVI,7580,None,5 mm UNI,#2,72,68,72,68,"C, J",
+"ELA Medical, Inc.",7583,Unilith 3,VVI,7583,None,VS-1 BI,#2,72,68,72,68,"C, J",
+"ELA Medical, Inc.",6234,Chorus II,DDD,ela 6234,VS-1B UNI/BI,VS-1B UNI/BI,#2,PR,PR,96,80,C,
+"ELA Medical, Inc.",6244,Chorus II,DDD,ela 6244,VS-1B UNI/BI,VS-1B UNI/BI,#2,PR,PR,96,80,C,
+"ELA Medical, Inc.",7034,Chorus RM,DDDR,ELA7034,VS-1B UNI/BI,VS-1B UNI/BI,#2,PR,PR,96,80,D,
+"ELA Medical, Inc.",7134,Chorus RM,DDDR,ELA7134,VS-1B BI,VS-1B BI,#2,PR,PR,96,80,D,
+"ELA Medical, Inc.",7234,Chorum,DDDR,ela 7234,VS-1B UNI/BI,VS-1B UNI/BI,#2,PR,VVI 70,96,80,C,
+"ELA Medical, Inc.",7334,Chorum,DDDR,ela 7334,VS-1B UNI/BI,VS-1B UNI/BI,#2,PR,VVI 70,96,80,"C, Mode and rate change to VVI-70",
+"ELA Medical, Inc.",7434,Chorum,VDDR,ela 7434,VS-1B UNI/BI,VS-1B UNI/BI,#2,PR,VVI 70,96,80,"C, Mode and rate change to VVI-70",
+"ELA Medical, Inc.",7520,Unilith 2,VVIM,ELAU2,None,5 mm UNI,#6,72,66,72,66,"C, 6 ppm, J",
+"ELA Medical, Inc.",7522,Unilith 2,VVIM,ELAU2B,None,5 mm Bif BI,#2,72,66,72,66,"C, 6 ppm, J",
+"ELA Medical, Inc.",7530,Unilith,VVl,None,None,5 mm UNI,#6,72,67,72,67,"C, 5 ppm, J",
+"ELA Medical, Inc.",7532,Unilith,VVl,None,None,5 mm Bif BI,#6,72,67,72,67,"C, 5 ppm, J",
+"ELA Medical, Inc.",7540,Unilith,VVI,None,None,5 mm UNI,#6,72,67,72,67,"C, 7.5 ppm, J",
+"ELA Medical, Inc.",7542,Unilith,VVI,None,None,5 mm Bif BI,#6,72,67,72,67,"C, 7.5 ppm, J",
+"ELA Medical, Inc.",7550,Unilith,VVIM,ELAU2,None,5 mm UNI,#2,72,68,72,68,"C, J",
+"ELA Medical, Inc.",7552,Unilith,VVIM,ELAU2B,None,5 mm Bif BI,#2,72,68,72,68,"C, J",
+"ELA Medical, Inc.",7580,Unilith 3,VVI,7580,None,5 mm UNI,#2,72,68,72,68,"C, J",
+"ELA Medical, Inc.",7583,Unilith 3,VVI,7583,None,VS-1 BI,#2,72,68,72,68,"C, J",
+"ELA Medical, Inc.",7680,Unilith 3,VVI,ela 7680,None,5 mm UNI,#2,72,68,72,68,"C, J",
+"ELA Medical, Inc.",7683,Unilith 3,VVI,ela 7683,None,VS-1 BI,#2,72,68,72,68,"C, J",
+"ELA Medical, Inc.",7730,Unilith,VVI,n/a,None,5 mm UNI,#6,72,68,72,68,C,
+"ELA Medical, Inc.",7760,Unilith,VVIM,ELAU2,None,5 mm UNI,#2,72,68,72,68,"C, J",
+"ELA Medical, Inc.",7762,Unilith,VVIM,ELAU2B,None,5 mm Bif BI,#2,72,68,72,68,"C, J",
+Guidant Corp.,1000,RS4 (Aa),VDD,CPI 1000,,4.75 mm Tripolar,#6,65,65,85,79,D,
+Guidant Corp.,101,Maxilith,VOO,CPI 101,None,6 mm UNI,#6,72,-6 ppm,,,C,
+Guidant Corp.,1100,Precept VR (Aa),SSIR,CPI 1100,None,Tripolar 3.2 mm,#2,PR,PR,100 (DOO),85 (DOO),D,
+Guidant Corp.,1118,Excel VR (Aa),SSIR,CPI 1118,None,5/6 mm UNI,#2,PR,PR,100 (DOO),85 (DOO),D,
+Guidant Corp.,1119,Excel VR (Aa),SSIR,CPI 1119,None,3.2 mm LP UNI/BI,#2,PR,PR,100 (DOO),85 (DOO),D,
+Guidant Corp.,1120,Excel VR (Aa),SSIR,CPI 1123,None,3.2 mm LP BI,#2,PR,PR,100 (DOO),85 (DOO),D,
+Guidant Corp.,1123,Triumph VR,SSIR,CPI 3,None,IS-1 UNI,#2,PR,65 (SSI),85 (SOO),65 (SOO),Pb,
+Guidant Corp.,1124,Triumph VR,SSIR,CPI 0,None,"VS-1B UNI/BI
+(IS-1 Compatible)",#2,PR,65 (SSI),85 (SOO),65 (SOO),Pb,
+Guidant Corp.,1125,Triumph VR,SSIR,CPI 1,None,5/6 mm UNI,#2,PR,65 (SSI),85 (SOO),65 (SOO),Pb,
+Guidant Corp.,1126,Triumph VR,SSIR,CPI 2,None,5 mm Bif BI,#2,PR,65 (SSI),85 (SOO),65 (SOO),Pb,
+Guidant Corp.,1130,Vigor SR,SSIR,CPI 1130,None,"VS-1B UNI/BI
+(IS-1 Compatible)",#2,PR,PR (SSI),100 (SOO),90/85 (SOO),"A, Nb",
+Guidant Corp.,1135,Vigor SR,SSIR,CPI 1135,None,5/6 mm UNI,#2,PR,PR (SSI),100 (SOO),90/85 (SOO),"A, Nb",
+Guidant Corp.,1170,Pulsar Max SR(Aa),SSIR,CPI 001,None,"VS-1B UNI/BI
+(IS-1 Compatible)",#2,PR,PR,100,85,S,
+Guidant Corp.,1171,Pulsar Max SR(Aa),SSIR,CPI 001,None,"VS-1B UNI/BI
+(IS-1 Compatible)",#2,PR,PR,100,85,S,
+Guidant Corp.,1172,Pulsar SR(Aa),SSIR,CPI 001,None,"VS-1B UNI/BI
+(IS-1 Compatible)",#2,PR,PR,100,85,S,
+Guidant Corp.,1174,Discovery SR,SSIR,CPI 001,None,"VS-1B UNI/BI
+(IS-1 Compatible)",#2,PR,PR,100,85,S,
+Guidant Corp.,1175,Discovery SR,SSIR,CPI 001,None,5/6 mm UNI,#2,PR,PR,100,85,S,
+Guidant Corp.,1176,Meridian SR,SSIR,CPI 001,None,"VS-1B UNI/BI
+(IS-1 Compatible)",#2,PR,PR,100,85,S,
+Guidant Corp.,1180,Pulsar Max II SR,SSIR,GDT 002,None,IS-1 UNI/BI,#2,PR,PR,100,85,S,
+Guidant Corp.,1181,Pulsar Max II SR,SSIR,GDT 002,None,IS-1 UNI/BI,#2,PR,PR,100,85,S,
+Guidant Corp.,1184,Discovery II SR,SSIR,GDT 002,None,IS-1 UNI/BI,#2,PR,PR,100,85,S,
+Guidant Corp.,1185,Discovery II,SSIR,GDT 002,None,5-6 mm UNI,#2,PR,PR,100,85,Single step drop in mag rate,
+Guidant Corp.,1186,Discovery II,SSIR,GDT 002,None,5-6 mm UNI,#2,PR,PR,100,85,Single step drop in mag rate,
+Guidant Corp.,1187,Discovery II SR,SSIR,GDT 002,None,5 mm Bif UNI/BI,#2,PR,PR,100,85,S,
+Guidant Corp.,1190,Insignia I Ultra,SSIR,GDT 003,None,IS-1 UNI/BI,#2,PR,PR,100,90/85,A,
+Guidant Corp.,1192,Insignia I AVT,SSIR,GDT 003,None,IS-1 UNI/BI,#2,PR,PR,100,90/85,A,
+Guidant Corp.,1194,Insignia I Plus SR,SSIR,GDT 003,None,IS-1 UNI/BI,#2,PR,PR,100,90/85,A,
+Guidant Corp.,1195,Insignia I Entra SR,SSIR,GDT 003,None,5/6 mm UNI,#2,PR,PR,100,90/85,A,
+Guidant Corp.,1198,Insignia I Entra SR,SSIR,GDT 003,None,"3.2 mm LP Medtronic
+(IS-1 Compatible)
+UNI/BI",#2,PR,PR,100,90/85,A,
+Guidant Corp.,1200 (Aa),Precept DR,DDDR,CPI 1200,3.2 mm UNI/BI,3.2 mm Tripolar,#2,PR,PR,100 (DOO),85 (DOO),D,
+Guidant Corp.,1223,Triumph DR,DDD(R),CPI 6,IS-1 UNI,IS-1 UNI,#2,PR,"PR (DDDR), 65 (VVI)",85,"75 (DOO),
+65 (VOO)","Ma, 75-65",
+Guidant Corp.,1224,Triumph DR,DDD(R),CPI 4,"VS-1B UNI/BI
+(IS-1 Compatible)","VS-1B UNI/BI
+(IS-1 Compatible)",#2,PR,"PR (DDDR), 65 (VVI)",85,"75 (DOO),
+65 (VOO)","Ma, 75-65",
+Guidant Corp.,1225,Triumph DR,DDD(R),CPI 5,5/6 mm UNI,5/6 mm UNI,#2,PR,"PR (DDDR), 65 (VVI)",85,"75 (DOO),
+65 (VOO)","Ma, 75-65",
+Guidant Corp.,1226,Prelude DR,DDDR,CP1 7,BI,3.2 mm LP MDT (IS-1 Compatible),#2,PR,65 (VVI),85 (DOO),65 (VOO),Ra,
+Guidant Corp.,1227,Prelude DR,DDDR,CPI 8,5/6 mm UNI,5/6 mm UNI,#2,PR,65 (VVI),85 (DOO),65 (VOO),Ra,
+Guidant Corp.,1229,Prelude DR,DDDR,CPI 9,IS-1 UNI,IS-1 UNI,#2,PR,65 (VVI),85 (DOO),65 (VOO),Ra,
+Guidant Corp.,1230,Vigor DR,DDDR,CPI 1230,"VS-1B UNI/BI
+(IS-1 Compatible)","VS-1B UNI/BI
+(IS-1 Compatible)",#2,PR,PR (DDD),100 (DOO),90/85 (DOO),"A, Nb",
+Guidant Corp.,1232,Vigor DR,DDDR,CPI 1232,"VS-1B UNI/BI
+(IS-1 Compatible)","VS-1B UNI/BI
+(IS-1 Compatible)",#2,PR,PR (DDD),100 (DOO),90/85 (DOO),"A, Nb",
+Guidant Corp.,1235,Vigor DR,DDDR,CPI 1235,5/6 mm UNI,5/6 mm UNI,#2,PR,PR (DDD),100 (DOO),90/85 (DOO),"A, Nb",
+Guidant Corp.,1240,Vigor CHF (Aa),DDDR,CPI 1240,"VS-1B UNI/BI
+(IS-1 Compatible)","VS-1B UNI/BI
+(IS-1 Compatible)",#2,PR,PR (DDD),100 (DOO),90/85 (DOO),"A, Nb",
+Guidant Corp.,1270,Pulsar Max DR (Aa),DDDR,CPI 001,"VS-1B UNI/BI
+(IS-1 Compatible)","VS-1B UNI/BI
+(IS-1 Compatible)",#2,PR,PR,100,85,S,
+Guidant Corp.,1272,Pulsar DR (Aa),DDDR,CPI 001,"VS-1B UNI/BI
+(IS-1 Compatible)","VS-1B UNI/BI
+(IS-1 Compatible)",#2,PR,PR,100,85,S,
+Guidant Corp.,1273,Discovery DR,DDDR,CPI 001,"VS-1B UNI/BI
+(IS-1 Compatible)","VS-1B UNI/BI
+(IS-1 Compatible)",#2,PR,PR,100,85,S,
+Guidant Corp.,1274,Discovery DR,DDDR,CPI 001,"VS-1B UNI/BI
+(IS-1 Compatible)","VS-1B UNI/BI
+(IS-1 Compatible)",#2,PR,PR,100,85,S,
+Guidant Corp.,1275,Discovery DR,DDDR,CPI 001,5/6 mm UNI,5/6 mm UNI,#2,PR,PR,100,85,S,
+Guidant Corp.,1276,Meridian DR,DDDR,CPI 001,"VS-1B UNI/BI
+(IS-1 Compatible)","VS-1B UNI/BI
+(IS-1 Compatible)",#2,PR,PR,100,85,S,
+Guidant Corp.,1280,Pulsar Max II DR,DDDR,GDT 002,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,PR,100,85,S,
+Guidant Corp.,1283,Discovery II DR,DDDR,GDT 002,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,PR,100,85,S,
+Guidant Corp.,1284,Discovery II DR,DDDR,GDT 002,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,PR,100,85,S,
+Guidant Corp.,1286,Discovery II DR,DDDR,GDT 002,3.2 mm LP UNI/BI (IS-1 Compatible),3.2 mm LP UNI/BI (IS-1 Compatible),#2,PR,PR,100,85,S,
+Guidant Corp.,1294,Insignia I Entra DR,DDDR,GDT 003,3.2 mm LP UNI/BI (IS-1 Compatible),3.2 mm LP UNI/BI (IS-1 Compatible),#2,PR,PR,100,90/85,A,
+Guidant Corp.,1295,Insignia I Entra DR,DDDR,GDT 003,5/6 mm UNI,5/6 mm UNI,#2,PR,PR,100,90/85,A,
+Guidant Corp.,1296,Insignia I Entra DR,DDDR,GDT 003,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,PR,100,90/85,A,
+Guidant Corp.,1297,Insignia I Plus DR,DDDR,GDT 003,3.2 mm LP UNI/BI (IS-1 Compatible),3.2 mm LP UNI/BI (IS-1 Compatible),#2,PR,PR,100,90/85,A,
+Guidant Corp.,1298,Insignia I Plus DR,DDDR,GDT 003,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,PR,100,90/85,A,
+Guidant Corp.,201,Maxilith,VOO,CPI 201,None,5 mm Bif BI,#6,72,-6 ppm,,,C,
+Guidant Corp.,301,Maxilith,VVI,CPI 301,None,6 mm UNI,#6,72,-6 ppm,86,-6 ppm,C,
+Guidant Corp.,401,Maxilith,VVI,CPI 401,None,5 mm Bif BI,#6,72,-6 ppm,86,-6 ppm,C,
+Guidant Corp.,427,Astra 2,VVIC,CPI 427,None,3.2 mm LP BI,#2,PR,PR-12.5%,100,87.5,"B, 12.5%",
+Guidant Corp.,428,Astra 4,VVIC,CPI 428,None,3.2 mm LP BI,#2,PR,PR-12.5%,100,87.5,"B, 12.5%",
+Guidant Corp.,429,Astra 6,SSIC,CPI 429,None,3.2 mm LP BI,#2,PR,PR-12.5%,100,87.5,"B, 12.5%",
+Guidant Corp.,437,Astra T2,VVIC,CPI 437,None,3.2 mm LP BI,#2,PR,PR-12.5%,100,87.5,"B, 12.5%",
+Guidant Corp.,438,Astra T4,VVIC,CPI 438,None,3.2 mm LP BI,#2,PR,PR-12.5%,100,87.5,"B, 12.5%",
+Guidant Corp.,439,Astra T6,SSIC,CPI 439,None,3.2 mm LP BI,#2,PR,PR-12.5%,100,87.5,"B, 12.5%",
+Guidant Corp.,443,Vista 4,VVIC,CPI 443,None,"VS-1B (IS-1
+Compatible) UNI Pace UNI/BI Sense",#2,PR,PR,100,85,D,
+Guidant Corp.,444,Vista 6,SSIC,CPI 444,None,"VS-1B (IS-1
+Compatible) UNI Pace UNI/BI Sense",#2,PR,PR,100,85,D,
+Guidant Corp.,445,Vista T,SSIC,CPI 445,None,"VS-1B (IS-1
+Compatible) UNI Pace UNI/BI Sense",#2,PR,PR,100,85,D,
+Guidant Corp.,446,Vista T,SSIC,CPI 446,None,3.2 mm LP BI,#2,PR,PR,100,85,D,
+Guidant Corp.,447,Vista T,SSIC,CPI 447,None,5/6 mm UNI,#2,PR,PR,100,85,D,
+Guidant Corp.,460,Vigor SSI,SSIC,CPI 460,None,"VS-1B UNI/BI
+(IS-1 Compatible)",#2,PR,PR,100,90/85,A,
+Guidant Corp.,465,Vigor SSI,SSIC,CPI 465,None,5/6 mm UNI,#2,PR,PR,100,90/85,A,
+Guidant Corp.,470,Pulsar SSI(Aa),SSIC,CPI 001,None,"VS-1B UNI/BI (IS-1
+Compatible)",#2,PR,PR,100,85,S,
+Guidant Corp.,476,Meridian SSI,SSIC,CPI 001,None,"VS-1B UNI/BI (IS-1
+Compatible)",#2,PR,PR,100,85,S,
+Guidant Corp.,501,Minilith,VVI,CPI 501,None,6 mm UNI,#6,72,66,86,80,C,
+Guidant Corp.,502,Minilith,VVI,CPI 502,None,6 mm UNI,#6,72,66,86,80,C,
+Guidant Corp.,503,Minilith,VVI,CPI 503,None,6 mm UNI,#6,72,66,86,80,C,
+Guidant Corp.,504,Minilith,VVI,CPI 504,None,6 mm UNI,#6,72,66,86,80,C,
+Guidant Corp.,505,Microlith P,VVI,CPI 505,None,6 mm UNI,#6,PR,PR,100,90/85,"A, 100-
+90-85",
+Guidant Corp.,507,Microlith D,VVI,CPI 507,None,6 mm UNI,#6,72,66,86,80,C,
+Guidant Corp.,508,Minilith,VVI,CPI 508,None,6 mm UNI,#6,72,66,86,80,C,
+Guidant Corp.,509,Microlith DX,VVI,CPI 509,None,6 mm UNI,#6,72,66,86,80,C,
+Guidant Corp.,520,Microthin D1,VVI,CPI 520,None,6 mm UNI,#6,72,66,86,80,C,
+Guidant Corp.,521,Microthin D2,VVI,CPI 521,None,6 mm UNI,SD,72,66,86,80,C,
+Guidant Corp.,522,Microthin P1,VVIP,CPI 522,None,6 mm UNI,#6 or SD,PR,PR,100,90/85,"A, 100-90-85",
+Guidant Corp.,523,Microthin P2,VVIP,CPI 523,None,6 mm UNI,SD,PR,PR,100,90/85,"A, 100-90-85",
+Guidant Corp.,525,Command NP,VVI,CPI 525,None,6 mm UNI,#2,PR,PR,100,90/85,"A, 100-90-85",
+Guidant Corp.,527,Astra 2,VVIC,CPI 527,None,6 mm UNI,#2,PR,PR-12.5%,100,87.5,"B, 12.5%",
+Guidant Corp.,528,Astra 4,VVIC,CPI 528,None,6 mm UNI,#2,PR,PR-12.5%,100,87.5,"B, 12.5%",
+Guidant Corp.,529,Astra 6,SSIC,CPI 529,None,6 mm UNI,#2,PR,PR-12.5%,100,87.5,"B, 12.5%",
+Guidant Corp.,530,Command P5,SSIC,CPI 530,None,6 mm UNI,#2 or SD,PR,PR,100,90/85,"A, 100-90-85",
+Guidant Corp.,531,Ultra I,SSIC,CPI 531,None,6 mm UNI,#2,PR,PR-11%,100,85,"B, 11% w/out
+magnet, D, 15 ppm w/mag.",
+Guidant Corp.,537,Astra T2,VVIC,CPI 537,None,6 mm UNI,#2,PR,PR-12.5%,100,87.5,"B, 12.5%",
+Guidant Corp.,538,Astra T4,VVIC,CPI 538,None,6 mm UNI,#2,PR,PR-12.5%,100,87.5,"B, 12.5%",
+Guidant Corp.,539,Astra T6,SSIC,CPI 539,None,6 mm UNI,#2,PR,PR-12.5%,100,87.5,"B, 12.5%",
+Guidant Corp.,601,Minilith,VVI,CPI 601,None,5 mm Bif BI,#6,72,-6 ppm,86,-6 ppm,C,
+Guidant Corp.,602,Minilith,VVI,CPI 602,None,5 mm Bif BI,#6,72,-6 ppm,86,-6 ppm,C,
+Guidant Corp.,603,Minilith,VVI,CPI 603,None,5 mm Bif BI,#6,72,66,86,80,C,
+Guidant Corp.,604,Minilith,VVI,CPI 604,None,5 mm Bif BI,#6,72,66,86,80,C,
+Guidant Corp.,605,Microlith P,VVIP,CPI 605,None,5 mm Bif BI,#6,PR,PR,100,90/85,"A, 100-90-85",
+Guidant Corp.,607,Microlith D,VVI,CPI 607,None,5 mm Bif BI,#6,72,66,86,80,C,
+Guidant Corp.,608,Minilith 3,VVI,CPI 608,None,5 mm Bif BI,#6,72,66,86,80,C,
+Guidant Corp.,609,Microlith DX,VVI,CPI 609,None,5 mm Bif BI,#6,72,66,86,80,C,
+Guidant Corp.,620,Microthin D1,VVI,CPI 620,None,5 mm Bif BI,#6,72,66,86,80,C,
+Guidant Corp.,621,Microthin D2,VVI,CPI 621,None,5 mm Bif BI,SD,72,66,86,80,C,
+Guidant Corp.,622,Microthin P1,VVIP,CPI 622,None,5 mm Bif BI,#6 or SD,PR,PR,100,90/85,"A, 100-90-85",
+Guidant Corp.,623,Microthin P2,VVIP,CPI 623,None,5 mm Bif BI,SD,PR,PR,100,90/85,"A, 100-90-85",
+Guidant Corp.,625,Command NP,VVI,CPI 625,None,5 mm Bif BI,#2,PR,PR,100,90/85,"A, 100-90-85",
+Guidant Corp.,627,Astra 2,VVIC,CPI 627,None,5 mm Bif BI,#2,PR,PR-12.5%,100,87.5,"B, 12.5%",
+Guidant Corp.,628,Astra 4,VVIC,CPI 628,None,5 mm Bif BI,#2,PR,PR-12.5%,100,87.5,"B, 12.5%",
+Guidant Corp.,629,Astra 6,SSIC,CPI 629,None,5 mm Bif BI,#2,PR,PR-12.5%,100,87.5,"B, 12.5%",
+Guidant Corp.,630,Command P5,SSIM,CPI 630,None,5 mm Bif BI,#2 or SD,PR,PR,100,90/85,"A, 100-90-85",
+Guidant Corp.,631,Ultra I,SSIC,CPI 631,None,5 mm Bif BI,#2,PR,PR-11%,100,85,"B, 11% w/out
+magnet, D, 15 ppm w/mag.",
+Guidant Corp.,635,Ultra I,SSIC,CPI 635,None,3.2 mm LP BI,#2,PR,PR-11%,100,85,"B, 11% w/out magnet, D, 15 ppm w/mag.
+",
+Guidant Corp.,637,Astra T2,VVIC,CPI 637,None,5 mm Bif BI,#2,PR,PR-12.5%,100,87.5,"B, 12.5%",
+Guidant Corp.,638,Astra T4,VVIC,CPI 638,None,5 mm Bif BI,#2,PR,PR-12.5%,100,87.5,"B, 12.5%",
+Guidant Corp.,639,Astra T6,SSIC,CPI 639,None,5 mm Bif BI,#2,PR,PR-12.5%,100,87.5,"B, 12.5%",
+Guidant Corp.,702,Minilith,VOO,CPI 702,None,6 mm UNI,#6,72,-6 ppm,,,C,
+Guidant Corp.,703,Microlith A,VOO,CPI 703,None,6 mm UNI,#6,72,-6 ppm,,,C,
+Guidant Corp.,802,Minilith,VOO,CPI 802,None,5 mm Bif BI,#6,72,-6 ppm,,,C,
+Guidant Corp.,803,Microlith A,VOO,CPI 703,None,5 mm Bif BI,#6,72,-6 ppm,,,C,
+Guidant Corp.,870,Pulsar VDD (Aa),VDDC,CPI 001,,VS-1B UNI/BI (IS-1 Compatible),#2,PR,PR,100,85,S,
+Guidant Corp.,910,Ultra II,VDDC,CPI 910,5 mm UNI,5 mm UNI,#2,PR,PR-11%,100,85,"B, 11% w/out magnet, D, 15 ppm w/mag.",
+Guidant Corp.,925,Delta,DDDC,    CPI 925,3.2 mm LP UNI/BI ,3.2 mm LP UNI/BI,#2,PR,PR,96 (VOO),90 (VOO),D,
+Guidant Corp.,926,Delta T,DDDC    ,CPI 926,"VS-1B (IS-1 Compatible) UNI/BI UNI Pace, UNI/BI Sense","VS-1B (IS-1 Compatible) UNI/BI UNI Pace, UNI/BI Sense",#2,PR,PR,100 (DOO),85 (DOO),D,
+Guidant Corp.,927,Delta TRS,DDDC    ,CPI 927,"VS-1B (IS-1 Compatible) UNI/BI UNI Pace, UNI/BI Sense","VS-1B (IS-1 Compatible) UNI/BI UNI Pace, UNI/BI Sense",#2,PR,PR,100 (DOO),85 (DOO),D,
+Guidant Corp.,928,Delta TRS,DDDC,CPI 928,5/6 mm UNI,5/6 mm UNI,#2,PR,PR,100 (DOO) ,85 (DOO) ,D,
+Guidant Corp.,936,Delta T,DDDC    ,CPI 936,"VS-1B (IS-1 Compatible) UNI/ BI UNI Pace, UNI/BI Sense","VS-1B (IS-1 Compatible) UNI/BI UNI Pace, UNI/BI Sense
+",#2,PR,PR,100 (DOO) ,85 (DOO) ,D,
+Guidant Corp.,937,Delta TRS,DDDC,CPI 937,"VS-1B (IS-1 Compatible) UNI/ BI UNI Pace, UNI/BI Sense
+","VS-1B (IS-1
+Compatible) UNI/BI UNI Pace, UNI/BI Sense
+",#2,PR,PR,100 (DOO) ,85 (DOO) ,D,
+Guidant Corp.,938,Delta TRS,DDDC,CPI 938,5/6 mm UNI,5/6 mm UNI,#2,PR,PR,100 (DOO) ,85 (DOO) ,D,
+Guidant Corp.,940,Vista DDD,DDDC,CPI 940,3.2 mm LP BI,3.2 mm LP BI,#2,PR,PR,100 (DOO),85 (DOO),D,
+Guidant Corp.,941,Vista DDD,DDDC,CPI 941,"VS-1B (IS-1 Compatible) UNI/ BI UNI Pace, UNI/BI Sense
+","VS-1B (IS-1
+Compatible) UNI/BI UNI Pace, UNI/BI Sense
+",#2,PR,PR,100 (DOO),85 (DOO),D,
+Guidant Corp.,942,Vista DDD,DDDC,CPI 942,5/6 mm UNI,5/6 mm UNI,#2,PR,PR,100 (DOO),85 (DOO),D,
+Guidant Corp.,950,Vigor DDD,DDDC,CPI 950,3.2 mm LP UNI/BI,3.2 mm LP UNI/BI,#2,PR,PR,100 (DOO),90/85,A,
+Guidant Corp.,955,Vigor DDD,DDDC,CPI 955,5/6 mm UNI,5/6 mm UNI,#2,PR,PR,100 (DOO),90/85,A,
+Guidant Corp.,970,Pulsar DDD (Aa),DDDC,CPI 001,VS-1B UNI/BI (IS-1 Compatible),VS-1B UNI/BI (IS-1 Compatible),#2,PR,PR,100,85,S,
+Guidant Corp.,972,Pulsar DDD(Aa),DDDC,CPI 001,VS-1B UNI/BI (IS-1 Compatible),VS-1B UNI/BI (IS-1 Compatible),#2,PR,PR,100,85,S,
+Guidant Corp.,976,Merididan DDD,DDDC,CPI 001,VS-1B UNI/BI (IS-1 Compatible),VS-1B UNI/BI (IS-1 Compatible),#2,PR,PR,100,85,S,
+Guidant Corp.,981,Discovery II,DDD,GDT002,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,PR,100,85,Single-step drop in Mag Rate,
+Guidant Corp.,982,Insignia I AVT,DDD,GDT003,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,PR,100,90/85,A,
+Guidant Corp.,985,Insignia I Entra,DDD,GDT003,5/6 mm UNI,5/6 mm UNI,#2,PR,PR,100,90/85,A,
+Guidant Corp.,986,Insignia I Entra,DDD,GDT003,3.2 mm LP UNI/BI (IS-1 Compatible),3.2 mm LP UNI/BI (IS-1 Compatible),#2,PR,PR,100,90/85,A,
+Guidant Corp.,S201,Altrua 20,SSIR,BOS 003,None,3.2 mm LP UNI/BI (IS-1 Compatible),#2,PR,PR,100,90/85,A,
+Guidant Corp.,S202,Altrua 20,DDDR,BOS 003,3.2 mm LP UNI/BI (IS-1 Compatible),3.2 mm LP UNI/BI (IS-1 Compatible),#2,PR,PR,100,90/85,A,
+Guidant Corp.,S203,Altrua 20,DDDR,BOS 003,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,PR,100,90/85,A,
+Guidant Corp.,S204,Altrua 20,SSIR,BOS 003,None,5/6 mm UNI,#2,PR,PR,100,90/85,A,
+Guidant Corp.,S205,Altrua 20,DDDR,BOS 003,5/6 mm UNI,5/6 mm UNI,#2,PR,PR,100,90/85,A,
+Guidant Corp.,S206,Altrua 20,SSI,BOS 003,None,3.2 mm LP UNI/BI (IS-1 Compatible),#2,PR,PR,100,90/85,A,
+Guidant Corp.,S207,Altrua 20,DDD,BOS 003,3.2 mm LP UNI/BI (IS-1 Compatible),3.2 mm LP UNI/BI (IS-1 Compatible),#2,PR,PR,100,90/85,A,
+Guidant Corp.,S208,Altrua 20,DDDR,BOS 003,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,PR,100,90/85,A,
+Guidant Corp.,S209,Altrua 20,DDD,BOS 003,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,PR,100,90/85,A,
+Guidant Corp.,S401,Altrua 40,SSIR,BOS 003,None,IS-1 UNI/BI,#2,PR,PR,100,90/85,A,
+Guidant Corp.,S402,Altrua 40,DDDR,BOS 003,3.2 mm LP UNI/BI (IS-1 Compatible),3.2 mm LP UNI/BI (IS-1 Compatible),#2,PR,PR,100,90/85,A,
+Guidant Corp.,S403,Altrua 40,DDDR,BOS 003,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,PR,100,90/85,A,
+Guidant Corp.,S404,Altrua 40,DDDR,BOS 003,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,PR,100,90/85,A,
+Guidant Corp.,S501,Altrua 50,SSIR,BOS 003,None,IS-1 UNI/BI,#2,PR,PR,100,90/85,A,
+Guidant Corp.,S502,Altrua 50,DDDR,BOS 003,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,PR,100,90/85,A,
+Guidant Corp.,S503,Altrua 50,DDD,BOS 003,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,PR,100,90/85,A,
+Guidant Corp.,S504,Altrua 50,VDD,BOS 003,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,PR,100,90/85,A,
+Guidant Corp.,S505,Altrua 50,DDDR,BOS 003,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,PR,100,90/85,A,
+Guidant Corp.,S506,Altrua 50,DDD,BOS 003,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,PR,100,90/85,A,
+Guidant Corp.,S507,Altrua 50,VDD,BOS 003,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,PR,100,90/85,A,
+Guidant Corp.,S508,Altrua 50,SSI,BOS 003,None,IS-1 UNI/BI,#2,PR,PR,100,90/85,A,
+Guidant Corp.,S601,Altrua 60,SSIR,BOS 003,None,IS-1 UNI/BI,#2,PR,PR,100,90/85,A,
+Guidant Corp.,S602,Altrua 60,DDDR,BOS 003,3.2 mm LP UNI/BI (IS-1 Compatible),3.2 mm LP UNI/BI (IS-1 Compatible),#2,PR,PR,100,90/85,A,
+Guidant Corp.,S603,Altrua 60,DDDR,BOS 003,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,PR,100,90/85,A,
+Guidant Corp.,S604,Altrua 60,DDDR,BOS 003,3.2 mm LP UNI/BI (IS-1 Compatible),3.2 mm LP UNI/BI (IS-1 Compatible),#2,PR,PR,100,90/85,A,
+Guidant Corp.,S605,Altrua 60,DDDR,BOS 003,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,PR,100,90/85,A,
+Guidant Corp.,S606,Altrua 60,DDDR,BOS 003,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,PR,100,90/85,A,
+"Intermedics, Inc. (Guidant Corp.)",201,Mercury Zinc,VVI,None,None,6 mm UNI,#6,70,67,70,67,"C, 3 ppm",
+"Intermedics, Inc. (Guidant Corp.)",211-01,CMOS,VVI,None,None,6 mm UNI,#6,70,67,70,67,"C, 3 ppm",
+"Intermedics, Inc. (Guidant Corp.)",221-02,CMOS,VVI,None,None,6 mm UNI,#6,70,67,70,67,"C, 3 ppm",
+"Intermedics, Inc. (Guidant Corp.)",222-01,CMOS,VVI,None,None,5 mm Bif BI,#6,70,67,70,67,"C, 3 ppm",
+"Intermedics, Inc. (Guidant Corp.)",223-01,Interlith,VVI,None,None,6 mm UNI,#6,71,66,71,66,"C, 5 ppm",
+"Intermedics, Inc. (Guidant Corp.)",223-02,Interlith,VVI,None,None,6 mm UNI,#6,71,66,71,66,"C, 5 ppm",
+"Intermedics, Inc. (Guidant Corp.)",223-04,Interlith TL,VVI,None,None,6 mm UNI,#6,71,66,71,66,"C, 5 ppm",
+"Intermedics, Inc. (Guidant Corp.)",224-01,Interlith,VVI,None,None,5 mm Bif BI,#6(Mb),71,66,71,66,"C, 5 ppm",
+"Intermedics, Inc. (Guidant Corp.)",224-02,Interlith,VVI,None,None,5 mm Bif BI,SD,71,66,71,66,"C, 5 ppm",
+"Intermedics, Inc. (Guidant Corp.)",225-01,Thinlith I,VVI,None,None,6 mm UNI,#6,71,68,71,68,"C, 3 ppm",
+"Intermedics, Inc. (Guidant Corp.)",227-01,Thinlith II,VVI,None,None,6 mm UNI,#6,71,65,71,65,"C, 6 ppm",
+"Intermedics, Inc. (Guidant Corp.)",227-05,Thinlith II,VVI,227-05,None,6 mm UNI,#6,72,72,90,83,"D, 7±3 ppm",
+"Intermedics, Inc. (Guidant Corp.)",228-01,Thinlith,VVI,None,None,6 mm In-line BI,#6,70,66,70,66,"C, 4 ppm",
+"Intermedics, Inc. (Guidant Corp.)",229-01,Thinlith III,VVI,None,None,6 mm UNI,#6,71,65,71,65,"C, 6 ppm",
+"Intermedics, Inc. (Guidant Corp.)",229-05,Thinlith III,VVI,229-05,None,6 mm UNI,#6,72,72,90,83,"D, 7±3 ppm",
+"Intermedics, Inc. (Guidant Corp.)",230-05,Thinlith III,VVI,230-05,None,5 mm Bif BI,#6,72,72,90,83,"D, 7±3 ppm",
+"Intermedics, Inc. (Guidant Corp.)",231-01,Unilith,VVI,None,None,6 mm UNI,#6,71,66,71,66,"C, 5 ppm",
+"Intermedics, Inc. (Guidant Corp.)",233-01,Thinlith IV,VVI,None,None,6 mm UNI,#6,71,68,71,68,"C, 3 ppm",
+"Intermedics, Inc. (Guidant Corp.)",233-02,Thinlith IV,VVI,None,None,6 mm UNI,#6,71,65,71,65,"C, 6 ppm",
+"Intermedics, Inc. (Guidant Corp.)",233-05,Thinlith IV,VVI,233-05,None,6 mm UNI,#6,72,72,90,83,"D, 7±3 ppm",
+"Intermedics, Inc. (Guidant Corp.)",235-01,Prima,VVI,235-01,None,6 mm UNI,SD,72,67,72±2,67,"C, 5 ppm",
+"Intermedics, Inc. (Guidant Corp.)",236-02,Prima,VVI,236-02,None,5 mm Bif BI,SD,72,67,72±2,67,"C, 5 ppm",
+"Intermedics, Inc. (Guidant Corp.)",251-01,Interlith RP,VVIP,None,None,6 mm UNI,#6,PR,PR-7%,PR,PR-7%,"C, 7%",
+"Intermedics, Inc. (Guidant Corp.)",251-02,Interlith RP,VVIP,None,None,6 mm UNI,#6,PR,PR-7%,PR,PR-7%,"C, 7%",
+"Intermedics, Inc. (Guidant Corp.)",252-01,Interlith RP,VVIP,None,None,5 mm Bif BI,#6(Mb),PR,PR-7%,PR,PR-7%,"C, 7%",
+"Intermedics, Inc. (Guidant Corp.)",253-01,Cyberlith I,VVIM,None,None,6 mm UNI,#6,PR,PR,90,83,"D, 7±3 ppm",
+"Intermedics, Inc. (Guidant Corp.)",253-02,Cyberlith I,VVIM,253-02,None,6 mm UNI,#6,PR,PR,90,83,"D, 7±3 ppm",
+"Intermedics, Inc. (Guidant Corp.)",253-03,Cyberlith I,VVIM,None,None,6 mm UNI,#6,PR,PR,90,83,"D, 7±3 ppm",
+"Intermedics, Inc. (Guidant Corp.)",253-04,Cyberlith I,VVIM,253-04,None,6 mm UNI,#6,PR,PR,90,83,"D, 7±3 ppm",
+"Intermedics, Inc. (Guidant Corp.)",253-05,Cyberlith,VVIM,None,None,6 mm UNI,#6,PR,PR,90,83,"D, 7±3 ppm",
+"Intermedics, Inc. (Guidant Corp.)",253-07,Cyberlith,VVIM,253-07,None,6 mm UNI,#6,PR,PR,90,83,"D, 7±3 ppm",
+"Intermedics, Inc. (Guidant Corp.)",253-09,Quantum,VVIC,253-09,None,6 mm UNI,#6,PR,PR,86,80,"D, 7%",
+"Intermedics, Inc. (Guidant Corp.)",253-11,Cyberlith I,VVIM,None,None,6 mm UNI,#6,PR,PR,90,83,"D, 7±3 ppm",
+"Intermedics, Inc. (Guidant Corp.)",253-19,Quantum,VVIC,253-19,None,6 mm UNI,SD,PR,PR,87±3,80±2,"D, 5 ppm",
+"Intermedics, Inc. (Guidant Corp.)",253-21,SuPrima,VVIM,253-21,None,6 mm UNI,#6,PR,PR,90,83,"D, 7±3 ppm",
+"Intermedics, Inc. (Guidant Corp.)",253-23,SuPrima II,VVIM,253-23,None,6 mm UNI,SD,PR,PR,87±3,80,D,
+"Intermedics, Inc. (Guidant Corp.)",253-25,Quantum II,SSIC,ICP,None,VS-1 UNI,SLC,PR,PR,PR(Ca),90/80,"A, 90-80",
+"Intermedics, Inc. (Guidant Corp.)",254-02,Cyberlith,VVIM,None,None,5 mm Bif BI,SD,PR,PR-6 ppm,90,84,"D, 6 ppm",
+"Intermedics, Inc. (Guidant Corp.)",254-06,Cyberlith,VVIM,None,None,6 mm In-line BI,#6,PR,PR,90,83,"D, 7±3 ppm",
+"Intermedics, Inc. (Guidant Corp.)",254-07,Cyberlith,VVIM,254-07,None,5 mm Bif BI,#2,PR,PR,90,83,"D, 7±3 ppm",
+"Intermedics, Inc. (Guidant Corp.)",254-09,Quantum,VVIC,254-09,None,5 mm Bif BI,#2,PR,PR,86±3,80±3,"D, 6 ppm",
+"Intermedics, Inc. (Guidant Corp.)",254-10,Quantum,VVIC,254-10,None,6 mm In-line BI,#6,PR,PR,86±3,80±3,"D, 6 ppm",
+"Intermedics, Inc. (Guidant Corp.)",254-18,Quantum,VVIC,254-18,None,5 mm Bif BI,SD,PR,PR,87±3,80±2,"D, 5 ppm",
+"Intermedics, Inc. (Guidant Corp.)",254-20,Quantum,VVIC,254-20,None,6 mm In-line BI,SD,PR,PR,87±3,80±2,"D, 5 ppm",
+"Intermedics, Inc. (Guidant Corp.)",254-20V,Quantum,VVIC,ICG,None,VS-1 BI,SLC,PR,PR,87±3,80±2,"D, 5 ppm",
+"Intermedics, Inc. (Guidant Corp.)",254-22,SuPrima,VVIM,254-22,None,5 mm Bif BI,#6,PR,PR,90,83,D,
+"Intermedics, Inc. (Guidant Corp.)",254-24,SuPrima,VVIM,254-24,None,6 mm In-line BI,#6,PR,PR,90,83,D,
+"Intermedics, Inc. (Guidant Corp.)",254-25,Quantum II,SSIC,ICX,None,VS-1 UNI/BI,SLC,PR,PR,PR(Ca),90/80,"A, 90-80",
+"Intermedics, Inc. (Guidant Corp.)",254-26,SuPrima II,VVIM,254-26,None,5 mm Bif BI,SD,PR,PR,87±3,80±2,D,
+"Intermedics, Inc. (Guidant Corp.)",254-27,Quantum III,SSIC,ICX,None,VS-1 UNI/BI,SLC,PR,PR,PR(Ca),90/80,"A, 90-80",
+"Intermedics, Inc. (Guidant Corp.)",254-28,SuPrima II,VVIM,254-28,None,6 mm In-line BI,SD,PR,PR,87±3,80±2,D,
+"Intermedics, Inc. (Guidant Corp.)",254-30,Quantum II,SSIC,ICU,None,VS-1 BI,SLC,PR,PR,PR(Ca),90/80,"A, 90-80",
+"Intermedics, Inc. (Guidant Corp.)",254-31,SuPrima III,VVIM,IET,None,VS-1 UNI/BI,SLC,PR,PR,PR(Ca),90/80,"A, 90-80",
+"Intermedics, Inc. (Guidant Corp.)",259-01,Cyberlith IV,DVIM,None,5 mm UNI,5 mm UNI,SD,PR,PR,90,83(Fa),"D, 7±3 ppm",
+"Intermedics, Inc. (Guidant Corp.)",262-01,CyberTach 60,AAIMP,None,5 mm Bif BI,None,SD,PR,PR,PR,PR-4.5 ppm,"D, 4.5 ppm",
+"Intermedics, Inc. (Guidant Corp.)",262-12,Intertach (Aa),AAICP,262-12,6 mm In-line BI,None,SD,PR,PR(Ea),PR(Ba),90,"Ba, 60-90",
+"Intermedics, Inc. (Guidant Corp.)",262-14,Intertach,VVICP,262-14,None,6 mm In-line BI,SD,PR,PR(Ea),PR,90,"Ba, 60-90",
+"Intermedics, Inc. (Guidant Corp.)",262-16,Intertach II,AAICP,IEG,VS-1 BI,VS-1 BI,SLC,PR,PR(Ea),PR(Ba),90/80,"A, 90-80",
+"Intermedics, Inc. (Guidant Corp.)",262-16R,Intertach II,AAICP,IES,6 mm/VS-1 BI,None,#2,PR,PR(Ea),PR(Ba),90/80,"A, 90-80",
+"Intermedics, Inc. (Guidant Corp.)",262-18,Intertach II(Aa),VVICP,IEH,None,VS-1 BI,SLC,PR,PR(Ea),PR,90/80,"A, 90-80",
+"Intermedics, Inc. (Guidant Corp.)",263-01,Avius,DVIM,263-01,5 mm UNI,5 mm UNI,#2,PR,PR,90,83,"D, 7 ppm",
+"Intermedics, Inc. (Guidant Corp.)",271-03,Galaxy,DDDC,271-03,5 mm UNI,5 mm UNI,#2,PR,PR(VVI),PR,90/80 (VOO),"A, 90-80",
+"Intermedics, Inc. (Guidant Corp.)",281-01,Nova,SSIC,281-01,None,6 mm UNI,SD,PR,PR,PR(Ca),65 (VOO),"B, 65 ppm",
+"Intermedics, Inc. (Guidant Corp.)",281-03,Nova II,SSIC,ICC,None,VS-1 UNI,SLC,PR,PR,PR(Ca),90/80,"A, 90-80",
+"Intermedics, Inc. (Guidant Corp.)",281-05,Nova II,SSIC,ICK,None,VS-1 UNI,SLC,PR,PR,PR(Ca),90/80,"A, 90-80",
+"Intermedics, Inc. (Guidant Corp.)",281-05S,Nova II,SSIC,ICZ,None,6 mm UNI,#2,PR,PR,PR(Ca),90/80,"A, 90-80",
+"Intermedics, Inc. (Guidant Corp.)",281-07,Nova III,SSIC,IFJ,None,6 mm UNI,#2,PR,PR,PR(Ca),90/80,"A, 90-80",
+"Intermedics, Inc. (Guidant Corp.)",282-02,Nova,SSIC,282-02,None,6 mm In-line BI,SD,PR,65,PR(Ca),65 (VOO),"B, 65 ppm",
+"Intermedics, Inc. (Guidant Corp.)",282-04,Nova II,SSIC,ICE,None,VS-1 BI,SLC,PR,PR,PR(Ca),90/80,"A, 90-80",
+"Intermedics, Inc. (Guidant Corp.)",282-04R,Nova II,SSIC,ICL,None,6 mm/VS-1 BI,#2,PR,PR,PR(Ca),90/80,"A, 90-80",
+"Intermedics, Inc. (Guidant Corp.)",282-04y,Nova II,SSIC,IEL,None,5 mm Bif BI,#2,PR,PR,PR(Ca),90/80,"A, 90-80",
+"Intermedics, Inc. (Guidant Corp.)",282-07,Nova III,SSIC,IFN,None,VS-1 UNI/BI,SLC,PR,PR,PR(Ca),90/80,"A, 90-80",
+"Intermedics, Inc. (Guidant Corp.)",282-09,Nova III,SSIC,IEN,None,5 mm Bif UNI/BI,#2,PR,PR,PR(Ca),90/80,"A, 90-80",
+"Intermedics, Inc. (Guidant Corp.)",282-09R,Nova III,SSIC,IEX,None,6 mm/VS-1 UNI/BI,#2,PR,PR,PR(Ca),90/80,"A, 90-80",
+"Intermedics, Inc. (Guidant Corp.)",283-01,Cosmos,DDDC,283-01,5 mm UNI,5 mm UNI,#2,PR,65 (VVI),PR(Ca),65 (VOO),"B, 65 ppm",
+"Intermedics, Inc. (Guidant Corp.)",283-01V,Cosmos,DDDC,283-01V,VS-1 UNI,VS-1 UNI,SLC,PR,65 (VVI),PR(Ca),65 (VOO),"B, 65 ppm",
+"Intermedics, Inc. (Guidant Corp.)",283-03,Cosmos II,DDDC,IEF,5 mm UNI,5 mm UNI,#2,PR,PR (VVI),PR(Ca),90/80 (VOO),"A, 90-80",
+"Intermedics, Inc. (Guidant Corp.)",283-09,Cosmos III,DDDC,IGZ,5 mm UNI,5 mm UNI,#2,PR,PR (VVI),PR(Ca),90/80 (VOO),"A, 90-80",
+"Intermedics, Inc. (Guidant Corp.)",284-02,Cosmos,DDDC,284-02,"6 mm In-line BI Sense, UNI Pace","6 mm In-line BI Sense, UNI Pace",#2,PR,65 (VVI),PR(Ca),65 (VOO),"B, 65 ppm",
+"Intermedics, Inc. (Guidant Corp.)",284-02S,Cosmos,DDDC,284-02,"6 mm In-line BI Sense, UNI Pace","6 mm In-line BI Sense, UNI Pace",#2,PR,65 (VVI),PR(Ca),65 (VOO),"B, 65 ppm",
+"Intermedics, Inc. (Guidant Corp.)",284-02V,Cosmos,DDDC,284-02V,"VS-1 BI Sense, UNI Pace","VS-1 BI Sense, UNI Pace",SLC,PR,65 (VVI),PR(Ca),65 (VOO),"B, 65 ppm",
+"Intermedics, Inc. (Guidant Corp.)",284-05,Cosmos II,DDDC,ICN,VS-1 UNI/BI,VS-1 UNI/BI,SLC,PR,PR (VVI),PR(Ca),90/80 (VOO),"A, 90-80",
+"Intermedics, Inc. (Guidant Corp.)",284-09,Cosmos III,DDDC,IGU,VS-1 UNI/BI,VS-1 UNI/BI,SLC,PR,PR (VVI),PR(Ca),90/80 (VOO),"A, 90-80",
+"Intermedics, Inc. (Guidant Corp.)",291-01,Nova MR,SSIR,ICI,None,VS-1 UNI,SLC,PR,PR,PR(Ca),90/80,"A, 90-80",
+"Intermedics, Inc. (Guidant Corp.)",291-03,Dash,SSIR,IFE,None,6 mm UNI,#2,PR,PR,PR(Ca),90/80,"A, 90-80",
+"Intermedics, Inc. (Guidant Corp.)",291-09,Marathon SR,SSIR,IGC,None,6 mm UNI,#2,PR,PR,PR(Ca),90/80,"A, 90-80",
+"Intermedics, Inc. (Guidant Corp.)",292-02,Nova MR,SSIR,ICI,None,VS-1 BI,SLC,PR,PR,PR(Ca),90/80,"A, 90-80",
+"Intermedics, Inc. (Guidant Corp.)",292-03,Dash,SSIR,IEK,None,VS-1 UNI/BI,SLC,PR,PR,PR(Ca),90/80,"A, 90-80",
+"Intermedics, Inc. (Guidant Corp.)",292-03R,Dash,SSIR,IFF,None,6 mm/VS-1 UNI/BI,#2,PR,PR,PR(Ca),90/80,"A, 90-80",
+"Intermedics, Inc. (Guidant Corp.)",292-05,Dart,SSIR,IFJ,None,VS-1 UNI/BI,SLC,PR,PR,PR(Ca),90/80,"A, 90-80",
+"Intermedics, Inc. (Guidant Corp.)",292-06,Unity C,VDD,IFT,VS-1 BI (Sense),VS-1 UNI (P/S),SLC,PR,PR,PR(Ca),90/80,"A, 90-80",
+"Intermedics, Inc. (Guidant Corp.)",292-07,Unity,VDDR,IFL,VS-1 BI (Sense),VS-1 UNI (P/S),SLC,PR,PR,PR(Ca),90/80,"A, 90-80",
+"Intermedics, Inc. (Guidant Corp.)",292-09R,Marathon SR,SSIR,IGF,None,6 mm/VS-1 UNI/BI,#2,PR,PR,PR(Ca),90/80,"A, 90-80",
+"Intermedics, Inc. (Guidant Corp.)",292-09X,Marathon SR,SSIR,IGK,None,VS-1 UNI/BI,SLC,PR,PR,PR(Ca),90/80,"A, 90-80",
+"Intermedics, Inc. (Guidant Corp.)",293-01,Circadia,DDDR,ICJ,VS-1 UNI,VS-1 UNI,#2,PR,PR,PR(Ca),90/80,"A, 90-80",
+"Intermedics, Inc. (Guidant Corp.)",293-03,Relay,DDDR,IFG,5 mm UNI,5 mm UNI,#2,PR,PR(SSI),PR(Ca),90/80 (SOO),"A, 90-80",
+"Intermedics, Inc. (Guidant Corp.)",293-09,Marathon DR,DDDR,IGH,5 mm UNI,5 mm UNI,#2,PR,PR(SSI),PR(Ca),90/80 (SOO),"A, 90-80",
+"Intermedics, Inc. (Guidant Corp.)",293-23,Momentum DR,DDDR,IHH,5 mm UNI,5 mm UNI,#2,PR,PR(SSI),PR(Ca),90/80 (SOO),"A, 90-80",
+"Intermedics, Inc. (Guidant Corp.)",294-03,Relay,DDDR,IEJ,VS-1 UNI/BI,VS-1 UNI/BI,SLC,PR,PR,PR(Ca),90/80,"A, 90-80",
+"Intermedics, Inc. (Guidant Corp.)",294-03R,Relay,DDDR,IFH,6 mm/VS-1 UNI/BI,6 mm/VS-1 UNI/BI,#2,PR,PR,PR(Ca),90/80,"A, 90-80",
+"Intermedics, Inc. (Guidant Corp.)",294-05,Stride,DDDR,IFK,VS-1B UNI/BI,VS-1B UNI/BI,SLC,PR,PR,PR(Ca),90/80,"A, 90-80",
+"Intermedics, Inc. (Guidant Corp.)",294-09,Marathon DR,DDDR,IFZ,VS-1 UNI/BI,VS-1 UNI/BI,SLC,PR,PR,PR(Ca),90/80,"A, 90-80",
+"Intermedics, Inc. (Guidant Corp.)",294-09R,Marathon DR,DDDR,IGG,6 mm/VS-1 UNI/BI,6 mm/VS-1 UNI/BI,#2,PR,PR,PR(Ca),90/80,"A, 90-80",
+"Intermedics, Inc. (Guidant Corp.)",294-10,Marathon DR,DDDR,IGJ,VS-1 BI,VS-1 BI,SLC,PR,PR,PR(Ca),90/80,"A, 90-80",
+"Intermedics, Inc. (Guidant Corp.)",294-23,Momentum DR,DDDR,IHG,VS-1 UNI/BI,VS-1 UNI/BI,SLC,PR,PR,PR(Ca),90/80,"A, 90-80",
+"Intermedics, Inc. (Guidant Corp.)",294-23Z,Momentum DR,DDDR,IHL,VS-1 UNI/BI,VS-1 UNI/BI,SLC,PR,PR,PR(Ca),90/80,"A, 90-80",
+"Medtronic, Inc.",5920,Spectrax VS,VVIOO,DH DH,None,5 mm Bif BI,#2,70,63,70,63,Oa,3.6
+"Medtronic, Inc.",5921,Spectrax VS,VVIOO,DJ DJ,None,5/6 mm UNI,#2,70,63,70,63,Oa,4.2
+"Medtronic, Inc.",5922,Spectrax VM,VVIOO,AU AU,None,5 mm Bif BI,#2,70,63,70,63,Oa,4.7
+"Medtronic, Inc.",5923,Spectrax VM,VVIOO,Ay Ay,None,5/6 mm UNI,#2,70,63,70,63,Oa,6.4
+"Medtronic, Inc.",5926,Xyrel VM,VVIOO,AE AE,None,5 mm Bif BI,#2,72,67,72 (+2 ppm),67,Pa,7.8
+"Medtronic, Inc.",5927,Xyrel VM,VVIOO,AF AF,None,5 mm UNI,#2,72,67,72 (+2 ppm),67,Pa,10.2
+"Medtronic, Inc.",5940,Spectrax S,VVIPO,NF NF,None,5 mm Bif BI,#2,PR,PR-10%,PR,PR-10%,G,9
+"Medtronic, Inc.",5940LP,Spectrax S,VVIPO,PD PD,None,3.2 mm LP BI,#2,PR,PR-10%,PR,PR-10%,G,9
+"Medtronic, Inc.",5941,Spectrax S,VVIPO,LP LP,None,5/6 mm UNI,#2,PR,PR-10%,PR,PR-10%,G,9
+"Medtronic, Inc.",5966,Spectrax VL,VVIOO,Cy Cy,None,5 mm Bif BI,#2,70,63,70,63,Oa,7.l
+"Medtronic, Inc.",5967,Spectrax VL,VVIOO,DE DE,None,5/6 mm UNI,#2,70,63,70,63,Oa,9.7
+"Medtronic, Inc.",5968,Spectrax VL,VVIOO,RF RF,None,3.2 mm LP BI,#2,70,63,70,63,Oa,8.4
+"Medtronic, Inc.",5972,Xyrel VL,VVIOO,MA MA,None,5 mm Bif BI,#2,72,67,72 (+2 ppm),67,Pa,"6.1(10: 1),
+8.2(15: 1)"
+"Medtronic, Inc.",5973,Xyrel VL,VVIOO,MD MD,None,5 mm UNI,#2,72,67,72 (+2 ppm),67,Pa,"8.0 (10: 1),
+10.7(15: 1)"
+"Medtronic, Inc.",5976,Spectrax SX-HT,SSIPO,JR JR,None,5 mm Bif BI,#2,PR,PR-10%,PR,PR-10%,G,4.8
+"Medtronic, Inc.",5977,Spectrax SX-HT,SSIPO,KN KN,None,5/6 mm UNI,#2,PR,PR-10%,PR,PR-10%,G,4.8
+"Medtronic, Inc.",5982,Mirel VM,VVIOO,NB NB,None,5 mm Bif BI,#2,72,67,72 (+3 ppm),67,Pa,8.5
+"Medtronic, Inc.",5983,Mirel VM,VVIOO,NC NC,None,5 mm UNI,#2,72,67,72 (+3 ppm),67,Pa,12.1
+"Medtronic, Inc.",5984,Spectrax SX,SSIPO,DF DF,None,5 mm Bif BI,#2,PR,PR-10%,PR,PR-10%,G,(Ga)
+"Medtronic, Inc.",5984LP,Spectrax SX,SSIPO,LH LH,None,3.2 mm LP BI,#2,PR,PR-10%,PR,PR-10%,G,(Ga)
+"Medtronic, Inc.",5985,Spectrax SX,SSIPO,DG DG,None,5/6 mm UNI,#2,PR,PR-10%,PR,PR-10%,G,(Ga)
+"Medtronic, Inc.",7005,Symbios,DDDCO,TN TN,5 mm UNI,5 mm UNI,#2,PR,"PR (DDD), 65 (VVI)",85,"75 (DOO),
+65 (VOO)","Ma, 75-65","7.6 @ 2.5 V,
+3.8 @ 5.0 V"
+"Medtronic, Inc.",7005C,Symbios,DDDCO,JS JS,5/6 mm UNI,5/6 mm UNI,#2,PR,"PR (DDD), 65 (VVI)",85,"75 (DOO),
+65 (VOO)","Ma, 75-65","7.6 @ 2.5 V,
+3.8 @ 5.0 V"
+"Medtronic, Inc.",7006,Symbios,DDDCO,UE UE,3.2 mm LP BI,3.2 mm LP BI,#2,PR,"PR (DDD), 65 (VVI)",85,"75 (DOO),
+65 (VOO)","Ma, 75-65","6.9 @ 2.5 V,
+4.2 @ 5.0 V"
+"Medtronic, Inc.",7008,Symbios (Aa),DDDCP,UD UD,3.2 mm LP BI,3.2 mm LP BI,#2,PR,"PR (DDD), 65 (VVI)",85,"75 (DOO),
+65 (VOO)","Ma, 75-65",4.5 @ 5.0 V
+"Medtronic, Inc.",7026,Synergyst,DDDCO,TV TV,3.2 mm LP BI,3.2 mm LP BI,#2,PR,"PR (DDD), 65 (VVI)",85,"75 (DOO),
+65 (VOO)","Ma, 75-65","6.1 @ 2.5 V,
+3.7 @ 5.0 V"
+"Medtronic, Inc.",7027,Synergyst,DDDCO,Ty Ty,5/6 mm UNI,5/6 mm UNI,#2,PR,"PR (DDD), 65 (VVI)",85,"75 (DOO),
+65 (VOO)","Ma, 75-65","5.9 @ 2.5 V,
+3.2 @ 5.0 V"
+"Medtronic, Inc.",7027A,Synergyst,DDDCO,2A 2A,5 mm UNI,5 mm UNI,#2,PR,"PR (DDD), 65 (VVI)",85,"75 (DOO),
+65 (VOO)","Ma, 75-65","5.9 @ 2.5 V,
+3.2 @ 5.0 V"
+"Medtronic, Inc.",7027M,Synergyst,DDDCO,5W 5W,IS-1 UNI,IS-1 UNI,#2,PR,"PR (DDD), 65 (VVI)",85,"75 (DOO),
+65 (VOO)","Ma, 75-65","5.9 @ 2.5 V,
+3.2 @ 5.0 V"
+"Medtronic, Inc.",7068,Preva D,DDDCO,PIE PIE,3.2 mm LP UNI/BI (IS-1 Compatible),3.2 mm LP UNI/BI (IS-1 Compatible),#2,PR,65 (VVI),85 (DOO),65 (VOO),Ra,"9.8 @ 2.5 V, 7.3 @ 3.5 V"
+"Medtronic, Inc.",7070,Synergyst II,DDD/R,PWPW,3.2 mm LP BI,3.2 mm LP BI,#2,PR,"PR (DDD/R), 65 (VVI)",85,"75 (DOO), 65 (VOO)","Ma, 75-65","6.1 @ 2.5 V, 3.7 @ 5.0 V"
+"Medtronic, Inc.",7071,Synergyst II,DDD/R,SWSW,5/6 mm UNI,5/6 mm UNI,#2,PR,"PR (DDD/R),65 (VVI)",85,"75 (DOO),65 (VOO)","Ma, 75-65","5.9 @ 2.5 V,3.2 @ 5.0 V"
+"Medtronic, Inc.",7071A,Synergyst II,DDD/R,1J1J,5 mm UNI,5 mm UNI,#2,PR,"PR (DDD/R),65 (VVI)",85,"75 (DOO),65 (VOO)","Ma, 75-65","5.9 @ 2.5 V,3.2 @ 5.0 V"
+"Medtronic, Inc.",7071M,Synergyst II,DDD/R,6W6W,IS-1 UNI,IS-1 UNI,#2,PR,"PR (DDD/R),65 (VVI)",85,"75 (DOO),65 (VOO)","Ma, 75-65","5.9 @ 2.5 V,3.2 @ 5.0 V"
+"Medtronic, Inc.",7074,Elite,DDD/RO,yEyE,3.2 mm LP UNI/BI (IS-1 Compatible),3.2 mm LP UNI/BI (IS-1 Compatible),#2,PR,65 (VVI),85 (DOO),65 (VOO),Ra,"11.4 @ 2.5 V,7.3 @ 4.2 V"
+"Medtronic, Inc.",7075,Elite,DDD/RO,yFyF,5/6 mm UNI,5/6 mm UNI,#2,PR,65 (VVI),85 (DOO),65 (VOO),Ra,"11.4 @ 2.5 V, 7.3 @ 4.2 V"
+"Medtronic, Inc.",7076,Elite,DDD/RO,2E2E,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,65 (VVI),85 (DOO),65 (VOO),Ra,"11.4 @ 2.5 V, 7.3 @ 4.2 V"
+"Medtronic, Inc.",7077,Elite,DDD/RO,1X1X,IS-1 UNI,IS-1 UNI,#2,PR,65 (VVI),85 (DOO),65 (VOO),Ra,"11.4 @ 2.5 V, 7.3 @ 4.2 V"
+"Medtronic, Inc.",7078,Preva ST DR,DDD/RO,PIFPIF,3.2 mm LP UNI/BI (IS-1 Compatible),3.2 mm LP UNI/BI (IS-1 Compatible),#2,PR,65 (VVI),85 (DOO),65 (VOO),Ra,"9.7 @ 2.5 V, 7.2 @ 3.5 V"
+"Medtronic, Inc.",7084,Elite II,DDD/RO,3U3U,"3.2 mm LP BI (IS-1 Compatible) BI(Pace), UNI/BI(Sense)","3.2 mm LP BI (IS-1 Compatible) BI(Pace), UNI/BI(Sense)",#2,PR,65 (VVI),85 (DOO),65 (VOO),Ra,"7.0 @ 2.5 V, 4.2 @ 4.2 V"
+"Medtronic, Inc.",7085,Elite II,DDD/RO,3V3V,5 mm UNI,5 mm UNI,#2,PR,65 (VVI),85 (DOO),65 (VOO),Ra,"7.0 @ 2.5 V, 4.2 @ 4.2 V"
+"Medtronic, Inc.",7086,Elite II,DDD/RO,3y3y,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,65 (VVI),85 (DOO),65 (VOO),Ra,"7.0 @ 2.5 V, 4.2 @ 4.2 V"
+"Medtronic, Inc.",7088,Preva DR,DDD/RO,PGJPGJ,3.2 mm LP UNI/BI (IS-1 Compatible),3.2 mm LP UNI/BI (IS-1 Compatible),#2,PR,65 (VVI),85 (DOO),65 (VOO),Ra,"9.7 @ 2.5 V, 7.2 @ 3.5 V"
+"Medtronic, Inc.",7089,Preva DR,DDD/RO,PGKPGK,5/6 mm UNI,5/6 mm UNI,#2,PR,65 (VVI),85 (SOO),65 (VOO),Ra,"9.7 @ 2.5 V, 7.2 @ 3.5 V"
+"Medtronic, Inc.",7100,Enertrax,VDDPO,UAUA,5 mm UNI,5 mm UNI,#2,PR,65 (VVI),85 (VOO),65 (VOO),Ma,"11.6 @ 2.5 V, 8.4 @ 5.0 V"
+"Medtronic, Inc.",7100E,Enertrax,VDDPO,UH UH,5 mm UNI,5 mm UNI,#2,PR,65 (VVI),85 (VOO),65 (VOO),Ma,"11.6 @ 2.5 V,8.4 @ 5.0 V"
+"Medtronic, Inc.",7107,Minuet,DDDCO,1Z1 1Z1,5 mm UNI,5 mm UNI,#2,PR,65 (VVI),85 (DOO),65 (VOO),Ra,"11.8 @ 2.5 V,7.2 @ 4.0 V"
+"Medtronic, Inc.",7108,Minuet,DDDCO,2G1 2G1,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,65 (VVI),85 (DOO),65 (VOO),Ra,"11.8 @ 2.5 V,7.2 @ 4.0 V"
+"Medtronic, Inc.",7850,Thera DR,DDD/RO,PDP PDP,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,65 (VVI),85 (DOO),65 (VOO),Ra,"10.2 @ 2.5 V,7.5 @ 3.5 V"
+"Medtronic, Inc.",7851,Thera DR,DDD/RO,PDR PDR,5/6 mm UNI,5/6 mm UNI,#2,PR,65 (VVI),85 (DOO),65 (VOO),Ra,"10.2 @ 2.5 V,7.5 @ 3.5 V"
+"Medtronic, Inc.",7852,Thera DR,DDD/RO,PDT PDT,3.2 mm LP UNI/BI (IS-1 Compatible),3.2 mm LP UNI/BI (IS-1 Compatible),#2,PR,65 (VVI),85 (DOO),65 (VOO),Ra,"10.2 @ 2.5 V,7.5 @ 3.5 V"
+"Medtronic, Inc.",7860,Prodigy DR,DDD/RO,PDH PDH,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,65 (VVI),85 (DOO),65 (VOO),Ra,"9.7 @ 2.5 V,7.2 @ 3.5 V"
+"Medtronic, Inc.",7861,Prodigy DR,DDD/RO,PDJ PDJ,5/6 mm UNI,5/6 mm UNI,#2,PR,65 (VVI),85 (DOO),65 (VOO),Ra,"9.7 @ 2.5 V,7.2 @ 3.5 V"
+"Medtronic, Inc.",7862,Prodigy DR,DDD/RO,PDK PDK,3.2 mm LP UNI/BI (IS-1 Compatible),3.2 mm LP UNI/BI (IS-1 Compatible),#2,PR,65 (VVI),85 (DOO),65 (VOO),Ra,"9.7 @ 2.5 V,7.2 @ 3.5 V"
+"Medtronic, Inc.",7864,Prodigy D,DDDCO,PDL PDL,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,65 (VVI),85 (DOO),65 (VOO),Ra,"9.7 @ 2.5 V,7.3 @ 3.5 V"
+"Medtronic, Inc.",7865,Prodigy D,DDDCO,PDM PDM,5/6 mm UNI,5/6 mm UNI,#2,PR,65 (VVI),85 (DOO),65 (VOO),Ra,"9.7 @ 2.5 V,7.3 @ 3.5 V"
+"Medtronic, Inc.",7866,Prodigy D,DDDCO,PDN PDN,3.2 mm LP UNI/BI (IS-1 Compatible),3.2 mm LP UNI/BI (IS-1 Compatible),#2,PR,65 (VVI),85 (DOO),65 (VOO),Ra,"9.7 @ 2.5 V,7.3 @ 3.5 V"
+"Medtronic, Inc.",7940,Thera DR,DDD/RO,PAF PAF,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,65 (VVI),85 (DOO),65 (VOO),Ra,"7.4 @ 2.5 V,5.4 @ 3.5 V"
+"Medtronic, Inc.",7941,Thera DR,DDD/RO,PAP PAP,5 mm UNI,5 mm UNI,#2,PR,65 (VVI),85 (DOO),65 (VOO),Ra,"7.4 @ 2.5 V,5.4 @ 3.5 V"
+"Medtronic, Inc.",7942,Thera DR,DDD/RO,PAT PAT,3.2 mm LP UNI/BI (IS-1 Compatible),3.2 mm LP UNI/BI (IS-1 Compatible),#2,PR,65 (VVI),85 (DOO),65 (VOO),Ra,"7.4 @ 2.5 V,5.4 @ 3.5 V"
+"Medtronic, Inc.",7944,Thera D,DDDCO,PBD PBD,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,65 (VVI),85 (DOO),65 (VOO),Ra,"7.4 @ 2.5 V,5.4 @ 3.5 V"
+"Medtronic, Inc.",7945,Thera D,DDDCO,PBE PBE,5 mm UNI,5 mm UNI,#2,PR,65 (VVI),85 (DOO),65 (VOO),Ra,"7.4 @ 2.5 V,5.4 @ 3.5 V"
+"Medtronic, Inc.",7946,Thera D,DDDCO,PBF PBF,3.2 mm LP UNI/BI (IS-1 Compatible),3.2 mm LP UNI/BI (IS-1 Compatible),#2,PR,65 (VVI),85 (DOO),65 (VOO),Ra,"7.4 @ 2.5 V,5.4 @ 3.5 V"
+"Medtronic, Inc.",7950,Thera DR,DDD/RO,PBR PBR,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,65 (VVI),85 (DOO),65 (VOO),Ra,"12.0 @ 2.5 V,
+8.9 @ 3.5 V"
+"Medtronic, Inc.",7951,Thera DR,DDD/RO,PBV PBV,5/6 mm UNI,5/6 mm UNI,#2,PR,65 (VVI),85 (DOO),65 (VOO),Ra,"12.0 @ 2.5 V,
+8.9 @ 3.5 V"
+"Medtronic, Inc.",7952,Thera DR,DDD/RO,PBW PBW,3.2 mm LP UNI/BI (IS-1 Compatible),3.2 mm LP UNI/BI (IS-1 Compatible),#2,PR,65 (VVI),85 (DOO),65 (VOO),Ra,"12.0 @ 2.5 V,
+8.9 @ 3.5 V"
+"Medtronic, Inc.",7960i,Thera DR,DDD/RO,PDB PDB,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,65 (VVI),85 (DOO),65 (VOO),Ra,"9.7 @ 2.5 V,
+7.2 @ 3.5 V"
+"Medtronic, Inc.",7961i,Thera DR,DDD/RO,PDC PDC,5/6 mm UNI,5/6 mm UNI,#2,PR,65 (VVI),85 (DOO),65 (VOO),Ra,"9.7 @ 2.5 V,
+7.2 @ 3.5 V"
+"Medtronic, Inc.",7962i,Thera DR,DDD/RO,PDD PDD,3.2 mm LP UNI/BI (IS-1 Compatible),3.2 mm LP UNI/BI (IS-1 Compatible),#2,PR,65 (VVI),85 (DOO),65 (VOO),Ra,"9.7 @ 2.5 V,
+7.2 @ 3.5 V"
+"Medtronic, Inc.",7964i,Thera D,DDDCO,PDE PDE,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,65 (VVI),85 (DOO),65 (VOO),Ra,"9.7 @ 2.5 V,
+7.3 @ 3.5 V"
+"Medtronic, Inc.",7965i,Thera D,DDDCO,PDF PDF,5/6 mm UNI,5/6 mm UNI,#2,PR,65 (VVI),85 (DOO),65 (VOO),Ra,"9.7 @ 2.5 V,
+7.3 @ 3.5 V"
+"Medtronic, Inc.",7966i,Thera D,DDDCO,PDG PDG,3.2 mm LP UNI/BI (IS-1 Compatible),3.2 mm LP UNI/BI (IS-1 Compatible),#2,PR,65 (VVI),85 (DOO),65 (VOO),Ra,"9.7 @ 2.5 V,
+7.3 @ 3.5 V"
+"Medtronic, Inc.",7968i,Thera DR,DDD/RO,PGH PGH,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,65 (VVI),85 (DOO),65 (VOO),Ra,"7.0 @ 2.5 V,
+5.1 @ 3.5 V"
+"Medtronic, Inc.",8079,Champion,VVIPO,PGE PGE,None,Nonstandard UNI,Spring Clip,PR,PR,PR,PR-17%,Xb,9.6 @ 3.3 V
+"Medtronic, Inc.",8081,Premier,VVI,PBM PBM,None,IS-1 UNI,#2,PR,PR-10%,PR,PR-20%,E,16.1 @ 2.5 V
+"Medtronic, Inc.",8084,Prevail S,SSI,PEV PEV,None,IS-1 UNI/BI,#2,PR,PR-10%,PR,PR-20%,E,15.9 @ 2.5 V
+"Medtronic, Inc.",8085,Prevail S,SSI,PEy PEy,None,5/6 mm UNI,#2,PR,PR-10%,PR,PR-20%,E,15.9 @ 2.5 V
+"Medtronic, Inc.",8086,Prevail S,SSI,PFA PFA,None,3.2 mm LP UNI/BI (IS-1 Compatible),#2,PR,PR-10%,PR,PR-20%,E,15.9 @ 2.5 V
+"Medtronic, Inc.",8088,Preva SR,SSIR,PGL PGL,None,3.2 mm LP UNI/BI (IS-1 Compatible),#2,PR,65 (SSI),85 (SOO),65 (SOO),Ra,"9.6 @ 2.5 V,
+7.8 @ 3.5 V"
+"Medtronic, Inc.",8089,Preva SR,SSIR,PGM PGM,None,5/6 mm UNI,#2,PR,65 (SSI),85 (SOO),65 (SOO),Ra,"9.6 @ 2.5 V,
+7.8 @ 3.5 V"
+"Medtronic, Inc.",8158,Prodigy SR,SSIR,PEM PEM,None,5 mm Bif UNI/BI,#2,PR,65 (SSI),85 (SOO),65 (SOO),Ra,"9.6 @ 2.5 V,
+7.8 @ 3.5 V"
+"Medtronic, Inc.",8160,Prodigy SR,SSIR,PED PED,None,IS-1 UNI/BI,#2,PR,65 (SSI),85 (SOO),65 (SOO),Ra,"9.6 @ 2.5 V,
+7.8 @ 3.5 V"
+"Medtronic, Inc.",8161,Prodigy SR,SSIR,PEE PEE,None,5/6 mm UNI,#2,PR,65 (SSI),85 (SOO),65 (SOO),Ra,"9.6 @ 2.5 V,
+7.8 @ 3.5 V"
+"Medtronic, Inc.",8162,Prodigy SR,SSIR,PEF PEF,None,3.2 mm LP UNI/BI (IS-1 Compatible),#2,PR,65 (SSI),85 (SOO),65 (SOO),Ra,"9.6 @ 2.5 V,
+7.8 @ 3.5 V"
+"Medtronic, Inc.",8164,Prodigy S,SSIC,PEG PEG,None,IS-1 UNI/BI,#2,PR,65 (SSI),85 (SOO),65 (SOO),Ra,"9.8 @ 2.5 V,
+7.9 @ 3.5 V"
+"Medtronic, Inc.",8165,Prodigy S,SSIC,PEH PEH,None,5/6 mm UNI,#2,PR,65 (SSI),85 (SOO),65 (SOO),Ra,"9.8 @ 2.5 V,
+7.9 @ 3.5 V"
+"Medtronic, Inc.",8166,Prodigy S,SSIC,PEJ PEJ,None,3.2 mm LP UNI/BI (IS-1 Compatible),#2,PR,65 (SSI),85 (SOO),65 (SOO),Ra,"9.8 @ 2.5 V,
+7.9 @ 3.5 V"
+"Medtronic, Inc.",8168,Prodigy VDD,VDD,PEK PEK,IS-1 BI,IS-1 UNI/BI,#2,PR,65 (SSI),85 (SOO),65 (SOO),Ra,11.5 @ 2.5 V
+"Medtronic, Inc.",8300,Activitrax E,VVIRO,QW QW,None,3.2 mm LP BI,#2,PR,65 (VVI),85 (VOO),65 (VOO),Wb,"8.5 @ 2.5 V,
+6.4 @ 5.0 V"
+"Medtronic, Inc.",8301,Activitrax E,VVIRO,QX QX,None,5/6 mm UNI,#2,PR,65 (VVI),85 (VOO),65 (VOO),Wb,"8.5 @ 2.5 V,
+6.4 @ 5.0 V"
+"Medtronic, Inc.",8316,Pasys ST,VVICO,NX NX,None,3.2 mm LP UNI/BI,#2,PR,PR-10%,PR,PR-10%,G,"10.7 @ 2.5 V,
+6.9 @ 5.0 V"
+"Medtronic, Inc.",8317,Pasys ST,VVICO,NZ NZ,None,5/6 mm UNI,#2,PR,PR-10%,PR,PR-10%,G,"10.7 @ 2.5 V,
+6.9 @ 5.0 V"
+"Medtronic, Inc.",8318,Pasys ST,VVICO,PJ PJ,None,5 mm Bif UNI/BI,#2,PR,PR-10%,PR,PR-10%,G,"10.7 @ 2.5 V,
+6.9 @ 5.0 V"
+"Medtronic, Inc.",8320,Pasys,SSICO,JU JU,None,3.2 mm LP UNI/BI,#2,PR,PR-10%,PR,PR-10%,G,"10.7 @ 2.5 V,
+6.9 @ 5.0 V"
+"Medtronic, Inc.",8322,Pasys,SSICO,LL LL,None,5 mm Bif UNI/BI,#2,PR,PR-10%,PR,PR-10%,G,"10.7 @ 2.5 V,
+6.9 @ 5.0 V"
+"Medtronic, Inc.",8329,Pasys,SSICO,VB VB,None,5/6 mm UNI,#2,PR,PR-10%,PR,PR-10%,G,"10.7 @ 2.5 V,
+6.9 @ 5.0 V"
+"Medtronic, Inc.",8330,Minix ST,VVICO,UV UV,None,3.2 mm LP UNI/BI (IS-1 Compatible),#2,PR,PR-10%,PR,PR-20%,E,"12.2 @ 2.5 V,
+5.8 @ 5.0 V"
+"Medtronic, Inc.",8331,Minix ST,VVICO,UX UX,None,5/6 mm UNI,#2,PR,PR-10%,PR,PR-20%,E,"12.2 @ 2.5 V,
+5.8 @ 5.0 V"
+"Medtronic, Inc.",8331M,Minix ST,VVICO,7W 7W,None,IS-1 UNI,#2,PR,PR-10%,PR,PR-20%,E,"12.2 @ 2.5 V,
+5.8 @ 5.0 V"
+"Medtronic, Inc.",8340,Minix,SSICO,UQ UQ,None,3.2 mm LP UNI/BI (IS-1 Compatible),#2,PR,PR-10%,PR,PR-20%,E,"12.2 @ 2.5 V,
+5.8 @ 5.0 V"
+"Medtronic, Inc.",8341,Minix,SSICO,US US,None,5/6 mm UNI,#2,PR,PR-10%,PR,PR-20%,E,"12.2 @ 2.5 V,
+5.8 @ 5.0 V"
+"Medtronic, Inc.",8341M,Minix,SSICO,8W 8W,None,IS-1 UNI,#2,PR,PR-10%,PR,PR-20%,E,"12.2 @ 2.5 V,
+5.8 @ 5.0 V"
+"Medtronic, Inc.",8342,Minix,SSICO,UU UU,None,5 mm Bif UNI/BI,#2,PR,PR-10%,PR,PR-20%,E,"12.2 @ 2.5 V,
+5.8 @ 5.0 V"
+"Medtronic, Inc.",8360,Micro Minix,SSICO,ZU ZU,None,IS-1 UNI/BI,#2,PR,PR-10%,PR,PR-20%,E,"6.3 @ 2.5 V,
+1.3 (Ka) @ 5.0 V"
+"Medtronic, Inc.",8400,Activitrax,VVIRO,IJ IJ,None,3.2 mm LP BI,#2,PR,65 (VVI),85 (VOO),65 (VOO),Wb,"8.5 @ 2.5 V,
+6.4 @ 5.0 V"
+"Medtronic, Inc.",8402,Activitrax,VVIRO,IW IW,None,5 mm Bif BI,#2,PR,65 (VVI),85 (VOO),65 (VOO),Wb,"8.5 @ 2.5 V, 6.4
+@ 5.0 V"
+"Medtronic, Inc.",8403,Activitrax,VVIRO,Iy Iy,None,5/6 mm UNI,#2,PR,65 (VVI),85 (VOO),65 (VOO),Wb,"8.5 @ 2.5 V, 6.4
+@ 5.0 V"
+"Medtronic, Inc.",8403M,Activitrax,VVIRO,3W 3W,None,IS-1 UNI,#2,PR,65 (VVI),85 (VOO),65 (VOO),Wb,"8.5 @ 2.5 V, 6.4
+@ 5.0 V"
+"Medtronic, Inc.",8412,Activitrax II,SSIRO,QE QE,None,3.2 mm LP UNI/BI,#2,PR,65 (SSI),85 (SOO),65 (SOO),E,"7.4 @ 2.5 V, 5.0
+@ 5.0 V"
+"Medtronic, Inc.",8413,Activitrax II,SSIRO,QF QF,None,5/6 mm UNI,#2,PR,65 (SSI),85 (SOO),65 (SOO),E,"7.4 @ 2.5 V, 5.0
+@ 5.0 V"
+"Medtronic, Inc.",8413M,Activitrax II,SSIRO,4W 4W,None,IS-1 UNI,#2,PR,65 (SSI),85 (SOO),65 (SOO),E,"7.4 @ 2.5 V, 5.0
+@ 5.0 V"
+"Medtronic, Inc.",8414,Activitrax II,SSIRO,QG QG,None,5 mm Bif UNI/BI,#2,PR,65 (SSI),85 (SOO),65 (SOO),E,"7.4 @ 2.5 V, 5.0
+@ 5.0 V"
+"Medtronic, Inc.",8416,Legend,SSIRO,XT XT,None,3.2 mm LP UNI/BI (IS-1 Compatible),#2,PR,65 (SSI),85 (SOO),65 (SOO),E,"13.1 @ 2.5 V,
+6.7 @ 5.0 V"
+"Medtronic, Inc.",8417,Legend,SSIRO,WJ WJ,None,5/6 mm UNI,#2,PR,65 (SSI),85 (SOO),65 (SOO),E,"13.1 @ 2.5 V,
+6.7 @ 5.0 V"
+"Medtronic, Inc.",8418,Legend,SSIRO,WN WN,None,5 mm Bif UNI/BI,#2,PR,65 (SSI),85 (SOO),65 (SOO),E,"13.1 @ 2.5 V,
+6.7 @ 5.0 V"
+"Medtronic, Inc.",8419,Legend,SSIRO,ZT ZT,None,IS-1 UNI,#2,PR,65 (SSI),85 (SOO),65 (SOO),E,"13.1 @ 2.5 V,
+6.7 @ 5.0 V"
+"Medtronic, Inc.",8420,Spectrax SXT,SSIMO,GL GL,None,3.2 mm LP BI,#2,PR,PR-10%,PR,PR-10%,G,"13.7 @ 2.5 V,
+10.9 @ 5.0 V"
+"Medtronic, Inc.",8422,Spectrax SXT,SSIMO,HJ HJ,None,5 mm Bif BI,#2,PR,PR-10%,PR,PR-10%,G,"13.7 @ 2.5 V,
+10.9 @ 5.0 V"
+"Medtronic, Inc.",8423,Spectrax SXT,SSIMO,HN HN,None,5/6 mm UNI,#2,PR,PR-10%,PR,PR-10%,G,"13.7 @ 2.5 V,
+10.9 @ 5.0 V"
+"Medtronic, Inc.",8423M,Spectrax SXT,SSIMO,3E 3E,None,IS-1 UNI,#2,PR,PR-10%,PR,PR-10%,G,"13.7 @ 2.5 V,
+10.9 @ 5.0 V"
+"Medtronic, Inc.",8424,Legend II,SSI, ,,,,PR,PR-10%,,PR-20%,,
+"Medtronic, Inc.",8424,Legend II,SSIRO,2P 2P,None,IS-1 UNI/BI,2,PR,65 (SSI),,65 (SOO),E,"11.2 @ 2.5V,
+6.0 @ 5V"
+"Medtronic, Inc.",8426,Legend II,SSIRO,2T 2T,None,3.2 mm LP UNI/BI (IS-1 Compatible),#2,PR,65 (SSI),85 (SOO),65 (SOO),E,"11.2 @ 2.5 V,
+6.0 @ 5.0 V"
+"Medtronic, Inc.",8427,Legend II,SSIRO,2U 2U,None,5/6 mm UNI,#2,PR,65 (SSI),85 (SOO),65 (SOO),E,"11.2 @ 2.5 V,
+6.0 @ 5.0 V"
+"Medtronic, Inc.",8436,Classix,SSIPO,GS GS,None,5 mm Bif BI,#2,PR,PR-10%,PR,PR-10%,G,"5.8 @ 2.5 V, 4.3
+@ 5.0 V"
+"Medtronic, Inc.",8437,Classix,SSIPO,CX CX,None,5/6 mm UNI,#2,PR,PR-10%,PR,PR-10%,"G, Ja","5.8 @ 2.5 V, 4.3
+@ 5.0 V"
+"Medtronic, Inc.",8438,Classix,SSIPO,CZ CZ,None,3.2 mm LP BI,#2,PR,PR-10%,PR,PR-10%,"G, Ja","5.8 @ 2.5 V,
+4.3 @ 5.0 V"
+"Medtronic, Inc.",8446,Legend Plus,SSIRO,2y 2y,None,3.2 mm LP UNI/BI (IS-1 Compatible),#2,PR,65 (SSI),85 (SOO),65 (SOO),E,"14.3 @ 2.5 V,
+8.9 @ 5.0 V"
+"Medtronic, Inc.",8448,Legend Plus,SSI,2Z 2Z,,,,PR,PR-10%,PR,PR-20%,,10.3 @ 5.0 V
+"Medtronic, Inc.",8940,Thera SR,SSI/R,PAU PAU,None,IS-1 UNI/BI,#2,PR,65 (SSI),85 (SOO),65 (SOO),Ra,"7.3 @ 2.5 V,
+6.0 @ 3.5 V"
+"Medtronic, Inc.",8941,Thera SR,SSI/R,PAV PAV,None,5/6 mm UNI,#2,PR,65 (SSI),85 (SOO),65 (SOO),Ra,"7.3 @ 2.5 V,
+6.0 @ 3.5 V"
+"Medtronic, Inc.",8942,Thera SR,SSI/R,PAW PAW,None,3.2 mm LP UNI/BI (IS-1 Compatible),#2,PR,65 (SSI),85 (SOO),65 (SOO),Ra,"7.3 @ 2.5 V,
+6.0 @ 3.5 V"
+"Medtronic, Inc.",8944,Thera S,SSI/R,PBG PBG,None,IS-1 UNI/BI,#2,PR,65 (SSI),85 (SOO),65 (SOO),Ra,"7.4 @ 2.5 V,
+6.0 @ 3.5 V"
+"Medtronic, Inc.",8945,Thera S,SSI/R,PBH PBH,None,5/6 mm UNI,#2,PR,65 (SSI),85 (SOO),65 (SOO),Ra,"7.4 @ 2.5 V,
+6.0 @ 3.5 V"
+"Medtronic, Inc.",8946,Thera S,SSI/R,PBJ PBJ,None,3.2 mm LP UNI/BI (IS-1 Compatible),#2,PR,65 (SSI),85 (SOO),65 (SOO),Ra,"7.4 @ 2.5 V,
+6.0 @ 3.5 V"
+"Medtronic, Inc.",8948,Thera VDD,VDD,PAy PAy,IS-1 BI,IS-1 UNI/BI,#2,PR,65 (SSI),85 (SOO),65 (SOO),Ra,8.8 @ 2.5 V
+"Medtronic, Inc.",8960i,Thera-i SR,SSIR,PDU PDU,None,IS-1 UNI/BI,#2,PR,65 (SSI),85 (SOO),65 (SOO),Ra,"9.6 @ 2.5 V,
+7.8 @ 3.5 V"
+"Medtronic, Inc.",8961i,Thera-i SR,SSIR,PDV PDV,None,5/6 mm UNI,#2,PR,65 (SSI),85 (SOO),65 (SOO),Ra,9.6 @ 2.5 V
+"Medtronic, Inc.",8962i,Thera-i SR,SSIR,PDW PDW,None,3.2 mm LP UNI/BI (IS-1 Compatible),#2,PR,65 (SSI),85 (SOO),65 (SOO),Ra,9.6 @ 2.5 V
+"Medtronic, Inc.",8964i,Thera-i S,SSIR,PDy PDy,None,IS-1 UNI/BI,#2,PR,65 (SSI),85 (SOO),65 (SOO),Ra,9.8 @ 2.5 V
+"Medtronic, Inc.",8965i,Thera-i S,SSIR,PEA PEA,None,5/6 mm UNI,#2,PR,65 (SSI),85 (SOO),65 (SOO),Ra,9.8 @ 2.5 V
+"Medtronic, Inc.",8966i,Thera-i S,SSIR,PEB PEB,None,3.2 mm LP UNI/BI (IS-1 Compatible),#2,PR,65 (SSI),85 (SOO),65 (SOO),Ra,9.8 @ 2.5 V
+"Medtronic, Inc.",8968i,Thera-i VDD,VDD,PEC PEC,IS-1 BI,IS-1 UNI/BI,#2,PR,65 (SSI),85 (SOO),65 (SOO),Ra,11.5 @ 2.5 V
+"Medtronic, Inc.",9000,Isotopic,VVIOO,#R #R,None,5 mm Bif BI,#6,72,67,"72
+(+3 ppm)",67,"C, 5 ppm decrease from BOL magnet rate",20+ @ 5.0 V
+"Medtronic, Inc.",A3DR01,"Advisa DR MRI
+SureScan",OAE- DDDR,PVX and MRI symbol PVX ,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,65 (VVI),85 (DOO),65 (VOO),RRT: Battery voltage ? 2.83 V on 3 consecutive daily automatic measurements EOS: 6 months post-RRT,
+"Medtronic, Inc.",A5DR01,Advisa DR,OAE- DDDR,PVX PVX,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,65 (VVI),85 (DOO),65 (VOO),RRT: Battery voltage ? 2.83 V on 3 consecutive daily automatic measurements EOS: 6 months post-RRT,
+"Medtronic, Inc.",ADD01,Adapta D,DDD,PWB PWB,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,65 (VVI),85 (DOO),65 (VOO),Z,
+"Medtronic, Inc.",ADD01*,Adapta D,DDD,PWB PWB,IS-1 UNI/BI,IS-1 UNI/BI,2,PR,65 (VVI),85 (DOO),65 (VOO),Z,"7.4 @ 2.5 V,
+6.0 @ 3.5 V"
+"Medtronic, Inc.",ADDR01,Adapta DR,DDDR,PWB PWB,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,65 (VVI),85 (DOO),65 (VOO),Z,
+"Medtronic, Inc.",ADDR01*,Adapta DR,DDDR,PWB PWB,IS-1 UNI/BI,IS-1 UNI/BI,2,PR,65 (VVI),85 (DOO),65 (VOO),Z,"7.4 @ 2.5 V,
+6.0 @ 3.5 V"
+"Medtronic, Inc.",ADDR03,Adapta DR,DDDR,PWB PWB,"3.2 mm LP UNI/BI
+(IS-1
+Compatible)",3.2 mm LP UNI/BI (IS-1 Compatible),#2,PR,65 (VVI),85 (DOO),65 (VOO),Z,
+"Medtronic, Inc.",ADDR03*,Adapta DR,DDDR,PWB PWB,3.2 mm LP UNI/BI (IS-1 Compatible),3.2 mm LP UNI/BI (IS-1 Compatible),2,PR,65 (VVI),85 (DOO),65 (VOO),Z,"7.4 @ 2.5 V,
+6.0 @ 3.5 V"
+"Medtronic, Inc.",ADDR06,Adapta DR,DDDR,PWB PWB,5/6 UNI,5/6 UNI,#2,PR,65 (VVI),85 (DOO),65 (VOO),Z,
+"Medtronic, Inc.",ADDR06*,Adapta DR,DDDR,PWB PWB,5/6 mm UNI,5/6 mm UNI,2,PR,65 (VVI),85 (DOO),65 (VOO),Z,"7.4 @ 2.5 V,
+6.0 @ 3.5 V"
+"Medtronic, Inc.",ADDRL1,Adapta DR,DDDR,PWB PWB,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,65 (VVI),85 (DOO),65 (VOO),Z,
+"Medtronic, Inc.",ADDRL1*,Adapta DR,DDDR,PWB PWB,IS-1 UNI/BI,IS-1 UNI/BI,2,PR,65 (VVI),85 (DOO),65 (VOO),Z,"9.1 @ 2.5 V,
+7.4 @ 3.5 V"
+"Medtronic, Inc.",ADDRS1,Adapta DR,DDDR,PWB PWB,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,65 (VVI),85 (DOO),65 (VOO),Z,
+"Medtronic, Inc.",ADDRS1*,Adapta DR,DDDR,PWB PWB,IS-1 UNI/BI,IS-1 UNI/BI,2,PR,65 (VVI),85 (DOO),65 (VOO),Z,"5.5 @ 2.5 V,
+4.3 @ 3.5 V"
+"Medtronic, Inc.",ADSR01,Adapta SR,SSIR,PWB PWB,None,IS-1 UNI/BI,#2,PR,65 (VVI),85 (SOO),65 (VOO),Z,
+"Medtronic, Inc.",ADSR01*,Adapta SR,SSIR,PWB PWB,None,IS-1 UNI/BI,2,PR,65 (VVI),85 (SOO),65 (VOO),Z,"7.3 @ 2.5 V,
+6.4 @ 3.5 V"
+"Medtronic, Inc.",ADSR03,Adapta SR,SSIR,PWB PWB,None,3.2 mm LP UNI/BI (IS-1 Compatible),#2,PR,65 (VVI),85 (SOO),65 (VOO),Z,
+"Medtronic, Inc.",ADSR03*,Adapta SR,SSIR,PWB PWB,None,3.2 mm LP UNI/BI (IS-1 Compatible),2,PR,65 (VVI),85 (SOO),65 (VOO),Z,"7.3 @ 2.5 V,
+6.4 @ 3.5 V"
+"Medtronic, Inc.",ADSR06,Adapta SR,SSIR,PWB PWB,None,5/6 UNI,#2,PR,65 (VVI),85 (SOO),65 (VOO),Z,
+"Medtronic, Inc.",ADSR06*,Adapta SR,SSIR,PWB PWB,None,5/6 mm UNI,2,PR,65 (VVI),85 (SOO),65 (VOO),Z,"7.3 @ 2.5 V,
+6.4 @ 3.5 V"
+"Medtronic, Inc.",ADVDD01,Adapta VDD,VDD,PWB PWB,IS-1 BI,IS-1 UNI/BI,#2,PR,65 (VVI),85 (VOO),65 (VOO),Z,
+"Medtronic, Inc.",ADVDD01*,Adapta VDD,VDD,PWB PWB,IS-1 UNI/BI,IS-1 UNI/BI,2,PR,65 (VVI),85 (SOO),65 (VOO),Z,"6.2 @ 2.5 V,
+5.5 @ 3.5 V"
+"Medtronic, Inc.",AT501,AT500,DDDRP,IJF IJF,IS-1 BI,IS-1 BI,#2,PR,PR,PR & mode,PR & mode,"? 2.60 V /
+? 2.20 V",
+"Medtronic, Inc.",E1DR01,EnPulse DR,DDDR,PRA PRA,UNI/BI IS-1,UNI/BI IS-1,#2,PR,65 (VVI),85 (DOO),65 (VOO),Z:,
+"Medtronic, Inc.",E1DR03,EnPulse DR,DDDR,PRB PRB,3.2 mm LP UNI/BI (IS-1 Compatible),"3.2 mm LP UNI/BI
+(IS-1
+Compatible)",#2,PR,65 (VVI),85 (DOO),65 (VOO),Z:,
+"Medtronic, Inc.",E1DR06,EnPulse DR,DDDR,PRE PRE,Unipolar 5/6 mm,Unipolar 5/6 mm,#2,PR,65 (VVI),85 (DOO),65 (VOO),Z,
+"Medtronic, Inc.",E1DR21,EnPulse DR,DDDR,PPT PPT,UNI/BI IS-1,UNI/BI IS-1,#2,PR,65 (VVI),85 (DOO),65 (VOO),Z,
+"Medtronic, Inc.",E2D01,EnPulse D,DDD,PNF PNF,UNI/BI IS-1,UNI/BI IS-1,#2,PR,65 (VVI),85 (DOO),65 (VOO),Z,
+"Medtronic, Inc.",E2D03,EnPulse D,DDD,PNG PNG,3.2 mm LP UNI/BI (IS-1 Compatible),3.2 mm LP UNI/BI (IS-1 Compatible),#2,PR,65 (VVI),85 (DOO),65 (VOO),Z,
+"Medtronic, Inc.",E2DR01,EnPulse DR,DDDR,PNB PNB,UNI/BI IS-1,UNI/BI IS-1,#2,PR,65 (VVI),85 (DOO),65 (VOO),Z,
+"Medtronic, Inc.",E2DR03,EnPulse DR,DDDR,PNC PNC,3.2 mm LP UNI/BI (IS-1 Compatible),"3.2 mm LP UNI/BI
+(IS-1
+Compatible)",#2,PR,65 (VVI),85 (DOO),65 (VOO),Z,
+"Medtronic, Inc.",E2DR06,EnPulse DR,DDDR,PNH PNH,Unipolar 5/6 mm,Unipolar 5/6 mm,#2,PR,65 (VVI),85 (DOO),65 (VOO),Z,
+"Medtronic, Inc.",E2DR21,EnPulse DR,DDDR,PMU PMU,UNI/BI IS-1,UNI/BI IS-1,#2,PR,65 (VVI),85 (DOO),65 (VOO),Z,
+"Medtronic, Inc.",E2DR31,EnPulse DR,DDDR,PNL PNL,UNI/BI IS-1,UNI/BI IS-1,#2,PR,65 (VVI),85 (DOO),65 (VOO),Z,
+"Medtronic, Inc.",E2DR33,EnPulse DR,DDDR,PNM PNM,3.2 mm LP UNI/BI (IS-1 Compatible),"3.2 mm LP UNI/BI
+(IS-1
+Compatible)",#2,PR,65 (VVI),85 (DOO),65 (VOO),Z,
+"Medtronic, Inc.",E2SR01,EnPulse SR,SSIR,PMW PMW,,UNI/BI IS-1,#2,PR,65 (VVI),85 (SOO),65 (VOO),Z,
+"Medtronic, Inc.",E2SR03,EnPulse SR,SSIR,PMy PMy,,"UNI/BI-3.2 mm
+LP Medtronic",#2,PR,65 (VVI),85 (SOO),65 (VOO),Z,
+"Medtronic, Inc.",E2SR06,EnPulse SR,SSIR,PNA PNA,,Unipolar 5/6 mm,#2,PR,65 (VVI),85 (SOO),65 (VOO),Z,
+"Medtronic, Inc.",E2VDD01,EnPulse VDD,VDD,PMV PMV,UNI/BI IS-1,UNI/BI IS-1,#2,PR,65 (VVI),85 (SOO),65 (VOO),Z,
+"Medtronic, Inc.",EMDR01,"EnRhythm MRI SureScan
+",OAE- DDDR,PTA and PTA MRI symbol,IS-1 BI,IS-1 BI,#2,PR,65 (VVI),85 (COO),65 (VOO),RRT: Battery voltage ? 2.81 V on 3 consecutive daily automatic measurements EOS: 3 months post-RRT,
+"Medtronic, Inc.",EN1DR01 ,Ensura MRI SureScan,OAE- DDDR,"PVX and MRI symbol PZW
+",UNI/BI IS-1,UNI/BI IS-1,#2,PR,65 (VVI),85 (SOO) ,65 (VOO) ,RRT: Battery voltage ?2.83 V on 3 consecutive daily automatic measurements EOS: 6 months post-RRT,
+"Medtronic, Inc.",KD700,Kappa D 700 Series,DDD,PHJ PHJ,"IS-1 UNI/BI, Quick secure
+","IS-1 UNI/BI, Quick secure
+",None,PR,65 (VVI),85 (DOO),65 (VOO),Z,"7.7 @ 2.5 V,6.3 @ 3.5 V"
+"Medtronic, Inc.",KD701,Kappa D 700 Series,DDD,PHK PHK,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,65 (VVI),85 (DOO),65 (VOO),Z,"7.7 @ 2.5 V, 6.3 @ 3.5 V"
+"Medtronic, Inc.",KD703,Kappa D 700 Series,DDD,PHM PHM,3.2 mm LP UNI/BI (IS-1 Compatible),3.2 mm LP UNI/BI (IS-1 Compatible),#2,PR,65 (VVI),85 (DOO)   ,65 (VOO),Z,"7.7 @ 2.5 V, 6.3 @ 3.5 V"
+"Medtronic, Inc.",KD706,Kappa D 700 Series,DDD,PHL PHL,5/6 mm UNI,5/6 mm UNI,#2,PR,65 (VVI),85 (DOO)   ,65 (VOO),Z,"7.7 @ 2.5 V, 6.3 @ 3.5 V "
+"Medtronic, Inc.",KD901,Kappa DR 900 Series,DDD/RO  PLB,PLB,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,65 (VVI),85 (DOO),65 (VOO),Z,"7.7 @ 2.5 V, 6.3 @ 3.5 V"
+"Medtronic, Inc.",KD903,Kappa DR 900 Series,DDD/RO,PLC PLC,3.2 mm LP UNI/BI (IS-1 Compatible),3.2 mm LP UNI/BI (IS-1 Compatible),#2,PR,65 (VVI),85 (DOO) ,65 (VOO)   ,Z,"7.7 @ 2.5 V, 6.3 @ 3.5 V"
+"Medtronic, Inc.",KD906,Kappa DR 900 Series,DDD/RO  ,PLD PLD,5/6 mm UNI,5/6 mm UNI,#2,PR,65 (VVI),85 (DOO)   ,65 (VOO)   ,Z,"7.7 @ 2.5 V, 6.3 @ 3.5 V"
+"Medtronic, Inc.",KDR401,"Kappa DR 400 Series
+",DDD/RO,PER PER,"IS-1 UNI/BI One lead must be BI
+","IS-1 UNI/BI One lead must be BI
+",#2,PR,65 (VVI),85 (DOO)   ,65 (VOO)   ,RA,"7.8 @ 2.5 V, 6.4 @ 3.5 V"
+"Medtronic, Inc.",KDR403,Kappa DR 400 Series,DDD/RO  ,PET PET,3.2 mm LP UNI/BI (IS-1 Compatible) One lead must be BI,3.2 mm LP UNI/BI (IS-1 Compatible) One lead must be BI,#2,PR,65 (VVI),85 (DOO)   ,65 (VOO)   ,RA,"7.8 @ 2.5 V, 6.4 @ 3.5 V"
+"Medtronic, Inc.",KDR600,Kappa DR 600 Series,DDD/RO,PHE PHE,"IS-1 UNI/BI, Quick secure
+","IS-1 UNI/BI, Quick secure
+",None,PR,65 (VVI),85 (DOO),65 (VOO),Z,"7.7 @ 2.5 V, 6.3 @ 3.5 V"
+"Medtronic, Inc.",KDR601,Kappa DR 600 Series,DDD/RO,PHF PHF,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,65 (VVI),85 (DOO),65 (VOO),Z,"7.7 @ 2.5 V,6.3 @ 3.5 V"
+"Medtronic, Inc.",KDR603,Kappa DR 600 Series,DDD/RO,PHH PHH,3.2 mm LP UNI/BI (IS-1 Compatible),3.2 mm LP UNI/BI (IS-1 Compatible),#2,PR,65 (VVI),85 (DOO),65 (VOO),Z,"7.7 @ 2.5 V,6.3 @ 3.5 V"
+"Medtronic, Inc.",KDR606,Kappa DR 600 Series,DDD/RO,PHG PHG,5/6 mm UNI,5/6 mm UNI,#2,PR,65 (VVI),85 (DOO),65 (VOO),Z,"7.7 @ 2.5 V,6.3 @ 3.5 V"
+"Medtronic, Inc.",KDR651,Kappa DR 600 Series,DDD/RO,PLJ PLJ,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,65 (VVI),85 (DOO),65 (VOO),Z,
+"Medtronic, Inc.",KDR653,Kappa DR 600 Series,DDD/RO,PLK PLK,3.2 mm LP UNI/BI (IS-1 Compatible),3.2 mm LP UNI/BI (IS-1 Compatible),#2,PR,65 (VVI),85 (DOO),65 (VOO),Ra,
+"Medtronic, Inc.",KDR700 KDR700V,Kappa DR 700 Series,DDD/RO,PGT PGT,"IS-1 UNI/BI, Quick secure
+","IS-1 UNI/BI, Quick secure
+",None,PR,65 (VVI),85 (DOO),65 (VOO),Z,"7.7 @ 2.5 V,6.3 @ 3.5 V"
+"Medtronic, Inc.",KDR701 (VPP) KDR701V,Kappa DR 700 Series,DDD/RO,PGU PGU,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,65 (VVI),85 (DOO),65 (VOO),Z,"7.7 @ 2.5 V,6.3 @ 3.5 V"
+"Medtronic, Inc.",KDR703 (VPP) KDR703V,Kappa DR 700 Series,DDD/RO,PGy PGy,3.2 mm LP UNI/BI (IS-1 Compatible),3.2 mm LP UNI/BI (IS-1 Compatible),#2,PR,65 (VVI),85 (DOO),65 (VOO),Z,"7.7 @ 2.5 V,6.3 @ 3.5 V"
+"Medtronic, Inc.",KDR706 (VPP) KDR706V,Kappa DR 700 Series,DDD/RO,PGW PGW,5/6 mm UNI,5/6 mm UNI,#2,PR,65 (VVI),85 (DOO),65 (VOO),Z,"7.7 @ 2.5 V,6.3 @ 3.5 V"
+"Medtronic, Inc.",KDR720,Kappa DR 700 Series,DDD/RO,PGP PGP,"IS-1 UNI/BI, Quick secure
+","IS-1 UNI/BI, Quick secure
+",None,PR,65 (VVI),85 (DOO),65 (VOO),Z,"5.5 @ 2.5 V,4.4 @ 3.5 V"
+"Medtronic, Inc.",KDR721,Kappa DR 700 Series,DDD/RO,PGR PGR,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,65 (VVI),85 (DOO),65 (VOO),Z,"5.5 @ 2.5 V,4.4 @ 3.5 V"
+"Medtronic, Inc.",KDR730,Kappa DR 700 Series,DDD/RO,PHA PHA,"IS-1 UNI/BI, Quick secure
+","IS-1 UNI/BI, Quick secure
+",None,PR,65 (VVI),85 (DOO),65 (VOO),Z,"9.2 @ 2.5 V,7.5 @ 3.5 V"
+"Medtronic, Inc.",KDR731,Kappa DR 700 Series,DDD/RO,PHB PHB,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,65 (VVI),85 (DOO),65 (VOO),Z,"9.2 @ 2.5 V,7.5 @ 3.5 V"
+"Medtronic, Inc.",KDR733,Kappa DR 700 Series,DDD/RO,PHD PHD,3.2 mm LP UNI/BI (IS-1 Compatible),3.2 mm LP UNI/BI (IS-1 Compatible),#2,PR,65 (VVI),85 (DOO),65 (VOO),Z,"9.2 @ 2.5 V,7.5 @ 3.5 V"
+"Medtronic, Inc.",KDR801,Kappa DR 800 Series,DDD/RO,PKW PKW,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,65 (VVI),85 (DOO),65 (VOO),Z,
+"Medtronic, Inc.",KDR803,Kappa DR 800 Series,DDD/RO,PKy PKy,3.2 mm LP UNI/BI (IS-1 Compatible),3.2 mm LP UNI/BI (IS-1 Compatible),#2,PR,65 (VVI),85 (DOO),65 (VOO),Ra,
+"Medtronic, Inc.",KDR901,Kappa DR 900 Series,DDD/RO,PKM PKM,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,65 (VVI),85 (DOO),65 (VOO),Z,"7.7 @ 2.5 V,6.3 @ 3.5 V"
+"Medtronic, Inc.",KDR903,Kappa DR 900 Series,DDD/RO,PKN PKN,3.2 mm LP UNI/BI (IS-1 Compatible),3.2 mm LP UNI/BI (IS-1 Compatible),#2,PR,65 (VVI),85 (DOO),65 (VOO),Z,"7.7 @ 2.5 V,6.3 @ 3.5 V"
+"Medtronic, Inc.",KDR906,Kappa DR900 Series,DDD/RO,PKP PKP,5/6 mm UNI,5/6 mm UNI,#2,PR,65 (VVI),85 (DOO),65 (VOO),Z,"7.7 @ 2.5 V,6.3 @ 3.5 V"
+"Medtronic, Inc.",KDR921,Kappa DR900 Series,DDD/RO,PKR PKR,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,65 (VVI),85 (DOO),65 (VOO),Z,"5.5 @ 2.5 V,4.4 @ 3.5 V"
+"Medtronic, Inc.",KDR931,Kappa DR900 Series,DDD/RO,PKT PKT,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,65 (VVI),85 (DOO),65 (VOO),Z,"9.2 @ 2.5 V,7.5 @ 3.5 V"
+"Medtronic, Inc.",KDR933,Kappa DR900 Series,DDD/RO,PKU PKU,3.2 mm LP UNI/BI (IS-1 Compatible),3.2 mm LP UNI/BI (IS-1 Compatible),#2,PR,65 (VVI),85 (DOO),65 (VOO),Z,"9.2 @ 2.5 V,7.5 @ 3.5 V"
+"Medtronic, Inc.",KSR403,Kappa SR400 Series,SSIR,PGD PGD,None,3.2 mm LP UNI/BI (IS-1 Compatible) One Lead Must be BI,#2,PR,65 (SSI),85 (SOO),65 (SOO),Ra,"7.9 @ 2.5 V,6.9 @ 3.5 V"
+"Medtronic, Inc.",KSR700,Kappa SR700 Series,SSIR,PHR PHR,None,"IS-1 UNI/BI, Quick secure.",None,PR,65 (VVI),85 (SOO),65 (VOO),Z,"7.4 @ 2.5 V,6.5 @ 3.5 V"
+"Medtronic, Inc.",KSR701,Kappa SR700 Series,SSIR,PHT PHT,None,IS-1 UNI/BI,#2,PR,65 (VVI),85 (SOO),65 (VOO),Z,"7.4 @ 2.5 V,6.5 @ 3.5 V"
+"Medtronic, Inc.",KSR703,Kappa SR700 Series,SSIR,PHW PHW,None,3.2 mm LP UNI/BI (IS-1 Compatible),#2,PR,65 (VVI),85 (SOO),65 (VOO),Z,"7.4 @ 2.5 V,6.5 @ 3.5 V"
+"Medtronic, Inc.",KSR706,Kappa SR700 Series,SSIR,PHU PHU,None,5/6 mm UNI,#2,PR,65 (VVI),85 (SOO),65 (VOO),Z,"7.4 @ 2.5 V,6.5 @ 3.5 V"
+"Medtronic, Inc.",KSR901,Kappa SR900 Series,SSIR,PLF PLF,None,IS-1 UNI/BI,#2,PR,65 (VVI),85 (SOO),65 (VOO),Z,"7.3 @ 2.5 V,6.4 @ 3.5 V"
+"Medtronic, Inc.",KSR903,Kappa SR900 Series,SSIR,PLG PLG,None,3.2 mm LP UNI/BI (IS-1 Compatible),#2,PR,65 (VVI),85 (SOO),65 (VOO),Z,"7.3 @ 2.5 V,6.4 @ 3.5 V"
+"Medtronic, Inc.",KSR906,Kappa SR900 Series,SSIR,PLH PLH,None,5/6 mm UNI,#2,PR,65 (VVI),85 (SOO),65 (VOO),Z,"7.3 @ 2.5 V,6.4 @ 3.5 V"
+"Medtronic, Inc.",KVDD700,Kappa VDD700 Series,VDDRO,PHN PHN,"IS-1 UNI/BI, Quick secure
+","IS-1 UNI/BI, Quick secure.",None,PR,65 (VVI),85 (DOO),65 (VOO),Z,"6.2 @ 2.5 V,5.6 @ 3.5 V"
+"Medtronic, Inc.",KVDD701,Kappa VDD700 Series,VDD/RO,PHP PHP,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,65 (VVI),85 (DOO),65 (VOO),Z,"6.2 @ 2.5 V,5.6 @ 3.5 V"
+"Medtronic, Inc.",KVDD901,Kappa VDD900 Series,VDD,PLE PLE,IS-1 BI Sense only,IS-1 UNI/BI,#2,PR,65 (VVI),85 (DOO),65 (VOO),Z,
+"Medtronic, Inc.",P1501DR,EnRhythmDR,DDDRP,PNP PNP,Bi IS-1,Bi IS-1,#2,PR,65 (VVI),85 (DOO),65 (VOO),EOL: 3,
+"Medtronic, Inc.",RED01,Relia D,DDD,PWB PWB,IS-1 UNI/BI,IS-1 UNI/BI,2,PR,65 (VVI),85 (DOO),65 (VOO),Z,"7.4 @ 2.5 V,6.0 @ 3.5 V"
+"Medtronic, Inc.",REDR01,Relia DR,DDDR,PWB PWB,IS-1 UNI/BI,IS-1 UNI/BI,2,PR,65 (VVI),85 (DOO),65 (VOO),Z,"7.4 @ 2.5 V,6.0 @ 3.5 V"
+"Medtronic, Inc.",RES01,Relia S,SSI,PWB PWB,None,IS-1 UNI/BI,2,PR,65 (VVI),85 (SOO),65 (VOO),Z,"7.3 @ 2.5 V,6.4 @ 3.5 V"
+"Medtronic, Inc.",RESR01,Relia SR,SSIR,PWB NWU   ,None,IS-1 UNI/BI,2,PR,65 (VVI),85 (SOO),65 (VOO),Z,"7.3 @ 2.5 V, 6.4 @ 3.5 V "
+"Medtronic, Inc.",REVDD01  ,Relia VDD,VDD,PWB NWX,IS-1 UNI/BI,IS-1 UNI/BI,2,PR,65 (VVI),85 (SOO),65 (VOO),Z,"6.2 @ 2.5 V, 5.5 @ 3.5 V"
+"Medtronic, Inc.",RVDR01 ,Revo MRI SureScan,OAE- DDDR,"PTA and MRI symbol, PTN",IS-1 BI,IS-1 BI,2,PR,65 (VVI),85 (DOO),65 (VOO),RRT: Battery voltage ? 2.81 V on 3 consecutive daily automatic measurements EOS: 3 months post-RRT,
+"Medtronic, Inc.",SD203,Sigma D 200 Series,DDD,PJD PJD,3.2 mm LP UNI/BI (IS-1 Compatible),3.2 mm LP UNI/BI (IS-1 Compatible),#2,PR,65 (VVI),85 (DOO),65 (VOO),RA,
+"Medtronic, Inc.",SDR303,Sigma DR 300 Series,DDD,PJD PJD,3.2 mm LP UNI/BI (IS-1 Compatible),,#2,PR,65 (VVI),85 (DOO),65 (VOO),RA,
+"Medtronic, Inc.",SDR203,Sigma DR 200 Series,DDD/RO,PJD PJD,3.2 mm LP UNI/BI (IS-1 Compatible),3.2 mm LP UNI/BI (IS-1 Compatible),#2,PR,65 (VVI),85 (DOO),65 (VOO),RA,
+"Medtronic, Inc.",SDR303,Sigma DR 300 Series,DDD/RO,PJD PJD,3.2 mm LP UNI/BI (IS-1 Compatible),3.2 mm LP UNI/BI (IS-1 Compatible),#2,PR,65 (VVI),85 (DOO),65 (VOO),RA,
+"Medtronic, Inc.",SDR306,Sigma DR 300 Series,DDD/ RO,PJE PJE,5/6 mm UNI,5/6 mm UNI,#2,PR,65 (VVI),85 (DOO) ,65 (VOO) ,Ra,
+"Medtronic, Inc.",SED01,Sensia D,DDD,PWL PWL,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,65 (VVI),85 (DOO) ,65 (VOO) ,Z,
+"Medtronic, Inc.",SED01*,Sensia D,DDD,PWB NWK  ,IS-1 UNI/BI,IS-1 UNI/BI,2,PR,65 (VVI),85 (DOO) ,65 (VOO) ,Z,"7.4 @ 2.5 V, 6.0 @ 3.5 V"
+"Medtronic, Inc.",SEDR01,Sensia DR,DDDR,PWL PWL,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,65 (VVI),85 (DOO) ,65 (VOO) ,Z,
+"Medtronic, Inc.",SEDR01*,Sensia DR,DDDR,PWL NWL,IS-1 UNI/BI,IS-1 UNI/BI,2,PR,65 (VVI),85 (DOO) ,65 (VOO) ,Z,"7.4 @ 2.5 V, 6.0 @ 3.5 V"
+"Medtronic, Inc.",SEDRL1,Sensia DR,DDDR   PWL,PWL,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,65 (VVI),85 (DOO) ,65 (VOO) ,Z,
+"Medtronic, Inc.",SEDRL1*,Sensia DR,DDDR   PWB,NWJ,IS-1 UNI/BI,IS-1 UNI/BI,2,PR,65 (VVI),85 (DOO) ,65 (VOO) ,Z,"7.4 @ 2.5 V, 6.0 @ 3.5 V"
+"Medtronic, Inc.",SES01,Sensia S,SSI,PWL PWL,None,IS-1 UNI/BI,#2,PR,65 (VVI),85 (SOO),65 (VOO) ,Z,
+"Medtronic, Inc.",SES01*,Sensia S,SSI,PWB NWS,None,IS-1 UNI/BI,2,PR,65 (VVI),85 (SOO),65 (VOO) ,Z,"7.3 @ 2.5 V, 6.4 @ 3.5 V"
+"Medtronic, Inc.",SESR01,Sensia SR,SSIR,PWL PWL,None,IS-1 UNI/BI,#2,PR,65 (VVI),85 (SOO),65 (VOO) ,Z,
+"Medtronic, Inc.",SESR01*,Sensia SR,SSIR,PWB NWR,None,IS-1 UNI/BI,2,PR,65 (VVI),85 (SOO),65 (VOO) ,Z,"7.3 @ 2.5 V, 6.4 @ 3.5 V"
+"Medtronic, Inc.",SS103,Sigma S 100 Series,SSI,PJG PJG,None,3.2 mm LP UNI/BI,#2,PR,65 (VVI),85 (SOO),65 (VOO) ,Ra,
+"Medtronic, Inc.",SS106,Sigma S 100 Series,SSI,PJH PJH,None,5/6 mm UNI,#2,PR,65 (VVI),85 (SOO),65 (VOO) ,Ra,
+"Medtronic, Inc.",SS203,Sigma S 200 Series,SSI,PJG PJG,None,3.2 mm LP UNI/BI (IS-1 Compatible),#2,PR,65 (VVI),85 (SOO),65 (VOO),Ra,
+"Medtronic, Inc.",SS303,Sigma S 300 Series,SSI,PJG PJG,None,3.2 mm LP UNI/BI  (IS-1 Compatible),#2,PR,65 (VVI),85 (SOO),65 (VOO),Ra,
+"Medtronic, Inc.",SSR203,Sigma SR 200 Series,SSIR,PJG PJG,None,3.2 mm LP UNI/BI  (IS-1 Compatible),#2,PR,65 (VVI),85 (SOO),65 (VOO),Ra,
+"Medtronic, Inc.",SSR303,Sigma SR 300 Series,SSIR,PJG PJG,None,3.2 mm LP UNI/BI  (IS-1 Compatible),#2,PR,65 (VVI),85 (SOO),65 (VOO),Ra,
+"Medtronic, Inc.",SSR306,Sigma SR 300 Series,SSIR,PJH PJH,None,5/6 mm UNI ,#2,PR,65 (VVI),85 (SOO),65 (VOO),Ra,
+"Medtronic, Inc.",SVDD303,Sigma VDD 300 Series,VDDD,PJD PJD,3.2 mm LP UNI/BI (IS-1 Compatible),3.2 mm LP UNI/BI  (IS-1 Compatible),#2,PR,65 (VVI),85 (SOO),65 (VOO),Ra,
+"Medtronic, Inc.",SVVI103,Sigma S 100 Series,SSI,PJG PJG,None,3.2 mm LP UNI/BI  (IS-1 Compatible),#2,PR,65 (VVI),85 (SOO),65 (VOO),Ra,
+"Medtronic, Inc.",VEDR01,Versa DR,DDDR,PWH PWH,IS-1 UNI/BI,IS-1 UNI/BI ,#2,PR,65 (VVI),85 (DOO),65 (VOO),Z,
+"Medtronic, Inc.",VEDR01*,Versa DR,DDDR,PWB NWH,IS-1 UNI/BI,IS-1 UNI/BI ,2,PR,65 (VVI),85 (DOO),65 (VOO),Z,"7.4 @ 2.5 V, 6.0 @ 3.5 V"
+"Pacesetter, Inc. (St. Jude Medical)",1102,Tempo VR,VVIR,tJJ,None,VS-1 BI,#2,PR,63,100,80,C,
+"Pacesetter, Inc. (St. Jude Medical)",1902,Tempo V,VVIC,tMJ,None,VS-1 UNI/BI,#2,PR,63,100,80,C,8.1
+"Pacesetter, Inc. (St. Jude Medical)",2002B,Solus,SSIR,AA,None,5 mm Bif UNI/BI,#2,PR,PI+100 ms,PR,PI+100 ms,F,
+"Pacesetter, Inc. (St. Jude Medical)",2002L,Solus,SSIR,AA,None,VS-1B UNI/BI,#2,PR,PI+100 ms,PR,PI+100 ms,F,
+"Pacesetter, Inc. (St. Jude Medical)",2002T,Solus,SSIR,AA,None,VS-1A UNI/BI,#2,PR,PI+100 ms,PR,PI+100 ms,F,
+"Pacesetter, Inc. (St. Jude Medical)",2003M,Solus,SSIR,None,None,5 mm UNI,#2,PR,PI+100 ms,PR,PI+100 ms,F,
+"Pacesetter, Inc. (St. Jude Medical)",2003M/S,Solus,SSIR,AB,None,5/6 mm UNI,#2,PR,PI+100 ms,PR,PI+100 ms,F,
+"Pacesetter, Inc. (St. Jude Medical)",2003S,Solus,SSIR,None,None,6 mm UNI,#2,PR,PI+100 ms,PR,PI+100 ms,F,
+"Pacesetter, Inc. (St. Jude Medical)",2005L,Phoenix 2,SSIC,AD,None,VS-1B UNI/BI,#2,PR,PI+100 ms,PR,PI+100 ms,F,
+"Pacesetter, Inc. (St. Jude Medical)",2005T,Phoenix 2,SSIC,AD,None,VS-1A UNI/BI,#2,PR,PI+100 ms,PR,PI+100 ms,F,
+"Pacesetter, Inc. (St. Jude Medical)",2006L,Solus II,SSIR,AE,None,VS-1B UNI/BI,#2,PR,PI+100 ms,PR,PI+100 ms,F,
+"Pacesetter, Inc. (St. Jude Medical)",2006T,Solus II,SSIR,AE,None,VS-1A UNI/BI,#2,PR,PI+100 ms,PR,PI+100 ms,F,
+"Pacesetter, Inc. (St. Jude Medical)",2007K,Solus II,SSIR,AF,None,IS-1 UNI,#2,PR,PI+100 ms,PR,PI+100 ms,F,
+"Pacesetter, Inc. (St. Jude Medical)",2007M/S,Solus II,SSIR,AF,None,5/6 mm UNI,#2,PR,PI+100 ms,PR,PI+100 ms,F,
+"Pacesetter, Inc. (St. Jude Medical)",2008L,Phoenix 2,SSIC,AG or PHX,None,VS-1B UNI/BI,#2,PR,PI+100 ms,PR,PI+100 ms,F,
+"Pacesetter, Inc. (St. Jude Medical)",2008T,Phoenix 2,SSIC,AG or PHX,None,VS-1A UNI/BI,#2,PR,PI+100 ms,PR,PI+100 ms,F,
+"Pacesetter, Inc. (St. Jude Medical)",2009K,Phoenix 2,SSIC,AH,None,IS-1 UNI,#2,PR,PI+100 ms,PR,PI+100 ms,F,
+"Pacesetter, Inc. (St. Jude Medical)",2009M/S,Phoenix 2,SSIC,AH,None,5/6 mm UNI,#2,PR,PI+100 ms,PR,PI+100 ms,F,
+"Pacesetter, Inc. (St. Jude Medical)","2010T (SN < 11,999)",Paragon,DDDC,AI,VS-1 UNI/BI,VS-1 UNI/BI,#2,PR,PI+100 ms,PR,PI+100 ms,F,
+"Pacesetter, Inc. (St. Jude Medical)","2010T (SN > 12,000)",Paragon,DDDC,AI,VS-1A UNI/BI,VS-1A UNI/BI,#2,PR,PI+100 ms,PR,PI+100 ms,F,
+"Pacesetter, Inc. (St. Jude Medical)",2011M,Paragon,DDDC,None,5 mm UNI,5 mm UNI,#2,PR,PI+100 ms,PR,PI+100 ms,F,
+"Pacesetter, Inc. (St. Jude Medical)",2011M/S,Paragon,DDDC,AJ,5/6 mm UNI,5/6 mm UNI,#2,PR,PI+100 ms,PR,PI+100 ms,F,
+"Pacesetter, Inc. (St. Jude Medical)",2012T,Paragon,DDDC,None,VS-1A BI,VS-1A BI,#2,PR,PI+100 ms,PR,PI+100 ms,F,
+"Pacesetter, Inc. (St. Jude Medical)",2016L,Paragon II,DDDC,AL,VS-1B UNI/BI,VS-1B UNI/BI,#2,PR,PI+100 ms,PR,PI+100 ms,F,
+"Pacesetter, Inc. (St. Jude Medical)",2016T,Paragon II,DDDC,AL,VS-1A UNI/BI,VS-1A UNI/BI,#2,PR,PI+100 ms,PR,PI+100 ms,F,
+"Pacesetter, Inc. (St. Jude Medical)",2017T,Bilog II,DDDC,AC or AI,VS-1A UNI/BI,VS-1A UNI/BI,#2,PR,PI+100 ms,PR,PI+100 ms,F,7.2
+"Pacesetter, Inc. (St. Jude Medical)",2019T,Bilog IV,DDDC,AL,VS-1A UNI/BI,VS-1A UNI/BI,#2,PR,PI+100 ms,PR,PI+100 ms,F,7.7
+"Pacesetter, Inc. (St. Jude Medical)",2020L,Synchrony,DDDR,None,VS-1B UNI/BI,VS-1B UNI/BI,#2,PR,PI+100 ms,PR,PI+100 ms,F,
+"Pacesetter, Inc. (St. Jude Medical)",2020T,Synchrony,DDDR,None,VS-1A UNI/BI,VS-1A UNI/BI,#2,PR,PI+100 ms,PR,PI+100 ms,F,
+"Pacesetter, Inc. (St. Jude Medical)",2022L,Synchrony II,DDDR,AN,VS-1B UNI/BI,VS-1B UNI/BI,#2,PR,PI+100 ms,PR,PI+100 ms,F,
+"Pacesetter, Inc. (St. Jude Medical)",2022T,Synchrony II,DDDR,AN,VS-1A UNI/BI,VS-1A UNI/BI,#2,PR,PI+100 ms,PR,PI+100 ms,F,
+"Pacesetter, Inc. (St. Jude Medical)",2023M,Synchrony II,DDDR,None,5 mm UNI,5 mm UNI,#2,PR,PI+100 ms,PR,PI+100 ms,F,
+"Pacesetter, Inc. (St. Jude Medical)",2023M/S,Synchrony II,DDDR,AO,5/6 mm UNI,5/6 mm UNI,#2,PR,PI+100 ms,PR,PI+100 ms,F,
+"Pacesetter, Inc. (St. Jude Medical)",2023U,Synchrony II,DDDR,AN,VS-1A UNI,VS-1A UNI,#2,PR,PI+100 ms,PR,PI+100 ms,F,8
+"Pacesetter, Inc. (St. Jude Medical)",2028L,Synchrony III,DDDR,AP,VS-1B UNI/BI,VS-1B UNI/BI,#2,PR,PI+100 ms,PR,PI+100 ms,F,
+"Pacesetter, Inc. (St. Jude Medical)",2028T,Synchrony III,DDDR,AP,VS-1A UNI/BI,VS-1A UNI/BI,#2,PR,PI+100 ms,PR,PI+100 ms,F,
+"Pacesetter, Inc. (St. Jude Medical)",2029K,Synchrony III,DDDR,AR,IS-1 UNI,IS-1 UNI,#2,PR,PI+100 ms,PR,PI+100 ms,F,
+"Pacesetter, Inc. (St. Jude Medical)",2029M/S,Synchrony III,DDDR,AR,5/6 mm UNI,5/6 mm UNI,#2,PR,PI+100 ms,PR,PI+100 ms,F,
+"Pacesetter, Inc. (St. Jude Medical)",2060BL,AddVent,VDDR,AS,"VS-1B UNI/BI
+Pace, BI Sense",VS-1B UNI/BI,#2,PR,PI+100 ms,PR,PI+100 ms,F,9.3
+"Pacesetter, Inc. (St. Jude Medical)",2060LR (Aa),AddVent,VDDR,AS,Special,Special,#2,PR,PI+100 ms,PR,PI+100 ms,F,
+"Pacesetter, Inc. (St. Jude Medical)",2091K,Polarity,DDDR,GK,"VS-1B UNI Pace,
+UNI/BI Sense",VS-1B UNI,UNK,PR,PI+100 ms,PR,PI+100 ms,F,8.05
+"Pacesetter, Inc. (St. Jude Medical)",2091M/S,Polarity,DDDR,GK,"5/6 UNI Pace, UNI/BI Sense",5/6 UNI/BI,UNK,PR,PI+100 ms,PR,PI+100 ms,F,8.05
+"Pacesetter, Inc. (St. Jude Medical)",2102,Tempo DR,DDDR,tHS,VS-1 BI,VS-1 BI,#2,PR,63,100,80,C,
+"Pacesetter, Inc. (St. Jude Medical)",2204L,Phoenix III,SSIC,BC,None,VS-1B UNI/BI,#2,PR,PI+100 ms,PR,PI+100 ms,F,
+"Pacesetter, Inc. (St. Jude Medical)",2204T,Phoenix III,SSIC,BC,None,VS-1A UNI/BI,#2,PR,PI+100 ms,PR,PI+100 ms,F,
+"Pacesetter, Inc. (St. Jude Medical)",2205K,Phoenix III,SSIC,BD,None,IS-1 UNI,#2,PR,PI+100 ms,PR,PI+100 ms,F,
+"Pacesetter, Inc. (St. Jude Medical)",2205M/S,Phoenix III,SSIC,BD,None,5/6 mm UNI,#2,PR,PI+100 ms,PR,PI+100 ms,F,
+"Pacesetter, Inc. (St. Jude Medical)",221,Programalith,SSIC,None,None,6 mm UNI,#4,PR,PR,Pr 5%,PR-10 or 15%,"D, Va, Wa, BOL
+mag is 5% < PR",
+"Pacesetter, Inc. (St. Jude Medical)",221 A,Programalith,SSIC,None,None,6 mm UNI,#4,PR,PR,Pr 5%,PR-10 or 15%,"D, Va, Wa, BOL
+mag is 5% < PR",
+"Pacesetter, Inc. (St. Jude Medical)",221 A-0,Programalith,VVIC,None,None,6 mm UNI,#4,PR,PR,Pr 5%,PR-10 or 15%,"D, Va, Wa, BOL
+mag is 5% < PR",
+"Pacesetter, Inc. (St. Jude Medical)",221 A-1,Programalith,VVIC,None,None,6 mm UNI,#4,PR,PR,Pr 5%,PR-10 or 15%,"D, Va, Wa, BOL
+mag is 5% < PR",
+"Pacesetter, Inc. (St. Jude Medical)",221 A-3,Programalith,VVIC,None,None,6 mm UNI,#4,PR,PR,Pr 5%,PR-10 or 15%,"D, Va, Wa, BOL
+mag is 5% < PR",
+"Pacesetter, Inc. (St. Jude Medical)",221 A-6,Programalith,SSIC,None,None,6 mm UNI,#4,PR,PR,Pr 5%,PR-10 or 15%,"D, Va, Wa, BOL
+mag is 5% < PR",
+"Pacesetter, Inc. (St. Jude Medical)",221-0,Programalith,VVIC,None,None,6 mm UNI,#4,PR,PR,Pr 5%,PR-10 or 15%,"D, Va, Wa, BOL
+mag is 5% < PR",
+"Pacesetter, Inc. (St. Jude Medical)",221-1,Programalith,VVIC,None,None,6 mm UNI,#4,PR,PR,Pr 5%,PR-10 or 15%,"D, Va, Wa, BOL
+mag is 5% < PR",
+"Pacesetter, Inc. (St. Jude Medical)",221-3,Programalith,VVIC,None,None,6 mm UNI,#4,PR,PR,Pr 5%,PR-10 or 15%,"D, Va, Wa, BOL
+mag is 5% < PR",
+"Pacesetter, Inc. (St. Jude Medical)",221-6,Programalith,SSIC,None,None,6 mm UNI,#4,PR,PR,Pr 5%,PR-10 or 15%,"D, Va, Wa, BOL
+mag is 5% < PR",
+"Pacesetter, Inc. (St. Jude Medical)",222,Programalith,SSIC,None,None,5 mm Bif BI,#4,PR,PR,Pr 5%,PR-10 or 15%,"D, Va, Wa, BOL
+mag is 5% < PR",
+"Pacesetter, Inc. (St. Jude Medical)",222-0,Programalith,VVIC,None,None,5 mm Bif BI,#4,PR,PR,Pr 5%,PR-10 or 15%,"D, Va, Wa, BOL
+mag is 5% < PR",
+"Pacesetter, Inc. (St. Jude Medical)",222-1,Programalith,VVIC,None,None,5 mm Bif BI,#4,PR,PR,Pr 5%,PR-10 or 15%,"D, Va, Wa, BOL
+mag is 5% < PR",
+"Pacesetter, Inc. (St. Jude Medical)",222-3,Programalith,VVIC,None,None,5 mm Bif BI,#4,PR,PR,Pr 5%,PR-10 or 15%,"D, Va, Wa, BOL
+mag is 5% < PR",
+"Pacesetter, Inc. (St. Jude Medical)",222-6,Programalith,SSIC,None,None,5 mm Bif BI,#4,PR,PR,Pr 5%,PR-10 or 15%,"D, Va, Wa, BOL mag is 5% < PR",
+"Pacesetter, Inc. (St. Jude Medical)",222A,Programalith,SSIC,None,None,5 mm Bif BI,#4,PR,PR,Pr 5%,PR-10 or 15%,"D, Va, Wa, BOL mag is 5% < PR",
+"Pacesetter, Inc. (St. Jude Medical)",222A-0,Programalith,VVIC,None,None,5 mm Bif BI,#4,PR,PR,Pr 5%,PR-10 or 15%,"D, Va, Wa, BOL mag is 5% < PR",
+"Pacesetter, Inc. (St. Jude Medical)",222A-1,Programalith,VVIC,None,None,5 mm Bif BI,#4,PR,PR,Pr 5%,PR-10 or 15%,"D, Va, Wa, BOL mag is 5% < PR",
+"Pacesetter, Inc. (St. Jude Medical)",222A-3,Programalith,VVIC,None,None,5 mm Bif BI,#4,PR,PR,Pr 5%,PR-10 or 15%,"D, Va, Wa, BOL mag is 5% < PR",
+"Pacesetter, Inc. (St. Jude Medical)",222A-6,Programalith,SSIC,None,None,5 mm Bif BI,#4,PR,PR,Pr 5%,PR-10 or 15%,"D, Va, Wa, BOL mag is 5% < PR",
+"Pacesetter, Inc. (St. Jude Medical)",223,Programalith AV,DVIC,None,5 mm UNI,5 mm UNI,#4,PR,PR,90,77,B,
+"Pacesetter, Inc. (St. Jude Medical)",225,Programalith II,SSIC,None,None,6 mm UNI,#2,PR,PR,Pr 5%,PR-10%,"D, 10% < prog rate",
+"Pacesetter, Inc. (St. Jude Medical)",225-0,Programalith II,VVIC,None,None,6 mm UNI,#2,PR,PR,Pr 5%,PR-10%,"D, 10% < prog rate",
+"Pacesetter, Inc. (St. Jude Medical)",2250L,Trilogy SR,SSIR,MM,None,VS-1B UNI/BI,#2,PR,PI+100 ms,PR,PI+100 ms,F,
+"Pacesetter, Inc. (St. Jude Medical)",2252L,Dynasty SR,SSIR,MM,VS-1B UNI/BI,VS-1B UNI/BI,#2,PR,PI+100 ms,PR,PI+100 ms,F,7.7
+"Pacesetter, Inc. (St. Jude Medical)",225-3,Programalith II,VVIC,None,None,6 mm UNI,#2,PR,PR,Pr 5%,PR-10%,"D, 10% < prog rate",
+"Pacesetter, Inc. (St. Jude Medical)",225-6,Programalith II,SSIC,None,None,6 mm UNI,#2,PR,PR,Pr 5%,PR-10%,"D, 10% < prog rate",
+"Pacesetter, Inc. (St. Jude Medical)",226,Programalith II,SSIC,None,None,5 mm Bif BI,#2,PR,PR,Pr 5%,PR-10%,"D, 10% < prog rate",
+"Pacesetter, Inc. (St. Jude Medical)",226-0,Programalith II,VVIC,None,None,5 mm Bif BI,#2,PR,PR,Pr 5%,PR-10%,"D, 10% < prog rate",
+"Pacesetter, Inc. (St. Jude Medical)",2260L,Trilogy SR+,SSIR,MM,None,VS-1B UNI/BI,#2,PR,PI+100 ms,PR,PI+100 ms,F,
+"Pacesetter, Inc. (St. Jude Medical)",2262L,Dynasty SR+,SSIR,MM,VS-1B UNI/BI,VS-1B UNI/BI,#2,PR,PI+100 ms,PR,PI+100 ms,F,7.7
+"Pacesetter, Inc. (St. Jude Medical)",226-3,Programalith II,VVIC,None,None,5 mm Bif BI,#2,PR,PR,Pr 5%,PR-10%,"D, 10% < prog rate",
+"Pacesetter, Inc. (St. Jude Medical)",2264L,Trilogy SR+,SSIR,MM,None,VS-1B UNI/BI,#2,PR,PI+100 ms,PR,PI+100 ms,F,
+"Pacesetter, Inc. (St. Jude Medical)",226-6,Programalith II,SSIC,None,None,5 mm Bif BI,#2,PR,PR,Pr 5%,PR-10%,"D, 10% < prog rate",
+"Pacesetter, Inc. (St. Jude Medical)",2304L,Paragon III,DDDC,BK,VS-1B UNI/BI,VS-1B UNI/BI,#2,PR,PI+100 ms,PR,PI+100 ms,F,
+"Pacesetter, Inc. (St. Jude Medical)",2304T,Paragon III,DDDC,BK,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,PI+100 ms,PR,PI+100 ms,F,
+"Pacesetter, Inc. (St. Jude Medical)",2305M/S,Paragon III,DDDC,BN,5/6 mm UNI,5/6 mm UNI,#2,PR,PI+100 ms,PR,PI+100 ms,F,
+"Pacesetter, Inc. (St. Jude Medical)",2308L,Trilogy DC,DDDC,MM,VS-1B UNI/BI,VS-1B UNI/BI,#2,PR,PI+100 ms,PR,PI+100 ms,F,
+"Pacesetter, Inc. (St. Jude Medical)",2310L,Dynasty DC,DDDC,MM,VS-1B UNI/BI,VS-1B UNI/BI,#2,PR,PI+100 ms,PR,PI+100 ms,F,5
+"Pacesetter, Inc. (St. Jude Medical)",2314L,Paragon III,DDDC,BK,VS-1B UNI/BI,VS-1B UNI/BI,#2,PR,PI+100 ms,PR,PI+100 ms,F,
+"Pacesetter, Inc. (St. Jude Medical)",2314T,Paragon III,DDDC,BK,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,PI+100 ms,PR,PI+100 ms,F,
+"Pacesetter, Inc. (St. Jude Medical)",2315M/S,Paragon III,DDDC,BN,5/6 mm UNI,5/6 mm UNI,#2,PR,PI+100 ms,PR,PI+100 ms,F,
+"Pacesetter, Inc. (St. Jude Medical)",2318L,Trilogy DC+,DDDM,MM,VS-1B UNI/BI,VS-1B UNI/BI,#2,PR,PI+100 ms,PR,PI+100 ms,F,
+"Pacesetter, Inc. (St. Jude Medical)",2320L,Dynasty DC+,DDDM,MM,VS-1B UNI/BI,VS-1B UNI/BI,#2,PR,PI+100 ms,PR,PI+100 ms,F,5
+"Pacesetter, Inc. (St. Jude Medical)",2350L,Trilogy DR,DDDR,MM,VS-1B UNI/BI,VS-1B UNI/BI,#2,PR,PI+100 ms,PR,PI+100 ms,F,
+"Pacesetter, Inc. (St. Jude Medical)",2352L,Dynasty DR,DDDR,MM,VS-1B UNI/BI,VS-1B UNI/BI,#2,PR,PI+100 ms,PR,PI+100 ms,F,5
+"Pacesetter, Inc. (St. Jude Medical)",2353,Dynasty DR,DDDR,MM,VS-1B UNI/BI,VS-1B UNI/BI,#2,PR,PI+100 ms,PR,PI+100 ms,F,5
+"Pacesetter, Inc. (St. Jude Medical)",2360L,Trilogy DR+,DDDR,MM,VS-1B UNI/BI,VS-1B UNI/BI,#2,PR,PI+100 ms,PR,PI+100 ms,F,
+"Pacesetter, Inc. (St. Jude Medical)",2362L,Dynasty DR+,DDDR,MM,VS-1B UNI/BI,VS-1B UNI/BI,#2,PR,PI+100 ms,PR,PI+100 ms,F,5
+"Pacesetter, Inc. (St. Jude Medical)",2363,Dynasty DR+,DDDR,MM,VS-1B UNI/BI,VS-1B UNI/BI,#2,PR,PI+100 ms,PR,PI+100 ms,F,5
+"Pacesetter, Inc. (St. Jude Medical)",2364L,Trilogy DR+,DDDR,MM,VS-1B UNI/BI,VS-1B UNI/BI,#2,PR,PI+100 ms,PR,PI+100 ms,F,
+"Pacesetter, Inc. (St. Jude Medical)",2400L,Regency SR+,SSIR,S*00,None,VS-1B UNI/BI,#2,PR,PR,100,85,C,
+"Pacesetter, Inc. (St. Jude Medical)",2402L,Regency SC+,SSIC,S*02,None,VS-1B UNI/BI,#2,PR,PR,100,85,C,
+"Pacesetter, Inc. (St. Jude Medical)",2404L,Regency SR,SSIR,S*04,None,VS-1B UNI/BI,#2,PR,PR,100,85,C,
+"Pacesetter, Inc. (St. Jude Medical)",2405K,Regency SR,SSIR,S*05,None,IS-1 UNI,#2,PR,PR,100,85,C,
+"Pacesetter, Inc. (St. Jude Medical)",2405M/S,Regency SR,SSIR,S*05,None,5/6 UNI,#2,PR,PR,100,< 85,C,9.1
+"Pacesetter, Inc. (St. Jude Medical)",2406L,Regency SC,SSIC,S*06,None,VS-1B UNI/BI,#2,PR,PR,100,85,C,
+"Pacesetter, Inc. (St. Jude Medical)",2406L,Regency SC,SSIC,S*06,None,VS-1B UNI/BI,#2,PR,PR,100,< 85,C,9.1
+"Pacesetter, Inc. (St. Jude Medical)",2407K,Regency SC,SSIC,S*07,None,IS-1 UNI,#2,PR,PR,100,85,C,
+"Pacesetter, Inc. (St. Jude Medical)",2407M/S,Regency SC,SSIC,S*07,None,5/6 UNI,#2,PR,PR,100,< 85,C,9.1
+"Pacesetter, Inc. (St. Jude Medical)",2408L,Regency SCX,SSIC,S*08,None,VS-1B UNI/BI,#2,PR,PR,100,< 85,C,9.1
+"Pacesetter, Inc. (St. Jude Medical)",2410L,Solus Mini SR+,SSIR,S*00,None,VS-1B UNI/BI,#2,PR,PR,100,85,C,16
+"Pacesetter, Inc. (St. Jude Medical)",2412,Solus Mini SC+,SSIC,S*02,None,VS-1B UNI/BI,#2,PR,PR,100,85,C,16
+"Pacesetter, Inc. (St. Jude Medical)",2414,Solus Mini SR,SSIR,S*04,None,VS-1B UNI/BI,#2,PR,PR,100,85,C,9.1
+"Pacesetter, Inc. (St. Jude Medical)",2415,Solus Mini SR,SSIR,S*05,None,VS-1B UNI,#2,PR,PR,100,85,C,9.1
+"Pacesetter, Inc. (St. Jude Medical)",2416,Solus Mini SC,SSIC,S*06,None,VS-1B UNI/BI,#2,PR,PR,100,85,C,9.1
+"Pacesetter, Inc. (St. Jude Medical)",2417,Solus Mini SC,SSIC,S*07,None,VS-1B UNI,#2,PR,PR,100,85,C,9.1
+"Pacesetter, Inc. (St. Jude Medical)",2418,Solus Mini SCX,SSIC,S*08,None,VS-1B UNI/BI,#2,PR,PR,100,85,C,9.1
+"Pacesetter, Inc. (St. Jude Medical)",2425T,Microny SR+,SSIR,S*25,None,IS-1 BI,#2,PR,PR,100,85,C,
+"Pacesetter, Inc. (St. Jude Medical)",2426T,Solus u SR+,SSIR,S*25,None,"IS-1 UNI pace, BI sense",#2,PR,PR,100,85,C,8.3
+"Pacesetter, Inc. (St. Jude Medical)",2525T,Microny II SR+,SSIR,S*25,None,"IS-1 UNI pace, BI sense",#2,PR,PR,100,? 85,C,
+"Pacesetter, Inc. (St. Jude Medical)",2535K,Microny K,SSIR,S*25,None,IS-1 UNI,#2,PR,PR,100,? 85,C,
+"Pacesetter, Inc. (St. Jude Medical)",261,AFP,SSIC,None,None,6 mm UNI,#2,PR,PR,PR +14%,PR-11%,Ta,
+"Pacesetter, Inc. (St. Jude Medical)",262,AFP,SSIC,None,None,5 mm Bif BI,#2,PR,PR,PR +14%,PR-11%,Ta,
+"Pacesetter, Inc. (St. Jude Medical)",262T,AFP,SSIC,None,None,VS-1A BI,#2,PR,PR,PR +14%,PR-11%,Ta,
+"Pacesetter, Inc. (St. Jude Medical)",273,AFP,DDIC,None,5 mm UNI,5 mm UNI,#2,PR,PR,PR +14%,PR-11%,Ta,
+"Pacesetter, Inc. (St. Jude Medical)",275,AFP,VDDC,None,None,5 mm UNI,#2,PR,PR,PR +14%,PR-11%,Ta,
+"Pacesetter, Inc. (St. Jude Medical)",277,AFP,DDDC,None,5 mm UNI,5 mm UNI,#2,PR,PR,PR +14%,PR-11%,Ta,
+"Pacesetter, Inc. (St. Jude Medical)",281,AFP,DDDC,None,5 mm UNI,5 mm UNI,#2,PR,PR,PR +14%,PR-11%,Ta,
+"Pacesetter, Inc. (St. Jude Medical)",283,AFP II,DDDC,None,5 mm UNI,5 mm UNI,#2,PR,PR,PR +14%,PR-11%,Ta,
+"Pacesetter, Inc. (St. Jude Medical)",285,Genesis,DDDC,None,5 mm UNI,5 mm UNI,#2,PR,PR,PR +14%,PR-11%,Ta,
+"Pacesetter, Inc. (St. Jude Medical)",285K,Genesis,DDDC,,VS-1B UNI,VS-1B UNI,#2,PR,PR,PR +14%,PR-11%,Ta,7
+"Pacesetter, Inc. (St. Jude Medical)",285R,Genesis,DDDC,,5 UNI,5 UNI,#2,PR,PR,PR +14%,PR-11%,Ta,7
+"Pacesetter, Inc. (St. Jude Medical)",286,AFP,DDDC,None,VS-1B BI,VS-1B BI,#2,PR,PR,PR +14%,PR-11%,Ta,
+"Pacesetter, Inc. (St. Jude Medical)",2902,Tempo D,DDDC,tKJ,VS-1 UNI/BI,VS-1 UNI/BI,#2,PR,63,100,80,,5.5
+"Pacesetter, Inc. (St. Jude Medical)",301,Vivalith II,VVI,,None,6 mm UNI,#6,71,65,78,72,,8
+"Pacesetter, Inc. (St. Jude Medical)",401,Vivalith II,VVI,,None,6 mm UNI,#6,71,65,78,72,,12
+"Pacesetter, Inc. (St. Jude Medical)",MDL-201,Vivalith,VVI,None,None,6 mm UNI,#4,71,63,71,63,"C, 11%",
+"Pacesetter, Inc. (St. Jude Medical)",MDL-201A,Vivalith 5,VVI,None,None,6 mm UNI,#4,71,63,71,63,"C, 11%",
+"Pacesetter, Inc. (St. Jude Medical)",MDL-201B,Vivalith 10,VVI,None,None,6 mm UNI,#4,71,63,71,63,"C, 11%",
+"Pacesetter, Inc. (St. Jude Medical)",TDL-201,Vivalith,VVI,None,None,5 mm Bif BI,#4,71,63,71,63,"C, 11%",
+"Pacesetter, Inc. (St. Jude Medical)",TDL-201A,Vivalith 5,VVI,None,None,5 mm Bif BI,#4,71,63,71,63,"C, 11%",
+"Pacesetter, Inc. (St. Jude Medical)",TDL-201B,Vivalith 10,VVI,None,None,5 mm Bif BI,#4,71,63,71,63,"C, 11%",
+Siemens-Elema (St. Jude Medical),2030K,Sensolog III,SSIR,S*30,VS-1,Unipolar,#2,PR/PR,,99,85,"C, Ab, Bb",8.3
+Siemens-Elema (St. Jude Medical),2030T,Sensolog III,SSIR,S*30,VS-1,Unipolar pace/ Bipolar sense,#2,PR/PR,,99,85,"C, Ab, Bb",8.3
+Siemens-Elema (St. Jude Medical),2033B,Sensolog III,SSIR,S*33,None,5 mm Bif UNI/BI,#2,PR,PR,99,85,"C, Ab, Bb",
+Siemens-Elema (St. Jude Medical),2033K,Sensolog III,SSIR,S*33,VS-1,Unipolar,#2,PR/PR,,99,85,"C, Ab, Bb",8.4
+Siemens-Elema (St. Jude Medical),2033L,Sensolog III,SSIR,S*33,None,VS-1B UNI/BI,#2,PR,PR,99,85,"C, Ab, Bb",
+Siemens-Elema (St. Jude Medical),2033M,Sensolog III,SSIR,S*33,None,5 mm UNI,#2,PR,PR,99,85,"C, Ab, Bb",
+Siemens-Elema (St. Jude Medical),2033S,Sensolog III,SSIR,S*33,None,6 mm UNI,#2,PR,PR,99,85,"C, Ab, Bb",
+Siemens-Elema (St. Jude Medical),2033T,Sensolog III,SSIR,S*33,None,VS-1A UNI/BI,#2,PR,PR,99,85,"C, Ab, Bb",
+Siemens-Elema (St. Jude Medical),2034K,Sensolog III,SSIR,S*34,VS-1A,Unipolar,#2,PR/PR,,99,85,"C, Ab, Bb",6.6
+Siemens-Elema (St. Jude Medical),2034L,Sensolog III,SSIR,S*34,None,VS-1B UNI/BI,#2,PR,PR,99,85,"C, Ab, Bb",
+Siemens-Elema (St. Jude Medical),2034M,Sensolog III,SSIR,S*34,None,5 mm UNI,#2,PR,PR,99,85,"C, Ab, Bb",
+Siemens-Elema (St. Jude Medical),2034T,Sensolog III,SSIR,S*34,None,VS-1A UNI/BI,#2,PR,PR,99,85,"C, Ab, Bb",
+Siemens-Elema (St. Jude Medical),2036K,Dialog II,SSIC,S*36,VS-1,Unipolar,#2,PR/PR,,99,85,"C, Ab, Bb",7.7
+Siemens-Elema (St. Jude Medical),2036T,Dialog II,SSIC,S*37,None,VS-1A UNI/BI,#2,PR,PR,99,85,"C, Ab, Bb",
+Siemens-Elema (St. Jude Medical),2037B,Dialog II,SSIC,S*37,None,5 mm Bif UNI/BI,#2,PR,PR,99,85,"C, Ab, Bb",
+Siemens-Elema (St. Jude Medical),2037K,Dialog II,SSIC,S*37,None,VS-1A UNI,#2,PR,PR,99,85,"C, Ab, Bb",
+Siemens-Elema (St. Jude Medical),2037L,Dialog II,SSIC,S*37,None,VS-1B UNI/BI,#2,PR,PR,99,85,"C, Ab, Bb",
+Siemens-Elema (St. Jude Medical),2037M,Dialog II,SSIC,S*37,None,5 mm UNI,#2,PR,PR,99,85,"C, Ab, Bb",
+Siemens-Elema (St. Jude Medical),2037S,Dialog II,SSIC,S*37,None,6 mm UNI,#2,PR,PR,99,85,"C, Ab, Bb",
+Siemens-Elema (St. Jude Medical),2037T,Dialog II,SSIC,S*37,None,VS-1A UNI/BI,#2,PR,PR,99,85,"C, Ab, Bb",
+Siemens-Elema (St. Jude Medical),2038K,Dialog II,SSIC,S*38,None,VS-1A UNI,#2,PR,PR,99,85,"C, Ab, Bb",
+Siemens-Elema (St. Jude Medical),2038L,Dialog II,SSIC,S*38,None,VS-1B UNI/BI,#2,PR,PR,99,85,"C, Ab, Bb",
+Siemens-Elema (St. Jude Medical),2038M,Dialog II,SSIC,S*38,None,5 mm UNI,#2,PR,PR,99,85,"C, Ab, Bb",
+Siemens-Elema (St. Jude Medical),2038T,Dialog II,SSIC,S*38,None,VS-1A UNI/BI,#2,PR,PR,99,85,"C, Ab, Bb",
+Siemens-Elema (St. Jude Medical),2040K,Multilog,SSIC,S*40,None,IS-1 UNI,#2,PR,PR,99,85,"C, Ab, Bb",
+Siemens-Elema (St. Jude Medical),2040M/S,Multilog,SSIC,S*40,06-May,Unipolar,#2,PR/PR,,99,85,"C, Ab, Bb",8.2/8.6
+Siemens-Elema (St. Jude Medical),2040T,Multilog,SSIC,S*40,None,IS-1 UNI/BI,#2,PR,PR,99,85,"C, Ab, Bb",
+Siemens-Elema (St. Jude Medical),2045K(Aa),Sensorithm,SSIRO,S*45,None,VS-1A UNI,#2,PR,PR,99,85,C,
+Siemens-Elema (St. Jude Medical),2045M/S(Aa),Sensorithm,SSIRO,S*45,None,5/6 mm UNI,#2,PR,PR,99,85,C,
+Siemens-Elema (St. Jude Medical),2045T(Aa),Sensorithm,SSIRO,S*45,None,VS-1A UNI/BI,#2,PR,PR,99,85,C,
+Siemens-Elema (St. Jude Medical),2049K,Dialog II,SSIC,S*37,None,VS-1 UNI,#2,PR,PR,99,85,"C, Ab, Bb",
+Siemens-Elema (St. Jude Medical),2049T,Dialog II,SSIC,S*37,None,VS-1 BI,#2,PR,PR,99,85,"C, Ab, Bb",
+Siemens-Elema (St. Jude Medical),447,,VVI,S*47,None,6 mm UNI,#2,70,70,100,85,D,
+Siemens-Elema (St. Jude Medical),619,,VVI,S*19,None,6 mm UNI,#2,70,70,100,75,D,
+Siemens-Elema (St. Jude Medical),625,,VAT,S*25,None,6 mm UNI,#2,55,48,100,75,D,
+Siemens-Elema (St. Jude Medical),627,,VVI,S*27,None,6 mm UNI,#2,70,70,100,75,D,
+Siemens-Elema (St. Jude Medical),629,,VVI,S*29,None,6 mm UNI,#2,70,70,100,75,D,
+Siemens-Elema (St. Jude Medical),637,,VVI,S*37,None,6 mm UNI,#2,70,70,100,75,D,
+Siemens-Elema (St. Jude Medical),657,,VVI,S*57,None,6 mm UNI,#2,70,70,100,75,D,
+Siemens-Elema (St. Jude Medical),658K,Prolog MP,SSIM,S*58,None,VS-1A UNI,#2,PR,PR,100,85,"C, Ab, Bb",
+Siemens-Elema (St. Jude Medical),658M,Prolog MP,SSIM,S*58,None,5 mm UNI,#2,PR,PR,100,85,"C, Ab, Bb",
+Siemens-Elema (St. Jude Medical),658T,Prolog MP,SSIM,S*58,None,VS-1A BI,#2,PR,PR,100,85,"C, Ab, Bb",
+Siemens-Elema (St. Jude Medical),659,,VVI,S*59,None,6 mm UNI,#2,70,70,100,85,"C, Ab, Bb",
+Siemens-Elema (St. Jude Medical),664,,DDDM,S*64,6 mm UNI,6 mm UNI,#2,PR,PR,100,85,"C, Bb",
+Siemens-Elema (St. Jude Medical),668,,SSIM,S*68,None,6 mm UNI,#2,PR,PR,100,85,"C, Ab, Bb",
+Siemens-Elema (St. Jude Medical),668B,,SSIM,S*68,None,5 mm Bif BI,#2,PR,PR,100,85,"C, Ab, Bb",
+Siemens-Elema (St. Jude Medical),669,,VVI,S*69,None,6 mm UNI,#2,70,70,100,85,"C, Ab, Bb",
+Siemens-Elema (St. Jude Medical),674,,DDDM,S*74,6 mm UNI,6 mm UNI,#2,PR,PR,100,85,"C, Ab, Bb",
+Siemens-Elema (St. Jude Medical),677,,VVI,S*77,None,6 mm UNI,#2,70,70,100,75,"C, Ab, Bb",
+Siemens-Elema (St. Jude Medical),678,,SSIM,S*78,None,6 mm UNI,#2,PR,PR,100,85,"C, Ab, Bb",
+Siemens-Elema (St. Jude Medical),698,Prolog MP,SSIM,S*98,None,6 mm UNI,#2,PR,PR,100,85,"C, Ab, Bb",
+Siemens-Elema (St. Jude Medical),698L,Prolog MP,SSIM,S*98,None,VS-1A BI,#2,PR,PR,100,85,"C, Ab, Bb",
+Siemens-Elema (St. Jude Medical),703K,Sensolog,SSIR,S*03,None,VS-1A UNI,#2,PR,PR,100,85,"C, Ab, Bb",
+Siemens-Elema (St. Jude Medical),703S,Sensolog,SSIR,S*03,None,6 mm UNI,#2,PR,PR,100,85,"C, Ab, Bb",
+Siemens-Elema (St. Jude Medical),703T,Sensolog,SSIR,S*03,None,VS-1A BI,#2,PR,PR,100,85,"C, Ab, Bb",
+Siemens-Elema (St. Jude Medical),704,Dialog AV,DDDC,S*04,6 mm UNI,6 mm UNI,#2,PR,PR,100,85,"C, Ab, Bb",
+Siemens-Elema (St. Jude Medical),718,Dialog,SSIC,S*18,None,6 mm UNI,#2,PR,PR,100,85,"C, Ab, Bb",
+Siemens-Elema (St. Jude Medical),718B,Dialog,SSIC,S*18,None,5 mm Bif BI,#2,PR,PR,100,85,"C, Ab, Bb",
+Siemens-Elema (St. Jude Medical),718L,Dialog,SSIC,S*18,None,VS-1A BI,#2,PR,PR,100,85,"C, Ab, Bb",
+Siemens-Elema (St. Jude Medical),728,Dialog S,SSIC,S*28,6,Unipolar,#2,PR/PR,,99,85,"C, Ab, Bb",9
+Siemens-Elema (St. Jude Medical),728B,Dialog,SSIC,S*28,None,5 mm Bif BI,#2,PR,PR,100,85,"C, Ab, Bb",
+Siemens-Elema (St. Jude Medical),728K,Dialog,SSIC,S*28,None,VS-1A UNI,#2,PR,PR,100,85,"C, Ab, Bb",
+Siemens-Elema (St. Jude Medical),728S,Dialog,SSIC,S*28,None,6 mm UNI,#2,PR,PR,100,85,"C, Ab, Bb",
+Siemens-Elema (St. Jude Medical),728T,Dialog,SSIC,S*28,None,VS-1A BI,#2,PR,PR,100,85,"C, Ab, Bb",
+Siemens-Elema (St. Jude Medical),748,Dialog,SSIC,S*48,6,Unipolar,#2,PR/PR,,99,85,"C, Ab, Bb",8.2
+Siemens-Elema (St. Jude Medical),748B,Dialog,SSIC,S*48,None,5 mm Bif BI,#2,PR,PR,100,85,"C, Ab, Bb",
+Siemens-Elema (St. Jude Medical),748K,Dialog,SSIC,S*48,None,VS-1A UNI,#2,PR,PR,100,85,"C, Ab, Bb",
+Siemens-Elema (St. Jude Medical),748S,Dialog,SSIC,S*48,None,6 mm UNI,#2,PR,PR,100,85,"C, Ab, Bb",
+Siemens-Elema (St. Jude Medical),748T,Dialog,SSIC,S*48,None,VS-1A BI,#2,PR,PR,100,85,"C, Ab, Bb",
+Siemens-Elema (St. Jude Medical),876,,VVI,*86,6,Unipolar,,70/64,,70/64,,,7
+Siemens-Elema (St. Jude Medical),748,Dialog,SSIC,S*48,6,Unipolar,#2,PR/PR,,99,85,"C, Ab, Bb",8.2
+Siemens-Elema (St. Jude Medical),748B,Dialog,SSIC,S*48,None,5 mm Bif BI,#2,PR,PR,100,85,"C, Ab, Bb",
+Siemens-Elema (St. Jude Medical),748K,Dialog,SSIC,S*48,None,VS-1A UNI,#2,PR,PR,100,85,"C, Ab, Bb",
+Siemens-Elema (St. Jude Medical),748S,Dialog,SSIC,S*48,None,6 mm UNI,#2,PR,PR,100,85,"C, Ab, Bb",
+Siemens-Elema (St. Jude Medical),748T,Dialog,SSIC,S*48,None,VS-1A BI,#2,PR,PR,100,85,"C, Ab, Bb",
+Siemens-Elema (St. Jude Medical),876,,VVI,*86,6,Unipolar,,70/64,,70/64,,,7
+Sorin-Biomedica C.R.M.,,Physiocor 300,VDDC,SBP,5 mm UNI,5 mm UNI,#2,PR,PI+109,PR,PI+109,B,11.8
+Sorin-Biomedica C.R.M.,,Micropacer1,SSIC,SPP,,6 mm UNI,#2,PR,PI+100,80,73,C,12
+Sorin-Biomedica C.R.M.,,Physiocor 400L,DDDC,SLP,IS-1 UNI,IS-1 UNI,#2,PR,PI+100,90,83,B,7.8
+Sorin-Biomedica C.R.M.,,Orion 60/C,VVIC,BS,,6 mm UNI,#2,PR,PI+100,80,73,B,11.5
+Sorin-Biomedica C.R.M.,,Physiocor 400B,DDDC,SZP,IS-1 BI,IS-1 UNI,#2,PR,PI+100,90,83,B,7.8
+Sorin-Biomedica C.R.M.,,Orion 30/A,VVIM,SOP,,6 mm UNI,#2,PR,PI+100,80,73,B,13
+Sorin-Biomedica C.R.M.,,Orion 50,SSIC,SRP,,6 mm UNI,#2,PR,PI+100,80,73,B,12
+Sorin-Biomedica C.R.M.,,Orion 30,VVIM,SIP,,6 mm UNI,#2,PR,PI+100,80,73,B,14
+Sorin-Biomedica C.R.M.,,Orion 40,VVIC,SCP,,6 mm UNI,#2,PR,PI+100,80,73,B,14
+Sorin-Biomedica C.R.M.,,Orion 60/A,VVIC,SAP,,5 mm UNI,#2,PR,PI+100,80,73,B,11.5
+Sorin-Biomedica C.R.M.,,Orion 60/B,VVIC,SGP,,VS-1 BI,#2,PR,PI+100,80,73,B,11.5
+Sorin-Biomedica C.R.M.,,Physiocor 400,DDDC,SDP,5 mm UNI,5 mm UNI,#2,PR,PI+100,90,83,B,7.8
+Sorin-Biomedica C.R.M.,,Orion 35,VVIP,SHP,,IS-1 UNI,#2,PR,PI+100,80,73,B,11
+Sorin-Biomedica C.R.M.,,Orion 10,VVIM,SNA,,6 mm UNI,#2,70,70,78,68,C,13
+Sorin-Biomedica C.R.M.,,Orion 35/B,VVIP,SNP,,IS-1 BI,#2,PR,PI+100,80,73,B,11
+Sorin-Biomedica C.R.M.,,Orion 60,VVIC,SSP,,VS-1 UNI,#2,PR,PI+100,80,73,B,11.5
+Sorin-Biomedica C.R.M.,DL 1,,VVI,,,6 mm UNI,#2,72,65,83,76,B,9
+Sorin-Biomedica C.R.M.,ICV0011,Minior 100,SSIC,KS,,IS-1 UNI,#2,PR,PI+100,80,73,B,6
+Sorin-Biomedica C.R.M.,ICV0012,Swing DR1,DDDR,ES,VS-1 UNI/BI,VS-1 UNI/BI,#2,PR,PI+100,90,83,B,6.5
+Sorin-Biomedica C.R.M.,ICV0013,Swing VDR1,VDDR,LS,"IS-1 UNI pace, UNI/BI sense",IS-1 UNI,#2,PR,PI+100,90,83,B,8
+Sorin-Biomedica C.R.M.,ICV0014,Newcor 50,DDDC,GS,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,PI+100,90,83,B,7.2
+Sorin-Biomedica C.R.M.,ICV0015,Swing 200,SSIR,FS,,IS-1 UNI/BI,#2,PR,PI+100,80,73,B,6.5
+Sorin-Biomedica C.R.M.,ICV0016,Swing 200/C,SSIR,MS,,6 mm UNI,#2,PR,PI+100,80,73,B,6.5
+Sorin-Biomedica C.R.M.,ICV0042,Minilit 100,VVI,US,,IS-1 BI,#2,PR,PI+100,80,73,B,6.2
+Sorin-Biomedica C.R.M.,ICV0043,Minilit 100,VVI,SS,,IS-1 BI,#2,PR,PI+100,80,73,B,6.2
+Sorin-Biomedica C.R.M.,ICV0044,Minior 100C,SSIC,RS,,6 mm UNI,#2,PR,PI+100,80,73,B,6
+Sorin-Biomedica C.R.M.,ICV0045,Minior 36,SSIC,yS,,IS-1 UNI/BI,#2,PR,PI+100,80,73,B,6.2
+Sorin-Biomedica C.R.M.,ICV0046,Minior 36,SSIC,yS,,IS-1 UNI/BI,#2,PR,PI+100,80,73,B,6.2
+Sorin-Biomedica C.R.M.,ICV0047,Minior 36C,SSIC,SD,,6 mm UNI,#2,PR,PI+100,80,73,B,6.2
+Sorin-Biomedica C.R.M.,ICV0048,Minior 36C,SSIC,SD,,6 mm UNI,#2,PR,PI+100,80,73,B,6.2
+Sorin-Biomedica C.R.M.,ICV0049,Minior 65,SSIC,ZD,,IS-1 UNI/BI,#2,PR,PI+100,80,73,B,6.2
+Sorin-Biomedica C.R.M.,ICV0050,Minior 65,SSIC,ZS,,IS-1 UNI/BI,#2,PR,PI+100,80,73,B,6.2
+Sorin-Biomedica C.R.M.,ICV0051,Minior 65C,SSIC,SE,,6 mm UNI,#2,PR,PI+100,80,73,B,6.2
+Sorin-Biomedica C.R.M.,ICV0052,Minior 65C,SSIC,SE,,6 mm UNI,#2,PR,PI+100,80,73,B,6.2
+Sorin-Biomedica C.R.M.,ICV0053,Theorema 100,SSIC,WS,,IS-1 UNI/BI,#2,PR,PI+100,80,73,B,6.6
+Sorin-Biomedica C.R.M.,ICV0054,Theorema 100,SSIC,WS,,IS-1 UNI/BI,#2,PR,PI+100,80,73,B,6.6
+Sorin-Biomedica C.R.M.,ICV0055,Theorema 100C,SSIC,SF,,6 mm UNI,#2,PR,PI+100,80,73,B,6.6
+Sorin-Biomedica C.R.M.,ICV0056,Theorema 100C,SSIC,SF,,6 mm UNI,#2,PR,PI+100,80,73,B,6.6
+Sorin-Biomedica C.R.M.,ICV0078,Minidual 50,DDDC,VS,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,PI+100,90,83,B,6
+Sorin-Biomedica C.R.M.,ICV0079,MiniSwing DR1,DDDR,XS,VS-1 UNI/BI,VS-1 UNI/BI,#2,PR,PI+100,90,83,B,6.5
+Sorin-Biomedica C.R.M.,ICV0080,MiniSwing VDR1,VDDR,SC,"IS-1 UNI pace, UNI/BI sense",IS-1 UNI,#2,PR,PI+100,90,83,B,8.3
+Sorin-Biomedica C.R.M.,ICV0081,MiniSwing 200,SSIR,SB,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,PI+100,80,73,B,9.2
+Sorin-Biomedica C.R.M.,ICV0082,Living,DDDR,SA,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,PI+100,90,83,B,6.7
+Sorin-Biomedica C.R.M.,ICV0082A,Living 1 Plus,DDDR,SI,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,PI+100,90,83,B,6.7
+Sorin-Biomedica C.R.M.,ICV0095,Minidual 50,DDDC,VS,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,PI+100,90,83,B,6
+Sorin-Biomedica C.R.M.,ICV0221,MiniSwing DR1,DDDR,ES,IS-1 UNI/BI,VS-1 UNI/BI,#2,PR,PI+100,90,83,B,6.5
+Sorin-Biomedica C.R.M.,ICV0222,MiniSwing VDR1,VDDR,SC,"IS-1 UNI pace, UNI/BI sense",IS-1 UNI,#2,PR,PI+100,90,83,B,8.3
+Sorin-Biomedica C.R.M.,ICV0223,MiniSwing 200,SSIR,SB,,IS-1 UNI/BI,#2,PR,PI+100,80,73,B,9.2
+Sorin-Biomedica C.R.M.,ICV0224,MiniSwing 200C,SSIR,SG,,6 mm UNI,#2,PR,PI+100,80,73,B,9.2
+Sorin-Biomedica C.R.M.,ICV0225,MiniSwing 200C,SSIR,SG,,6 mm UNI,#2,PR,PI+100,80,73,B,9.2
+Sorin-Biomedica C.R.M.,ICV0226,Swing DR1 M,DDDR,SH,5 mm UNI,5 mm UNI,#2,PR,PI+100,90,83,B,6.5
+Sorin-Biomedica C.R.M.,ICV0227,Swing DR1 M,DDDR,SH,5 mm UNI,5 mm UNI,#2,PR,PI+100,90,83,B,6.5
+Sorin-Biomedica C.R.M.,ICV0328,Minidual 50S,DDDC,SI,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,PI+100,90,83,B,6.5
+Sorin-Biomedica C.R.M.,ICV0329,Minidual 50S,DDDC,SI,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,PI+100,90,83,B,6.5
+Sorin-Biomedica C.R.M.,ICV0341,MiniLiving S,VVIR,SN,,SOR Unipolar,#2,PR,PI+100,80,73,B,7.3
+Sorin-Biomedica C.R.M.,ICV0343,Elect D,DDDC,AS,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,PI+100,80,73,B,6.6
+Sorin-Biomedica C.R.M.,ICV0344,Elect D,DDDR,AS,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,PI+100,80,73,B,6.6
+Sorin-Biomedica C.R.M.,ICV0345,MiniLiving D,DDDR,SM,SOR Unipolar,SOR Unipolar,#2,PR,PI+100,80,73,B,5.5
+Sorin-Biomedica C.R.M.,ICV0509,MiniSwing VDR4,VDDR,SR,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,PI+100,90,83,B,8.3
+Sorin-Biomedica C.R.M.,ICV0510,MiniSwing VDR4,VDDR,SR,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,PI+100,90,83,B,8.3
+Sorin-Biomedica C.R.M.,ICV0511,Thesis,SSIC,SP,,IS-1 UNI/BI,#2,PR,PI+100,80,73,B,9.2
+Sorin-Biomedica C.R.M.,ICV0512,Thesis,SSIC,SP,,IS-1 UNI/BI,#2,PR,PI+100,80,73,B,9.2
+Sorin-Biomedica C.R.M.,ICV0513,Thesis C,SSIC,SZ,,6 mm UNI,#2,PR,PI+100,80,73,B,9.2
+Sorin-Biomedica C.R.M.,ICV0514,Thesis C,SSIC,SZ,,6 mm UNI,#2,PR,PI+100,80,73,B,9.2
+Sorin-Biomedica C.R.M.,ICV0528,MiniSwing DR1M,DDDR,SH,5 mm UNI,5 mm UNI,#2,PR,PI+100,90,83,B,6.5
+Sorin-Biomedica C.R.M.,ICV0529,MiniSwing DR1M,DDDR,SH,5 mm UNI,5 mm UNI,#2,PR,PI+100,90,83,B,6.5
+Sorin-Biomedica C.R.M.,ICV0645,Concord,DDD,SJ,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,PI+100,90,83,B,6.5
+Sorin-Biomedica C.R.M.,ICV0646,Concord,DDD,SJ,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,PI+100,90,83,B,6.5
+Sorin-Biomedica C.R.M.,ICV0647,Elect DR,DDDR,ES,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,PI+100,80,73,B,6.6
+Sorin-Biomedica C.R.M.,ICV0648,Elect DR,DDDR,ES,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,PI+100,80,73,B,6.6
+Sorin-Biomedica C.R.M.,ICV0701,Elect XS plus,SSIC,ST,,IS-1 UNI/BI,#2,PR,PI+100,80,73,B,13
+Sorin-Biomedica C.R.M.,ICV0702,Elect XS plus,SSIC,ST,,IS-1 UNI/BI,#2,PR,PI+100,80,73,B,13
+Sorin-Biomedica C.R.M.,ICV0703,Elect XS plus C,SSIC,SX,,6 mm UNI,#2,PR,PI+100,80,73,B,13
+Sorin-Biomedica C.R.M.,ICV0704,Elect XS plus C,SSIC,SX,,6 mm UNI,#2,PR,PI+100,80,73,B,13
+Sorin-Biomedica C.R.M.,ICV0705,Elect XS,SSIC,SK,,IS-1 UNI/BI,#2,PR,PI+100,80,73,B,13
+Sorin-Biomedica C.R.M.,ICV0706,Elect XS,SSIC,SK,,IS-1 UNI/BI,#2,PR,PI+100,80,73,B,13
+Sorin-Biomedica C.R.M.,ICV0707,Elect XS C,SSIC,SU,,6 mm UNI,#2,PR,PI+100,80,73,B,13
+Sorin-Biomedica C.R.M.,ICV0708,Elect XS C,SSIC,SU,,6 mm UNI,#2,PR,PI+100,80,73,B,13
+Sorin-Biomedica C.R.M.,ICV0709,Diapason,SSIC,Sy,,IS-1 UNI/BI,#2,PR,PI+100,80,73,B,13
+Sorin-Biomedica C.R.M.,ICV0710,Diapason,SSIC,Sy,,IS-1 UNI/BI,#2,PR,PI+100,80,73,B,13
+Sorin-Biomedica C.R.M.,ICV0711,Diapason C,SSIC,SW,,6 mm UNI,#2,PR,PI+100,80,73,B,13
+Sorin-Biomedica C.R.M.,ICV0712,Diapason C,SSIC,SW,,6 mm UNI,#2,PR,PI+100,80,73,B,13
+Sorin-Biomedica C.R.M.,ICV0738,Elect VDR,VDDR,FS,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,PI+100,80,73,B,8.2
+Sorin-Biomedica C.R.M.,ICV0739,Elect VDR,VDDR,FS,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,PI+100,80,73,B,8.2
+Sorin-Biomedica C.R.M.,ICV0740,Elect SR,DDDR,DS,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,PI+100,80,73,B,8.1
+Sorin-Biomedica C.R.M.,ICV0741,Elect SR,DDDR,DS,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,PI+100,80,73,B,8.1
+Sorin-Biomedica C.R.M.,ICV0811,Elect DR M,DDDR,HS,5 mm UNI,5 mm UNI,#2,PR,PI+100,80,73,B,6.6
+Sorin-Biomedica C.R.M.,ICV0812,Elect SR C,DDDR,IS,6 mm UNI/BI,6 mm UNI/BI,#2,PR,PI+100,80,73,B,8.1
+Sorin-Biomedica C.R.M.,ICV0813,Elect SR C,DDDR,IS,6 mm UNI/BI,6 mm UNI/BI,#2,PR,PI+100,80,73,B,8.1
+Sorin-Biomedica C.R.M.,LIT 111,LIT 111,VOO,,,6 mm UNI,#2,72,B,,,C,7
+Sorin-Biomedica C.R.M.,LIT 211,LIT 211,VVI,,,6 mm UNI,#2,72,66,83,77,C,5
+Sorin-Biomedica C.R.M.,LIT 212,LIT 212,VVI,,,Unipolar,#2,72,67,85,77,C,5
+Sorin-Biomedica C.R.M.,LIT 214H,LIT 214H,VVI,SHA,,6 mm UNI,#2,72,65,90,82,C,6.5
+Sorin-Biomedica C.R.M.,LIT 216,LIT 216,VVI,SFA,,6 mm UNI,#2,72,65,90,82,C,12
+Sorin-Biomedica C.R.M.,LIT 221,LIT 221,VVI,SMA,,6 mm UNI,#2,72,65,86,78,C,> 12
+Sorin-Biomedica C.R.M.,LIT 222,LIT 222,VVI,SLA,,6 mm UNI,#2,72,65,90,83,C,> 8
+Sorin-Biomedica C.R.M.,LIT 610,LIT 610,VVI,SEA,,6 mm UNI,#2,72,66,85,78,C,6.5
+Sorin-Biomedica C.R.M.,LIT 610/A,LIT 610/A,VVI,SEA,,6 mm UNI,#2,72,66,85,78,C,8
+Sorin-Biomedica C.R.M.,LIT 620,LIT 620,VVI,SGA,,6 mm UNI,#2,72,66,85,78,C,9
+Sorin-Biomedica C.R.M.,LIT 620/A,LIT 620/A,VVI,SGA,,6 mm UNI,#2,72,66,85,78,C,11
+Sorin-Biomedica C.R.M.,LIT 630,LIT 630,VVI,SDA,,6 mm UNI,#2,72,66,85,78,C,13
+Sorin-Biomedica C.R.M.,LIT 630/A,LIT 630/A,VVI,SDA,,6 mm UNI,#2,72,66,85,78,C,15
+Sorin-Biomedica C.R.M.,LIT 630/B,LIT 630/B,VVI,SDA,,6 mm UNI,#2,72,66,85,78,C,15
+Sorin-Biomedica C.R.M.,LIT 635/A,LIT 635/A,VVI,SIA,,IS-1 BI,#2,PR,PI+100,80,73,C,11.5
+Sorin-Biomedica C.R.M.,LIT 635/B,LIT 635/B,VVI,SOA,,IS-1 BI,#2,PR,PI+100,80,73,C,11.5
+Sorin-Biomedica C.R.M.,LIT 650/A,LIT 650/A,VVI,SUA,,6 mm UNI,#2,72,66,85,78,C,20
+Sorin-Biomedica C.R.M.,LIT 650/B,LIT 650/B,VVI,SRA,,6 mm UNI,#2,72,66,85,78,C,15
+Sorin-Biomedica C.R.M.,P0001,Orion 36,VVIC,SXP,,IS-1 UNI,#2,PR,PI+100,80,73,B,8.5
+Sorin-Biomedica C.R.M.,P0002,Orion 36/B,VVIC,SyP,,IS-1 BI,#2,PR,PI+100,80,73,B,8.5
+Sorin-Biomedica C.R.M.,P0003,Orion 36,VVIC,SXP,,IS-1 UNI,#2,PR,PI+100,80,73,B,8.5
+Sorin-Biomedica C.R.M.,P0004,Physiocor 400T,DDDC,AS,IS-1 BI,IS-1 UNI,#2,PR,PI+100,90,83,B,5
+Sorin-Biomedica C.R.M.,P0007,Swing 100/C,SSIR,CS,,6 mm UNI,#2,PR,PI+100,80,73,B,7.2
+Sorin-Biomedica C.R.M.,P0040,Physiocor 400T,DDDC,DS,IS-1 UNI,IS-1 UNI,#2,PR,PI+100,90,83,B,5
+Sorin-Biomedica C.R.M.,P0045,Orion 65/C,SSIC,,,6 mm UNI,#2,PR,PI+100,80,73,B,8.5
+Sorin-Biomedica C.R.M.,P0048,Newcor 50,DDDC,GS,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,PI+100,90,83,B,7.2
+Sorin-Biomedica C.R.M.,P0059,Minior 100,SSIC,KS,,IS-1 UNI/BI,#2,PR,PI+100,80,73,B,6
+Sorin-Biomedica C.R.M.,P0069,Theorema 90/C,SSIC,NS,,6 mm UNI,#2,PR,PI+100,80,73,B,7.3
+Sorin-Biomedica C.R.M.,P0069,Theorema 90,SSIC,STP,,IS-1 UNI/BI,#2,PR,PI+100,80,73,B,7.3
+Sorin-Biomedica C.R.M.,P0074,Swing VDR1,VDDR,LS,"IS-1 UNI pace, UNI/BI sense",IS-1 UNI,#2,PR,PI+100,90,83,B,8
+Sorin-Biomedica C.R.M.,P0076,Swing DR1,DDDR,ES,VS-1 UNI/BI,VS-1 UNI/BI,#2,PR,PI+100,90,83,B,6.5
+Sorin-Biomedica C.R.M.,P0077,Swing 200,SSIR,FS,,IS-1 UNI/BI,#2,PR,PI+100,80,73,B,6.5
+Sorin-Biomedica C.R.M.,P0117,LIT 636/A,VVI,HS,,IS-1 BI,#2,70,,,,C,8.5
+Sorin-Biomedica C.R.M.,P0119,LIT 636/B,VVI,IS,,IS-1 BI,#2,70,,,,C,8.5
+Sorin-Biomedica C.R.M.,P0122,LIT 636/A,VVI,HS,,IS-1 BI,#2,70,,,,C,8.5
+Sorin-Biomedica C.R.M.,P0151,Swing 100,SSIR,SUP,,IS-1 UNI,#2,PR,PI+100,80,73,B,7.2
+Sorin-Biomedica C.R.M.,P0155,Swing 100/B,SSIR,SVP,,IS-1 BI,#2,PR,PI+100,80,73,B,7.2
+Sorin-Biomedica C.R.M.,P0159,Swing 100,SSIR,SUP,,IS-1 UNI,#2,PR,PI+100,80,73,B,7.2
+Sorin-Biomedica C.R.M.,P0163,Orion 65,SSIC,,,IS-1 UNI,#2,PR,PI+100,80,73,B,8.5
+Sorin-Biomedica C.R.M.,P0164,Orion 65/B,SSIC,,,IS-1 BI,#2,PR,PI+100,80,73,B,8.5
+Sorin-Biomedica C.R.M.,P0166,Orion 65,SSIC,,,IS-1 UNI,#2,PR,PI+100,80,73,B,8.5
+Sorin-Biomedica C.R.M.,P0719,Swing 200/C,SSIR,MS,,6 mm UNI,#2,PR,PI+100,80,73,B,6.5
+Sorin-Biomedica C.R.M.,P0721,Newcor 50 M,DDDC,PS,5 mm UNI/BI,5 mm UNI/BI,#2,PR,PI+100,90,83,B,7.2
+Sorin-Biomedica C.R.M.,P0722,Minior 100C,SSIC,RS,,6 mm UNI,#2,PR,PI+100,80,73,B,6
+St. Jude Medical,5056,Verity ADx XL SC,SSIC,VV,None,VS-1B UNI/BI,#2,PR,PI+100 ms,98.6,86.3,C,16.1
+St. Jude Medical,5130,Affinity SR,SSIR,VT,None,VS-1B UNI/BI,#2,PR,PI+100 ms,98.6,86.3,C,13.6
+St. Jude Medical,5130L,Affinity SR,SSIR,VT,None,VS-1B UNI/BI,#2,PR,PI+100 ms,98.6,86.3,C,13.6
+St. Jude Medical,5130R,Affinity SR,SSIR,VT,None,VS-1B UNI/BI,#2,PR,PI+100 ms,98.6,86.3,C,13.6
+St. Jude Medical,5131M/S,Affinity SR,SSIR,VT,None,5/6 mm UNI,#2,PR,PI+100 ms,98.6,86.3,C,8.6
+St. Jude Medical,5132L,Affirmity SR,SSIR,VT,None,VS-1B UNI/BI,#2,PR,PI+100 ms,98.6,86.3,C,13.6
+St. Jude Medical,5132R,Affirmity SR,SSIR,VT,None,VS-1B UNI/BI,#2,PR,PI+100 ms,98.6,86.3,C,13.6
+St. Jude Medical,5133M/S,Affirmity SR,SSIR,VT,None,5/6 mm UNI,#2,PR,PI+100 ms,98.6,86.3,C,8.6
+St. Jude Medical,5136,Integrity µ SR,SSIR,VT,None,VS-1 UNI/BI,#2,PR,PI+100 ms,98.6,86.3,C,
+St. Jude Medical,5138,Affirmity µ SR,SSIR,VT,None,VS-1 UNI/BI,,PR,PI+100 ms,98.6,86.3,C,6.3
+St. Jude Medical,5142,Integrity SR,SSIR,VT,None,VS-1B UNI/BI,#2,PR,PI+100 ms,98.6,86.3,C,13.6
+St. Jude Medical,5156,Verity ADx XL SR,SSIR,VV,None,VS-1B UNI/BI,#2,PR,PI+100 ms,98.6,86.3,C,16.1
+St. Jude Medical,5157M/S,Verity ADx XL SR,SSIR,VV,None,5/6 mm UNI,#2,PR,PI+100 ms,98.6,86.3,C,14.1
+St. Jude Medical,5160,Integrity ADx SR,SSIR,VV,None,VS-1 UNI/BI,#2,PR,PI+100 ms,98.6,86.3,C,9
+St. Jude Medical,5172,Identity SR,SSIR,VV,None,VS-1 UNI/BI,#2,PR,PI+100 ms,98.6,86.3,C,
+St. Jude Medical,5174,Fidelity SR,SSIR,VV,None,VS-1 UNI/BI,#2,PR,PI+100 ms,98.6,86.3,C,9.1
+St. Jude Medical,5180,Identity ADx SR,SSIR,VV,None,VS-1 UNI/BI,#2,PR,PI+100 ms,98.6,86.3,C,9
+St. Jude Medical,5184,Fidelity ADx SR,SSIR,VV,None,VS-1 UNI/BI,#2,PR,PI+100 ms,98.6,86.3,C,9
+St. Jude Medical,5226,Entity DC,DDDC,VT,VS-1B UNI/BI,VS-1B UNI/BI,#2,PR,PI+100 ms,98.6,86.3,C,10.1
+St. Jude Medical,5226L,Entity DC,DDDC,VT,VS-1B UNI/BI,VS-1B UNI/BI,#2,PR,PI+100 ms,98.6,86.3,C,10.1
+St. Jude Medical,5226R,Entity DC,DDDC,VT,VS-1B UNI/BI,VS-1B UNI/BI,#2,PR,PI+100 ms,98.6,86.3,C,10.1
+St. Jude Medical,5230,Affinity DC,DDDC,VT,VS-1B UNI/BI,VS-1B UNI/BI,#2,PR,PI+100 ms,98.6,86.3,C,10.1
+St. Jude Medical,5230L,Affinity DC,DDDC,VT,VS-1B UNI/BI,VS-1B UNI/BI,#2,PR,PI+100 ms,98.6,86.3,C,10.1
+St. Jude Medical,5230R,Affinity DC,DDDC,VT,VS-1B UNI/BI,VS-1B UNI/BI,#2,PR,PI+100 ms,98.6,86.3,C,10.1
+St. Jude Medical,5231M/S,Affinity DC,DDDC,VT,5/6 mm UNI,5/6 mm UNI,#2,PR,PI+100 ms,98.6,86.3,C,6.3
+St. Jude Medical,5232L,Affirmity DC,DDDC,VT,VS-1B UNI/BI,VS-1B UNI/BI,#2,PR,PI+100 ms,98.6,86.3,C,10.1
+St. Jude Medical,5232R,Affirmity DC,DDDC,VT,VS-1B UNI/BI,VS-1B UNI/BI,#2,PR,PI+100 ms,98.6,86.3,C,10.1
+St. Jude Medical,5233M/S,Affirmity DC,DDDC,VT,5/6 mm UNI,5/6 mm UNI,#2,PR,PI+100 ms,98.6,86.3,C,
+St. Jude Medical,5256,Verity ADx XL DC,DDDC,VV,VS-1B UNI/BI,VS-1B UNI/BI,#2,PR,PI+100 ms,98.6,86.3,C,12.3
+St. Jude Medical,5286,Identity ADx XL DC,DDDC,VV,VS-1B UNI/BI,VS-1B UNI/BI,#2,PR,PI+100 ms,98.6,86.3,C,12.3
+St. Jude Medical,5326,Entity DR,DDDR,VT,VS-1B UNI/BI,VS-1B UNI/BI,#2,PR,PI+100 ms,98.6,86.3,C,10.1
+St. Jude Medical,5326L,Entity DR,DDDR,VT,VS-1B UNI/BI,VS-1B UNI/BI,#2,PR,PI+100 ms,98.6,86.3,C,10.1
+St. Jude Medical,5326R,Entity DR,DDDR,VT,VS-1B UNI/BI,VS-1B UNI/BI,#2,PR,PI+100 ms,98.6,86.3,C,10.1
+St. Jude Medical,5330,Affinity DR,DDDR,VT,VS-1B UNI/BI,VS-1B UNI/BI,#2,PR,PI+100 ms,98.6,86.3,C,10.1
+St. Jude Medical,5330L,Affinity DR,DDDR,VT,VS-1B UNI/BI,VS-1B BI,#2,PR,PI+100 ms,98.6,86.3,C,
+St. Jude Medical,5330R,Affinity DR,DDDR,VT,VS-1B UNI/BI,VS-1B UNI/BI,#2,PR,PI+100 ms,98.6,86.3,C,
+St. Jude Medical,5331M/S,Affinity DR,DDDR,VT,5/6 mm UNI,5/6 mm UNI,#2,PR,PI+100 ms,98.6,86.3,C,6.1
+St. Jude Medical,5332L,Affirmity DR,DDDR,VT,VS-1B UNI/BI,VS-1B UNI/BI,#2,PR,PI+100 ms,98.6,86.3,C,10.1
+St. Jude Medical,5332R,Affirmity DR,DDDR,VT,VS-1B UNI/BI,VS-1B UNI/BI,#2,PR,PI+100 ms,98.6,86.3,C,10.1
+St. Jude Medical,5333M/S,Affirmity DR,DDDR,VT,5/6 mm UNI,5/6 mm UNI,#2,PR,PI+100 ms,98.6,86.3,C,6.8
+St. Jude Medical,5336,Integrity micro DR,DDDR,VT,VS-1 UNI/BI,VS-1 UNI/BI,#2,PR,PI+100 ms,98.6,86.3,C,
+St. Jude Medical,5338,Affirmity µ DR,DDDR,VT,VS-1 UNI/BI,VS-1 UNI/BI,#2,PR,PI+100 ms,98.6,86.3,C,6.1
+St. Jude Medical,5342,Integrity DR,DDDR,VT,VS-1B UNI/BI,VS-1B UNI/BI,#2,PR,PI+100 ms,98.6,86.3,C,10.1
+St. Jude Medical,5346,Integrity DR,DDDR,VT,VS-1B UNI/BI,VS-1B UNI/BI,#2,PR,PI+100 ms,98.6,86.3,C,
+St. Jude Medical,5348,Affirmity DR+,DDDR,VT,VS-1B UNI/BI,VS-1B UNI/BI,#2,PR,PI+100 ms,98.6,86.3,C,10.1
+St. Jude Medical,5356,Verity ADx XL DR,DDDR,VV,VS-1B UNI/BI,VS-1B UNI/BI,#2,PR,PI+100 ms,98.6,86.3,C,12.3
+St. Jude Medical,5357M/S,Verity ADx XL DR,DDDR,VV,5/6 mm UNI,5/6 mm UNI,#2,PR,PI+100 ms,98.6,86.3,C,11.1
+St. Jude Medical,5360,Integrity ADx DR,DDDR,VV,VS-1 UNI/BI,VS-1 UNI/BI,#2,PR,PI+100 ms,98.6,86.3,C,7.3
+St. Jude Medical,5366,Integrity ADx XL DR,DDDR,VV,VS-1B UNI/BI,VS-1B UNI/BI,#2,PR,PI+100 ms,98.6,86.3,C,12.3
+St. Jude Medical,5368,Fidelity DR,DDDR,VV,VS-1 UNI/BI,VS-1 UNI/BI,#2,PR,PI+100 ms,98.6,86.3,C,7.3
+St. Jude Medical,5370,Identity DR,DDDR,VV,VS-1 UNI/BI,VS-1 UNI/BI,#2,PR,PI+100 ms,98.6,86.3,C,
+St. Jude Medical,5372,Identity DR,DDDR,VV,VS-1 UNI/BI,VS-1 UNI/BI,#2,PR,PI+100 ms,98.6,86.3,C,
+St. Jude Medical,5374,Fidelity DR+,DDDR,VV,VS-1 UNI/BI,VS-1 UNI/BI,#2,PR,PI+100 ms,98.6,86.3,C,7.3
+St. Jude Medical,5376,Identity XL DR,DDDR,VV,VS-1B UNI/BI,VS-1B UNI/BI,#2,PR,PI+100 ms,98.6,86.3,C,
+St. Jude Medical,5378,Fidelity XL DR,DDDR,VT,VS-1B UNI/BI,VS-1B UNI/BI,#2,PR,PI+100 ms,98.6,86.3,C,12.6
+St. Jude Medical,5380,Identity ADX DR,DDDR,VV,VS-1 UNI/BI,VS-1 UNI/BI,#2,PR,PI+100 ms,98.6,86.3,C,
+St. Jude Medical,5382,Victory AF DR,DDDR,VV,VS-1 UNI/BI,VS-1 UNI/BI,#2,PR,PI+100 ms,98.6,86.3,C,7.3
+St. Jude Medical,5384,Fidelity ADx DR,DDDR,VV,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,PI +100 ms,98.6,86.3,C,6.8
+St. Jude Medical,5386,Identity ADX XLR DR,DDDR,VV,VS-1B UNI/BI,VS-1B UNI/BI,#2,PR,PI+100 ms,98.6,86.3,C,
+St. Jude Medical,5388,Fidelity ADx XL DR,DDDR,VV,3.2 mm LP UNI/BI (IS-1 Compatible),3.2 mm LP UNI/BI (IS-1 Compatible),#2,PR,PI +100 ms,98.6,86.3,C,12.3
+St. Jude Medical,5430,Affinity VDR,VDDR,VT,VS-1B UNI/BI,VS-1B UNI/BI,#2,PR,PI+100 ms,98.6,86.3,C,13.6
+St. Jude Medical,5430i,Affinity VDR,VDDR,VT,SJ4,SJ4,#2,PR,PI +100 ms,98.6,86.3,C,13.6
+St. Jude Medical,5432,Affinity VDR,VDDR,VT,IS-1 Comp,3.2 mm LP UNI/BI (IS-1 Compatible),#2,PR,PI +100 ms,98.6,86.3,C,13.6
+St. Jude Medical,5432i,Affirmity VDR,VDDR,VT,Quad programmable,Quad programmable,#2,PR,PI +100 ms,98.6,86.3,C,13.6
+St. Jude Medical,5456,Verity ADx XL VDR,VDDR,VV,VS-1B UNI/BI,VS-1B UNI/BI,#2,PR,PI+100 ms,98.6,86.3,C,15.1
+St. Jude Medical,5456i,Verity ADx XL VDR,VDDR,VV,SJ4,SJ4,#2,PR,PI+100 ms,98.6,86.3,C,15.1
+St. Jude Medical,5480,Identity ADx VDR,VDDR,VV,VS-1 UNI/BI,VS-1 UNI/BI,#2,PR,PI+100 ms,98.6,86.3,C,8.5
+St. Jude Medical,5610,Victory SR,SSIR,VW,None,IS-1 UNI/BI,#2,PR,PI +100 ms,98.6,86.3,C,10.1
+St. Jude Medical,5612,Emprise SR,SSIR,VW,None,IS-1 UNI/BI,#2,PR,PI +100 ms,98.6,86.3,C,10.1
+St. Jude Medical,5620,Zephyr SR,SSIR,VW,None,IS-1 UNI/BI,#2,PR,PI +100 ms,98.6,86.3,C,10.1
+St. Jude Medical,5622,Emprise SR+,SSIR,VW,None,IS-1 UNI/BI,#2,PR,PI +100 ms,98.6,86.3,C,10.1
+St. Jude Medical,5626,Zephyr XL SR,SSIR,VW,None,3.2 mm LP UNI/BI (IS-1 Compatible),#2,PR,PI +100 ms,98.6,86.3,C,18.1
+St. Jude Medical,5628,Emprise XL SR+,SSIR,VW,None,3.2 mm LP UNI/BI (IS-1 Compatible),#2,PR,PI +100 ms,98.6,86.3,C,18.1
+St. Jude Medical,5810,Victory DR,DDDR,VW,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,PI +100 ms,98.6,86.3,C,7.2
+St. Jude Medical,5812,Emprise DR,DDDR,VW,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,PI +100 ms,98.6,86.3,C,7.2
+St. Jude Medical,5816,Victory XL DR,DDDR,VW,3.2 mm LP UNI/BI (IS-1 Compatible),,#2,PR,PI +100 ms,98.6,86.3,C,13
+St. Jude Medical,5818,Emprise XL DR,DDDR,VW,3.2 mm LP UNI/BI (IS-1 Compatible),,#2,PR,PI +100 ms,98.6,86.3,C,13
+St. Jude Medical,5820,Zephyr DR,DDDR,VW,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,PI +100 ms,98.6,86.3,C,7.2
+St. Jude Medical,5822,Emprise DR+,DDDR,VW,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,PI +100 ms,98.6,86.3,C,7.2
+St. Jude Medical,5826,Zephyr XL DR,DDDR,VW,3.2 mm LP UNI/BI (IS-1 Compatible),3.2 mm LP UNI/BI (IS-1 Compatible),#2,PR,PI +100 ms,98.6,86.3,C,13
+St. Jude Medical,5828,Emprise XL DR+,DDDR,VW,3.2 mm LP UNI/BI (IS-1 Compatible),3.2 mm LP UNI/BI (IS-1 Compatible),#2,PR,PI +100 ms,98.6,86.3,C,13
+St. Jude Medical,PM1110,Accent SR,SSIR,HI,None,IS-1 UNI/BI,#2,PR,PI +100 ms,100,85,Voltage at RRT 2.6 V,12.9
+St. Jude Medical,PM1114,Nuance VR,VVI,HI,None,IS-1 UNI/BI,#2,PR,PI +100 ms,100,85,Voltage at RRT 2.6 V,12.9
+St. Jude Medical,PM1122,Accent ST,SR,HI,None,,#2,PR,,,,Voltage at RRT 2.6 V,
+St. Jude Medical,PM1124,Accent MRI,SR,HM MRI,None,,#2,PR,,,,Voltage at RRT 2.6 V,
+St. Jude Medical,PM1126,Accent ST MRI,SR,HM MRI,None,,#2,PR,,,,Voltage at RRT 2.6 V,
+St. Jude Medical,PM1210,Accent SR RF,SSIR,HI,None,IS-1 UNI/BI,#2,PR,PI +100 ms,100,85,Voltage at RRT 2.6 V,12.5
+St. Jude Medical,PM1214,Nuance VR RF,VVI,HI,None,IS-1 UNI/BI,#2,PR,PI +100 ms,100,85,Voltage at RRT 2.6 V,12.5
+St. Jude Medical,PM1222,Accent ST,SR,HI,None,,#2,PR,,,,Voltage at RRT 2.6 V,
+St. Jude Medical,PM1224,Accent MRI,SR,HM MRI,None,,#2,PR,,,,Voltage at RRT 2.6 V,
+St. Jude Medical,PM1226,Accent ST MRI,SR,HM MRI,None,,#2,PR,,,,Voltage at RRT 2.6 V,
+St. Jude Medical,PM2110,Accent DR,DDDR,HI,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,PI +100 ms,100,85,Voltage at RRT 2.6 V,9.2
+St. Jude Medical,PM2112,Accent DR,DR,HI,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,,,,Voltage at RRT 2.6 V,
+St. Jude Medical,PM2114,Nuance DR,DDD,HI,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,PI +100 ms,100,85,Voltage at RRT 2.6 V,9.2
+St. Jude Medical,PM2122,Accent ST,DR,HI,,,#2,PR,,,,Voltage at RRT 2.6 V,
+St. Jude Medical,PM2124,Accent MRI,DR,HM MRI,,,#2,PR,,,,Voltage at RRT 2.6 V,
+St. Jude Medical,PM2126,Accent ST MRI,DR,HM MRI,,,#2,PR,,,,Voltage at RRT 2.6 V,
+St. Jude Medical,PM2210,Accent DR RF,DDDR,HI,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,PI +100 ms,100,85,Voltage at RRT 2.6 V,9
+St. Jude Medical,PM2212,Accent DR RF,DDDR,HI,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,PI +100 ms,100,85,Voltage at RRT 2.6 V,9
+St. Jude Medical,PM2214,Nuance DR RF,DDD,HI,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,PI +100 ms,100,85,Voltage at RRT 2.6 V,9
+St. Jude Medical,PM2222,Accent ST,DR,HI,,,#2,PR,,,,Voltage at RRT 2.6 V,
+St. Jude Medical,PM2224,Accent MRI,DR,HM MRI,,,#2,PR,,,,Voltage at RRT 2.6 V,
+St. Jude Medical,PM2226,Accent ST MRI,DR,HM MRI,,,#2,PR,,,,Voltage at RRT 2.6 V,
+Telectronics Pacing Systems (St. Jude Medical),120,,VVI,None,None,5 mm UNI,#6,74,67,74,67,C,
+Telectronics Pacing Systems (St. Jude Medical),1202,Meta MV,SSIR,TWI,None,VS-1A BI,#2,PR,PR,99,< 93/80,"Xa, 6 ppm magnet",
+Telectronics Pacing Systems (St. Jude Medical),1204,Meta II,SSIR,tAW,None,VS-1B UNI/BI,#2,PR,PR,100,82.5/80,Xa,
+Telectronics Pacing Systems (St. Jude Medical),1204H,Meta II,SSIR,tVM,None,VS-1A UNI/BI,#2,PR,PR,100,82.5/80,Xa,
+Telectronics Pacing Systems (St. Jude Medical),1206,Meta III,SSIR,tQZ,None,VS-1A UNI/BI,#2,PR,PR,100,82.5/80,Xa,
+Telectronics Pacing Systems (St. Jude Medical),1206E,Meta III,SSIR,tLM,None,6 mm Linear UNI/BI,#2,PR,PR,100,82.5/80,Xa,
+Telectronics Pacing Systems (St. Jude Medical),1206M,Meta III,SSIR,tMM,None,5 mm Bif UNI/BI,#2,PR,PR,100,82.5/80,Xa,
+Telectronics Pacing Systems (St. Jude Medical),120B,,VVI,None,None,5 mm UNI,#6+SD,74,67,74,67,C,
+Telectronics Pacing Systems (St. Jude Medical),1210,Sentri,SSIR,TCW,None,VS-1B UNI/BI,#2,PR,PR,100,82.5/80,Xa,
+Telectronics Pacing Systems (St. Jude Medical),1210H,Sentri,SSIR,tWM,None,VS-1A UNI/BI,#2,PR,PR,100,82.5/80,Xa,
+Telectronics Pacing Systems (St. Jude Medical),1230,Meta DDD,DDDC/ VVIR,TMZ,VS-1B UNI/BI,VS-1B UNI/BI,#2,PR,PR,> 85 (VOO),< 78/63 (VOO),C,
+Telectronics Pacing Systems (St. Jude Medical),1250,Meta DDDR,DDDR,TZV,VS-1B UNI/BI,VS-1B UNI/BI,#2,PR,PR,> 85 (VOO),< 78/63 (VOO),C,
+Telectronics Pacing Systems (St. Jude Medical),1250H,Meta DDDR,DDDR,TQM,VS-1A UNI/BI,VS-1A UNI/BI,#2,PR,PR,> 85 (VOO),< 78/63 (VOO),C,
+Telectronics Pacing Systems (St. Jude Medical),1254,Meta DDDR,DDDR,TBM,VS-1A UNI/BI,VS-1A BI,#2,PR,PR,> 85 (VOO),< 78/63 (VOO),C,
+Telectronics Pacing Systems (St. Jude Medical),1256,Meta DDDR,DDDR,tAL,VS-1A UNI/BI,VS-1A BI,#2,PR,PR,100,82.5/80,C,
+Telectronics Pacing Systems (St. Jude Medical),1256D,Meta DDDR,DDDR,tIL,VS-1B UNI/BI,VS-1B BI,#2,PR,PR,100,82.5/80,C,
+Telectronics Pacing Systems (St. Jude Medical),1256R,Meta DDDR,DDDR,tEL,VS-1 UNI/BI,VS-1 BI,#2,PR,PR,100,82.5/80,C,
+Telectronics Pacing Systems (St. Jude Medical),129,,VOO,None,None,5 mm UNI,#6+SD,74,67,,,C,
+Telectronics Pacing Systems (St. Jude Medical),130BE,,VVI,None,None,5 mm UNI,#6+SD,74,67,74,67,C,
+Telectronics Pacing Systems (St. Jude Medical),140B,,VVI,None,None,5 mm UNI,#6+SD,74,67,74,67,C,
+Telectronics Pacing Systems (St. Jude Medical),147,Optima,VVI,TAI,None,5/6 mm UNI,#2,72,65,95,84,C,
+Telectronics Pacing Systems (St. Jude Medical),147B,Optima,VVI,TAI,None,5/6 mm UNI,#2,72,65,95,84,C,
+Telectronics Pacing Systems (St. Jude Medical),147S,Optima,VVI,TAI(Ha),None,5/6 mm UNI,#2,72,65,95,84,C,
+Telectronics Pacing Systems (St. Jude Medical),149,,VOO,None,None,5 mm UNI,#6+SD,74,67,,,C,
+Telectronics Pacing Systems (St. Jude Medical),150B,,VVI,None,None,5 mm UNI,#6+SD,74,67,74,67,C,
+Telectronics Pacing Systems (St. Jude Medical),150L,Monolithic 9V,VVI,None,None,5 mm UNI,#6+SD,74,67,74,67,C,
+Telectronics Pacing Systems (St. Jude Medical),155,Optima MP,SSIM,TBP,None,5/6 mm UNI,#2,PR,PR,99,85/60,"C, 14 ppm magnet, 20% PR, Gb",
+Telectronics Pacing Systems (St. Jude Medical),155S,Optima MP,SSIM,TBP(Ha),None,5/6 mm UNI,#2,PR,PR,99,85/60,"C, 14 ppm magnet, 20% PR, Gb",
+Telectronics Pacing Systems (St. Jude Medical),158,Optima MP II,SSIM,TKT,None,3.2 mm UNI,#2,PR,PR,99,85/60,"C, 14 ppm magnet, 20% PR, Gb",
+Telectronics Pacing Systems (St. Jude Medical),158B,Optima MP,SSIM,None,None,5/6 mm UNI,#2,PR,PR,99,85/60,"C, 14 ppm magnet, 20% PR, Gb",
+Telectronics Pacing Systems (St. Jude Medical),158C,Optima MP II,SSIM,TPV,None,VS-1B UNI,#2,PR,PR,99,85/60,"C, 14 ppm magnet, 20% PR, Gb",
+Telectronics Pacing Systems (St. Jude Medical),159,,VOO,None,None,5 mm UNI,#6+SD,74,67,,,"C, 7-9 ppm",
+Telectronics Pacing Systems (St. Jude Medical),160B,Slimline,VVI,None,None,5 mm UNI,#2,72,65,72,65,C,
+Telectronics Pacing Systems (St. Jude Medical),160B II,,VVI,None,None,5 mm UNI,#2,72,65,72,65,C,
+Telectronics Pacing Systems (St. Jude Medical),161,Slimline,VVI,None,None,5/6 mm UNI,#2,72,65,72,65,C,
+Telectronics Pacing Systems (St. Jude Medical),169,,VOO,None,None,5 mm UNI,#2,72,65,,,C,
+Telectronics Pacing Systems (St. Jude Medical),171,,VVIP,None,None,5/6 mm UNI,#2,PR,PR-10%,PR,PR-10%,"C, 10%",
+Telectronics Pacing Systems (St. Jude Medical),171E,,VVIP,None,None,5/6 mm UNI,#2,PR,PR-10%,PR,PR-10%,"C, 10%",
+Telectronics Pacing Systems (St. Jude Medical),173,,VVIP,None,None,5/6 mm UNI,#2,PR,PR-10%,PR,PR-10%,"C, 10%",
+Telectronics Pacing Systems (St. Jude Medical),174,(S/N < All 30000 pre-Optima),VVIP,TZP,None,5/6 mm UNI,#2,PR,PR-6%,95,84,"C, 6% programmmed, 10 ppm mag.",
+Telectronics Pacing Systems (St. Jude Medical),174S,Optima,VVIP,TZP,None,5/6 mm UNI,#2,PR,PR-6%,95,84,"C, 6% programmmed, 10 ppm mag.",
+Telectronics Pacing Systems (St. Jude Medical),174SQ,,VVIP,None,None,5/6 mm UNI,#2,PR,Pr 5%,95,85,"C, 5% programmmed",
+Telectronics Pacing Systems (St. Jude Medical),181,,VVI,None,None,5/6 mm UNI,#2,72,65,72,65,C,
+Telectronics Pacing Systems (St. Jude Medical),182,Slimline,VVI,None,None,5/6 mm UNI,#2,72,65,72,65,C,
+Telectronics Pacing Systems (St. Jude Medical),183,Slimline,VVI,None,None,5/6 mm UNI,#2,72,65,72,65,C,
+Telectronics Pacing Systems (St. Jude Medical),2251,Autima,DDD,None,5 mm UNI,5 mm UNI,#2,PR,PR-8%,Lb,Lb,"Lb, 8%",
+Telectronics Pacing Systems (St. Jude Medical),2291,Autima II,DDD,None,5 mm UNI,5/6 mm UNI,#2,PR,PR-8%,90 (DOO),80 (DOO),"D, 10 ppm magnet",
+Telectronics Pacing Systems (St. Jude Medical),247,Optima,VVI,TTI,None,5 mm Bif BI,#2,70,70,99,85/60,"C, 14 ppm magnet, 20% PR, Gb",
+Telectronics Pacing Systems (St. Jude Medical),250B,,VVI,None,None,5 mm Bif BI,#2,74,67,74,67,C,
+Telectronics Pacing Systems (St. Jude Medical),255,Optima MP,SSIM,TBD or TEP,None,5 mm Bif BI,#2,PR,PR,99,85/60,"C, 14 ppm magnet, 20% PR, Gb",
+Telectronics Pacing Systems (St. Jude Medical),258,Optima MP II,SSIM,TJT,None,3.2 mm BI,#2,PR,PR,99,85/60,"C, 14 ppm magnet, 20% PR, Gb",
+Telectronics Pacing Systems (St. Jude Medical),258C,Optima MP II,SSIM,TQV,None,VS-1A BI,#2,PR,PR,99,85/60,"C, 14 ppm magnet, 20% PR, Gb",
+Telectronics Pacing Systems (St. Jude Medical),271E,Slimline,VVIP,None,None,5 mm Bif BI,#2,PR,PR-10%,PR,PR-10%,"C, 10%",
+Telectronics Pacing Systems (St. Jude Medical),158,Optima MP II,SSIM,TKT,None,3.2 mm UNI,#2,PR,PR,99,85/60,"C, 14 ppm magnet, 20% PR, Gb",
+Telectronics Pacing Systems (St. Jude Medical),274,Optima,VVIP,TWQ,None,5 mm Bif BI,#2,PR,PR-6%,95,84,"C, 6%",
+Telectronics Pacing Systems (St. Jude Medical),274SQ,(square can pre-Optima),VVIP,None,None,5 mm Bif BI,#2,PR,PR-4%,95,85,"C, 4% programmmed",
+Telectronics Pacing Systems (St. Jude Medical),280,Slimline,VVI,None,None,5 mm Bif BI,#2,72,65,72,65,C,
+Telectronics Pacing Systems (St. Jude Medical),4151,PASAR,AATMP,None,5 mm Bif BI,None,#2,,,(Eb),(Fb),,
+Telectronics Pacing Systems (St. Jude Medical),4171,PASAR,AADMP,A,5 mm Bif BI,None,#2,,,(Cb),(Db),,
+Telectronics Pacing Systems (St. Jude Medical),4172,PASAR,AADMP,B,5 mm Bif BI,None,#2,,,(Cb),(Db),,
+Telectronics Pacing Systems (St. Jude Medical),5241,Optima SPT,VVIC,THV,None,3.2 mm UNI,#2,PR,PR,99,85/60,"C, 14 ppm magnet, 20% PR, Gb",
+Telectronics Pacing Systems (St. Jude Medical),5242,Optima SPT,VVIC,TIV,None,3.2 mm BI,#2,PR,PR,99,85/60,"C, 14 ppm magnet, 20% PR, Gb",
+Telectronics Pacing Systems (St. Jude Medical),5243,Optima SPT,VVIC,TJV,None,5/6 mm UNI,#2,PR,PR,99,85/60,"C, 14 ppm magnet, 20% PR, Gb",
+Telectronics Pacing Systems (St. Jude Medical),5281,Optima MPT,SSIC,THP,None,5/6 mm UNI,#2,PR,PR,99,85/60,"C, 14 ppm magnet, 20% PR, Gb",
+Telectronics Pacing Systems (St. Jude Medical),5281A,Optima MPT II,SSIC,TWT,None,3.2 mm UNI,#2,PR,PR,99,85/60,"C, 14 ppm magnet, 20% PR, Gb",
+Telectronics Pacing Systems (St. Jude Medical),5281B,Optima MPT II,SSIC,TVT,None,5/6 mm UNI,#2,PR,PR,99,85/60,"C, 14 ppm magnet, 20% PR, Gb",
+Telectronics Pacing Systems (St. Jude Medical),5281C,Optima MPT II,SSIC,TTV,None,VS-1B UNI,#2,PR,PR,99,85/60,"C, 14 ppm magnet, 20% PR, Gb",
+Telectronics Pacing Systems (St. Jude Medical),5281D,Optima MPT III,SSIC,tLZ,None,VS-1B UNI,#2,PR,PR,99,95/85,"C, 4 ppm magnet, 20% PR, Gb",
+Telectronics Pacing Systems (St. Jude Medical),5281E,Optima MPT III,SSIC,tKW,None,6 mm UNI,#6,PR,PR,99,95/85,"C, 4 ppm magnet, 20% PR, Gb",
+Telectronics Pacing Systems (St. Jude Medical),5282,Optima MPT,SSIC,TIP,None,5 mm Bif BI,#2,PR,PR,99,85/60,"C, 14 ppm magnet, 20% PR, Gb",
+Telectronics Pacing Systems (St. Jude Medical),5282A,Optima MPT II,SSIC,TLT,None,3.2 mm BI,#2,PR,PR,99,85/60,"C, 14 ppm magnet, 20% PR, Gb",
+Telectronics Pacing Systems (St. Jude Medical),5282C,Optima MPT II,SSIC,TVV,None,VS-1A BI,#2,PR,PR,99,85/60,"C, 14 ppm magnet, 20% PR, Gb",
+Telectronics Pacing Systems (St. Jude Medical),5281,Optima MPT,SSIC,THP,None,5/6 mm UNI,#2,PR,PR,99,85/60,"C, 14 ppm magnet, 20% PR, Gb",
+Telectronics Pacing Systems (St. Jude Medical),5281A,Optima MPT II,SSIC,TWT,None,3.2 mm UNI,#2,PR,PR,99,85/60,"C, 14 ppm magnet, 20% PR, Gb",
+Telectronics Pacing Systems (St. Jude Medical),5281B,Optima MPT II,SSIC,TVT,None,5/6 mm UNI,#2,PR,PR,99,85/60,"C, 14 ppm magnet, 20% PR, Gb",
+Telectronics Pacing Systems (St. Jude Medical),5281C,Optima MPT II,SSIC,TTV,None,VS-1B UNI,#2,PR,PR,99,85/60,"C, 14 ppm magnet, 20% PR, Gb",
+Telectronics Pacing Systems (St. Jude Medical),5281D,Optima MPT III,SSIC,tLZ,None,VS-1B UNI,#2,PR,PR,99,95/85,"C, 4 ppm magnet, 20% PR, Gb",
+Telectronics Pacing Systems (St. Jude Medical),5281E,Optima MPT III,SSIC,tKW,None,6 mm UNI,#6,PR,PR,99,95/85,"C, 4 ppm magnet, 20% PR, Gb",
+Telectronics Pacing Systems (St. Jude Medical),5282,Optima MPT ,SSIC,TIP,None,5 mm Bif BI,#2,PR,PR,99,85/60,"C, 14 ppm magnet, 20% PR, Gb",
+Telectronics Pacing Systems (St. Jude Medical),5282A,Optima MRT II,SSIC,TLT,None,3.2 mm BI,#2,PR,PR,99,85/60,"C, 14 ppm magnet, 20% PR, Gb",
+Telectronics Pacing Systems (St. Jude Medical),5282C,Optima MRT II,SSIC,TVV,None,VS-1A BI,#2,PR,PR,99,85/60,"C, 14 ppm magnet, 20% PR, Gb",
+Telectronics Pacing Systems (St. Jude Medical),5282D,Optima MPT III,SSIC,tKZ,None,VS-1A BI,#2,PR,PR,99,95/85,"C, 14 ppm magnet, 20% PR, Gb",
+Telectronics Pacing Systems (St. Jude Medical),5282E,Optima MPT III,SSIC,tJW,None,6 mm In-line BI,#6,PR,PR,99,95/85,"C, 14 ppm magnet, 20% PR, Gb",
+Telectronics Pacing Systems (St. Jude Medical),6230,Autima III,DDDC,TBQ,VS-1B UNI,VS-1B UNI,#2,PR,PR,95,90/84,,
+Telectronics Pacing Systems (St. Jude Medical),6291,Aurora,DDDC,TET,5/6 mm UNI (Early versions 5 mm Atrial only),5/6 mm UNI,#2,PR,PR (VVI),> 85 (VOO),80/63 (VOO),"A, magnet 80.3, paced 63",
+Telectronics Pacing Systems (St. Jude Medical),6292,Aurora,DDDC,THT,VS-1B UNI/BI Sensing VS-1 B UNI Pacing,VS-1B UNI/BI Sensing VS-1 B UNI Pacing,#2,PR,PR (VVI),> 85 (VOO),80/63 (VOO),"A, magnet 80.3, paced 63",
+Telectronics Pacing Systems (St. Jude Medical),8218,Reflex,SSIC,tCM,None,VS-1A UNI/BI,#6,PR,PR (SSI),> 85 (SOO),83/63 (SOO),C,
+Telectronics Pacing Systems (St. Jude Medical),8220,Reflex,SSIC,tZZ,None,VS-1B UNI/BI,#2,PR,PR (SSI),> 85 (SOO),83/63 (SOO),C,
+Telectronics Pacing Systems (St. Jude Medical),8220E,Reflex,SSIC,tTZ,None,6 mm Linear UNI/BI,#6,PR,PR (SSI),> 85 (SOO),83/63 (SOO),C,
+Telectronics Pacing Systems (St. Jude Medical),8222,Reflex DDD,DDDC,tWZ,VS-1 UNI/BI,VS-1 UNI/BI,#2,PR,PR (VVI),> 85 (VOO),80/63 (VOO),C,
+Telectronics Pacing Systems (St. Jude Medical),8223E,Reflex DDD,DDDC,tVW,6 mm UNI,6 mm UNI,#6,PR,PR (VVI),> 85 (VOO),80/63 (VOO),C,
+Telectronics Pacing Systems (St. Jude Medical),8224,Reflex DDD,DDDC,tHM,VS-1A UNI/BI,VS-1A UNI/BI,#2,PR,PR (VVI),> 85 (VOO),80/63 (VOO),C,
+Telectronics Pacing Systems (St. Jude Medical),8230,Simplex,VVIC,tVZ,None,VS-1B UNI/BI,#2,PR,PR (VVI),> 85 (VOO),80/63 (VOO),C,
+Telectronics Pacing Systems (St. Jude Medical),8232,Simplex,VVIC,tEM,None,VS-1A UNI/BI,#6,PR,PR (VVI),> 85 (VOO),80/63 (VOO),C,
+Telectronics Pacing Systems (St. Jude Medical),9221,Quadra,DDDC,tQT,VS-1B UNI/BI,VS-1B UNI/BI,#2,PR,PR,> 85 (VOO),80/63 (VOO),C,
+"Vitatron (Medtronic, Inc.)",101,Onyx,VVI,V101,None,5/6 mm UNI,#2,70,68,100,86,"F, Magnet only, J",8.0 @ 5.0 V
+"Vitatron (Medtronic, Inc.)",102,Geo 1 SSI,SSIC,VC,None,3.2 mm UNI/BI,#2,PR,PI+100 ms,100,95/86,"A, F",11.8 @ 2.5 V
+"Vitatron (Medtronic, Inc.)",104,Onyx,VVI,V104,None,3.2 mm LP BI,#2,70,68,100,86,"F, Magnet only, J",8.0 @ 5.0 V
+"Vitatron (Medtronic, Inc.)",105,Geo 1 SSI,SSIC,VC,None,5/6 mm UNI,#2,PR,PI+100 ms,100,95/86,"A, F",11.8 @ 2.5 V
+"Vitatron (Medtronic, Inc.)",108,Geo 1 SSI,SSIC,VC,None,IS-1 UNI/BI,#2,PR,PI+100 ms,100,95/86,"A, F",11.8 @ 2.5 V
+"Vitatron (Medtronic, Inc.)",111,Ceryx-1,VVIC,V111,None,5/6 mm UNI,#2,PR,PI+100 ms,100,86,F,10.0 @ 5.0 V
+"Vitatron (Medtronic, Inc.)",114,Ceryx-1,VVIC,V114,None,3.2 mm LP BI,#2,PR,PI+100 ms,100,86,F,10.0 @ 5.0 V
+"Vitatron (Medtronic, Inc.)",115,Vita S,SSIC,VCK,None,5/6 mm UNI,#2,PR,PR-10%,PR,PR-20%,E,15.9 @ 2.5 V
+"Vitatron (Medtronic, Inc.)",116,Vita S,SSIC,VCI,None,3.2 mm LP UNI/BI (IS-1 Compatible),#2,PR,PR-10%,PR,PR-20%,E,15.9 @ 2.5 V
+"Vitatron (Medtronic, Inc.)",121,Ceryx-1,VVIC,V121,None,5 mm UNI,#2,PR,PI+100 ms,100,86,F,11.1 @ 5.0 V
+"Vitatron (Medtronic, Inc.)",123,Ceryx-1,VVIC,V123,None,IS-1 UNI,#2,PR,PI+100 ms,100,86,F,11.1 @ 5.0 V
+"Vitatron (Medtronic, Inc.)",124,Ceryx-1,VVIC,V124,None,IS-1 BI,#2,PR,PI+100 ms,100,86,F,11.1 @ 5.0 V
+"Vitatron (Medtronic, Inc.)",126,Legacy II S,SSIC,VCB,None,3.2 mm LP UNI/BI (IS-1 Compatible),#2,PR,65 (SSI),85,65,Ra,7.9 @ 3.5 V
+"Vitatron (Medtronic, Inc.)",128,Legacy II S,SSIC,VCA,None,IS-1 UNI/BI,#2,PR,65 (SSI),85,65,Ra,7.9 @ 3.5 V
+"Vitatron (Medtronic, Inc.)",130,Vita,SSIC,VA,None,IS-1 UNI/BI,#2,PR,PI+20%,100 (Nb),91/83,"A, B",11.0 @ 3.8 V
+"Vitatron (Medtronic, Inc.)",140,Vita,VVIC,VA,None,IS-1 UNI/BI,#2,PR,PI+20%,100 (Nb),91/83,"A, B",11.0 @ 3.8 V
+"Vitatron (Medtronic, Inc.)",150,Legacy S,SSIC,VBJ,None,3.2 mm LP UNI/BI (IS-1 Compatible),#2,PR,PR-10%,PR,PR-20%,E,"12.2 @ 2.5 V, 5.8 @ 5.0 V"
+"Vitatron (Medtronic, Inc.)",151,Legacy S,SSIC,VBK,None,5/6 mm UNI,#2,PR,PR-10%,PR,PR-20%,E,"12.2 @ 2.5 V, 5.8 @ 5.0 V"
+"Vitatron (Medtronic, Inc.)",152,Legacy S,SSIC,VBL,None,5 mm Bif UNI/BI,#2,PR,PR-10%,PR,PR-20%,E,"12.2 @ 2.5 V, 5.8 @ 5.0 V"
+"Vitatron (Medtronic, Inc.)",201,Finesse,SSIC,V201,None,IS-1 UNI,#2,PR,PI+100 ms,100,86,F,8.6 @ 5.0 V
+"Vitatron (Medtronic, Inc.)",202,Finesse,SSIC,V202,None,IS-1 BI,#2,PR,PI+100 ms,100,86,F,8.6 @ 5.0 V
+"Vitatron (Medtronic, Inc.)",203,Ultra Finesse,SSIC,V203,None,IS-1 UNI,#2,PR,PI+100 ms,100,86,F,5.8 @ 2.5 V
+"Vitatron (Medtronic, Inc.)",204,Ultra Finesse,SSIC,V204,None,IS-1 BI,#2,PR,PI+100 ms,100,86,F,5.8 @ 2.5 V
+"Vitatron (Medtronic, Inc.)",205,Finesse Primo,VVIC,V205,None,IS-1 UNI,#2,PR,PI+100 ms,100,86,F,8.6 @ 2.5 V
+"Vitatron (Medtronic, Inc.)",206,Finesse Primo,VVIC,V206,None,IS-1 BI,#2,PR,PI+100 ms,100,86,F,8.6 @ 2.5 V
+"Vitatron (Medtronic, Inc.)",220,Jade II,SSIC,VB,None,IS-1 UNI/BI,#2,PR,PI+100 ms,100,95/86,"A, F",9.9 @ 2.5 V
+"Vitatron (Medtronic, Inc.)",220E,Jade II,SSI,VB,None,5/6 mm UNI,#2,PR,PI+100 ms,100,95/86,"A, F",9.9 @ 2.5 V
+"Vitatron (Medtronic, Inc.)",221,Jade II,SSIC,VB,None,5/6 mm UNI,#2,PR,PI+100 ms,100,95/86,"A, F",9.9 @ 2.5 V
+"Vitatron (Medtronic, Inc.)",230,Vita 2 SSI,SSIC,VC,None,IS-1 UNI/BI,#2,PR,PI+100 ms,100,95/86,"A, F",11.8 @ 2.5 V
+"Vitatron (Medtronic, Inc.)",232,Vita 2 SSI,SSIC,VC,None,3.2 mm UNI,#2,PR,PI+100 ms,100,95/86,"A, F",
+"Vitatron (Medtronic, Inc.)",235,Vita 2 SSI,SSIC,VC,None,5/6 mm UNI,#2,PR,PI+100 ms,100,95/86,"A, F",
+"Vitatron (Medtronic, Inc.)",310,Vita VVIR,VVIR,VB,None,IS-1 UNI/BI,#2,PR,PI+100 ms,100,95/86,"A, F",9.9 @ 2.5 V
+"Vitatron (Medtronic, Inc.)",311,Ceryx-3,SSIC,V311,None,5/6 mm UNI,#2,PR,PI+100 ms,100,86,F,10.0 @ 5.0 V
+"Vitatron (Medtronic, Inc.)",314,Ceryx-3,SSIC,V314,None,3.2 mm LP BI,#2,PR,PI+100 ms,100,86,F,10.0 @ 5.0 V
+"Vitatron (Medtronic, Inc.)",315,Vita VVIR,VVIR,V315,None,5/6 mm UNI,#2,PR,PI+100 ms,100,"95, 86","A, F",9.9 @ 2.5 V
+"Vitatron (Medtronic, Inc.)",321,Ceryx-3,SSIC,V321,None,5 mm UNI,#2,PR,PI+100 ms,100,86,F,11.1 @ 5.0 V
+"Vitatron (Medtronic, Inc.)",323,Ceryx-3,SSIC,V323,None,IS-1 UNI,#2,PR,PI+100 ms,100,86,F,11.1 @ 5.0 V
+"Vitatron (Medtronic, Inc.)",324,Ceryx-3,SSIC,V324,None,3.2 mm LP BI (IS-1 Compatible) ,#2,PR,PI+100 ms,100,86,F,11.1 @ 5.0 V
+"Vitatron (Medtronic, Inc.)",340,Jade 3 SSI,SSI(R),VC,None,IS-1 UNI/BI,#2,PR,PI+100 ms,100,"95, 86","A, F",11.8 @ 2.5 V
+"Vitatron (Medtronic, Inc.)",342,Jade 3 SSI,SSI(R),VC,None,3.2 mm UNI/BI,#2,PR,PI+100 ms,100,"95, 86","A, F",
+"Vitatron (Medtronic, Inc.)",345,Jade 3 SSI,SSI(R),VC,None,5/6 mm UNI,#2,PR,PI+100 ms,100,"95, 86","A, F",
+"Vitatron (Medtronic, Inc.)",400,Vitesse,VDDC,V400,None,IS-1 UNI Pacing UNI/BI IS-1 Sensing,#2,PR,PI+100 ms,100,"95, 86","A, F",7.5 @ 4.0 V
+"Vitatron (Medtronic, Inc.)",401,Onyx4,VVIC,V401,None,IS-1 UNI,#2,PR,PI+100 ms,100,86,F,11.1 @ 5.0 V
+"Vitatron (Medtronic, Inc.)",410,Vita VDD,VDDC,VB,None,IS-1 UNI/BI,#2,PR,PI+100 ms,100,"95, 86","A, F",9.9 @ 2.5 V
+"Vitatron (Medtronic, Inc.)",415,Visa SR,SSI,VCH,None,5/6 mm UNI,#2,PR,65 (SSI),85,65,Ra,8.2 @ 3.5 V
+"Vitatron (Medtronic, Inc.)",416,Visa SR,SSI,VCG,None,3.2 mm LP UNI/BI (IS-1 Compatible),#2,PR,65 (SSI),85,65,Ra,8.2 @ 3.5 V
+"Vitatron (Medtronic, Inc.)",425,Visa D,DDDC,VCF,5/6 mm UNI,5/6 mm UNI,#2,PR,65 (SSI),85,65,Ra,10.2 @ 2.5 V
+"Vitatron (Medtronic, Inc.)",426,Visa D,DDDC,VCE,3.2 mm LP UNI/BI (IS-1 Compatible),3.2 mm LP UNI/BI (IS-1 Compatible),#2,PR,65 (SSI),85,65,Ra,10.2 @ 2.5 V
+"Vitatron (Medtronic, Inc.)",435,Visa DR,DDDC,VCE,,,,PR,65 (SSI),85,65,Ra,7.7 @ 3.5 V
+"Vitatron (Medtronic, Inc.)",435,Visa DR,DDDR,VCD,5/6 mm UNI,5/6 mm UNI,#2,PR,65 (SSI),85,65,Ra,10.1 @ 2.5 V
+"Vitatron (Medtronic, Inc.)",435,Visa DR,SSI,VCE,,,,PR,65 (SSI),85,65,Ra,
+"Vitatron (Medtronic, Inc.)",436,Visa DR,DDDR,VCC,3.2 mm LP UNI/BI (IS-1 Compatible),3.2 mm LP UNI/BI (IS-1 Compatible),#2,PR,65 (SSI),85,65,Ra,10.1 @ 2.5 V
+"Vitatron (Medtronic, Inc.)",436,Visa DR,DDD,VCC,,,,PR,65 (SSI),85,65,Ra,7.7 @ 3.5 V
+"Vitatron (Medtronic, Inc.)",436,Visa DR,SSIR,VCC,,,,PR,65 (SSI),85,65,Ra,
+"Vitatron (Medtronic, Inc.)",436,Visa DR,SSI,VCC,,,,PR,65 (SSI),85,65,Ra,
+"Vitatron (Medtronic, Inc.)",500,Topaz,SSIR,V500,None,"3.2 mm LP (IS-1 Compatible) UNI/BI Sensing, UNI Pacing",#2,PR,PI+100 ms,100,"95, 86","A, F",8.0 @ 4.0 V
+"Vitatron (Medtronic, Inc.)",501,Rhythmyx,VVIR,V501,None,5 mm UNI,#2,PR,PI+100 ms,100,86,F,6.7 @ 5.0 V
+"Vitatron (Medtronic, Inc.)",503,Rhythmyx,VVIR,V503,None,IS-1 UNI,#2,PR,PI+100 ms,100,86,F,6.7 @ 5.0 V
+"Vitatron (Medtronic, Inc.)",505,Rhythmyx II,VVIR,V505,None,IS-1 UNI,#2,PR,PI+100 ms,100,86,F,9.0 @ 5.3 V
+"Vitatron (Medtronic, Inc.)",515,Topaz,SSIR,V515,None,IS-1 UNI,#2,PR,PI+100 ms,100,86,F,9.0 @ 5.3 V
+"Vitatron (Medtronic, Inc.)",517,Topaz,SSIR,V517,None,5 mm UNI,#2,PR,PI+100 ms,100,86,F,9.0 @ 5.3 V
+"Vitatron (Medtronic, Inc.)",519,Topaz,SSIR,V519,None,6 mm UNI,#2,PR,PI+100 ms,100,86,F,9.0 @ 5.3 V
+"Vitatron (Medtronic, Inc.)",520,Topaz II,SSIR,VB,None,IS-1 UNI/BI,#2,PR,PI+100 ms,100,"95, 86","A, F",9.9 @ 2.5 V
+"Vitatron (Medtronic, Inc.)",521,Topaz II,SSIR,VB,None,5/6 mm UNI,#2,PR,PI+100 ms,100,"95, 86","A, F",9.9 @ 2.5 V
+"Vitatron (Medtronic, Inc.)",526,Legacy II SR,SSIR,VBy,None,3.2 mm LP UNI/BI (IS-1 Compatible),#2,PR,65 (SSI),85,65,Ra,9.9 @ 2.5 V
+"Vitatron (Medtronic, Inc.)",528,Legacy II SR,SSIR,VBW,None,IS-1 UNI/BI,#2,PR,65 (SSI),85,65,Ra,9.9 @ 2.0 V
+"Vitatron (Medtronic, Inc.)",530,Vita II SSIR,SSIR,VC,None,IS-1 UNI/BI,#2,PR,PI+100 ms,100,"95, 86","A, F",9.5 @ 2.5 V
+"Vitatron (Medtronic, Inc.)",532,Vita II SSIR,SSIR,VC,None,3.2 mm UNI/BI,#2,PR,PI+100 ms,100,"95, 86","A, F",9.5 @ 2.5 V
+"Vitatron (Medtronic, Inc.)",535,Vita II SSIR,SSIR,VC,None,5/6 mm UNI,#2,PR,PI+100 ms,100,"95, 86","A, F",9.5 @ 2.5 V
+"Vitatron (Medtronic, Inc.)",540,Topaz III SSIR,SSIR,VC,None,IS-1 UNI/BI,#2,PR,PI+100 ms,100,"95, 86","A, F",9.5 @ 2.5 V
+"Vitatron (Medtronic, Inc.)",542,Topaz III SSIR,SSIR,VC,None,3.2 mm UNI/BI,#2,PR,PI+100 ms,100,"95, 86","A, F",
+"Vitatron (Medtronic, Inc.)",545,Topaz III SSIR,SSIR,VC,None,5/6 mm UNI,#2,PR,PI+100 ms,100,"95, 86","A, F",
+"Vitatron (Medtronic, Inc.)",550,Legacy SR,SSIR,VBA,None,IS-1 UNI/BI,#2,PR,65 (SSI),85,65,Pb,11.2 @ 2.5 V
+"Vitatron (Medtronic, Inc.)",551,Legacy SR,SSIR,VBB,None,5/6 mm UNI,#2,PR,65 (SSI),85,65,Pb,11.2 @ 2.5 V
+"Vitatron (Medtronic, Inc.)",552,Legacy SR,SSIR,VBC,None,3.2 mm LP UNI/BI (IS-1 Compatible),#2,PR,65 (SSI),85,65,Pb,11.2 @ 2.5 V
+"Vitatron (Medtronic, Inc.)",560,Clarity SSIR,SSIR,VC,None,IS-1 UNI/BI,#2,PR,PI+100 ms,100,"95, 86","A, F",9.5 @ 2.5 V
+"Vitatron (Medtronic, Inc.)",562,Clarity SSIR,SSIR,VC,None,3.2 mm UNI/BI,#2,PR,PI+100 ms,100,"95, 86","A, F",9.5 @ 2.5 V
+"Vitatron (Medtronic, Inc.)",565,Clarity SSIR,SSIR,VC,None,5/6 mm UNI,#2,PR,PI+100 ms,100,"95, 86","A, F",9.5 @ 2.5 V
+"Vitatron (Medtronic, Inc.)",600,Saphir,VDDR,V600,IS-1 UNI Pacing IS-1 UNI/BI Sensing,IS-1 UNI Pacing IS-1 UNI/BI Sensing,#2,PR,PI+100 ms (VVI),100,"95, 86","A, F",9.5 @ 2.5 V
+"Vitatron (Medtronic, Inc.)",611,Ceryx-6,SSIC,V611,None,5/6 mm UNI,#2,PR,PI+100 ms,100,"95, 86","A, F",10.0 @ 5.0 V
+"Vitatron (Medtronic, Inc.)",614,Ceryx-6,SSIC,V614,None,3.2 mm LP BI,#2,PR,PI+100 ms,100,"95, 86","A, F",10.0 @ 5.0 V
+"Vitatron (Medtronic, Inc.)",620,Saphir II,VDDR,VB,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,PI+100 ms (VVI),100,"95, 86","A, F",9.9 @ 2.5 V
+"Vitatron (Medtronic, Inc.)",621,Ceryx-6,SSIC,V621,None,5 mm UNI,#2,PR,PI+100 ms,100,"95, 86","A, F",11.1 @ 5.0 V
+"Vitatron (Medtronic, Inc.)",623,Ceryx-6,SSIC,V623,None,IS-1 UNI,#2,PR,PI+100 ms,100,"95, 86","A, F",11.1 @ 5.0 V
+"Vitatron (Medtronic, Inc.)",624,Ceryx-6,SSIC,V624,None,IS-1 BI,#2,PR,PI+100 ms,100,"95, 86","A, F",11.1 @ 5.0 V
+"Vitatron (Medtronic, Inc.)",630,Vita II VDD,VDDC,VC,IS-1 BI,IS-1 UNI/BI,#2,PR,PI+100 ms (VVI),100,"95, 86","A, F",9.7 @ 2.5 V
+"Vitatron (Medtronic, Inc.)",640,Saphir III VDDR,VDDR,VC,IS-1 BI,IS-1 UNI/BI,#2,PR,PI+100 ms (VVI),100,"95, 86","A, F",9.7 @ 2.5 V
+"Vitatron (Medtronic, Inc.)",700,Ruby,DDDC,V700,IS-1 UNI Pacing IS-1 UNI/BI Sensing,IS-1 UNI Pacing IS-1 UNI/BI Sensing,#2,PR,PI+100 ms (VVI),100,"95, 86","A, F",9.0 @ 4.0 V
+"Vitatron (Medtronic, Inc.)",701,Harmony,DDDC,V701,5 mm UNI,5 mm UNI,#2,PR,PI+100 ms (VVI),100,86,F,8.0 @ 2.5 V
+"Vitatron (Medtronic, Inc.)",703,Harmony,DDDC,V703,IS-1 UNI,IS-1 UNI,#2,PR,PI+100 ms (VVI),100,86,F,8.0 @ 2.5 V
+"Vitatron (Medtronic, Inc.)",704,Harmony II,DDDC,V704,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,PI+100 ms (VVI),100,86,F,7.3 @ 2.7 V
+"Vitatron (Medtronic, Inc.)",705,Harmony II,DDDC,V705,5 mm UNI,5 mm UNI,#2,PR,PI+100 ms (VVI),100,86,F,7.3 @ 2.7 V
+"Vitatron (Medtronic, Inc.)",707,Ruby,DDDC,V707,5 mm UNI,5 mm UNI,#2,PR,PI+100 ms,100,"95, 86","A, F",9.0 @ 4.0 V
+"Vitatron (Medtronic, Inc.)",710,Vita DDD,DDDC,VB,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,PI+100 ms (VVI),100,"95, 86","A, F",8.2 @ 2.5 V
+"Vitatron (Medtronic, Inc.)",712,Geo I DDD,DDDC,VC,3.2 mm LP UNI/BI (IS-1 Compatible),3.2 mm LP UNI/BI (IS-1 Compatible),#2,PR,PI+100 ms,100,"95, 86","A, F",8.1 @ 2.5 V
+"Vitatron (Medtronic, Inc.)",715,Geo I DDD,DDDC,VC,5 mm UNI,5 mm UNI,#2,PR,PI+100 ms,100,"95, 86","A, F",8.1 @ 2.5 V
+"Vitatron (Medtronic, Inc.)",720,Ruby II,DDDC,VB,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,PI+100 ms,100,"95, 86","A, F",8.2 @ 2.5 V
+"Vitatron (Medtronic, Inc.)",720E,Ruby II,DDD,,,,#2,PR,PI+100 ms,100,"95, 86","A, F",8.2 @ 2.5 V
+"Vitatron (Medtronic, Inc.)",724,Geo I DDD,DDDC,VC,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,PI+100 ms,100,95,"A, F",8.1 @ 2.5 V
+"Vitatron (Medtronic, Inc.)",726,Legacy II D,DDDC,VBU,3.2 mm LP UNI/BI (IS-1 Compatible),3.2 mm LP UNI/BI (IS-1 Compatible),#2,PR,65 (SSI),85,65,Ra,10.2 @ 2.5 V
+"Vitatron (Medtronic, Inc.)",728,Legacy II D,DDDC,VBT,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,65 (SSI),85,65,Ra,10.2 @ 2.5 V
+"Vitatron (Medtronic, Inc.)",730,Vita II DDD,DDDC,VC,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,PI+100 ms,100,"95, 86","A, F",8.1 @ 2.5 V
+"Vitatron (Medtronic, Inc.)",732,Vita II DDD,DDDC,VC,3.2 mm LP UNI/BI (IS-1 Compatible),3.2 mm LP UNI/BI (IS-1 Compatible),#2,PR,PI+100 ms,100,"95, 86","A, F",8.1 @ 2.5 V
+"Vitatron (Medtronic, Inc.)",735,Vita II DDD,DDDC,VC,5 mm UNI,5 mm UNI,#2,PR,PI+100 ms,100,"95, 86","A, F",8.1 @ 2.5 V
+"Vitatron (Medtronic, Inc.)",740,Ruby III DDD,DDDC,VC,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,PI+100 ms,100,"95, 86","A, F",8.1 @ 2.5 V
+"Vitatron (Medtronic, Inc.)",742,Ruby III DDD,DDDC,VC,3.2 mm LP UNI/BI (IS-1 Compatible),3.2 mm LP UNI/BI (IS-1 Compatible),#2,PR,PI+100 ms,100,"95, 86","A, F",8.1 @ 2.5 V
+"Vitatron (Medtronic, Inc.)",745,Ruby III DDD,DDDC,VC,5 mm UNI,5 mm UNI,#2,PR,PI+100 ms,100,"95, 86","A, F",8.1 @ 2.5 V
+"Vitatron (Medtronic, Inc.)",750,Legacy D,DDDC,VBM,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,65 (VVI),85,65,Ra,"11.8 @ 2.5 V,7.2 @ 4.0 V"
+"Vitatron (Medtronic, Inc.)",751,Legacy D,DDDC,VBN,5 mm UNI,5 mm UNI,#2,PR,65 (VVI),85,65,Ra,"11.8 @ 2.5 V, 7.2 @ 4.0 V"
+"Vitatron (Medtronic, Inc.)",720,Ruby II,DDDC,VB,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,PI+100 ms,100,"95, 86","A, F",8.2 @ 2.5 V
+"Vitatron (Medtronic, Inc.)",720E,Ruby II,DDD,,,,#2,PR,PI+100 ms,100,"95, 86","A, F",8.2 @ 2.5 V
+"Vitatron (Medtronic, Inc.)",724,Geo I DDD,DDDC,VC,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,PI+100 ms,100,95,"A, F",8.1 @ 2.5 V
+"Vitatron (Medtronic, Inc.)",726,Legacy II D,DDDC,VBU,3.2 mm LP UNI/BI (IS-1 Compatible),3.2 mm LP UNI/BI (IS-1 Compatible),#2,PR,65 (SSI),85,65,Ra,10.2 @ 2.5 V
+"Vitatron (Medtronic, Inc.)",728,Legacy II D,DDDC,VBT,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,65 (SSI),85,65,Ra,10.2 @ 2.5 V
+"Vitatron (Medtronic, Inc.)",730,Vita II DDD,DDDC,VC,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,PI+100 ms,100,"95, 86","A, F",8.1 @ 2.5 V
+"Vitatron (Medtronic, Inc.)",732,Vita II DDD,DDDC,VC,3.2 mm LP UNI/BI (IS-1 Compatible),3.2 mm LP UNI/BI (IS-1 Compatible),#2,PR,PI+100 ms,100,"95, 86","A, F",8.1 @ 2.5 V
+"Vitatron (Medtronic, Inc.)",735,Vita II DDD,DDDC,VC,5 mm UNI,5 mm UNI,#2,PR,PI+100 ms,100,"95, 86","A, F",8.1 @ 2.5 V
+"Vitatron (Medtronic, Inc.)",740,Ruby III DDD,DDDC,VC,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,PI+100 ms,100,"95, 86","A, F",8.1 @ 2.5 V
+"Vitatron (Medtronic, Inc.)",742,Ruby III DDD,DDDC,VC,3.2 mm LP UNI/BI (IS-1 Compatible),3.2 mm LP UNI/BI (IS-1 Compatible),#2,PR,PI+100 ms,100,"95, 86","A, F",8.1 @ 2.5 V
+"Vitatron (Medtronic, Inc.)",745,Ruby III DDD,DDDC,VC,5 mm UNI,5 mm UNI,#2,PR,PI+100 ms,100,"95, 86","A, F",8.1 @ 2.5 V
+"Vitatron (Medtronic, Inc.)",750,Legacy D,DDDC,VBM,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,65 (VVI),85,65,Ra,"11.8 @ 2.5 V, 7.2 @ 4.0 V"
+"Vitatron (Medtronic, Inc.)",751,Legacy D,DDDC,VBN,5 mm UNI,5 mm UNI,#2,PR,65 (VVI),85,65,Ra,"11.8 @ 2.5 V, 7.2 @ 4.0 V"
+"Vitatron (Medtronic, Inc.)",800,Diamond,DDDR,V800,IS-1 UNI Pacing IS-1 UNI/BI Sensing,IS-1 UNI Pacing IS-1 UNI/BI Sensing,#2,PR,PI+100 ms,100,"95, 86","A, F",7.0 @ 4.0 V
+"Vitatron (Medtronic, Inc.)",801,Diamond,DDDR,V801,5 mm UNI,5 mm UNI,#2,PR,PI+100 ms (VVI),100,"95, 86","A, F",7.0 @ 4.0 V
+"Vitatron (Medtronic, Inc.)",810,Vita DDDR,DDDR,VB,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,PI+100 ms (VVI),100,"95, 86","A, F",8.2 @ 2.5 V
+"Vitatron (Medtronic, Inc.)",820,Diamond II,DDDR,VD,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,PI+100 ms (VVI),100,"95, 86","A, F",8.2 @ 2.5 V
+"Vitatron (Medtronic, Inc.)",822E,Diamond II,DDDR,VD,3.2 mm LP UNI/BI (IS-1 Compatible),3.2 mm LP UNI/BI (IS-1 Compatible),#2,PR,PI+100 ms (VVI),100,"95, 86","A, F",8.2 @ 2.5 V
+"Vitatron (Medtronic, Inc.)",826,Legacy II DR,DDDR,VBR,3.2 mm LP UNI/BI (IS-1 Compatible),3.2 mm LP UNI/BI (IS-1 Compatible),#2,PR,65 (VVI),85,65,Ra,10.1 @ 2.5 V
+"Vitatron (Medtronic, Inc.)",828,Legacy II DR,DDDR,VBP,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,65 (VVI),85,65,Ra,10.1 @ 2.5 V
+"Vitatron (Medtronic, Inc.)",830,Vita II DDDR,DDDR,VC,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,PI+100 ms,100,"95, 86","A, F",7.3 @ 2.5 V
+"Vitatron (Medtronic, Inc.)",832,Vita II DDDR,DDDR,VC,3.2 mm LP UNI/BI (IS-1 Compatible),3.2 mm LP UNI/BI (IS-1 Compatible),#2,PR,PI+100 ms,100,"95, 86","A, F",7.3 @ 2.5 V
+"Vitatron (Medtronic, Inc.)",835,Vita II DDDR,DDDR,VC,5 mm UNI,5 mm UNI,#2,PR,PI+100 ms,100,"95, 86","A, F",7.3 @ 2.5 V
+"Vitatron (Medtronic, Inc.)",840,Diamond III,DDDR,VC,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,PI+100 ms,100,"95, 86","A, F",7.3 @ 2.5 V
+"Vitatron (Medtronic, Inc.)",842,Diamond III,DDDR,VC,3.2 mm LP UNI/BI (IS-1 Compatible),3.2 mm LP UNI/BI (IS-1 Compatible),#2,PR,PI+100 ms,100,"95, 86","A, F",7.3 @ 2.5 V
+"Vitatron (Medtronic, Inc.)",845,Diamond III,DDDR,VC,5 mm UNI,5 mm UNI,#2,PR,PI+100 ms,100,"95, 86","A, F",7.3 @ 2.5 V
+"Vitatron (Medtronic, Inc.)",850,Legacy DR,DDDR,VBF,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,65 (VVI),85,65,Ra,7.0 @ 2.5 V
+"Vitatron (Medtronic, Inc.)",851,Legacy DR,DDDR,VBG,5 mm UNI,5 mm UNI,#2,PR,65 (VVI),85,65,Ra,7.0 @ 2.5 V
+"Vitatron (Medtronic, Inc.)",852,Legacy DR,DDDR,VBH,"3.2 mm LP BI (IS-1 Compatible) BI(Pace), UNI/BI(Sense)","3.2 mm LP BI (IS-1 Compatible) BI(Pace), UNI/BI(Sense)",#2,PR,65 (VVI),85,65,Ra,7.0 @ 2.5 V
+"Vitatron (Medtronic, Inc.)",860,Clarity DDDR,DDDR,VC,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,PI+100 ms,100,"95, 86","A, F",8.1 @ 2.5 V
+"Vitatron (Medtronic, Inc.)",862,Clarity DDDR,DDDR,VC,3.2 mm LP UNI/BI (IS-1 Compatible),3.2 mm LP UNI/BI (IS-1 Compatible),#2,PR,PI+100 ms,100,"95, 86","A, F",8.1 @ 2.5 V
+"Vitatron (Medtronic, Inc.)",865,Clarity DDDR,DDDR,VC,5 mm UNI,5 mm UNI,#2,PR,PI+100 ms,100,"95, 86","A, F",8.1 @ 2.5 V
+"Vitatron (Medtronic, Inc.)",900,"Selection 900(E) AF1, AF2",DDDR,VB/VE,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,PI+100 ms,100,"95, 86","A, F",8.3 @ 2.5 V
+"Vitatron (Medtronic, Inc.)",900E,"Selection 900(E) AF1, AF2",,,,,,,,,,,
+"Vitatron (Medtronic, Inc.)",902,Selection Afm,DDDR,VE,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,PI+100 ms,100,"95, 86","A, F",8.1 @ 2.5 V
+"Vitatron (Medtronic, Inc.)",910,DiagnoseAF,DDDR,VE,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,PI+100 ms,100,"95, 86","A, F",8.3 @ 2.5 V
+"Vitatron (Medtronic, Inc.)",911,Quintech TX,VVIR,V911,None,5/6 mm UNI,#2,PR,PI+100 ms,100,86,F,6.6 @ 5.0 V
+"Vitatron (Medtronic, Inc.)",915,Quintech TX,VVIR,V915,None,5/6 mm UNI,#2,PR,PI+100 ms,100,86,F,6.4 @ 5.0 V
+"Vitatron (Medtronic, Inc.)",919,Model 919,VVIR,V919,None,5 mm UNI,#2,PR,PI+100 ms,100,86,F,5.3 @ 5.0 V
+"Vitatron (Medtronic, Inc.)",920,PreventAF,DDDR,VE,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,PI+100 ms,100,"95, 86","A, F",8.3 @ 2.5 V
+"Vitatron (Medtronic, Inc.)",921,Quintech DPG,VVIC,V921,None,5/6 mm UNI,#2,PR,PI+100 ms,100,86,F,6.4 @ 5.0 V
+"Vitatron (Medtronic, Inc.)",931,Quintech DDD,DDDC,V931,5 mm UNI,5 mm UNI,#2,PR,PI+100 ms,100,86,F,
+"Vitatron (Medtronic, Inc.)",9000,Selection 9000 AF3,DDDR,VE,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,PI+100 ms,100,"95, 86","A, F",7.4 @ 2.5 V
+"Vitatron (Medtronic, Inc.)",C10A1,C10S,SSI,VF,None,IS-1 UNI/BI,#2,PR,PI+100 ms,100,"95, 86","A, F",12.8 @ 2.5 V
+"Vitatron (Medtronic, Inc.)",C10A2,C10S,SSI,VF,None,IS-1 UNI/BI,#2,PR,PI+100 ms,100,"95, 86","A, F",12.8 @ 2.5 V
+"Vitatron (Medtronic, Inc.)",C10A3,C10S,SSI,VF,None,IS-1 UNI/BI,#2,PR,PI+100 ms,100,"95, 86","A, F",13.2 @ 2.5 V
+"Vitatron (Medtronic, Inc.)",C20A1,C20SR,SSIR,,None,IS-1 UNI/BI,#2,PR,PI+100 ms,100,"95, 86","A, F",11.6 @ 2.5 V
+"Vitatron (Medtronic, Inc.)",C20A1,C20SR,SSIR,VF,None,IS-1 UNI/BI,#2,PR,PI+100 ms,100,"95, 86","A, F",12.3 @ 2.5 V
+"Vitatron (Medtronic, Inc.)",C20A2,C20SR,SSIR,VF,None,IS-1 UNI/BI,#2,PR,PI+100 ms,100,"95, 86","A, F",12.3 @ 2.5 V
+"Vitatron (Medtronic, Inc.)",C20A3,C20SR,SSIR,VF,None,IS-1 UNI/BI,#2,PR,PI+100 ms,100,"95, 86","A, F",13.0 @ 2.5 V
+"Vitatron (Medtronic, Inc.)",C2331,Vitalith,AAl,None,Vitatron UNI,None,Screw,70,66,95,89,"C, J",
+"Vitatron (Medtronic, Inc.)",C50A1,C50D,DDD,VF,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,PI+100 ms,100,"95, 86","A, F",9.1 @ 2.5 V
+"Vitatron (Medtronic, Inc.)",C50A2,C50D,DDD,VF,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,PI+100 ms,100,"95, 86","A, F",9.1 @ 2.5 V
+"Vitatron (Medtronic, Inc.)",C50A3,C50D,DDD,VF,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,PI+100 ms,100,"95, 86","A, F",9.5 @ 2.5 V
+"Vitatron (Medtronic, Inc.)",C5122,,VVI,VC5122,None,5/6 mm UNI,#2,70,70,100,90,F,7.5 @ 5.0 V
+"Vitatron (Medtronic, Inc.)",C60A1,C60DR,DDDR,,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,PI+100 ms,100,"95, 86","A, F",8.1 @ 2.5 V
+"Vitatron (Medtronic, Inc.)",C60A1,C60DR,DDDR,VF,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,PI+100 ms,100,"95, 86","A, F",8.8 @ 2.5 V
+"Vitatron (Medtronic, Inc.)",C60A2,C60DR,DDDR,VF,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,PI+100 ms,100,"95, 86","A, F",8.8 @ 2.5 V
+"Vitatron (Medtronic, Inc.)",C60A3,C60DR,DDDR,VF,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,PI+100 ms,100,"95, 86","A, F",9.4 @ 2.5 V
+"Vitatron (Medtronic, Inc.)",E10A1,E10 S,SSI,VG,None,IS-1 UNI/BI,#2,PR,VVI 65 ppm,85,65,,
+"Vitatron (Medtronic, Inc.)",E50A1,E50 D,DDD,VG,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,VVI 65 ppm,85,65,,
+"Vitatron (Medtronic, Inc.)",E60A1,E60 DR,DDDR,VG,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,VVI 65 ppm,85,65,,
+"Vitatron (Medtronic, Inc.)",G20A1,G20 SR,SSIR,VG,None,IS-1 UNI/BI,#2,PR,VVI 65 ppm,85,65,,
+"Vitatron (Medtronic, Inc.)",G70A1,G70 DR,DDDR,VG,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,VVI 65 ppm,85,65,,
+"Vitatron (Medtronic, Inc.)",T20A1,T20SR,SSIR,,None,IS-1 UNI/BI,#2,PR,PI+100 ms,100,"95, 86","A, F",13.0 @ 2.5 V
+"Vitatron (Medtronic, Inc.)",T20A1,T20SR,SSIR,VF,None,IS-1 UNI/BI,#2,PR,PI+100 ms,100,"95, 86","A, F",13.0 @ 2.5 V
+"Vitatron (Medtronic, Inc.)",T60A,T60DR,DDDR,,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,PI+100 ms,100,"95, 86","A, F",9.4 @ 2.5 V
+"Vitatron (Medtronic, Inc.)",T60A1,T60DR,DDDR,VF,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,PI+100 ms,100,"95, 86","A, F",9.4 @ 2.5 V
+"Vitatron (Medtronic, Inc.)",T70A1,T70DR,DDDR,VF,IS-1 UNI/BI,IS-1 UNI/BI,#2,PR,PI+100 ms,100,"95, 86","A, F",9.4 @ 2.5 V
