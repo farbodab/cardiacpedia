@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="jumbotron">
+  <h1 class="display-4">{{device.model_number}} : {{device.name}}</h1>
+  <p class="lead">Manufactured by: {{device.manufacturer}}</p>
+  <hr class="my-4">
+  <p><b>NBG CODE: </b>{{device.nbg_code}}</p>
+  <p><b>X-ray / Serial ID: </b>{{device.x_ray}}</p>
+  <p><b>Sense / Pace Connector RA: </b>{{device.ra}}</p>
+  <p><b>Sense/Pace Connectors LA: </b>{{device.la}}</p>
+  <p><b>Sense / Pace Connector RV: </b>{{device.rv}}</p>
+  <p><b>Sense / Pace Connector LV: </b>{{device.lv}}</p>
+  <p><b>Detach Tools: </b>{{device.detach}}</p>
+  <p><b>Non MAG Rate BOL </b>{{device.n_bol}}</p>
+  <p><b>Non MAG Rate ERI / EOL </b>{{device.n_eri}}</p>
+  <p><b>MAG Rate BOL </b>{{device.m_bol}}</p>
+  <p><b>MAG Rate ERI / EOL </b>{{device.m_eri}}</p>
+  <p><b>ERI EOL Behavior </b>{{device.eri_behaviour}}</p>
+  <p><b>Longetivity </b>{{device.longevity}}</p>
+</div>
+{% endblock %}

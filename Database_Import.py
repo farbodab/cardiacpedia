@@ -133,25 +133,5 @@ def HV_m():
     print(HV.query.all()[:10])
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 if __name__ == '__main__':
-    HV_m()
+    pass
