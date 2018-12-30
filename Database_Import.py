@@ -70,6 +70,28 @@ def icd():
     db.session.commit()
     print(ICD.query.all()[:10])
 
+def CRTD_m():
+    df = pd.read_csv('Devices/CRTD.csv', encoding = "ISO-8859-1")
+    for index, row in df.iterrows():
+        device = CRTD(
+        manufacturer=row['Manufacturer'],
+        model_number=row['Model Number'],
+        name=row['Model Name'],
+        nbg_code=row['NBD Code'],
+        x_ray=row['X-ray ID'],
+        serial=row['Serial ID'],
+        ra=row['Connectors RA'],
+        rv=row['Connectors RV'],
+        lv=row['Connectors LV'],
+        hv=row['Connectors HV'],
+        detach=row['Detach Tool'],
+        wave=row['HV Waveform'],
+        replacement=row['Replacement Indicator'],
+        )
+        db.session.add(device)
+    db.session.commit()
+    print(CRTD.query.all()[:10])
+
 
 
 
@@ -93,4 +115,4 @@ def icd():
 
 
 if __name__ == '__main__':
-    icd()
+    CRTD_m()
