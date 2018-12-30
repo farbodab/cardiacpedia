@@ -112,6 +112,26 @@ def LV_m():
     print(LV.query.all()[:10])
 
 
+def HV_m():
+    df = pd.read_csv('Devices/HV.csv', encoding = "ISO-8859-1")
+    for index, row in df.iterrows():
+        device = HV(
+        manufacturer=row['Manufacturer'],
+        model_number=row['Model Number'],
+        name=row['Name'],
+        serial=row['Serial ID'],
+        sense=row['Connectors Sense/Pace'],
+        high=row['High Voltage'],
+        sensing=row['Sensing Configurations'],
+        lead=row['Lead Polarity'],
+        placement=row['Placement'],
+        fixation=row['Fixation'],
+        insulation=row['Insultation'],
+        )
+        db.session.add(device)
+    db.session.commit()
+    print(HV.query.all()[:10])
+
 
 
 
@@ -134,4 +154,4 @@ def LV_m():
 
 
 if __name__ == '__main__':
-    LV_m()
+    HV_m()
