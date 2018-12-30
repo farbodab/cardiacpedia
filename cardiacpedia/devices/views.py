@@ -133,7 +133,7 @@ def icd():
     form = Find_Device()
     if form.validate_on_submit():
         page = request.args.get('page', 1, type=int)
-        devices = HV.query
+        devices = ICD.query
         if form.manufacturer.data:
             devices = devices.filter(ICD.manufacturer.like('%' + form.manufacturer.data + '%'))
         if form.model_number.data:
