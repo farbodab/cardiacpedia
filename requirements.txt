@@ -41,3 +41,4 @@ wincertstore>=0.2
 WTForms>=2.1
 Flask-User>=1.0
 Bootstrap-Flask>=1.0.9
+gunicorn==19.9.0
