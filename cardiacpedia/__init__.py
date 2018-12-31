@@ -25,6 +25,7 @@ class ConfigClass(object):
     MAIL_USERNAME = 'farbod@deepmedsolutions.com'
     MAIL_PASSWORD = 'kalimdor1996'
     MAIL_DEFAULT_SENDER = '"CardiacPedia" <noreply@cardiacpedia.com>'
+    #hello
 
     # Flask-User settings
     USER_APP_NAME = "CardiacPedia"      # Shown in and email templates and page footers
