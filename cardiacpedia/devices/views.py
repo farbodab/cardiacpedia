@@ -43,7 +43,7 @@ def ipg_device(id):
 def crtp():
     form = Find_Device()
     if form.validate_on_submit():
-        return redirect(url_for('devices.crtp',devices=devices, page_title='CRT-P Low-Voltage Devices', form=form))
+        return redirect(url_for('devices.crtp',page_title='CRT-P Low-Voltage Devices', manufacturer=form.manufacturer.data, model_number=form.model_number.data, device_name=form.name.data))
 
     page = request.args.get('page', 1, type=int)
     manufacturer = request.args.get('manufacturer')
@@ -72,7 +72,7 @@ def crtp_device(id):
 def crtd():
     form = Find_Device()
     if form.validate_on_submit():
-        return redirect(url_for('devices.crtd',devices=devices, page_title='CRT-D High Voltage Devices', form=form))
+        return redirect(url_for('devices.crtd',page_title='CRT-D High Voltage Devices', manufacturer=form.manufacturer.data, model_number=form.model_number.data, device_name=form.name.data))
 
     page = request.args.get('page', 1, type=int)
     manufacturer = request.args.get('manufacturer')
@@ -101,7 +101,7 @@ def crtd_device(id):
 def hv():
     form = Find_Device()
     if form.validate_on_submit():
-        return redirect(url_for('devices.hv',devices=devices, page_title='CRT-D High Voltage Devices', form=form))
+        return redirect(url_for('devices.hv',page_title='CRT-D High Voltage Devices', manufacturer=form.manufacturer.data, model_number=form.model_number.data, device_name=form.name.data))
 
     page = request.args.get('page', 1, type=int)
     manufacturer = request.args.get('manufacturer')
@@ -131,7 +131,7 @@ def hv_device(id):
 def icd():
     form = Find_Device()
     if form.validate_on_submit():
-        return redirect(url_for('devices.icd',devices=devices, page_title='ICD High-Voltage Devices', form=form))
+        return redirect(url_for('devices.icd',page_title='ICD High-Voltage Devices', manufacturer=form.manufacturer.data, model_number=form.model_number.data, device_name=form.name.data))
 
     page = request.args.get('page', 1, type=int)
     manufacturer = request.args.get('manufacturer')
@@ -160,7 +160,7 @@ def icd_device(id):
 def lv():
     form = Find_Device()
     if form.validate_on_submit():
-        return redirect(url_for('devices.lv',devices=devices, page_title='LV Low-Voltage Devices', form=form))
+        return redirect(url_for('devices.lv',page_title='LV Low-Voltage Devices', manufacturer=form.manufacturer.data, model_number=form.model_number.data, device_name=form.name.data))
 
     page = request.args.get('page', 1, type=int)
     manufacturer = request.args.get('manufacturer')

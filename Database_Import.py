@@ -134,4 +134,4 @@ def HV_m():
 
 
 if __name__ == '__main__':
-    pass
+    db.session.execute(IPG.delete())
