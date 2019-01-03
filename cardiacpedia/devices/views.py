@@ -22,7 +22,6 @@ def ipg():
     model_number = request.args.get('model_number')
     device_name = request.args.get('device_name')
     devices = IPG.query
-    
     if manufacturer:
         devices = devices.filter(IPG.manufacturer.like('%' + manufacturer + '%'))
     if model_number:
@@ -44,21 +43,21 @@ def ipg_device(id):
 def crtp():
     form = Find_Device()
     if form.validate_on_submit():
-        page = request.args.get('page', 1, type=int)
-        devices = CRTP.query
-        if form.manufacturer.data:
-            devices = devices.filter(CRTP.manufacturer.like('%' + form.manufacturer.data + '%'))
-        if form.model_number.data:
-            devices = devices.filter(CRTP.model_number.like('%' + form.model_number.data + '%' ))
-        if form.name.data:
-            devices = devices.filter(CRTP.name.like('%' + form.name.data + '%' ))
-
-        devices = devices.paginate(page=page, per_page=10)
-        return render_template('/Devices/crtp.html', devices=devices, page_title='CRT-P Low-Voltage Devices', form=form)
+        return redirect(url_for('devices.crtp',devices=devices, page_title='CRT-P Low-Voltage Devices', form=form))
 
     page = request.args.get('page', 1, type=int)
-    devices = CRTP.query.paginate(page=page, per_page=10)
-    return render_template('/Devices/crtp.html', devices=devices, page_title='CRT-P Low-Voltage Devices', form=form)
+    manufacturer = request.args.get('manufacturer')
+    model_number = request.args.get('model_number')
+    device_name = request.args.get('device_name')
+    devices = CRTP.query
+    if manufacturer:
+        devices = devices.filter(CRTP.manufacturer.like('%' + manufacturer + '%'))
+    if model_number:
+        devices = devices.filter(CRTP.model_number.like('%' + model_number + '%' ))
+    if device_name:
+        devices = devices.filter(CRTP.name.like('%' + device_name + '%' ))
+    devices = devices.paginate(page=page, per_page=10)
+    return render_template('/Devices/crtp.html', devices=devices, page_title='CRT-P Low-Voltage Devices', form=form, manufacturer=manufacturer, model_number=model_number, device_name=device_name)
 
 
 
@@ -73,21 +72,21 @@ def crtp_device(id):
 def crtd():
     form = Find_Device()
     if form.validate_on_submit():
-        page = request.args.get('page', 1, type=int)
-        devices = CRTD.query
-        if form.manufacturer.data:
-            devices = devices.filter(CRTD.manufacturer.like('%' + form.manufacturer.data + '%'))
-        if form.model_number.data:
-            devices = devices.filter(CRTD.model_number.like('%' + form.model_number.data + '%' ))
-        if form.name.data:
-            devices = devices.filter(CRTD.name.like('%' + form.name.data + '%' ))
-
-        devices = devices.paginate(page=page, per_page=10)
-        return render_template('/Devices/crtd.html', devices=devices, page_title='CRT-D High Voltage Devices', form=form)
+        return redirect(url_for('devices.crtd',devices=devices, page_title='CRT-D High Voltage Devices', form=form))
 
     page = request.args.get('page', 1, type=int)
-    devices = CRTD.query.paginate(page=page, per_page=10)
-    return render_template('/Devices/crtd.html', devices=devices, page_title='CRT-D High Voltage Devices', form=form)
+    manufacturer = request.args.get('manufacturer')
+    model_number = request.args.get('model_number')
+    device_name = request.args.get('device_name')
+    devices = CRTD.query
+    if manufacturer:
+        devices = devices.filter(CRTD.manufacturer.like('%' + manufacturer + '%'))
+    if model_number:
+        devices = devices.filter(CRTD.model_number.like('%' + model_number + '%' ))
+    if device_name:
+        devices = devices.filter(CRTD.name.like('%' + device_name + '%' ))
+    devices = devices.paginate(page=page, per_page=10)
+    return render_template('/Devices/crtd.html', devices=devices, page_title='CRT-D High Voltage Devices', form=form, manufacturer=manufacturer, model_number=model_number, device_name=device_name)
 
 
 
@@ -102,21 +101,21 @@ def crtd_device(id):
 def hv():
     form = Find_Device()
     if form.validate_on_submit():
-        page = request.args.get('page', 1, type=int)
-        devices = HV.query
-        if form.manufacturer.data:
-            devices = devices.filter(HV.manufacturer.like('%' + form.manufacturer.data + '%'))
-        if form.model_number.data:
-            devices = devices.filter(HV.model_number.like('%' + form.model_number.data + '%' ))
-        if form.name.data:
-            devices = devices.filter(HV.name.like('%' + form.name.data + '%' ))
-
-        devices = devices.paginate(page=page, per_page=10)
-        return render_template('/Devices/hv.html', devices=devices, page_title='HV High-Voltage Leads', form=form)
+        return redirect(url_for('devices.hv',devices=devices, page_title='CRT-D High Voltage Devices', form=form))
 
     page = request.args.get('page', 1, type=int)
-    devices = HV.query.paginate(page=page, per_page=10)
-    return render_template('/Devices/hv.html', devices=devices, page_title='HV High-Voltage Leads', form=form)
+    manufacturer = request.args.get('manufacturer')
+    model_number = request.args.get('model_number')
+    device_name = request.args.get('device_name')
+    devices = HV.query
+    if manufacturer:
+        devices = devices.filter(HV.manufacturer.like('%' + manufacturer + '%'))
+    if model_number:
+        devices = devices.filter(HV.model_number.like('%' + model_number + '%' ))
+    if device_name:
+        devices = devices.filter(HV.name.like('%' + device_name + '%' ))
+    devices = devices.paginate(page=page, per_page=10)
+    return render_template('/Devices/hv.html', devices=devices, page_title='HV High-Voltage Leads', form=form, manufacturer=manufacturer, model_number=model_number, device_name=device_name)
 
 
 
@@ -132,21 +131,21 @@ def hv_device(id):
 def icd():
     form = Find_Device()
     if form.validate_on_submit():
-        page = request.args.get('page', 1, type=int)
-        devices = ICD.query
-        if form.manufacturer.data:
-            devices = devices.filter(ICD.manufacturer.like('%' + form.manufacturer.data + '%'))
-        if form.model_number.data:
-            devices = devices.filter(ICD.model_number.like('%' + form.model_number.data + '%' ))
-        if form.name.data:
-            devices = devices.filter(ICD.name.like('%' + form.name.data + '%' ))
-
-        devices = devices.paginate(page=page, per_page=10)
-        return render_template('/Devices/icd.html', devices=devices, page_title='ICD High-Voltage Devices', form=form)
+        return redirect(url_for('devices.icd',devices=devices, page_title='ICD High-Voltage Devices', form=form))
 
     page = request.args.get('page', 1, type=int)
-    devices = ICD.query.paginate(page=page, per_page=10)
-    return render_template('/Devices/icd.html', devices=devices, page_title='ICD High-Voltage Devices', form=form)
+    manufacturer = request.args.get('manufacturer')
+    model_number = request.args.get('model_number')
+    device_name = request.args.get('device_name')
+    devices = ICD.query
+    if manufacturer:
+        devices = devices.filter(ICD.manufacturer.like('%' + manufacturer + '%'))
+    if model_number:
+        devices = devices.filter(ICD.model_number.like('%' + model_number + '%' ))
+    if device_name:
+        devices = devices.filter(ICD.name.like('%' + device_name + '%' ))
+    devices = devices.paginate(page=page, per_page=10)
+    return render_template('/Devices/icd.html', devices=devices, page_title='ICD High-Voltage Devices', form=form, manufacturer=manufacturer, model_number=model_number, device_name=device_name)
 
 
 
@@ -161,21 +160,21 @@ def icd_device(id):
 def lv():
     form = Find_Device()
     if form.validate_on_submit():
-        page = request.args.get('page', 1, type=int)
-        devices = LV.query
-        if form.manufacturer.data:
-            devices = devices.filter(LV.manufacturer.like('%' + form.manufacturer.data + '%'))
-        if form.model_number.data:
-            devices = devices.filter(LV.model_number.like('%' + form.model_number.data + '%' ))
-        if form.name.data:
-            devices = devices.filter(LV.name.like('%' + form.name.data + '%' ))
-
-        devices = devices.paginate(page=page, per_page=10)
-        return render_template('/Devices/lv.html', devices=devices, page_title='LV Low-Voltage Devices', form=form)
+        return redirect(url_for('devices.lv',devices=devices, page_title='LV Low-Voltage Devices', form=form))
 
     page = request.args.get('page', 1, type=int)
-    devices = LV.query.paginate(page=page, per_page=10)
-    return render_template('/Devices/lv.html', devices=devices, page_title='LV Low-Voltage Devices', form=form)
+    manufacturer = request.args.get('manufacturer')
+    model_number = request.args.get('model_number')
+    device_name = request.args.get('device_name')
+    devices = LV.query
+    if manufacturer:
+        devices = devices.filter(LV.manufacturer.like('%' + manufacturer + '%'))
+    if model_number:
+        devices = devices.filter(LV.model_number.like('%' + model_number + '%' ))
+    if device_name:
+        devices = devices.filter(LV.name.like('%' + device_name + '%' ))
+    devices = devices.paginate(page=page, per_page=10)
+    return render_template('/Devices/lv.html', devices=devices, page_title='LV Low-Voltage Devices', form=form, manufacturer=manufacturer, model_number=model_number, device_name=device_name)
 
 
 
