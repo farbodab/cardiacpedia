@@ -15,22 +15,22 @@ devices = Blueprint('devices', __name__)
 def ipg():
     form = Find_Device()
     if form.validate_on_submit():
-        page = request.args.get('page', 1, type=int)
-        devices = IPG.query
-        FILTERS = [form.manufacturer.data, form.model_number.data, form.name.data]
-        NAMES = [IPG.manufacturer, IPG.model_number, IPG.name]
-        if form.manufacturer.data:
-            devices = devices.filter(IPG.manufacturer.like('%' + form.manufacturer.data + '%'))
-        if form.model_number.data:
-            devices = devices.filter(IPG.model_number.like('%' + form.model_number.data + '%' ))
-        if form.name.data:
-            devices = devices.filter(IPG.name.like('%' + form.name.data + '%' ))
-        devices = devices.paginate(page=page, per_page=10)
-        return render_template('/Devices/ipg.html', devices=devices, page_title='IPG Low-Voltage Devices', form=form)
+        return redirect(url_for('devices.ipg',manufacturer=form.manufacturer.data, model_number=form.model_number.data, device_name=form.name.data))
 
     page = request.args.get('page', 1, type=int)
-    devices = IPG.query.paginate(page=page, per_page=10)
-    return render_template('/Devices/ipg.html', devices=devices, page_title='IPG Low-Voltage Devices', form=form)
+    manufacturer = request.args.get('manufacturer')
+    model_number = request.args.get('model_number')
+    device_name = request.args.get('device_name')
+    devices = IPG.query
+    
+    if manufacturer:
+        devices = devices.filter(IPG.manufacturer.like('%' + manufacturer + '%'))
+    if model_number:
+        devices = devices.filter(IPG.model_number.like('%' + model_number + '%' ))
+    if device_name:
+        devices = devices.filter(IPG.name.like('%' + device_name + '%' ))
+    devices = devices.paginate(page=page, per_page=10)
+    return render_template('/Devices/ipg.html', devices=devices, page_title='IPG Low-Voltage Devices', form=form, manufacturer=manufacturer, model_number=model_number, device_name=device_name)
 
 @devices.route('/devices/ipg/<id>')
 @login_required
