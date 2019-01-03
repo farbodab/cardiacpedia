@@ -1,11 +1,32 @@
-from flask import render_template, url_for, flash, redirect, request, Blueprint, render_template_string
+from flask import render_template, url_for, flash, redirect, request, Blueprint
 from cardiacpedia import db
 from cardiacpedia.models import *
-from cardiacpedia.devices.forms import Find_Device
+from cardiacpedia.devices.forms import *
 from flask_user import current_user, login_required, roles_required, UserManager, UserMixin
 
 
 devices = Blueprint('devices', __name__)
+
+@devices.route('/devices/finder', methods=['GET', 'POST'])
+@login_required
+def finder():
+    form = Finder()
+    if form.validate_on_submit():
+        if form.type.data == 'IPG':
+            return redirect(url_for('devices.ipg',manufacturer=form.manufacturer.data, model_number=form.model_number.data, device_name=form.name.data))
+        elif form.type.data == 'CRTP':
+            return redirect(url_for('devices.crtp',manufacturer=form.manufacturer.data, model_number=form.model_number.data, device_name=form.name.data))
+        elif form.type.data == 'ICD':
+            return redirect(url_for('devices.icd',manufacturer=form.manufacturer.data, model_number=form.model_number.data, device_name=form.name.data))
+        elif form.type.data == 'CRTD':
+            return redirect(url_for('devices.crtd',manufacturer=form.manufacturer.data, model_number=form.model_number.data, device_name=form.name.data))
+        elif form.type.data == 'LV':
+            return redirect(url_for('devices.lv',manufacturer=form.manufacturer.data, model_number=form.model_number.data, device_name=form.name.data))
+        elif form.type.data == 'HV':
+            return redirect(url_for('devices.hv',manufacturer=form.manufacturer.data, model_number=form.model_number.data, device_name=form.name.data))
+
+    return render_template('/Devices/finder.html', page_title="Device Finder", form=form)
+
 
 ################################################################################
 ##############################View Table########################################

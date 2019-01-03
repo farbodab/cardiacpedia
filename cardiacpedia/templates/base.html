@@ -9,6 +9,27 @@
 
   <style>
 
+  .main-container {
+     min-height: 100vh; /* will cover the 100% of viewport */
+     overflow: hidden;
+     display: block;
+     position: relative;
+     padding-bottom: 300px; /* height of your footer */
+    }
+
+  html,
+  body {
+   height: 100%;
+   position: relative;
+  }
+
+.alert-info {
+    color: #07689f;
+    background-color: #a2d5f2;
+    border-color: #a2d5f2;
+    margin-bottom: 0;
+}
+
   a{
     color:#cc6452;
   }
@@ -40,18 +61,18 @@
   }
 
   .fas{
-    color:#ff7e67;
+    color:#FFA733;
   }
 
   .navbar-dark .navbar-brand{
-    color: #a2d5f2;
+    color: #ff7e67;
   }
   .navbar-dark .navbar-brand:hover{
-    color: #ff7e67;
+    color: #FFA733;
   }
 
   .navbar-dark .navbar-nav .nav-link{
-    color: #fafafa;
+    color:#fafafa;
   }
 
   .navbar-dark .navbar-nav .nav-link:hover  {
@@ -74,6 +95,9 @@
       background-color: #07689f;
       color: white;
       padding-top: 30px;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
   }
 
   #myFooter .footer-copyright {
@@ -176,128 +200,125 @@
 
   </style>
   </head>
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-dark">
-      <a class="navbar-brand" href="{{ url_for('core.index') }}"><i class="fas fa-book"></i> CardiacPedia</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="{{ url_for('core.index') }}">Home</a>
-          </li>
-          {% if current_user.is_authenticated %}
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Devices
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="{{ url_for('devices.ipg') }}">IPG Low-Voltage Devices</a>
-              <a class="dropdown-item" href="{{ url_for('devices.crtp') }}">CRT-P Low-Voltage Devices</a>
-              <a class="dropdown-item" href="{{ url_for('devices.icd') }}">ICD High-Voltage Devices</a>
-              <a class="dropdown-item" href="{{ url_for('devices.crtd') }}">CRT-D High-Voltage Devices</a>
-              <a class="dropdown-item" href="{{ url_for('devices.lv') }}">LV Low-Voltage Devices</a>
-              <a class="dropdown-item" href="{{ url_for('devices.hv') }}">HV High-Voltage Devices</a>
-            </div>
-          </li>
-          {% if current_user.has_roles('Admin') %}
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Admin
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="{{ url_for('users.admin_users_view_users') }}">View Users</a>
-                <a class="dropdown-item" href="{{ url_for('users.admin_users_remove_users') }}">Remove Users</a>
-                <a class="dropdown-item" href="{{ url_for('users.admin_users_view_roles') }}">View Roles</a>
-                <a class="dropdown-item" href="{{ url_for('users.admin_users_add_roles') }}">Add Roles</a>
-                <a class="dropdown-item" href="{{ url_for('users.admin_users_remove_roles') }}">Remove Roles</a>
-                <a class="dropdown-item" href="{{ url_for('users.admin_users_add_user_roles') }}">Add User-Roles</a>
-                <a class="dropdown-item" href="{{ url_for('users.admin_users_remove_user_roles') }}">Remove User-Roles</a>
-                <a class="dropdown-item" href="{{ user_manager.USER_INVITE_USER_URL }}">Invite Users</a>
-              </div>
+  <div class="main-container">
+    <body>
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="{{ url_for('core.index') }}"><i class="fas fa-book"></i> CardiacPedia</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="{{ url_for('core.index') }}">Home</a>
             </li>
-          {% endif %}
-
-
-          {% endif %}
-        </ul>
-        <ul class="navbar-nav ml-auto ">
             {% if current_user.is_authenticated %}
             <li class="nav-item dropdown">
-              <a style="color:white;" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                {{current_user.email}}
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Devices
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="{{ user_manager.USER_EDIT_USER_PROFILE_URL }}">Profile</a>
-                <a class="dropdown-item" href="{{ user_manager.USER_LOGOUT_URL }}">Log Out</a>
+                <a class="dropdown-item" href="{{ url_for('devices.finder') }}">Find Device</a>
               </div>
             </li>
-            {% else %}
-            <li class="nav-item"><a class="nav-link" href="{{ user_manager.USER_LOGIN_URL }}">Log In</a></li>
-            <li class="nav-item"><a class="nav-link" href="{{ user_manager.USER_REGISTER_URL }}">Register</a></li>
+            {% if current_user.has_roles('Admin') %}
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Admin
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="{{ url_for('users.admin_users_view_users') }}">View Users</a>
+                  <a class="dropdown-item" href="{{ url_for('users.admin_users_remove_users') }}">Remove Users</a>
+                  <a class="dropdown-item" href="{{ url_for('users.admin_users_view_roles') }}">View Roles</a>
+                  <a class="dropdown-item" href="{{ url_for('users.admin_users_add_roles') }}">Add Roles</a>
+                  <a class="dropdown-item" href="{{ url_for('users.admin_users_remove_roles') }}">Remove Roles</a>
+                  <a class="dropdown-item" href="{{ url_for('users.admin_users_add_user_roles') }}">Add User-Roles</a>
+                  <a class="dropdown-item" href="{{ url_for('users.admin_users_remove_user_roles') }}">Remove User-Roles</a>
+                  <a class="dropdown-item" href="{{ user_manager.USER_INVITE_USER_URL }}">Invite Users</a>
+                </div>
+              </li>
             {% endif %}
-        </ul>
-      </div>
-    </nav>
-    {% for mess in get_flashed_messages() %}
-      <div class="alert alert-info alert-dismissible fade show" role="alert">
-        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        {{mess}}
-      </div>
-    {% endfor %}
-
-    <div class="container">
-    {% block content %}
-
-    {% endblock %}
-    </div>
-    {% block main %}
-
-    {% endblock %}
 
 
-    <footer id="myFooter">
-        <div class="container">
-            <div class="row">
-                <div style="text-align: center;" class="col-sm-3">
-                    <img src="/static/logo.png" alt="">
+            {% endif %}
+          </ul>
+          <ul class="navbar-nav ml-auto ">
+              {% if current_user.is_authenticated %}
+              <li class="nav-item dropdown">
+                <a style="color:white;" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  {{current_user.email}}
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="{{ user_manager.USER_EDIT_USER_PROFILE_URL }}">Profile</a>
+                  <a class="dropdown-item" href="{{ user_manager.USER_LOGOUT_URL }}">Log Out</a>
                 </div>
-                <div class="col-sm-2">
-                    <h5>Get started</h5>
-                    <ul>
-                        <li><a href="{{ url_for('core.index')}}">Home</a></li>
-                        <li><a href="{{ user_manager.USER_REGISTER_URL }}">Sign up</a></li>
-                    </ul>
-                </div>
-                <div class="col-sm-2">
-                    <h5>About us</h5>
-                    <ul>
-                        <li><a href="#">Company Information</a></li>
-                        <li><a href="#">Contact us</a></li>
-                    </ul>
-                </div>
-                <div class="col-sm-2">
-                    <h5>Support</h5>
-                    <ul>
-                        <li><a href="#">FAQ</a></li>
-                        <li><a href="#">Contact Us</a></li>
-                    </ul>
-                </div>
-                <div class="col-sm-3">
-                    <div class="social-networks">
-                        <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="facebook"><i class="fab fa-facebook"></i></a>
-                        <a href="#" class="google"><i class="fab fa-google-plus"></i></a>
-                    </div>
-                </div>
-            </div>
+              </li>
+              {% else %}
+              <li class="nav-item"><a class="nav-link" href="{{ user_manager.USER_LOGIN_URL }}">Log In</a></li>
+              <li class="nav-item"><a class="nav-link" href="{{ user_manager.USER_REGISTER_URL }}">Register</a></li>
+              {% endif %}
+          </ul>
         </div>
-        <div class="footer-copyright">
-          <p>© 2018 Copyright DeepMedSolutions Inc. </p>
+      </nav>
+      {% for mess in get_flashed_messages() %}
+        <div class="alert alert-info alert-dismissible fade show" role="alert">
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            {{mess|safe}}
         </div>
-    </footer>
-  </body>
+      {% endfor %}
+
+      <div class="container">
+      {% block content %}
+
+      {% endblock %}
+      </div>
+      {% block main %}
+
+      {% endblock %}
+
+
+      <footer id="myFooter">
+          <div class="container">
+              <div class="row">
+                  <div style="text-align: center;" class="col-sm-3">
+                      <img src="/static/logo.png" alt="">
+                  </div>
+                  <div class="col-sm-2">
+                      <h5>Get started</h5>
+                      <ul>
+                          <li><a href="{{ url_for('core.index')}}">Home</a></li>
+                          <li><a href="{{ user_manager.USER_REGISTER_URL }}">Sign up</a></li>
+                      </ul>
+                  </div>
+                  <div class="col-sm-2">
+                      <h5>About us</h5>
+                      <ul>
+                          <li><a href="#">Company Information</a></li>
+                          <li><a href="#">Contact us</a></li>
+                      </ul>
+                  </div>
+                  <div class="col-sm-2">
+                      <h5>Support</h5>
+                      <ul>
+                          <li><a href="#">FAQ</a></li>
+                          <li><a href="#">Contact Us</a></li>
+                      </ul>
+                  </div>
+                  <div class="col-sm-3">
+                      <div class="social-networks">
+                          <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+                          <a href="#" class="facebook"><i class="fab fa-facebook"></i></a>
+                          <a href="#" class="google"><i class="fab fa-google-plus"></i></a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="footer-copyright">
+            <p>© 2018 Copyright DeepMedSolutions Inc. </p>
+          </div>
+      </footer>
+    </body>
+  </div>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
   {{ bootstrap.load_js() }}
 </html>
