@@ -7,14 +7,76 @@
   {{ bootstrap.load_css() }}
 
   <style>
+
+  a{
+    color:#cc6452;
+  }
+
+  a:hover{
+    color:#cc6452;
+  }
+
+  .page-link{
+    color:#cc6452;
+  }
+
+  .page-link:hover{
+    color:#cc6452;
+  }
+
+  .promotion{
+    font-size: 3rem;
+  }
+
+  .btn-primary{
+    background-color:#ff7e67;
+    border-color: #fafafa;
+  }
+
+  .btn-primary:hover{
+    background-color:#cc6452;
+    border-color: #fafafa;
+  }
+
+  .fas{
+    color:#ff7e67;
+  }
+
+  .navbar-dark .navbar-brand{
+    color: #a2d5f2;
+  }
+  .navbar-dark .navbar-brand:hover{
+    color: #ff7e67;
+  }
+
+  .navbar-dark .navbar-nav .nav-link{
+    color: #fafafa;
+  }
+
+  .navbar-dark .navbar-nav .nav-link:hover  {
+    color: #ff7e67;
+  }
+
+  .navbar{
+    background-color: #07689f;
+  }
+
+  .navbar-dark .nav-link{
+    font-size: larger;
+  }
+
+  .carousel-item > img {
+    height: 45rem;
+  }
+
   #myFooter {
-      background-color: #3c3d41;
+      background-color: #07689f;
       color: white;
       padding-top: 30px;
   }
 
   #myFooter .footer-copyright {
-      background-color: #333333;
+      background-color: #065d8f;
       padding-top: 3px;
       padding-bottom: 3px;
       text-align: center;
@@ -114,18 +176,18 @@
   </style>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <nav class="navbar navbar-expand-lg navbar-dark">
       <a class="navbar-brand" href="{{ url_for('core.index') }}"><i class="fas fa-book"></i> CardiacPedia</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
+          <li class="nav-item">
             <a class="nav-link" href="{{ url_for('core.index') }}">Home</a>
           </li>
           {% if current_user.is_authenticated %}
-          <li class="nav-item dropdown active">
+          <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Devices
             </a>
@@ -139,7 +201,7 @@
             </div>
           </li>
           {% if current_user.has_roles('Admin') %}
-            <li class="nav-item dropdown active">
+            <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Admin
               </a>
@@ -171,8 +233,8 @@
               </div>
             </li>
             {% else %}
-            <li class="nav-item active"><a class="nav-link" href="{{ user_manager.USER_LOGIN_URL }}">Log In</a></li>
-            <li class="nav-item active"><a class="nav-link" href="{{ user_manager.USER_REGISTER_URL }}">Register</a></li>
+            <li class="nav-item"><a class="nav-link" href="{{ user_manager.USER_LOGIN_URL }}">Log In</a></li>
+            <li class="nav-item"><a class="nav-link" href="{{ user_manager.USER_REGISTER_URL }}">Register</a></li>
             {% endif %}
         </ul>
       </div>
@@ -183,12 +245,15 @@
         {{mess}}
       </div>
     {% endfor %}
+
     <div class="container">
-      {% block content %}
+    {% block content %}
 
-      {% endblock %}
-
+    {% endblock %}
     </div>
+    {% block main %}
+
+    {% endblock %}
 
 
     <footer id="myFooter">
@@ -227,7 +292,7 @@
                         <a href="#" class="facebook"><i class="fab fa-facebook"></i></a>
                         <a href="#" class="google"><i class="fab fa-google-plus"></i></a>
                     </div>
-                    <button type="button" class="btn btn-default">Contact us</button>
+                    <button type="button" class="btn btn-primary">Contact us</button>
                 </div>
             </div>
         </div>

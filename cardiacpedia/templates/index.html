@@ -1,6 +1,6 @@
-{% extends 'base2.html' %}
+{% extends 'base.html' %}
 
-{% block content %}
+{% block main %}
 
 <main role="main">
       <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -9,8 +9,7 @@
             <img class="first-slide" src="../static/1.jpg" alt="First slide">
             <div class="container">
               <div class="carousel-caption text-left">
-                <h1 style="color: black">CardiacPedia.</h1>
-                <p style="color: black">Developed to assist medical professionals involved in the care of patients with implantable cardiac devices. Technicians, nurses, doctors and company representatives owe it to patients and themselves to own this essential and most clinically relevant app available.</p>
+                <p class="promotion" style="color: #fafafa">Developed to assist medical professionals involved in the care of patients with implantable cardiac devices.</p>
                 <p><a class="btn btn-lg btn-primary" href="{{ user_manager.USER_REGISTER_URL }}" role="button">Sign up today</a></p>
               </div>
             </div>
@@ -19,12 +18,8 @@
       </div>
 
 
-        <!-- START THE FEATURETTES -->
         <div class="container">
-
-
         <hr class="featurette-divider">
-
         <div class="row featurette">
           <div class="col-md-7">
             <h2 class="featurette-heading">Your ultimate cardiac device implantation and follow up assistant</h2>
@@ -42,9 +37,7 @@
             <img class="featurette-image img-fluid mx-auto" src="../static/heart (1).png" alt="Image of Heart">
           </div>
         </div>
-
         <hr class="featurette-divider">
-
         <div class="row featurette">
           <div class="col-md-7 order-md-2">
             <h2 class="featurette-heading">Desgined for Clincians</h2>
@@ -54,9 +47,7 @@
             <img class="featurette-image img-fluid mx-auto" src="../static/nurse.png" alt="Image of Clincian">
           </div>
         </div>
-
         <hr class="featurette-divider">
-
         <div class="row featurette">
           <div class="col-md-7">
             <h2 class="featurette-heading">Anytime, Anywhere, Online!</h2>
@@ -67,8 +58,5 @@
           </div>
         </div>
 </div>
-
-
-
 
 {% endblock %}
