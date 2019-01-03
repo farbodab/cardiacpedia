@@ -5,4 +5,4 @@ core = Blueprint('core', __name__)
 @core.route('/')
 def index():
     #home page view
-    return render_template('index.html', page_title="Home")
+    return render_template('index.html', page_title="CardiacPedia - The Ultimate ICD Assistant")
