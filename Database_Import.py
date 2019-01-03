@@ -2,7 +2,7 @@ from cardiacpedia.models import *
 import pandas as pd
 
 def ipg():
-    df = pd.read_csv('/Devices/IPG.csv', encoding = "ISO-8859-1")
+    df = pd.read_csv('Devices/IPG.csv', encoding = "ISO-8859-1")
     for index, row in df.iterrows():
         device = IPG(
         manufacturer=row['Manufacturer'],
@@ -134,4 +134,9 @@ def HV_m():
 
 
 if __name__ == '__main__':
-    db.session.execute(IPG.delete())
+    ipg()
+    crtp()
+    icd()
+    CRTD_m()
+    LV_m()
+    HV_m()

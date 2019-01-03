@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+{% from 'bootstrap/form.html' import render_field %}
+
+{% block content %}
+  <h1>{{page_title}}</h1>
+
+  <form class="form-group" method="POST">
+       {{ form.hidden_tag() }}
+       {{ render_field(form.manufacturer) }}
+       {{ render_field(form.model_number) }}
+       {{ render_field(form.name) }}
+       <div class="form-group">
+           {{ form.submit(class="btn btn-outline-info") }}
+       </div>
+  </form>
+
+  {% if page_title == 'IPG Low-Voltage Devices' %}
+      {% set url = 'devices.ipg' %}
+      {% include '/Devices/ipg.html' %}
+  {% elif page_title == 'CRT-P Low-Voltage Devices' %}
+    {% set url = 'devices.crtp' %}
+    {% include '/Devices/crtp.html' %}
+  {% elif page_title == 'CRT-D High Voltage Devices' %}
+    {% set url = 'devices.crtd' %}
+    {% include '/Devices/crtd.html' %}
+  {% elif page_title == 'HV High-Voltage Leads' %}
+    {% set url = 'devices.hv' %}
+    {% include '/Devices/hv.html' %}
+  {% elif page_title == 'ICD High-Voltage Devices' %}
+    {% set url = 'devices.icd' %}
+    {% include '/Devices/icd.html' %}
+  {% elif page_title == 'LV Low-Voltage Devices' %}
+    {% set url = 'devices.lv' %}
+    {% include '/Devices/lv.html' %}
+  {% endif %}
+
+  <nav aria-label="Page navigation example">
+    <ul class="pagination justify-content-center">
+      {% for page_num in devices.iter_pages(left_edge=1, right_edge=2, left_current=1, right_current=2) %}
+         {% if not page_num %}
+          <li class="page-item disabled"><a class="page-link" href="#">...</a></li>
+         {% elif devices.page == page_num %}
+         <li class="page-item disabled">
+           <a class="page-link" href="{{ url_for(url, page=page_num, manufacturer=manufacturer, model_number=model_number, device_name=device_name) }}">{{ page_num }}</a></li>
+         </li>
+         {% else %}
+           <li class="page-item"><a class="page-link" href="{{ url_for(url, page=page_num, manufacturer=manufacturer, model_number=model_number, device_name=device_name) }}">{{ page_num }}</a></li>
+         {% endif %}
+     {% endfor %}
+   </nav>
+{% endblock %}

@@ -1,6 +1,6 @@
 Manufacturer,Model Number,Name,NBG Code,X-ray/Serial ID,Sense / Pace Connector RA,Sense / Pace Connector RV,Detach Tools,Non MAG Rate BOS,Non MAG Rate RRT/EOS,MAG Rate BOS,MAG Rate RRT/EOS,RRT/EOS Behavior,RRT/EOS Longetivity
-"Biotronik, Inc.",—,Axios DR-B ,DDDR,ER,6 mm Programmable,6 mm Programmable,#2,PR,PR-11% (VDD),PR,PR-11% (VOO),"B, 11%, Jb",5.5
-"Biotronik, Inc.",—,Axios SR-B ,SSIR,ER,None,6 mm Programmable,#2,PR,PR-11% (SI),PR,PR-11% (SOO),"B, 11%, Jb",6.7
+"Biotronik, Inc.",,Axios DR-B ,DDDR,ER,6 mm Programmable,6 mm Programmable,#2,PR,PR-11% (VDD),PR,PR-11% (VOO),"B, 11%, Jb",5.5
+"Biotronik, Inc.",,Axios SR-B ,SSIR,ER,None,6 mm Programmable,#2,PR,PR-11% (SI),PR,PR-11% (SOO),"B, 11%, Jb",6.7
 "Biotronik, Inc.",101,Ergos 01 UP ,SSIR,None,None,IS-1 UNI,#2,PR,PR-11%,PR,PR-11%,"B, 11%",
 "Biotronik, Inc.",102,Diplos 03 ,DDDM,None,5 mm UNI,5 mm UNI,#2,PR,PR-6%,PR,PR-6%,"B, 6%",
 "Biotronik, Inc.",102,Diplos 03 ,VVI,None,None,5 mm UNI,#2,PR,PR-6%,PR,PR-6%,"B, 6%",
