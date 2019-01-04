@@ -13,17 +13,17 @@ def compatibility():
     form = Devices()
     if form.validate_on_submit():
         if form.type.data == 'IPG':
-            return redirect(url_for('devices.ipg',manufacturer=form.manufacturer.data, nbg=form.paced.data + form.sensed.data))
+            return redirect(url_for('devices.ipg',manufacturer=form.manufacturer.data.strip(), nbg=form.paced.data + form.sensed.data))
         elif form.type.data == 'CRTP':
-            return redirect(url_for('devices.crtp',manufacturer=form.manufacturer.data, nbg=form.paced.data + form.sensed.data))
+            return redirect(url_for('devices.crtp',manufacturer=form.manufacturer.data.strip(), nbg=form.paced.data + form.sensed.data))
         elif form.type.data == 'ICD':
-            return redirect(url_for('devices.icd',manufacturer=form.manufacturer.data, nbg=form.paced.data + form.sensed.data))
+            return redirect(url_for('devices.icd',manufacturer=form.manufacturer.data.strip(), nbg=form.paced.data + form.sensed.data))
         elif form.type.data == 'CRTD':
-            return redirect(url_for('devices.crtd',manufacturer=form.manufacturer.data, nbg=form.paced.data + form.sensed.data))
+            return redirect(url_for('devices.crtd',manufacturer=form.manufacturer.data.strip(), nbg=form.paced.data + form.sensed.data))
         elif form.type.data == 'LV':
-            return redirect(url_for('devices.lv',manufacturer=form.manufacturer.data, nbg=form.paced.data + form.sensed.data))
+            return redirect(url_for('devices.lv',manufacturer=form.manufacturer.data.strip(), nbg=form.paced.data + form.sensed.data))
         elif form.type.data == 'HV':
-            return redirect(url_for('devices.hv',manufacturer=form.manufacturer.data, nbg=form.paced.data + form.sensed.data))
+            return redirect(url_for('devices.hv',manufacturer=form.manufacturer.data.strip(), nbg=form.paced.data + form.sensed.data))
     return render_template('/Devices/compatible_finder.html', page_title="Compatible Device Finder", form=form)
 
 
@@ -33,17 +33,17 @@ def finder():
     form = Finder()
     if form.validate_on_submit():
         if form.type.data == 'IPG':
-            return redirect(url_for('devices.ipg',manufacturer=form.manufacturer.data, model_number=form.model_number.data, device_name=form.name.data))
+            return redirect(url_for('devices.ipg',manufacturer=form.manufacturer.data.strip(), model_number=form.model_number.data.strip(), device_name=form.name.data.strip()))
         elif form.type.data == 'CRTP':
-            return redirect(url_for('devices.crtp',manufacturer=form.manufacturer.data, model_number=form.model_number.data, device_name=form.name.data))
+            return redirect(url_for('devices.crtp',manufacturer=form.manufacturer.data.strip(), model_number=form.model_number.data.strip(), device_name=form.name.data.strip()))
         elif form.type.data == 'ICD':
-            return redirect(url_for('devices.icd',manufacturer=form.manufacturer.data, model_number=form.model_number.data, device_name=form.name.data))
+            return redirect(url_for('devices.icd',manufacturer=form.manufacturer.data.strip(), model_number=form.model_number.data.strip(), device_name=form.name.data.strip()))
         elif form.type.data == 'CRTD':
-            return redirect(url_for('devices.crtd',manufacturer=form.manufacturer.data, model_number=form.model_number.data, device_name=form.name.data))
+            return redirect(url_for('devices.crtd',manufacturer=form.manufacturer.data.strip(), model_number=form.model_number.data.strip(), device_name=form.name.data.strip()))
         elif form.type.data == 'LV':
-            return redirect(url_for('devices.lv',manufacturer=form.manufacturer.data, model_number=form.model_number.data, device_name=form.name.data))
+            return redirect(url_for('devices.lv',manufacturer=form.manufacturer.data.strip(), model_number=form.model_number.data.strip(), device_name=form.name.data.strip()))
         elif form.type.data == 'HV':
-            return redirect(url_for('devices.hv',manufacturer=form.manufacturer.data, model_number=form.model_number.data, device_name=form.name.data))
+            return redirect(url_for('devices.hv',manufacturer=form.manufacturer.data.strip(), model_number=form.model_number.data.strip(), device_name=form.name.data.strip()))
 
     return render_template('/Devices/finder.html', page_title="Device Finder", form=form)
 
@@ -56,7 +56,7 @@ def finder():
 def ipg():
     form = Find_Device()
     if form.validate_on_submit():
-        return redirect(url_for('devices.ipg',manufacturer=form.manufacturer.data, model_number=form.model_number.data, device_name=form.name.data))
+        return redirect(url_for('devices.ipg',manufacturer=form.manufacturer.data.strip(), model_number=form.model_number.data.strip(), device_name=form.name.data.strip()))
 
     page = request.args.get('page', 1, type=int)
     manufacturer = request.args.get('manufacturer')
@@ -90,7 +90,7 @@ def ipg_device(id):
 def crtp():
     form = Find_Device()
     if form.validate_on_submit():
-        return redirect(url_for('devices.crtp',page_title='CRT-P Low-Voltage Devices', manufacturer=form.manufacturer.data, model_number=form.model_number.data, device_name=form.name.data))
+        return redirect(url_for('devices.crtp',page_title='CRT-P Low-Voltage Devices', manufacturer=form.manufacturer.data.strip(), model_number=form.model_number.data.strip(), device_name=form.name.data.strip()))
 
     page = request.args.get('page', 1, type=int)
     manufacturer = request.args.get('manufacturer')
@@ -122,7 +122,7 @@ def crtp_device(id):
 def crtd():
     form = Find_Device()
     if form.validate_on_submit():
-        return redirect(url_for('devices.crtd',page_title='CRT-D High Voltage Devices', manufacturer=form.manufacturer.data, model_number=form.model_number.data, device_name=form.name.data))
+        return redirect(url_for('devices.crtd',page_title='CRT-D High Voltage Devices', manufacturer=form.manufacturer.data.strip(), model_number=form.model_number.data.strip(), device_name=form.name.data.strip()))
 
     page = request.args.get('page', 1, type=int)
     manufacturer = request.args.get('manufacturer')
@@ -155,7 +155,7 @@ def crtd_device(id):
 def hv():
     form = Find_Device()
     if form.validate_on_submit():
-        return redirect(url_for('devices.hv',page_title='HV High-Voltage Leads', manufacturer=form.manufacturer.data, model_number=form.model_number.data, device_name=form.name.data))
+        return redirect(url_for('devices.hv',page_title='HV High-Voltage Leads', manufacturer=form.manufacturer.data.strip(), model_number=form.model_number.data.strip(), device_name=form.name.data.strip()))
 
     page = request.args.get('page', 1, type=int)
     manufacturer = request.args.get('manufacturer')
@@ -188,7 +188,7 @@ def hv_device(id):
 def icd():
     form = Find_Device()
     if form.validate_on_submit():
-        return redirect(url_for('devices.icd',page_title='ICD High-Voltage Devices', manufacturer=form.manufacturer.data, model_number=form.model_number.data, device_name=form.name.data))
+        return redirect(url_for('devices.icd',page_title='ICD High-Voltage Devices', manufacturer=form.manufacturer.data.strip(), model_number=form.model_number.data.strip(), device_name=form.name.data.strip()))
 
     page = request.args.get('page', 1, type=int)
     manufacturer = request.args.get('manufacturer')
@@ -217,7 +217,7 @@ def icd_device(id):
 def lv():
     form = Find_Device()
     if form.validate_on_submit():
-        return redirect(url_for('devices.lv',page_title='LV Low-Voltage Devices', manufacturer=form.manufacturer.data, model_number=form.model_number.data, device_name=form.name.data))
+        return redirect(url_for('devices.lv',page_title='LV Low-Voltage Devices', manufacturer=form.manufacturer.data.strip(), model_number=form.model_number.data.strip(), device_name=form.name.data.strip()))
 
     page = request.args.get('page', 1, type=int)
     manufacturer = request.args.get('manufacturer')
