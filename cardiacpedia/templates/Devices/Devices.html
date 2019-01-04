@@ -4,15 +4,9 @@
 {% block content %}
   <h1>{{page_title}}</h1>
 
-  <form class="form-group" method="POST">
-       {{ form.hidden_tag() }}
-       {{ render_field(form.manufacturer) }}
-       {{ render_field(form.model_number) }}
-       {{ render_field(form.name) }}
-       <div class="form-group">
-           {{ form.submit(class="btn btn-lg btn-primary") }}
-       </div>
-  </form>
+  {% if f_type == '1' %}
+    {% include '/Devices/new_finder_form.html' %}
+  {% endif %}
 
   {% if page_title == 'IPG Low-Voltage Devices' %}
       {% set url = 'devices.ipg' %}
