@@ -3,23 +3,38 @@
 
 {% block content %}
 <h1>{{page_title}}</h1>
-<div class="container" style="height: 70vh;">
+
   <div class="row">
     <div class="col-sm-4">
       <div class="card" style="width: 18rem;">
-        <a href="{{ url_for('devices.new') }}" class="btn btn-primary btn-lg"><i style="color:white;"class="fas fa-plus"><br>New Implant</i></a>
+        <img src="{{ url_for('static', filename='Pacemaker.png') }}" class="card-img-top" alt="...">
+        <div class="card-body">
+        <h5 class="card-title">New Implant</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a style="width:100%;" href="{{ url_for('devices.new') }}" class="btn btn-primary btn-lg"><i style="color:white;"class="fas fa-plus"><br></i></a>
+      </div>
       </div>
     </div>
     <div class="col-sm-4">
       <div class="card" style="width: 18rem;">
-        <a href="{{ url_for('devices.compatibility') }}" class="btn btn-primary btn-lg"><i style="color:white;"class="fas fa-exchange-alt"><br>Pac Change / Upgrade</i></a>
+        <img src="{{ url_for('static', filename='change.png') }}" class="card-img-top" alt="...">
+        <div class="card-body">
+        <h5 class="card-title">Pac Change / Upgrade</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a style="width:100%;" href="{{ url_for('devices.compatibility') }}" class="btn btn-primary btn-lg"><i style="color:white;"class="fas fa-exchange-alt"><br></i></a>
+      </div>
       </div>
     </div>
     <div class="col-sm-4">
       <div class="card" style="width: 18rem;">
-        <a href="{{ url_for('devices.finder') }}" class="btn btn-primary btn-lg"><i style="color:white;"class="fas fa-search"><br>Search All Devices</i></a>
+        <img src="{{ url_for('static', filename='search.png') }}" class="card-img-top" alt="...">
+        <div class="card-body">
+        <h5 class="card-title">Search All Devices</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a style="width:100%;" href="{{ url_for('devices.finder') }}" class="btn btn-primary btn-lg"><i style="color:white;"class="fas fa-search"><br></i></a>
+      </div>
       </div>
     </div>
   </div>
-</div>
+
 {% endblock %}

@@ -5,22 +5,23 @@ from wtforms import ValidationError
 from flask_login import current_user
 from cardiacpedia.models import IPG
 
-
-class Device_Find(FlaskForm):
+class Device_Type(FlaskForm):
     type = SelectField('Device Type', choices=[('IPG','IPG Low-Voltage Devices'),
     ('CRTP','CRT-P Low-Voltage Devices'),('ICD','ICD High-Voltage Devices'),
     ('CRTD','CRT-D High-Voltage Devices'),('LV','LV Low-Voltage Devices'),
-    ('HV','HV High-Voltage Devices')],validators=[DataRequired(message='You must select a device type')])
-    manufacturer = StringField('Manufacturer')
-    model_number = StringField('Model Number')
-    name = StringField('Name')
+    ('HV','HV High-Voltage Devices')])
+
+class Device_New(FlaskForm):
+    paced = SelectField('Chambers Paced', choices=[("", "---"), ('D','Dual (A+V)'),
+    ('A','Atrium'),('V','Ventricle')])
+
+    sensed = SelectField('Chambers Sensed', choices=[("", "---"),('D','Dual (A+V)'),
+    ('A','Atrium'),('V','Ventricle')])
     submit = SubmitField('Find Device')
 
+    manufacturer = StringField('Manufacturer')
+
 class Devices_Change(FlaskForm):
-    type = SelectField('Device Type', choices=[('IPG','IPG Low-Voltage Devices'),
-    ('CRTP','CRT-P Low-Voltage Devices'),('ICD','ICD High-Voltage Devices'),
-    ('CRTD','CRT-D High-Voltage Devices'),('LV','LV Low-Voltage Devices'),
-    ('HV','HV High-Voltage Devices')],validators=[DataRequired(message='You must select a device type')])
 
     paced = SelectField('Chambers Paced', choices=[("", "---"), ('D','Dual (A+V)'),
     ('A','Atrium'),('V','Ventricle')])
@@ -47,17 +48,8 @@ class Devices_Change(FlaskForm):
 
     manufacturer = StringField('Manufacturer')
 
-class Device_New(FlaskForm):
-    type = SelectField('Device Type', choices=[('IPG','IPG Low-Voltage Devices'),
-    ('CRTP','CRT-P Low-Voltage Devices'),('ICD','ICD High-Voltage Devices'),
-    ('CRTD','CRT-D High-Voltage Devices'),('LV','LV Low-Voltage Devices'),
-    ('HV','HV High-Voltage Devices')],validators=[DataRequired(message='You must select a device type')])
-
-    paced = SelectField('Chambers Paced', choices=[("", "---"), ('D','Dual (A+V)'),
-    ('A','Atrium'),('V','Ventricle')])
-
-    sensed = SelectField('Chambers Sensed', choices=[("", "---"),('D','Dual (A+V)'),
-    ('A','Atrium'),('V','Ventricle')])
-    submit = SubmitField('Find Device')
-
+class Device_Find(FlaskForm):
     manufacturer = StringField('Manufacturer')
+    model_number = StringField('Model Number')
+    name = StringField('Name')
+    submit = SubmitField('Find Device')
