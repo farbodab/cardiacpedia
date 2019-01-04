@@ -14,64 +14,35 @@ def new():
     form = Device_New()
     if form.validate_on_submit():
         if form_type.type.data == 'IPG':
-            if form.paced.data or form.sensed.data:
-                if form.paced.data and form.sensed.data:
-                    return redirect(url_for('devices.ipg',manufacturer=form.manufacturer.data.strip(), paced=form.paced.data, sensed=form.sensed.data, f_type='1'))
-                else:
-                    flash('You need to select both sense and pace configurations')
-            else:
-                return redirect(url_for('devices.ipg',manufacturer=form.manufacturer.data.strip(), paced=form.paced.data, sensed=form.sensed.data, f_type='1'))
+            return redirect(url_for('devices.ipg',manufacturer=form.manufacturer.data.strip(), paced=form.paced.data, sensed=form.sensed.data, f_type='1'))
         elif form_type.type.data == 'CRTP':
-            if form.paced.data or form.sensed.data:
-                if form.paced.data and form.sensed.data:
-                    return redirect(url_for('devices.crtp',manufacturer=form.manufacturer.data.strip(), paced=form.paced.data, sensed=form.sensed.data, f_type='1'))
-                else:
-                    flash('You need to select both sense and pace configurations')
-            else:
-                return redirect(url_for('devices.crtp',manufacturer=form.manufacturer.data.strip(), paced=form.paced.data, sensed=form.sensed.data, f_type='1'))
+            return redirect(url_for('devices.crtp',manufacturer=form.manufacturer.data.strip(), paced=form.paced.data, sensed=form.sensed.data, f_type='1'))
         elif form_type.type.data == 'ICD':
-            if form.paced.data or form.sensed.data:
-                if form.paced.data and form.sensed.data:
-                    return redirect(url_for('devices.icd',manufacturer=form.manufacturer.data.strip(), paced=form.paced.data, sensed=form.sensed.data, f_type='1'))
-                else:
-                    flash('You need to select both sense and pace configurations')
-            else:
-                return redirect(url_for('devices.icd',manufacturer=form.manufacturer.data.strip(), paced=form.paced.data, sensed=form.sensed.data, f_type='1'))
+            return redirect(url_for('devices.icd',manufacturer=form.manufacturer.data.strip(), paced=form.paced.data, sensed=form.sensed.data, f_type='1'))
         elif form_type.type.data == 'CRTD':
-            if form.paced.data or form.sensed.data:
-                if form.paced.data and form.sensed.data:
-                    return redirect(url_for('devices.crtd',manufacturer=form.manufacturer.data.strip(), paced=form.paced.data, sensed=form.sensed.data, f_type='1'))
-                else:
-                    flash('You need to select both sense and pace configurations')
-            else:
-                return redirect(url_for('devices.crtd',manufacturer=form.manufacturer.data.strip(), paced=form.paced.data, sensed=form.sensed.data, f_type='1'))
+            return redirect(url_for('devices.crtd',manufacturer=form.manufacturer.data.strip(), paced=form.paced.data, sensed=form.sensed.data, f_type='1'))
     return render_template('/Devices/New/new_finder.html', page_title="New Device Finder", form_type=form_type, form=form)
 
 @devices.route('/devices/compatibility', methods=['GET', 'POST'])
 @login_required
 def compatibility():
     form = Devices_Change()
+    form_type = Device_Type()
     if form.validate_on_submit():
-        if form.type.data == 'IPG':
-            if form.paced.data or form.sensed.data:
-                if form.paced.data and form.sensed.data:
-                    return redirect(url_for('devices.ipg',manufacturer=form.manufacturer.data.strip(), paced=form.paced.data, sensed=form.sensed.data, ra=form.ra.data, rv=form.rv.data))
-                else:
-                    flash('You need to select both sense and pace configurations')
-            else:
-                return redirect(url_for('devices.ipg',manufacturer=form.manufacturer.data.strip(), paced=form.paced.data, sensed=form.sensed.data, ra=form.ra.data, rv=form.rv.data))
-        elif form.type.data == 'CRTP':
-            return redirect(url_for('devices.crtp',manufacturer=form.manufacturer.data.strip(), paced=form.paced.data, sensed=form.sensed.data))
-        elif form.type.data == 'ICD':
-            return redirect(url_for('devices.icd',manufacturer=form.manufacturer.data.strip(), paced=form.paced.data, sensed=form.sensed.data))
-        elif form.type.data == 'CRTD':
-            return redirect(url_for('devices.crtd',manufacturer=form.manufacturer.data.strip(), paced=form.paced.data, sensed=form.sensed.data))
-        elif form.type.data == 'LV':
-            return redirect(url_for('devices.lv',manufacturer=form.manufacturer.data.strip(), paced=form.paced.data, sensed=form.sensed.data))
-        elif form.type.data == 'HV':
-            return redirect(url_for('devices.hv',manufacturer=form.manufacturer.data.strip(), paced=form.paced.data, sensed=form.sensed.data))
+        if form_type.type.data == 'IPG':
+            return redirect(url_for('devices.ipg',manufacturer=form.manufacturer.data.strip(), paced=form.paced.data, sensed=form.sensed.data, ra=form.ra.data, rv=form.rv.data, f_type='2'))
+        elif form_type.type.data == 'CRTP':
+            return redirect(url_for('devices.crtp',manufacturer=form.manufacturer.data.strip(), paced=form.paced.data, sensed=form.sensed.data,ra=form.ra.data, rv=form.rv.data, f_type='2'))
+        elif form_type.type.data == 'ICD':
+            return redirect(url_for('devices.icd',manufacturer=form.manufacturer.data.strip(), paced=form.paced.data, sensed=form.sensed.data,ra=form.ra.data, rv=form.rv.data, f_type='2'))
+        elif form_type.type.data == 'CRTD':
+            return redirect(url_for('devices.crtd',manufacturer=form.manufacturer.data.strip(), paced=form.paced.data, sensed=form.sensed.data,ra=form.ra.data, rv=form.rv.data, f_type='2'))
+        elif form_type.type.data == 'LV':
+            return redirect(url_for('devices.lv',manufacturer=form.manufacturer.data.strip(), paced=form.paced.data, sensed=form.sensed.data,ra=form.ra.data, rv=form.rv.data, f_type='2'))
+        elif form_type.type.data == 'HV':
+            return redirect(url_for('devices.hv',manufacturer=form.manufacturer.data.strip(), paced=form.paced.data, sensed=form.sensed.data,ra=form.ra.data, rv=form.rv.data, f_type='2'))
 
-    return render_template('/Devices/compatible_finder.html', page_title="Upgrade / PAC Change", form=form)
+    return render_template('/Devices/Change/compatible.html', page_title="Upgrade / PAC Change", form=form, form_type=form_type)
 
 
 @devices.route('/devices/finder', methods=['GET', 'POST'])
@@ -113,17 +84,11 @@ def ipg():
     if f_type == '1':
         form = Device_New()
         if form.validate_on_submit():
-            if form.paced.data or form.sensed.data:
-                if form.paced.data and form.sensed.data:
-                    return redirect(url_for('devices.ipg',manufacturer=form.manufacturer.data.strip(), paced=form.paced.data, sensed=form.sensed.data, f_type =f_type))
-                else:
-                    flash('You need to select both sense and pace configurations')
-            else:
-                return redirect(url_for('devices.ipg',manufacturer=form.manufacturer.data.strip(), paced=form.paced.data, sensed=form.sensed.data, f_type=f_type))
+            return redirect(url_for('devices.ipg',manufacturer=form.manufacturer.data.strip(), paced=form.paced.data, sensed=form.sensed.data, f_type =f_type))
     elif f_type == '2':
         form = Devices_Change()
         if form.validate_on_submit():
-            return redirect(url_for('devices.ipg',manufacturer=form.manufacturer.data.strip(), paced=form.paced.data, sensed=form.sensed.data, f_type =f_type))
+            return redirect(url_for('devices.ipg',manufacturer=form.manufacturer.data.strip(), paced=form.paced.data, sensed=form.sensed.data, ra=form.ra.data, rv=form.rv.data, f_type =f_type))
     elif f_type == '3':
         form = Device_Find()
         if form.validate_on_submit():
@@ -135,12 +100,17 @@ def ipg():
     device_name = request.args.get('device_name')
     paced = request.args.get('paced')
     sensed = request.args.get('sensed')
+    ra = request.args.get('ra')
+    rv = request.args.get('rv')
+
     nbg = ''
+
     if paced and sensed:
         nbg = paced + sensed
         form.paced.data = paced
         form.sensed.data = sensed
     devices = IPG.query
+
     if manufacturer:
         devices = devices.filter(IPG.manufacturer.like('%' + manufacturer + '%'))
         form.manufacturer.data = manufacturer
@@ -153,8 +123,15 @@ def ipg():
     if nbg:
         devices = devices.filter(IPG.nbg_code.like(nbg + '%'))
 
+    if ra:
+        devices = devices.filter(IPG.ra.like(ra + '%'))
+        form.ra.data = ra
+    if rv:
+        devices = devices.filter(IPG.rv.like(rv + '%'))
+        form.rv.data = rv
+
     devices = devices.paginate(page=page, per_page=10)
-    return render_template('/Devices/Devices.html', devices=devices, page_title='IPG Low-Voltage Devices',form=form, manufacturer=manufacturer, model_number=model_number, device_name=device_name, sensed=sensed, paced=paced, f_type=f_type)
+    return render_template('/Devices/Devices.html', devices=devices, page_title='IPG Low-Voltage Devices',form=form, manufacturer=manufacturer, model_number=model_number, device_name=device_name, sensed=sensed, paced=paced, f_type=f_type, ra=ra, rv=rv)
 
 @devices.route('/devices/ipg/<id>')
 @login_required
@@ -166,15 +143,37 @@ def ipg_device(id):
 @devices.route('/devices/crtp', methods=['GET', 'POST'])
 @login_required
 def crtp():
-    form = Find_Device()
-    if form.validate_on_submit():
-        return redirect(url_for('devices.crtp',page_title='CRT-P Low-Voltage Devices', manufacturer=form.manufacturer.data.strip(), model_number=form.model_number.data.strip(), device_name=form.name.data.strip()))
+    f_type = request.args.get('f_type')
+    if f_type == '1':
+        form = Device_New()
+        if form.validate_on_submit():
+            return redirect(url_for('devices.crtp',manufacturer=form.manufacturer.data.strip(), paced=form.paced.data, sensed=form.sensed.data, f_type =f_type))
+    elif f_type == '2':
+        form = Devices_Change()
+        if form.validate_on_submit():
+            return redirect(url_for('devices.crtp',manufacturer=form.manufacturer.data.strip(), paced=form.paced.data, sensed=form.sensed.data, ra=form.ra.data, rv=form.rv.data, f_type =f_type))
+    elif f_type == '3':
+        form = Device_Find()
+        if form.validate_on_submit():
+            return redirect(url_for('devices.crtp',manufacturer=form.manufacturer.data.strip(), model_number=form.model_number.data.strip(), device_name=form.name.data.strip(), f_type = f_type))
 
     page = request.args.get('page', 1, type=int)
     manufacturer = request.args.get('manufacturer')
     model_number = request.args.get('model_number')
     device_name = request.args.get('device_name')
+    paced = request.args.get('paced')
+    sensed = request.args.get('sensed')
+    ra = request.args.get('ra')
+    rv = request.args.get('rv')
+
+    nbg = ''
+
+    if paced and sensed:
+        nbg = paced + sensed
+        form.paced.data = paced
+        form.sensed.data = sensed
     devices = CRTP.query
+
     if manufacturer:
         devices = devices.filter(CRTP.manufacturer.like('%' + manufacturer + '%'))
         form.manufacturer.data = manufacturer
@@ -184,9 +183,18 @@ def crtp():
     if device_name:
         devices = devices.filter(CRTP.name.like('%' + device_name + '%' ))
         form.name.data = device_name
-    devices = devices.paginate(page=page, per_page=10)
-    return render_template('/Devices/Devices.html', devices=devices, page_title='CRT-P Low-Voltage Devices', form=form, manufacturer=manufacturer, model_number=model_number, device_name=device_name)
+    if nbg:
+        devices = devices.filter(CRTP.nbg_code.like(nbg + '%'))
 
+    if ra:
+        devices = devices.filter(CRTP.ra.like(ra + '%'))
+        form.ra.data = ra
+    if rv:
+        devices = devices.filter(CRTP.rv.like(rv + '%'))
+        form.rv.data = rv
+
+    devices = devices.paginate(page=page, per_page=10)
+    return render_template('/Devices/Devices.html', devices=devices, page_title='CRT-P Low-Voltage Devices',form=form, manufacturer=manufacturer, model_number=model_number, device_name=device_name, sensed=sensed, paced=paced, f_type=f_type, ra=ra, rv=rv)
 
 
 @devices.route('/devices/crtp/<id>')
@@ -198,15 +206,37 @@ def crtp_device(id):
 @devices.route('/devices/crtd', methods=['GET', 'POST'])
 @login_required
 def crtd():
-    form = Find_Device()
-    if form.validate_on_submit():
-        return redirect(url_for('devices.crtd',page_title='CRT-D High Voltage Devices', manufacturer=form.manufacturer.data.strip(), model_number=form.model_number.data.strip(), device_name=form.name.data.strip()))
+    f_type = request.args.get('f_type')
+    if f_type == '1':
+        form = Device_New()
+        if form.validate_on_submit():
+            return redirect(url_for('devices.crtd',manufacturer=form.manufacturer.data.strip(), paced=form.paced.data, sensed=form.sensed.data, f_type =f_type))
+    elif f_type == '2':
+        form = Devices_Change()
+        if form.validate_on_submit():
+            return redirect(url_for('devices.crtd',manufacturer=form.manufacturer.data.strip(), paced=form.paced.data, sensed=form.sensed.data, ra=form.ra.data, rv=form.rv.data, f_type =f_type))
+    elif f_type == '3':
+        form = Device_Find()
+        if form.validate_on_submit():
+            return redirect(url_for('devices.crtd',manufacturer=form.manufacturer.data.strip(), model_number=form.model_number.data.strip(), device_name=form.name.data.strip(), f_type = f_type))
 
     page = request.args.get('page', 1, type=int)
     manufacturer = request.args.get('manufacturer')
     model_number = request.args.get('model_number')
     device_name = request.args.get('device_name')
+    paced = request.args.get('paced')
+    sensed = request.args.get('sensed')
+    ra = request.args.get('ra')
+    rv = request.args.get('rv')
+
+    nbg = ''
+
+    if paced and sensed:
+        nbg = paced + sensed
+        form.paced.data = paced
+        form.sensed.data = sensed
     devices = CRTD.query
+
     if manufacturer:
         devices = devices.filter(CRTD.manufacturer.like('%' + manufacturer + '%'))
         form.manufacturer.data = manufacturer
@@ -216,9 +246,17 @@ def crtd():
     if device_name:
         devices = devices.filter(CRTD.name.like('%' + device_name + '%' ))
         form.name.data = device_name
+    if nbg:
+        devices = devices.filter(CRTD.nbg_code.like(nbg + '%'))
+    if ra:
+        devices = devices.filter(CRTD.ra.like(ra + '%'))
+        form.ra.data = ra
+    if rv:
+        devices = devices.filter(CRTD.rv.like(rv + '%'))
+        form.rv.data = rv
+
     devices = devices.paginate(page=page, per_page=10)
-    return render_template('/Devices/Devices.html', devices=devices, page_title='CRT-D High Voltage Devices',
-    form=form, manufacturer=manufacturer, model_number=model_number, device_name=device_name)
+    return render_template('/Devices/Devices.html', devices=devices, page_title='CRT-D High Voltage Devices',form=form, manufacturer=manufacturer, model_number=model_number, device_name=device_name, sensed=sensed, paced=paced, f_type=f_type, ra=ra, rv=rv)
 
 
 
@@ -231,15 +269,38 @@ def crtd_device(id):
 @devices.route('/devices/hv', methods=['GET', 'POST'])
 @login_required
 def hv():
-    form = Find_Device()
-    if form.validate_on_submit():
-        return redirect(url_for('devices.hv',page_title='HV High-Voltage Leads', manufacturer=form.manufacturer.data.strip(), model_number=form.model_number.data.strip(), device_name=form.name.data.strip()))
+    f_type = request.args.get('f_type')
+    if f_type == '1':
+        form = Device_New()
+        if form.validate_on_submit():
+            return redirect(url_for('devices.hv',manufacturer=form.manufacturer.data.strip(), paced=form.paced.data, sensed=form.sensed.data, f_type =f_type))
+    elif f_type == '2':
+        form = Devices_Change()
+        if form.validate_on_submit():
+            return redirect(url_for('devices.hv',manufacturer=form.manufacturer.data.strip(), paced=form.paced.data, sensed=form.sensed.data, ra=form.ra.data, rv=form.rv.data, f_type =f_type))
+    elif f_type == '3':
+        form = Device_Find()
+        if form.validate_on_submit():
+            return redirect(url_for('devices.hv',manufacturer=form.manufacturer.data.strip(), model_number=form.model_number.data.strip(), device_name=form.name.data.strip(), f_type = f_type))
 
     page = request.args.get('page', 1, type=int)
     manufacturer = request.args.get('manufacturer')
     model_number = request.args.get('model_number')
     device_name = request.args.get('device_name')
+    paced = request.args.get('paced')
+    sensed = request.args.get('sensed')
+    ra = request.args.get('ra')
+    rv = request.args.get('rv')
+
+    nbg = ''
+
+    if paced and sensed:
+        nbg = paced + sensed
+        form.paced.data = paced
+        form.sensed.data = sensed
+
     devices = HV.query
+
     if manufacturer:
         devices = devices.filter(HV.manufacturer.like('%' + manufacturer + '%'))
         form.manufacturer.data = manufacturer
@@ -249,9 +310,18 @@ def hv():
     if device_name:
         devices = devices.filter(HV.name.like('%' + device_name + '%' ))
         form.name.data = device_name
-    devices = devices.paginate(page=page, per_page=10)
-    return render_template('/Devices/Devices.html', devices=devices, page_title='HV High-Voltage Leads', form=form, manufacturer=manufacturer, model_number=model_number, device_name=device_name)
+    if nbg:
+        #devices = devices.filter(CRTD.nbg_code.like(nbg + '%'))
+        pass
+    if ra:
+        devices = devices.filter(HV.sense.like(ra + '%'))
+        form.ra.data = ra
+    if rv:
+        devices = devices.filter(HV.high.like(rv + '%'))
+        form.rv.data = rv
 
+    devices = devices.paginate(page=page, per_page=10)
+    return render_template('/Devices/Devices.html', devices=devices, page_title='HV High-Voltage Leads',form=form, manufacturer=manufacturer, model_number=model_number, device_name=device_name, sensed=sensed, paced=paced, f_type=f_type, ra=ra, rv=rv)
 
 
 @devices.route('/devices/hv/<id>')
@@ -264,24 +334,57 @@ def hv_device(id):
 @devices.route('/devices/icd', methods=['GET', 'POST'])
 @login_required
 def icd():
-    form = Find_Device()
-    if form.validate_on_submit():
-        return redirect(url_for('devices.icd',page_title='ICD High-Voltage Devices', manufacturer=form.manufacturer.data.strip(), model_number=form.model_number.data.strip(), device_name=form.name.data.strip()))
+    f_type = request.args.get('f_type')
+    if f_type == '1':
+        form = Device_New()
+        if form.validate_on_submit():
+            return redirect(url_for('devices.icd',manufacturer=form.manufacturer.data.strip(), paced=form.paced.data, sensed=form.sensed.data, f_type =f_type))
+    elif f_type == '2':
+        form = Devices_Change()
+        if form.validate_on_submit():
+            return redirect(url_for('devices.icd',manufacturer=form.manufacturer.data.strip(), paced=form.paced.data, sensed=form.sensed.data, ra=form.ra.data, rv=form.rv.data, f_type =f_type))
+    elif f_type == '3':
+        form = Device_Find()
+        if form.validate_on_submit():
+            return redirect(url_for('devices.icd',manufacturer=form.manufacturer.data.strip(), model_number=form.model_number.data.strip(), device_name=form.name.data.strip(), f_type = f_type))
 
     page = request.args.get('page', 1, type=int)
     manufacturer = request.args.get('manufacturer')
     model_number = request.args.get('model_number')
     device_name = request.args.get('device_name')
+    paced = request.args.get('paced')
+    sensed = request.args.get('sensed')
+    ra = request.args.get('ra')
+    rv = request.args.get('rv')
+
+    nbg = ''
+
+    if paced and sensed:
+        nbg = paced + sensed
+        form.paced.data = paced
+        form.sensed.data = sensed
     devices = ICD.query
+
     if manufacturer:
         devices = devices.filter(ICD.manufacturer.like('%' + manufacturer + '%'))
+        form.manufacturer.data = manufacturer
     if model_number:
         devices = devices.filter(ICD.model_number.like('%' + model_number + '%' ))
+        form.model_number.data = model_number
     if device_name:
         devices = devices.filter(ICD.name.like('%' + device_name + '%' ))
-    devices = devices.paginate(page=page, per_page=10)
-    return render_template('/Devices/Devices.html', devices=devices, page_title='ICD High-Voltage Devices', form=form, manufacturer=manufacturer, model_number=model_number, device_name=device_name)
+        form.name.data = device_name
+    if nbg:
+        devices = devices.filter(ICD.nbg_code.like(nbg + '%'))
+    if ra:
+        devices = devices.filter(ICD.ra.like(ra + '%'))
+        form.ra.data = ra
+    if rv:
+        devices = devices.filter(ICD.rv.like(rv + '%'))
+        form.rv.data = rv
 
+    devices = devices.paginate(page=page, per_page=10)
+    return render_template('/Devices/Devices.html', devices=devices, page_title='ICD High-Voltage Devices',form=form, manufacturer=manufacturer, model_number=model_number, device_name=device_name, sensed=sensed, paced=paced, f_type=f_type, ra=ra, rv=rv)
 
 
 @devices.route('/devices/icd/<id>')
@@ -293,15 +396,37 @@ def icd_device(id):
 @devices.route('/devices/lv', methods=['GET', 'POST'])
 @login_required
 def lv():
-    form = Find_Device()
-    if form.validate_on_submit():
-        return redirect(url_for('devices.lv',page_title='LV Low-Voltage Devices', manufacturer=form.manufacturer.data.strip(), model_number=form.model_number.data.strip(), device_name=form.name.data.strip()))
+    f_type = request.args.get('f_type')
+    if f_type == '1':
+        form = Device_New()
+        if form.validate_on_submit():
+            return redirect(url_for('devices.lv',manufacturer=form.manufacturer.data.strip(), paced=form.paced.data, sensed=form.sensed.data, f_type =f_type))
+    elif f_type == '2':
+        form = Devices_Change()
+        if form.validate_on_submit():
+            return redirect(url_for('devices.lv',manufacturer=form.manufacturer.data.strip(), paced=form.paced.data, sensed=form.sensed.data, ra=form.ra.data, rv=form.rv.data, f_type =f_type))
+    elif f_type == '3':
+        form = Device_Find()
+        if form.validate_on_submit():
+            return redirect(url_for('devices.lv',manufacturer=form.manufacturer.data.strip(), model_number=form.model_number.data.strip(), device_name=form.name.data.strip(), f_type = f_type))
 
     page = request.args.get('page', 1, type=int)
     manufacturer = request.args.get('manufacturer')
     model_number = request.args.get('model_number')
     device_name = request.args.get('device_name')
+    paced = request.args.get('paced')
+    sensed = request.args.get('sensed')
+    ra = request.args.get('ra')
+    rv = request.args.get('rv')
+
+    nbg = ''
+
+    if paced and sensed:
+        nbg = paced + sensed
+        form.paced.data = paced
+        form.sensed.data = sensed
     devices = LV.query
+
     if manufacturer:
         devices = devices.filter(LV.manufacturer.like('%' + manufacturer + '%'))
         form.manufacturer.data = manufacturer
@@ -311,9 +436,18 @@ def lv():
     if device_name:
         devices = devices.filter(LV.name.like('%' + device_name + '%' ))
         form.name.data = device_name
-    devices = devices.paginate(page=page, per_page=10)
-    return render_template('/Devices/Devices.html', devices=devices, page_title='LV Low-Voltage Devices', form=form, manufacturer=manufacturer, model_number=model_number, device_name=device_name)
+    if nbg:
+        #devices = devices.filter(ICD.nbg_code.like(nbg + '%'))
+        pass
+    if ra:
+        devices = devices.filter(LV.sense.like(ra + '%'))
+        form.ra.data = ra
+    if rv:
+        #devices = devices.filter(ICD.rv.like(rv + '%'))
+        form.rv.data = rv
 
+    devices = devices.paginate(page=page, per_page=10)
+    return render_template('/Devices/Devices.html', devices=devices, page_title='LV Low-Voltage Devices',form=form, manufacturer=manufacturer, model_number=model_number, device_name=device_name, sensed=sensed, paced=paced, f_type=f_type, ra=ra, rv=rv)
 
 
 @devices.route('/devices/lv/<id>')

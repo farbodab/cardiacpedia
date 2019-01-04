@@ -6,6 +6,8 @@
 
   {% if f_type == '1' %}
     {% include '/Devices/New/new_finder_form.html' %}
+  {% elif f_type == '2' %}
+    {% include '/Devices/Change/compatible_form.html' %}
   {% elif f_type == '3' %}
     {% include '/Devices/Finder/finder_form.html' %}
   {% endif %}
@@ -18,7 +20,7 @@
     {% include '/Devices/crtp.html' %}
   {% elif page_title == 'CRT-D High Voltage Devices' %}
     {% set url = 'devices.crtd' %}
-    {% include '/Devices/crtp.html' %}
+    {% include '/Devices/crtd.html' %}
   {% elif page_title == 'HV High-Voltage Leads' %}
     {% set url = 'devices.hv' %}
     {% include '/Devices/hv.html' %}

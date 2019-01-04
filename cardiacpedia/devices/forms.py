@@ -1,9 +1,10 @@
 from flask_wtf import FlaskForm
 from wtforms import IntegerField, StringField, PasswordField, SubmitField, SelectField
-from wtforms.validators import DataRequired, Email, EqualTo
+from wtforms.validators import DataRequired, Email, EqualTo, Optional
 from wtforms import ValidationError
 from flask_login import current_user
 from cardiacpedia.models import IPG
+from flask import flash
 
 class Device_Type(FlaskForm):
     type = SelectField('Device Type', choices=[('IPG','IPG Low-Voltage Devices'),
@@ -13,14 +14,23 @@ class Device_Type(FlaskForm):
 
 class Device_New(FlaskForm):
     paced = SelectField('Chambers Paced', choices=[("", "---"), ('D','Dual (A+V)'),
-    ('A','Atrium'),('V','Ventricle')])
+    ('A','Atrium'),('V','Ventricle')], validators=[Optional()])
 
     sensed = SelectField('Chambers Sensed', choices=[("", "---"),('D','Dual (A+V)'),
-    ('A','Atrium'),('V','Ventricle')])
+    ('A','Atrium'),('V','Ventricle')],validators=[Optional()])
     submit = SubmitField('Find Device')
 
     manufacturer = StringField('Manufacturer')
 
+    def validate(self):
+        if self.paced.data or self.sensed.data:
+            if self.paced.data and self.sensed.data:
+                return True
+            else:
+                flash('You must select both a sensing and pacing configuration')
+                return False
+        else:
+            return True
 class Devices_Change(FlaskForm):
 
     paced = SelectField('Chambers Paced', choices=[("", "---"), ('D','Dual (A+V)'),
@@ -28,6 +38,7 @@ class Devices_Change(FlaskForm):
 
     sensed = SelectField('Chambers Sensed', choices=[("", "---"),('D','Dual (A+V)'),
     ('A','Atrium'),('V','Ventricle')])
+
     submit = SubmitField('Find Device')
 
     ra = SelectField('RA Connector', choices=[("", "---"),("3.2 mm C","3.2 mm C"), ("3.2 mm LP","3.2 mm LP"), ("4.75 mm", "4.75 mm"),
@@ -46,7 +57,19 @@ class Devices_Change(FlaskForm):
     ("PSI","PSI"), ("SOR", "SOR"), ("Spring clip", "Spring clip"), ("Thermistor", "Thermistor"), ("Vitatron", "Vitatron"), ("VS-1", "VS-1"),
     ("VS-1A","VS-1A"), ("VS-1B", "VS-1B")])
 
+
     manufacturer = StringField('Manufacturer')
+
+    def validate(self):
+        if self.paced.data or self.sensed.data:
+            if self.paced.data and self.sensed.data:
+                return True
+            else:
+                flash('You must select both a sensing and pacing configuration')
+                return False
+        else:
+            return True
+
 
 class Device_Find(FlaskForm):
     manufacturer = StringField('Manufacturer')
