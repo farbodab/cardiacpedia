@@ -9,4 +9,4 @@ def index():
     if current_user.is_authenticated:
         return redirect(url_for('devices.finder'))
     else:
-        return render_template('index.html', page_title="CardiacPedia - The Ultimate ICD Assistant")
+        return render_template('index.html', page_title="CardiacBook - The Ultimate ICD Assistant")
