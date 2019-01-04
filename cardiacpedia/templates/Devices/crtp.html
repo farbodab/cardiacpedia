@@ -1,19 +1,19 @@
   <table style="word-wrap:break-word; table-layout: fixed;" class="table table-striped">
     <thead>
         <tr>
-          <th scope="col">ID</th>
           <th scope="col">Manufacturer</th>
           <th scope="col">Model Number</th>
           <th scope="col">Name</th>
+          <th scope="col">Click to View</th>
         </tr>
       </thead>
       <tbody>
         {% for device in devices.items %}
         <tr>
-          <td><a href="/devices/crtp/{{device.id}}">{{device.id}}</a></td>
           <td>{{device.manufacturer}}</td>
           <td>{{device.model_number}}</td>
           <td>{{device.name}}</td>
+          <td><a href="/devices/crtp/{{device.id}}"><i class="fas fa-folder"></i></a></td>
         </tr>
         {% endfor %}
       </tbody>

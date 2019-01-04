@@ -1,50 +1,78 @@
 from flask_wtf import FlaskForm
 from wtforms import IntegerField, StringField, PasswordField, SubmitField, SelectField
-from wtforms.validators import DataRequired, Email, EqualTo
+from wtforms.validators import DataRequired, Email, EqualTo, Optional
 from wtforms import ValidationError
 from flask_login import current_user
 from cardiacpedia.models import IPG
+from flask import flash
 
-
-class Find_Device(FlaskForm):
-    manufacturer = StringField('Manufacturer')
-    model_number = StringField('Model Number')
-    name = StringField('Name')
-    submit = SubmitField('Find Device')
-
-class Finder(FlaskForm):
+class Device_Type(FlaskForm):
     type = SelectField('Device Type', choices=[('IPG','IPG Low-Voltage Devices'),
     ('CRTP','CRT-P Low-Voltage Devices'),('ICD','ICD High-Voltage Devices'),
     ('CRTD','CRT-D High-Voltage Devices'),('LV','LV Low-Voltage Devices'),
-    ('HV','HV High-Voltage Devices')],validators=[DataRequired(message='You must select a device type')])
+    ('HV','HV High-Voltage Devices')])
+
+class Device_New(FlaskForm):
+    paced = SelectField('Chambers Paced', choices=[("", "---"), ('D','Dual (A+V)'),
+    ('A','Atrium'),('V','Ventricle')], validators=[Optional()])
+
+    sensed = SelectField('Chambers Sensed', choices=[("", "---"),('D','Dual (A+V)'),
+    ('A','Atrium'),('V','Ventricle')],validators=[Optional()])
+    submit = SubmitField('Find Device')
+
+    manufacturer = StringField('Manufacturer')
+
+    def validate(self):
+        if self.paced.data or self.sensed.data:
+            if self.paced.data and self.sensed.data:
+                return True
+            else:
+                flash('You must select both a sensing and pacing configuration')
+                return False
+        else:
+            return True
+class Devices_Change(FlaskForm):
+
+    paced = SelectField('Chambers Paced', choices=[("", "---"), ('D','Dual (A+V)'),
+    ('A','Atrium'),('V','Ventricle')])
+
+    sensed = SelectField('Chambers Sensed', choices=[("", "---"),('D','Dual (A+V)'),
+    ('A','Atrium'),('V','Ventricle')])
+
+    submit = SubmitField('Find Device')
+
+    ra = SelectField('RA Connector', choices=[("", "---"),("3.2 mm C","3.2 mm C"), ("3.2 mm LP","3.2 mm LP"), ("4.75 mm", "4.75 mm"),
+    ("4.75 mm Bif Bi.", "4.75 mm Bif Bi."), ("5 mm Uni", "5 mm Uni"), ("5 mm", "5 mm"), ("5 mm Bif", "5 mm Bif"), ("5/6 mm Uni", "5/6 mm Uni"),
+    ("6 B", "6 B"), ("6 L", "6 L"), ("6 L-I", "6 L-I"), ("6.1 mm","6.1 mm"), ("6.5 mm", "6.5 mm"), ("Bayonet", "Bayonet"), ("CKP","CKP"),
+    ("CPI","CPI"), ("DF-1", "DF-1"), ("DF-1 (1 port)", "DF-1 (1 port)"), ("DF-1 (2 ports)", "DF-1 (2 ports)"), ("DF-1 (3 ports)", "DF-1 (3 ports)"),
+    ("DF4","DF4"),("ELA","ELA"),("HV-1", "HV-1"), ("IS-1 BI", "IS-1 BI"), ("IS-1 UNI","IS-1 UNI"), ("Linear", "Linear"), ("LV-1", "LV-1"),
+    ("PSI","PSI"), ("SOR", "SOR"), ("Spring clip", "Spring clip"), ("Thermistor", "Thermistor"), ("Vitatron", "Vitatron"), ("VS-1", "VS-1"),
+    ("VS-1A","VS-1A"), ("VS-1B", "VS-1B")])
+
+    rv = SelectField('RV Connector', choices=[("", "---"),("3.2 mm C","3.2 mm C"), ("3.2 mm LP","3.2 mm LP"), ("4.75 mm", "4.75 mm"),
+    ("4.75 mm Bif Bi.", "4.75 mm Bif Bi."), ("5 mm Uni", "5 mm Uni"), ("5 mm", "5 mm"), ("5 mm Bif", "5 mm Bif"), ("5/6 mm Uni", "5/6 mm Uni"),
+    ("6 B", "6 B"), ("6 L", "6 L"), ("6 L-I", "6 L-I"), ("6.1 mm","6.1 mm"), ("6.5 mm", "6.5 mm"), ("Bayonet", "Bayonet"), ("CKP","CKP"),
+    ("CPI","CPI"), ("DF-1", "DF-1"), ("DF-1 (1 port)", "DF-1 (1 port)"), ("DF-1 (2 ports)", "DF-1 (2 ports)"), ("DF-1 (3 ports)", "DF-1 (3 ports)"),
+    ("DF4","DF4"),("ELA","ELA"),("HV-1", "HV-1"), ("IS-1 BI", "IS-1 BI"), ("IS-1 UNI","IS-1 UNI"), ("Linear", "Linear"), ("LV-1", "LV-1"),
+    ("PSI","PSI"), ("SOR", "SOR"), ("Spring clip", "Spring clip"), ("Thermistor", "Thermistor"), ("Vitatron", "Vitatron"), ("VS-1", "VS-1"),
+    ("VS-1A","VS-1A"), ("VS-1B", "VS-1B")])
+
+
+    manufacturer = StringField('Manufacturer')
+
+    def validate(self):
+        if self.paced.data or self.sensed.data:
+            if self.paced.data and self.sensed.data:
+                return True
+            else:
+                flash('You must select both a sensing and pacing configuration')
+                return False
+        else:
+            return True
+
+
+class Device_Find(FlaskForm):
     manufacturer = StringField('Manufacturer')
     model_number = StringField('Model Number')
     name = StringField('Name')
     submit = SubmitField('Find Device')
-
-class Devices(FlaskForm):
-    type = SelectField('Device Type', choices=[('IPG','IPG Low-Voltage Devices')])
-
-    # type = SelectField('Device Type', choices=[('IPG','IPG Low-Voltage Devices'),
-    # ('CRTP','CRT-P Low-Voltage Devices'),('ICD','ICD High-Voltage Devices'),
-    # ('CRTD','CRT-D High-Voltage Devices'),('LV','LV Low-Voltage Devices'),
-    # ('HV','HV High-Voltage Devices')],validators=[DataRequired(message='You must select a device type')])
-
-    paced = SelectField('Chambers Paced', choices=[('D','Dual (A+V)'),
-    ('A','Atrium'),('V','Ventricle')],validators=[DataRequired(message='You must select a pacing configuration')])
-
-    sensed = SelectField('Chambers Sensed', choices=[('D','Dual (A+V)'),
-    ('A','Atrium'),('V','Ventricle')],validators=[DataRequired(message='You must select a sensing type')])
-    submit = SubmitField('Find Device')
-
-    # ra = SelectField('RA Connector', choices=[('D','3.2 mm C'),
-    # ('A','3.2 mm LP Bi.'),('V','3.2 mm LP#'),('V','3.2/5 mm'),
-    # ('V','4.75 mm Bif Bi.'),('V','5 mm Bif'),('V','5 mm'),('V','5 mm/Thermistor')
-    # ('V','6 mm C'),('V','6 mm B'),('V','6 mm L-I'),('V','A-Track™')
-    # ('V','A-V Data™'),('V','3.2 mm LP#'),('V','3.2 mm LP#'),('V','3.2 mm LP#')
-    # ('V','3.2 mm LP#'),('V','3.2 mm LP#')],validators=[DataRequired(message='You must select a sensing type')])
-    #
-    # rv = SelectField('RV Connector', choices=[('D','Dual (A+V)'),
-    # ('A','Atrium'),('V','Ventricle')],validators=[DataRequired(message='You must select a sensing type')])
-
-    manufacturer = StringField('Manufacturer')

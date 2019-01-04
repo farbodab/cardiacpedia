@@ -4,15 +4,13 @@
 {% block content %}
   <h1>{{page_title}}</h1>
 
-  <form class="form-group" method="POST">
-       {{ form.hidden_tag() }}
-       {{ render_field(form.manufacturer) }}
-       {{ render_field(form.model_number) }}
-       {{ render_field(form.name) }}
-       <div class="form-group">
-           {{ form.submit(class="btn btn-lg btn-primary") }}
-       </div>
-  </form>
+  {% if f_type == '1' %}
+    {% include '/Devices/New/new_finder_form.html' %}
+  {% elif f_type == '2' %}
+    {% include '/Devices/Change/compatible_form.html' %}
+  {% elif f_type == '3' %}
+    {% include '/Devices/Finder/finder_form.html' %}
+  {% endif %}
 
   {% if page_title == 'IPG Low-Voltage Devices' %}
       {% set url = 'devices.ipg' %}
@@ -22,7 +20,7 @@
     {% include '/Devices/crtp.html' %}
   {% elif page_title == 'CRT-D High Voltage Devices' %}
     {% set url = 'devices.crtd' %}
-    {% include '/Devices/crtp.html' %}
+    {% include '/Devices/crtd.html' %}
   {% elif page_title == 'HV High-Voltage Leads' %}
     {% set url = 'devices.hv' %}
     {% include '/Devices/hv.html' %}
@@ -42,11 +40,19 @@
           <li class="page-item disabled"><a class="page-link" href="#">...</a></li>
          {% elif devices.page == page_num %}
          <li class="page-item disabled">
-           <a class="page-link" href="{{ url_for(url, page=page_num, manufacturer=manufacturer, model_number=model_number, device_name=device_name, nbg=nbg) }}">{{ page_num }}</a></li>
+           <a class="page-link" href="{{ url_for(url, page=page_num, manufacturer=manufacturer, model_number=model_number, device_name=device_name, sensed=sensed, paced=paced, ra=ra, rv=rv, f_type=f_type) }}">{{ page_num }}</a>
          </li>
          {% else %}
-           <li class="page-item"><a class="page-link" href="{{ url_for(url, page=page_num, manufacturer=manufacturer, model_number=model_number, device_name=device_name, nbg=nbg) }}">{{ page_num }}</a></li>
+           <li class="page-item"><a class="page-link" href="{{ url_for(url, page=page_num, manufacturer=manufacturer, model_number=model_number, device_name=device_name, sensed=sensed, paced=paced, ra=ra, rv=rv, f_type=f_type) }}">{{ page_num }}</a></li>
          {% endif %}
      {% endfor %}
    </nav>
+
+   <script type="text/javascript">
+     var folder = document.querySelectorAll('.fa-folder');
+     for (var i = 0 ; i < folder.length; i++) {
+     folder[i].addEventListener("mouseover", function(){ this.classList.remove('fa-folder'); this.classList.add('fa-folder-open'); })
+     folder[i].addEventListener("mouseout", function(){ this.classList.remove('fa-folder-open'); this.classList.add('fa-folder'); })
+   }
+   </script>
 {% endblock %}

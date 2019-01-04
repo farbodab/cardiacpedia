@@ -7,6 +7,6 @@ core = Blueprint('core', __name__)
 @core.route('/')
 def index():
     if current_user.is_authenticated:
-        return redirect(url_for('devices.finder'))
+        return redirect(url_for('devices.home'))
     else:
         return render_template('index.html', page_title="CardiacBook - The Ultimate ICD Assistant")
