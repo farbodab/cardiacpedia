@@ -47,6 +47,11 @@ def finder():
 
     return render_template('/Devices/finder.html', page_title="Device Finder", form=form)
 
+@devices.route('/devices/home', methods=['GET', 'POST'])
+@login_required
+def home():
+    return render_template('/Devices/Home.html', page_title="Home")
+
 
 ################################################################################
 ##############################View Table########################################
