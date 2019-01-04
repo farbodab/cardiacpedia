@@ -1,14 +1,16 @@
 {% extends 'base.html' %}
 {% from 'bootstrap/form.html' import render_field %}
 
+
+
 {% block content %}
   <h1>{{page_title}}</h1>
-
   <form class="form-group" method="POST">
        {{ form.hidden_tag() }}
+       {{ render_field(form.type) }}
+       {{ render_field(form.paced) }}
+       {{ render_field(form.sensed) }}
        {{ render_field(form.manufacturer) }}
-       {{ render_field(form.model_number) }}
-       {{ render_field(form.name) }}
        <div class="form-group">
            {{ form.submit(class="btn btn-lg btn-primary") }}
        </div>
@@ -16,23 +18,19 @@
 
   {% if page_title == 'IPG Low-Voltage Devices' %}
       {% set url = 'devices.ipg' %}
-      {% include '/Devices/ipg.html' %}
   {% elif page_title == 'CRT-P Low-Voltage Devices' %}
     {% set url = 'devices.crtp' %}
-    {% include '/Devices/crtp.html' %}
   {% elif page_title == 'CRT-D High Voltage Devices' %}
     {% set url = 'devices.crtd' %}
-    {% include '/Devices/crtp.html' %}
   {% elif page_title == 'HV High-Voltage Leads' %}
     {% set url = 'devices.hv' %}
-    {% include '/Devices/hv.html' %}
   {% elif page_title == 'ICD High-Voltage Devices' %}
     {% set url = 'devices.icd' %}
-    {% include '/Devices/icd.html' %}
   {% elif page_title == 'LV Low-Voltage Devices' %}
     {% set url = 'devices.lv' %}
-    {% include '/Devices/lv.html' %}
+
   {% endif %}
+  {% include '/Devices/device_table.html' %}
 
 
   <nav aria-label="Page navigation example">
@@ -42,10 +40,10 @@
           <li class="page-item disabled"><a class="page-link" href="#">...</a></li>
          {% elif devices.page == page_num %}
          <li class="page-item disabled">
-           <a class="page-link" href="{{ url_for(url, page=page_num, manufacturer=manufacturer, model_number=model_number, device_name=device_name, nbg=nbg) }}">{{ page_num }}</a></li>
+           <a class="page-link" href="{{ url_for(url, page=page_num, manufacturer=manufacturer, model_number=model_number, device_name=device_name) }}">{{ page_num }}</a></li>
          </li>
          {% else %}
-           <li class="page-item"><a class="page-link" href="{{ url_for(url, page=page_num, manufacturer=manufacturer, model_number=model_number, device_name=device_name, nbg=nbg) }}">{{ page_num }}</a></li>
+           <li class="page-item"><a class="page-link" href="{{ url_for(url, page=page_num, manufacturer=manufacturer, model_number=model_number, device_name=device_name) }}">{{ page_num }}</a></li>
          {% endif %}
      {% endfor %}
    </nav>

@@ -7,6 +7,26 @@ from flask_user import current_user, login_required, roles_required, UserManager
 
 devices = Blueprint('devices', __name__)
 
+@devices.route('/devices/compatibility', methods=['GET', 'POST'])
+@login_required
+def compatibility():
+    form = Devices()
+    if form.validate_on_submit():
+        if form.type.data == 'IPG':
+            return redirect(url_for('devices.ipg',manufacturer=form.manufacturer.data, nbg=form.paced.data + form.sensed.data))
+        elif form.type.data == 'CRTP':
+            return redirect(url_for('devices.crtp',manufacturer=form.manufacturer.data, nbg=form.paced.data + form.sensed.data))
+        elif form.type.data == 'ICD':
+            return redirect(url_for('devices.icd',manufacturer=form.manufacturer.data, nbg=form.paced.data + form.sensed.data))
+        elif form.type.data == 'CRTD':
+            return redirect(url_for('devices.crtd',manufacturer=form.manufacturer.data, nbg=form.paced.data + form.sensed.data))
+        elif form.type.data == 'LV':
+            return redirect(url_for('devices.lv',manufacturer=form.manufacturer.data, nbg=form.paced.data + form.sensed.data))
+        elif form.type.data == 'HV':
+            return redirect(url_for('devices.hv',manufacturer=form.manufacturer.data, nbg=form.paced.data + form.sensed.data))
+    return render_template('/Devices/compatible_finder.html', page_title="Compatible Device Finder", form=form)
+
+
 @devices.route('/devices/finder', methods=['GET', 'POST'])
 @login_required
 def finder():
@@ -42,6 +62,7 @@ def ipg():
     manufacturer = request.args.get('manufacturer')
     model_number = request.args.get('model_number')
     device_name = request.args.get('device_name')
+    nbg = request.args.get('nbg')
     devices = IPG.query
     if manufacturer:
         devices = devices.filter(IPG.manufacturer.like('%' + manufacturer + '%'))
@@ -52,8 +73,10 @@ def ipg():
     if device_name:
         devices = devices.filter(IPG.name.like('%' + device_name + '%' ))
         form.name.data = device_name
+    if nbg:
+        devices = devices.filter(IPG.nbg_code.like(nbg[0] + nbg[1] + '%'))
     devices = devices.paginate(page=page, per_page=10)
-    return render_template('/Devices/Devices.html', devices=devices, page_title='IPG Low-Voltage Devices', form=form, manufacturer=manufacturer, model_number=model_number, device_name=device_name)
+    return render_template('/Devices/Devices.html', devices=devices, page_title='IPG Low-Voltage Devices', form=form, manufacturer=manufacturer, model_number=model_number, device_name=device_name, nbg=nbg)
 
 @devices.route('/devices/ipg/<id>')
 @login_required
