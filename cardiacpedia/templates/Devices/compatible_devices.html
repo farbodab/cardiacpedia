@@ -6,9 +6,10 @@
 
   <form class="form-group" method="POST">
        {{ form.hidden_tag() }}
+       {{ render_field(form.paced) }}
+       {{ render_field(form.sensed) }}
        {{ render_field(form.manufacturer) }}
-       {{ render_field(form.model_number) }}
-       {{ render_field(form.name) }}
+
        <div class="form-group">
            {{ form.submit(class="btn btn-lg btn-primary") }}
        </div>
@@ -22,7 +23,7 @@
     {% include '/Devices/crtp.html' %}
   {% elif page_title == 'CRT-D High Voltage Devices' %}
     {% set url = 'devices.crtd' %}
-    {% include '/Devices/crtp.html' %}
+    {% include '/Devices/crtd.html' %}
   {% elif page_title == 'HV High-Voltage Leads' %}
     {% set url = 'devices.hv' %}
     {% include '/Devices/hv.html' %}
@@ -34,7 +35,6 @@
     {% include '/Devices/lv.html' %}
   {% endif %}
 
-
   <nav aria-label="Page navigation example">
     <ul class="pagination justify-content-center">
       {% for page_num in devices.iter_pages(left_edge=1, right_edge=2, left_current=1, right_current=2) %}
@@ -42,10 +42,10 @@
           <li class="page-item disabled"><a class="page-link" href="#">...</a></li>
          {% elif devices.page == page_num %}
          <li class="page-item disabled">
-           <a class="page-link" href="{{ url_for(url, page=page_num, manufacturer=manufacturer, model_number=model_number, device_name=device_name, nbg=nbg) }}">{{ page_num }}</a></li>
+           <a class="page-link" href="{{ url_for(url, page=page_num, manufacturer=manufacturer, model_number=model_number, device_name=device_name) }}">{{ page_num }}</a></li>
          </li>
          {% else %}
-           <li class="page-item"><a class="page-link" href="{{ url_for(url, page=page_num, manufacturer=manufacturer, model_number=model_number, device_name=device_name, nbg=nbg) }}">{{ page_num }}</a></li>
+           <li class="page-item"><a class="page-link" href="{{ url_for(url, page=page_num, manufacturer=manufacturer, model_number=model_number, device_name=device_name) }}">{{ page_num }}</a></li>
          {% endif %}
      {% endfor %}
    </nav>

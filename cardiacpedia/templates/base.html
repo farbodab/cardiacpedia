@@ -219,6 +219,7 @@
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <a class="dropdown-item" href="{{ url_for('devices.finder') }}">Find Device</a>
+                <a class="dropdown-item" href="{{ url_for('devices.compatibility') }}">Compatible Device Finder</a>
               </div>
             </li>
             {% if current_user.has_roles('Admin') %}
