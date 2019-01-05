@@ -60,13 +60,13 @@
       {% if current_user.is_authenticated %}
       <ul style="text-align: center;" class="nav nav-tabs">
         <li style="width:25%;"class="nav-item">
-          <a class="nav-link active" href="{{ url_for('devices.home') }}"><i class="fas fa-home"></i> Dashboard</a>
+          <a class="nav-link active" href="{{ url_for('devices.home') }}"><i class="fas fa-home"></i> Home</a>
         </li>
         <li style="width:25%;"class="nav-item">
-          <a class="nav-link" href="{{ url_for('devices.new') }}"><i class="fas fa-plus"></i> New Implant</a>
+          <a class="nav-link" href="{{ url_for('devices.new') }}"><i class="fas fa-plus"></i> New</a>
         </li>
         <li style="width:25%;"class="nav-item">
-          <a class="nav-link" href="{{ url_for('devices.compatibility') }}"><i class="fas fa-exchange-alt"></i> Upgrade / PAC change</a>
+          <a class="nav-link" href="{{ url_for('devices.compatibility') }}"><i class="fas fa-exchange-alt"></i> Upgrade</a>
         </li>
         <li style="width:25%;"class="nav-item">
           <a class="nav-link" href="{{ url_for('devices.finder') }}"><i class="fas fa-search"></i> Search</a>
