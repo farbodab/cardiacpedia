@@ -32,3 +32,5 @@ Traceback (most recent call last):
   File "/home/ubuntu/cardiacpedia/venv/lib/python3.5/site-packages/flask/templating.py", line 86, in _get_source_fast
     raise TemplateNotFound(template)
 jinja2.exceptions.TemplateNotFound: /Devices/Change/compatible.html
+2019-01-04 22:08:14,268 INFO: CardiacBook startup [in C:\Users\farbo\Desktop\CardiacPedia\cardiacpedia\__init__.py:52]
+2019-01-04 22:08:19,367 INFO: CardiacBook startup [in C:\Users\farbo\Desktop\CardiacPedia\cardiacpedia\__init__.py:52]

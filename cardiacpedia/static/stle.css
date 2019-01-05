@@ -65,9 +65,17 @@
   }
 
   .navbar-dark .nav-link{
-    font-size: larger;
+    font-size: medium;
   }
 
+  .nav-tabs .nav-link {
+    font-size: larger;
+    color: white;
+  }
+
+  .nav-tabs {
+    background-color: #ff7e67;
+  }
   .carousel-item > img {
     height: 45rem;
   }

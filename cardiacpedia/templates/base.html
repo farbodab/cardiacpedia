@@ -16,43 +16,31 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
+            {% if not current_user.is_authenticated %}
             <li class="nav-item">
               <a class="nav-link" href="{{ url_for('core.index') }}">Home</a>
             </li>
-            {% if current_user.is_authenticated %}
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Devices
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="{{ url_for('devices.new') }}">New Implant</a>
-                <a class="dropdown-item" href="{{ url_for('devices.compatibility') }}">Upgrade / PAC change</a>
-                <a class="dropdown-item" href="{{ url_for('devices.finder') }}">Search all devices</a>
-              </div>
-            </li>
-            {% if current_user.has_roles('Admin') %}
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Admin
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="{{ url_for('users.admin_users_view_users') }}">View Users</a>
-                  <a class="dropdown-item" href="{{ url_for('users.admin_users_remove_users') }}">Remove Users</a>
-                  <a class="dropdown-item" href="{{ url_for('users.admin_users_view_roles') }}">View Roles</a>
-                  <a class="dropdown-item" href="{{ url_for('users.admin_users_add_roles') }}">Add Roles</a>
-                  <a class="dropdown-item" href="{{ url_for('users.admin_users_remove_roles') }}">Remove Roles</a>
-                  <a class="dropdown-item" href="{{ url_for('users.admin_users_add_user_roles') }}">Add User-Roles</a>
-                  <a class="dropdown-item" href="{{ url_for('users.admin_users_remove_user_roles') }}">Remove User-Roles</a>
-                  <a class="dropdown-item" href="{{ user_manager.USER_INVITE_USER_URL }}">Invite Users</a>
-                </div>
-              </li>
-            {% endif %}
-
-
             {% endif %}
           </ul>
           <ul class="navbar-nav ml-auto ">
               {% if current_user.is_authenticated %}
+                {% if current_user.has_roles('Admin') %}
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Admin
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="{{ url_for('users.admin_users_view_users') }}">View Users</a>
+                      <a class="dropdown-item" href="{{ url_for('users.admin_users_remove_users') }}">Remove Users</a>
+                      <a class="dropdown-item" href="{{ url_for('users.admin_users_view_roles') }}">View Roles</a>
+                      <a class="dropdown-item" href="{{ url_for('users.admin_users_add_roles') }}">Add Roles</a>
+                      <a class="dropdown-item" href="{{ url_for('users.admin_users_remove_roles') }}">Remove Roles</a>
+                      <a class="dropdown-item" href="{{ url_for('users.admin_users_add_user_roles') }}">Add User-Roles</a>
+                      <a class="dropdown-item" href="{{ url_for('users.admin_users_remove_user_roles') }}">Remove User-Roles</a>
+                      <a class="dropdown-item" href="{{ user_manager.USER_INVITE_USER_URL }}">Invite Users</a>
+                    </div>
+                  </li>
+                {% endif %}
               <li class="nav-item dropdown">
                 <a style="color:white;" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   {{current_user.email}}
@@ -69,6 +57,22 @@
           </ul>
         </div>
       </nav>
+      {% if current_user.is_authenticated %}
+      <ul style="text-align: center;" class="nav nav-tabs">
+        <li style="width:25%;"class="nav-item">
+          <a class="nav-link active" href="{{ url_for('devices.home') }}"><i class="fas fa-home"></i> Dashboard</a>
+        </li>
+        <li style="width:25%;"class="nav-item">
+          <a class="nav-link" href="{{ url_for('devices.new') }}"><i class="fas fa-plus"></i> New Implant</a>
+        </li>
+        <li style="width:25%;"class="nav-item">
+          <a class="nav-link" href="{{ url_for('devices.compatibility') }}"><i class="fas fa-exchange-alt"></i> Upgrade / PAC change</a>
+        </li>
+        <li style="width:25%;"class="nav-item">
+          <a class="nav-link" href="{{ url_for('devices.finder') }}"><i class="fas fa-search"></i> Search</a>
+        </li>
+      </ul>
+      {% endif %}
       {% for mess in get_flashed_messages() %}
         <div class="alert alert-info alert-dismissible fade show" role="alert">
           <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
@@ -129,5 +133,11 @@
     </body>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
   {{ bootstrap.load_js() }}
+  <script type="text/javascript">
+  $(document).ready(function() {
+    $('a.active').removeClass('active');
+    $('a[href="' + location.pathname + '"]').closest('a').addClass('active');
+    });
+  </script>
 
 </html>
