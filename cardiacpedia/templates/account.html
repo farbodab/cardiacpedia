@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% from 'bootstrap/form.html' import render_field %}
+
+{% block content %}
+<div style="min-height: 70vh;" class="container">
+<h1>Account</h1>
+<hr>
+<div class="row">
+  <div class="col-sm">
+    {{current_user.email}}
+  </div>
+  <div class="col-sm">
+    <a href="{{url_for('users.email')}}">Change email</a>
+  </div>
+</div>
+<div class="row">
+  <div class="col-sm">
+    Password: ********
+  </div>
+  <div class="col-sm">
+    <a href="{{url_for('users.password')}}">Change password</a>
+  </div>
+</div>
+<hr>
+<div class="row">
+	<div class="col-sm">
+	  Plan Details:
+	</div>
+	<div class="col-sm">
+	  {% if current_user.access == '2' or current_user.access == '3' %}
+			<h6>Paid</h6>
+		{% else %}
+			<h6>Free</h6>
+		{% endif %}
+	</div>
+</div>
+</div>
+{% endblock %}

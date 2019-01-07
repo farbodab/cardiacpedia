@@ -1,141 +1,143 @@
 from flask import render_template
-from cardiacpedia import db, app, template_dir
+from cardiacpedia import db,login_manager, requires_access_level
 from datetime import datetime
 from werkzeug.security import generate_password_hash, check_password_hash
-from flask_user import current_user, login_required, roles_required, UserManager, UserMixin
+from flask_login import UserMixin
+
+ACCESS = {
+    'guest': 0,
+    'unpaid': 1,
+    'paid':2,
+    'admin': 3
+}
+
+@login_manager.user_loader
+def load_user(user_id):
+    return User.query.get(user_id)
 
 class User(db.Model, UserMixin):
         __tablename__ = 'users'
         id = db.Column(db.Integer, primary_key=True)
-        active = db.Column('is_active', db.Boolean(), nullable=False, server_default='1')
+        email = db.Column(db.String(255), nullable=False, unique=True, index=True)
+        password_hash = db.Column(db.String(255))
+        access = db.Column(db.String(5))
+        customer_id = db.Column(db.String(255))
 
-        # User authentication information. The collation='NOCASE' is required
-        # to search case insensitively when USER_IFIND_MODE is 'nocase_collation'.
-        email = db.Column(db.String(255, collation='NOCASE'), nullable=False, unique=True)
-        email_confirmed_at = db.Column(db.DateTime())
-        password = db.Column(db.String(255), nullable=False, server_default='')
 
-        # User information
-        first_name = db.Column(db.String(100, collation='NOCASE'), nullable=False, server_default='')
-        last_name = db.Column(db.String(100, collation='NOCASE'), nullable=False, server_default='')
+        def __init__(self, email, password, access=ACCESS['unpaid'], customer_id=''):
+            self.email = email
+            self.password_hash = generate_password_hash(password)
+            self.access = access
+            self.customer_id = customer_id
 
-        # Define the relationship to Role via UserRoles
-        roles = db.relationship('Role', secondary='user_roles')
+        def check_password(self,password):
+            return check_password_hash(self.password_hash,password)
 
-# Define the Role data-model
-class Role(db.Model):
-    __tablename__ = 'roles'
-    id = db.Column(db.Integer(), primary_key=True)
-    name = db.Column(db.String(50), unique=True)
+        def is_admin(self):
+            return self.access == ACCESS['admin']
 
-# Define the UserRoles association table
-class UserRoles(db.Model):
-    __tablename__ = 'user_roles'
-    id = db.Column(db.Integer(), primary_key=True)
-    user_id = db.Column(db.Integer(), db.ForeignKey('users.id', ondelete='CASCADE'))
-    role_id = db.Column(db.Integer(), db.ForeignKey('roles.id', ondelete='CASCADE'))
+        def allowed(self, access_level):
+            return int(self.access) >= access_level
+
 
 # Define the UserRoles association table
 class IPG(db.Model):
     __tablename__ = 'ipg'
     id = db.Column(db.Integer(), primary_key=True)
-    manufacturer = db.Column(db.String(255, collation='NOCASE'), nullable=False)
-    model_number = db.Column(db.String(255, collation='NOCASE'), nullable=True)
-    name = db.Column(db.String(255, collation='NOCASE'),nullable=True)
-    nbg_code = db.Column(db.String(255, collation='NOCASE'),nullable=True)
-    x_ray = db.Column(db.String(255, collation='NOCASE'), nullable=True)
-    ra = db.Column(db.String(255, collation='NOCASE'), nullable=True)
-    rv = db.Column(db.String(255, collation='NOCASE'), nullable=True)
-    detach = db.Column(db.String(255, collation='NOCASE'), nullable=True)
-    n_bos = db.Column(db.String(255, collation='NOCASE'), nullable=True)
-    n_rrt = db.Column(db.String(255, collation='NOCASE'), nullable=True)
-    m_bos = db.Column(db.String(255, collation='NOCASE'), nullable=True)
-    m_rrt = db.Column(db.String(255, collation='NOCASE'), nullable=True)
-    rrt_behaviour = db.Column(db.String(255, collation='NOCASE'), nullable=True)
-    rrt_longevity = db.Column(db.String(255, collation='NOCASE'), nullable=True)
+    manufacturer = db.Column(db.String(255), nullable=False)
+    model_number = db.Column(db.String(255), nullable=True)
+    name = db.Column(db.String(255),nullable=True)
+    nbg_code = db.Column(db.String(255),nullable=True)
+    x_ray = db.Column(db.String(255), nullable=True)
+    ra = db.Column(db.String(255), nullable=True)
+    rv = db.Column(db.String(255), nullable=True)
+    detach = db.Column(db.String(255), nullable=True)
+    n_bos = db.Column(db.String(255), nullable=True)
+    n_rrt = db.Column(db.String(255), nullable=True)
+    m_bos = db.Column(db.String(255), nullable=True)
+    m_rrt = db.Column(db.String(255), nullable=True)
+    rrt_behaviour = db.Column(db.String(255), nullable=True)
+    rrt_longevity = db.Column(db.String(255), nullable=True)
 
 class CRTP(db.Model):
     __tablename__ = 'crtp'
     id = db.Column(db.Integer(), primary_key=True)
-    manufacturer = db.Column(db.String(255, collation='NOCASE'), nullable=False)
-    model_number = db.Column(db.String(255, collation='NOCASE'), nullable=True)
-    name = db.Column(db.String(255, collation='NOCASE'),nullable=True)
-    nbg_code = db.Column(db.String(255, collation='NOCASE'),nullable=True)
-    x_ray = db.Column(db.String(255, collation='NOCASE'), nullable=True)
-    ra = db.Column(db.String(255, collation='NOCASE'), nullable=True)
-    la = db.Column(db.String(255, collation='NOCASE'), nullable=True)
-    rv = db.Column(db.String(255, collation='NOCASE'), nullable=True)
-    lv = db.Column(db.String(255, collation='NOCASE'), nullable=True)
-    detach = db.Column(db.String(255, collation='NOCASE'), nullable=True)
-    n_bol = db.Column(db.String(255, collation='NOCASE'), nullable=True)
-    n_eri = db.Column(db.String(255, collation='NOCASE'), nullable=True)
-    m_bol = db.Column(db.String(255, collation='NOCASE'), nullable=True)
-    m_eri = db.Column(db.String(255, collation='NOCASE'), nullable=True)
-    eri_behaviour = db.Column(db.String(255, collation='NOCASE'), nullable=True)
-    longevity = db.Column(db.String(255, collation='NOCASE'), nullable=True)
+    manufacturer = db.Column(db.String(255), nullable=False)
+    model_number = db.Column(db.String(255), nullable=True)
+    name = db.Column(db.String(255),nullable=True)
+    nbg_code = db.Column(db.String(255),nullable=True)
+    x_ray = db.Column(db.String(255), nullable=True)
+    ra = db.Column(db.String(255), nullable=True)
+    la = db.Column(db.String(255), nullable=True)
+    rv = db.Column(db.String(255), nullable=True)
+    lv = db.Column(db.String(255), nullable=True)
+    detach = db.Column(db.String(255), nullable=True)
+    n_bol = db.Column(db.String(255), nullable=True)
+    n_eri = db.Column(db.String(255), nullable=True)
+    m_bol = db.Column(db.String(255), nullable=True)
+    m_eri = db.Column(db.String(255), nullable=True)
+    eri_behaviour = db.Column(db.String(255), nullable=True)
+    longevity = db.Column(db.String(255), nullable=True)
 
 class ICD(db.Model):
     __tablename__ = 'icd'
     id = db.Column(db.Integer(), primary_key=True)
-    manufacturer = db.Column(db.String(255, collation='NOCASE'), nullable=False)
-    model_number = db.Column(db.String(255, collation='NOCASE'), nullable=True)
-    name = db.Column(db.String(255, collation='NOCASE'),nullable=True)
-    nbg_code = db.Column(db.String(255, collation='NOCASE'),nullable=True)
-    x_ray = db.Column(db.String(255, collation='NOCASE'), nullable=True)
-    serial = db.Column(db.String(255, collation='NOCASE'), nullable=True)
-    ra = db.Column(db.String(255, collation='NOCASE'), nullable=True)
-    rv = db.Column(db.String(255, collation='NOCASE'), nullable=True)
-    hv = db.Column(db.String(255, collation='NOCASE'), nullable=True)
-    detach = db.Column(db.String(255, collation='NOCASE'), nullable=True)
-    wave = db.Column(db.String(255, collation='NOCASE'), nullable=True)
-    replacement = db.Column(db.String(255, collation='NOCASE'), nullable=True)
+    manufacturer = db.Column(db.String(255), nullable=False)
+    model_number = db.Column(db.String(255), nullable=True)
+    name = db.Column(db.String(255),nullable=True)
+    nbg_code = db.Column(db.String(255),nullable=True)
+    x_ray = db.Column(db.String(255), nullable=True)
+    serial = db.Column(db.String(255), nullable=True)
+    ra = db.Column(db.String(255), nullable=True)
+    rv = db.Column(db.String(255), nullable=True)
+    hv = db.Column(db.String(255), nullable=True)
+    detach = db.Column(db.String(255), nullable=True)
+    wave = db.Column(db.String(255), nullable=True)
+    replacement = db.Column(db.String(255), nullable=True)
 
 class CRTD(db.Model):
     __tablename__ = 'crtd'
     id = db.Column(db.Integer(), primary_key=True)
-    manufacturer = db.Column(db.String(255, collation='NOCASE'), nullable=False)
-    model_number = db.Column(db.String(255, collation='NOCASE'), nullable=True)
-    name = db.Column(db.String(255, collation='NOCASE'),nullable=True)
-    nbg_code = db.Column(db.String(255, collation='NOCASE'),nullable=True)
-    x_ray = db.Column(db.String(255, collation='NOCASE'), nullable=True)
-    serial = db.Column(db.String(255, collation='NOCASE'), nullable=True)
-    ra = db.Column(db.String(255, collation='NOCASE'), nullable=True)
-    rv = db.Column(db.String(255, collation='NOCASE'), nullable=True)
-    lv = db.Column(db.String(255, collation='NOCASE'), nullable=True)
-    hv = db.Column(db.String(255, collation='NOCASE'), nullable=True)
-    detach = db.Column(db.String(255, collation='NOCASE'), nullable=True)
-    wave = db.Column(db.String(255, collation='NOCASE'), nullable=True)
-    replacement = db.Column(db.String(255, collation='NOCASE'), nullable=True)
+    manufacturer = db.Column(db.String(255), nullable=False)
+    model_number = db.Column(db.String(255), nullable=True)
+    name = db.Column(db.String(255),nullable=True)
+    nbg_code = db.Column(db.String(255),nullable=True)
+    x_ray = db.Column(db.String(255), nullable=True)
+    serial = db.Column(db.String(255), nullable=True)
+    ra = db.Column(db.String(255), nullable=True)
+    rv = db.Column(db.String(255), nullable=True)
+    lv = db.Column(db.String(255), nullable=True)
+    hv = db.Column(db.String(255), nullable=True)
+    detach = db.Column(db.String(255), nullable=True)
+    wave = db.Column(db.String(255), nullable=True)
+    replacement = db.Column(db.String(255), nullable=True)
 
 class LV(db.Model):
     __tablename__ = 'lv'
     id = db.Column(db.Integer(), primary_key=True)
-    manufacturer = db.Column(db.String(255, collation='NOCASE'), nullable=False)
-    model_number = db.Column(db.String(255, collation='NOCASE'), nullable=True)
-    name = db.Column(db.String(255, collation='NOCASE'),nullable=True)
-    serial = db.Column(db.String(255, collation='NOCASE'), nullable=True)
-    sense = db.Column(db.String(255, collation='NOCASE'), nullable=True)
-    polarity = db.Column(db.String(255, collation='NOCASE'), nullable=True)
-    fixation = db.Column(db.String(255, collation='NOCASE'), nullable=True)
-    placement = db.Column(db.String(255, collation='NOCASE'), nullable=True)
-    insulation = db.Column(db.String(255, collation='NOCASE'), nullable=True)
-    location = db.Column(db.String(255, collation='NOCASE'), nullable=True)
+    manufacturer = db.Column(db.String(255), nullable=False)
+    model_number = db.Column(db.String(255), nullable=True)
+    name = db.Column(db.String(255),nullable=True)
+    serial = db.Column(db.String(255), nullable=True)
+    sense = db.Column(db.String(255), nullable=True)
+    polarity = db.Column(db.String(255), nullable=True)
+    fixation = db.Column(db.String(255), nullable=True)
+    placement = db.Column(db.String(255), nullable=True)
+    insulation = db.Column(db.String(255), nullable=True)
+    location = db.Column(db.String(255), nullable=True)
 
 
 class HV(db.Model):
     __tablename__ = 'hv'
     id = db.Column(db.Integer(), primary_key=True)
-    manufacturer = db.Column(db.String(255, collation='NOCASE'), nullable=False)
-    model_number = db.Column(db.String(255, collation='NOCASE'), nullable=True)
-    name = db.Column(db.String(255, collation='NOCASE'),nullable=True)
-    serial = db.Column(db.String(255, collation='NOCASE'), nullable=True)
-    sense = db.Column(db.String(255, collation='NOCASE'), nullable=True)
-    high = db.Column(db.String(255, collation='NOCASE'), nullable=True)
-    sensing = db.Column(db.String(255, collation='NOCASE'), nullable=True)
-    lead = db.Column(db.String(255, collation='NOCASE'), nullable=True)
-    placement = db.Column(db.String(255, collation='NOCASE'), nullable=True)
-    fixation = db.Column(db.String(255, collation='NOCASE'), nullable=True)
-    insulation = db.Column(db.String(255, collation='NOCASE'), nullable=True)
-
-
-user_manager = UserManager(app, db, User)
+    manufacturer = db.Column(db.String(255), nullable=False)
+    model_number = db.Column(db.String(255), nullable=True)
+    name = db.Column(db.String(255),nullable=True)
+    serial = db.Column(db.String(255), nullable=True)
+    sense = db.Column(db.String(255), nullable=True)
+    high = db.Column(db.String(255), nullable=True)
+    sensing = db.Column(db.String(255), nullable=True)
+    lead = db.Column(db.String(255), nullable=True)
+    placement = db.Column(db.String(255), nullable=True)
+    fixation = db.Column(db.String(255), nullable=True)
+    insulation = db.Column(db.String(255), nullable=True)

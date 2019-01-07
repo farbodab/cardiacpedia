@@ -1,6 +1,7 @@
 {% extends 'base.html' %}
 
 {% block content %}
+<div class="container">
 <div class="jumbotron">
   <h1 class="display-4">{{device.model_number}} : {{device.name}}</h1>
   <p class="lead">Manufactured by: {{device.manufacturer}}</p>
@@ -15,5 +16,6 @@
   <p><b>Detach Tool: </b>{{device.detach}}</p>
   <p><b>HV Waveform: </b>{{device.wave}}</p>
   <p><b>Replacement Indicator: </b>{{device.replacement}}</p>
+</div>
 </div>
 {% endblock %}

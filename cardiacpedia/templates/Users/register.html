@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% from 'bootstrap/form.html' import render_field %}
+
+
+
+{% block content %}
+  <div class="container centre">
+  <form style="width: 50%" class="form-group" method="POST">
+      <h3>Sign up to start using CardiacBook</h3>
+      <h5>Create your account.</h5>
+       {{ form.hidden_tag() }}
+       {{ render_field(form.email) }}
+       {{ render_field(form.password) }}
+       <div class="form-group">
+           {{ form.submit(class="btn-primary btn-lg btn-block") }}
+       </div>
+  </form>
+  </div>
+{% endblock %}

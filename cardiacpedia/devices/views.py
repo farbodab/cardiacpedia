@@ -2,13 +2,14 @@ from flask import render_template, url_for, flash, redirect, request, Blueprint
 from cardiacpedia import db
 from cardiacpedia.models import *
 from cardiacpedia.devices.forms import *
-from flask_user import current_user, login_required, roles_required, UserManager, UserMixin
+from flask_login import login_user, current_user, logout_user, login_required
+from cardiacpedia import requires_access_level
 
 
 devices = Blueprint('devices', __name__)
 
 @devices.route('/devices/new', methods=['GET', 'POST'])
-@login_required
+@requires_access_level(ACCESS['paid'])
 def new():
     form_type = Device_Type()
     form = Device_New()
@@ -24,7 +25,7 @@ def new():
     return render_template('/Devices/New/new_finder.html', page_title="New Device Finder", form_type=form_type, form=form)
 
 @devices.route('/devices/compatibility', methods=['GET', 'POST'])
-@login_required
+@requires_access_level(ACCESS['paid'])
 def compatibility():
     form = Devices_Change()
     form_type = Device_Type()
@@ -46,7 +47,7 @@ def compatibility():
 
 
 @devices.route('/devices/finder', methods=['GET', 'POST'])
-@login_required
+@requires_access_level(ACCESS['paid'])
 def finder():
     form = Device_Find()
     form_type = Device_Type()
@@ -69,7 +70,7 @@ def finder():
     return render_template('/Devices/Finder/finder.html', page_title="Search All Devices", form=form, form_type=form_type)
 
 @devices.route('/devices/home', methods=['GET', 'POST'])
-@login_required
+@requires_access_level(ACCESS['paid'])
 def home():
     return render_template('/Devices/Home.html', page_title="Home")
 
@@ -78,7 +79,7 @@ def home():
 ##############################View Table########################################
 ################################################################################
 @devices.route('/devices/ipg', methods=['GET', 'POST'])
-@login_required
+@requires_access_level(ACCESS['paid'])
 def ipg():
     f_type = request.args.get('f_type')
     if f_type == '1':
@@ -134,14 +135,14 @@ def ipg():
     return render_template('/Devices/Devices.html', devices=devices, page_title='IPG Low-Voltage Devices',form=form, manufacturer=manufacturer, model_number=model_number, device_name=device_name, sensed=sensed, paced=paced, f_type=f_type, ra=ra, rv=rv)
 
 @devices.route('/devices/ipg/<id>')
-@login_required
+@requires_access_level(ACCESS['paid'])
 def ipg_device(id):
     devices = IPG.query.filter_by(id=id).first_or_404()
     return render_template('/Devices/ipg_device.html', device=devices, page_title=devices.model_number)
 
 
 @devices.route('/devices/crtp', methods=['GET', 'POST'])
-@login_required
+@requires_access_level(ACCESS['paid'])
 def crtp():
     f_type = request.args.get('f_type')
     if f_type == '1':
@@ -198,13 +199,13 @@ def crtp():
 
 
 @devices.route('/devices/crtp/<id>')
-@login_required
+@requires_access_level(ACCESS['paid'])
 def crtp_device(id):
     devices = CRTP.query.filter_by(id=id).first_or_404()
     return render_template('/Devices/crtp_device.html', device=devices, page_title=devices.model_number)
 
 @devices.route('/devices/crtd', methods=['GET', 'POST'])
-@login_required
+@requires_access_level(ACCESS['paid'])
 def crtd():
     f_type = request.args.get('f_type')
     if f_type == '1':
@@ -261,13 +262,13 @@ def crtd():
 
 
 @devices.route('/devices/crtd/<id>')
-@login_required
+@requires_access_level(ACCESS['paid'])
 def crtd_device(id):
     devices = CRTD.query.filter_by(id=id).first_or_404()
     return render_template('/Devices/crtd_device.html', device=devices, page_title=devices.model_number)
 
 @devices.route('/devices/hv', methods=['GET', 'POST'])
-@login_required
+@requires_access_level(ACCESS['paid'])
 def hv():
     f_type = request.args.get('f_type')
     if f_type == '1':
@@ -325,14 +326,14 @@ def hv():
 
 
 @devices.route('/devices/hv/<id>')
-@login_required
+@requires_access_level(ACCESS['paid'])
 def hv_device(id):
     devices = HV.query.filter_by(id=id).first_or_404()
     return render_template('/Devices/hv_device.html', device=devices, page_title=devices.model_number)
 
 
 @devices.route('/devices/icd', methods=['GET', 'POST'])
-@login_required
+@requires_access_level(ACCESS['paid'])
 def icd():
     f_type = request.args.get('f_type')
     if f_type == '1':
@@ -388,13 +389,13 @@ def icd():
 
 
 @devices.route('/devices/icd/<id>')
-@login_required
+@requires_access_level(ACCESS['paid'])
 def icd_device(id):
     devices = ICD.query.filter_by(id=id).first_or_404()
     return render_template('/Devices/icd_device.html', device=devices, page_title=devices.model_number)
 
 @devices.route('/devices/lv', methods=['GET', 'POST'])
-@login_required
+@requires_access_level(ACCESS['paid'])
 def lv():
     f_type = request.args.get('f_type')
     if f_type == '1':
@@ -451,7 +452,7 @@ def lv():
 
 
 @devices.route('/devices/lv/<id>')
-@login_required
+@requires_access_level(ACCESS['paid'])
 def lv_device(id):
     devices = LV.query.filter_by(id=id).first_or_404()
     return render_template('/Devices/lv_device.html', device=devices, page_title=devices.model_number)

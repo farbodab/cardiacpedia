@@ -1,6 +1,6 @@
 {% extends 'base.html' %}
 
-{% block main %}
+{% block content %}
 
 <main role="main">
       <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -10,7 +10,7 @@
             <div class="container">
               <div class="carousel-caption text-left">
                 <p class="promotion" style="color: #fafafa">Developed to assist medical professionals involved in the care of patients with implantable cardiac devices.</p>
-                <p><a class="btn btn-lg btn-primary" href="{{ user_manager.USER_REGISTER_URL }}" role="button">Sign up today</a></p>
+                <p><a class="btn btn-lg btn-primary" href="{{ url_for('users.register') }}" role="button">Sign up today</a></p>
               </div>
             </div>
           </div>
@@ -60,8 +60,4 @@
       </div>
 </main>
 
-<script type="text/javascript">
-  var container = document.querySelectorAll('.container')[0];
-  container.parentNode.removeChild(container);
-</script>
 {% endblock %}

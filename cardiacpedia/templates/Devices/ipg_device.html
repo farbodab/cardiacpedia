@@ -1,6 +1,7 @@
 {% extends 'base.html' %}
 
 {% block content %}
+<div class="container">
 <div class="jumbotron">
   <h1 class="display-4">{{device.model_number}} : {{device.name}}</h1>
   <p class="lead">Manufactured by: {{device.manufacturer}}</p>
@@ -16,5 +17,6 @@
   <p><b>MAG Rate RRT/EOS: </b>{{device.m_rrt}}</p>
   <p><b>RRT / EOS Behavior: </b>{{device.rrt_behaviour}}</p>
   <p><b>RRT / EOS Longetivity: </b>{{device.rrt_longevity}}</p>
+</div>
 </div>
 {% endblock %}

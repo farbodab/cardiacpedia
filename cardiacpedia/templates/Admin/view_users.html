@@ -2,6 +2,7 @@
 {% from 'bootstrap/form.html' import render_field %}
 
 {% block content %}
+<div class="container">
 <h1>View Users</h1>
 <div class="container">
   <table class="table">
@@ -9,9 +10,7 @@
         <tr>
           <th scope="col">User ID</th>
           <th scope="col">Email Address</th>
-          <th scope="col">First Name</th>
-          <th scope="col">Last Name</th>
-          <th scope="col">Roles</th>
+          <th scope="col">Access</th>
         </tr>
       </thead>
       <tbody>
@@ -19,13 +18,11 @@
         <tr>
           <td>{{element.id}}</td>
           <td>{{element.email}}</td>
-          <td>{{element.first_name}}</td>
-          <td>{{element.last_name}}</td>
-          <td>{% for role in element.roles %} {{ role.name }} {% endfor %}</td>
+          <td>{{element.access}}</td>
         </tr>
-
         {% endfor %}
       </tbody>
   </table>
+</div>
 </div>
 {% endblock %}

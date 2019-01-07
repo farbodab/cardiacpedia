@@ -4,6 +4,10 @@
    position: relative;
   }
 
+  button.stripe-button-el {
+      width: 100%;
+  }
+
 .alert-info {
     color: #07689f;
     background-color: #a2d5f2;
@@ -41,7 +45,11 @@
     border-color: #fafafa;
   }
 
-  .fas{
+  .fas {
+    color:#FFA733;
+  }
+  
+  .pay {
     color:#FFA733;
   }
 
@@ -76,9 +84,19 @@
   .nav-tabs {
     background-color: #ff7e67;
   }
+
   .carousel-item > img {
     height: 45rem;
   }
+
+  .centre {
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
 
   #myFooter {
       background-color: #07689f;

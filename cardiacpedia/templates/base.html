@@ -15,63 +15,60 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          {% if not current_user.is_authenticated %}
           <ul class="navbar-nav mr-auto">
-            {% if not current_user.is_authenticated %}
             <li class="nav-item">
               <a class="nav-link" href="{{ url_for('core.index') }}">Home</a>
             </li>
-            {% endif %}
           </ul>
+          {% endif %}
           <ul class="navbar-nav ml-auto ">
-              {% if current_user.is_authenticated %}
-                {% if current_user.has_roles('Admin') %}
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Admin
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <a class="dropdown-item" href="{{ url_for('users.admin_users_view_users') }}">View Users</a>
-                      <a class="dropdown-item" href="{{ url_for('users.admin_users_remove_users') }}">Remove Users</a>
-                      <a class="dropdown-item" href="{{ url_for('users.admin_users_view_roles') }}">View Roles</a>
-                      <a class="dropdown-item" href="{{ url_for('users.admin_users_add_roles') }}">Add Roles</a>
-                      <a class="dropdown-item" href="{{ url_for('users.admin_users_remove_roles') }}">Remove Roles</a>
-                      <a class="dropdown-item" href="{{ url_for('users.admin_users_add_user_roles') }}">Add User-Roles</a>
-                      <a class="dropdown-item" href="{{ url_for('users.admin_users_remove_user_roles') }}">Remove User-Roles</a>
-                      <a class="dropdown-item" href="{{ user_manager.USER_INVITE_USER_URL }}">Invite Users</a>
-                    </div>
-                  </li>
+            {% if current_user.is_authenticated %}
+              {% if current_user.allowed(3) %}
+                <li class="nav-item dropdown">
+                  <a style="color:white;" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Admin
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="{{ url_for('users.admin_users_view_users') }}">View Users</a>
+                    <a class="dropdown-item" href="{{ url_for('users.admin_users_remove_users') }}">Remove Users</a>
+                    <a class="dropdown-item" href="{{ url_for('users.admin_users_add_user_roles') }}">Add User-Roles</a>
+                  </div>
+                </li>
                 {% endif %}
               <li class="nav-item dropdown">
                 <a style="color:white;" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   {{current_user.email}}
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="{{ user_manager.USER_EDIT_USER_PROFILE_URL }}">Profile</a>
-                  <a class="dropdown-item" href="{{ user_manager.USER_LOGOUT_URL }}">Log Out</a>
+                  <a class="dropdown-item" href="{{ url_for('users.account') }}">Account</a>
+                  <a class="dropdown-item" href="{{ url_for('users.logout') }}">Log Out</a>
                 </div>
               </li>
               {% else %}
-              <li class="nav-item"><a class="nav-link" href="{{ user_manager.USER_LOGIN_URL }}">Log In</a></li>
-              <li class="nav-item"><a class="nav-link" href="{{ user_manager.USER_REGISTER_URL }}">Register</a></li>
-              {% endif %}
+              <li class="nav-item"><a class="nav-link" href="{{ url_for('users.login') }}">Log In</a></li>
+              <li class="nav-item"><a class="nav-link" href="{{ url_for('users.register') }}">Register</a></li>
+            {% endif %}
           </ul>
         </div>
       </nav>
       {% if current_user.is_authenticated %}
-      <ul style="text-align: center;" class="nav nav-tabs">
-        <li style="width:25%;"class="nav-item">
-          <a class="nav-link active" href="{{ url_for('devices.home') }}"><i class="fas fa-home"></i> Home</a>
-        </li>
-        <li style="width:25%;"class="nav-item">
-          <a class="nav-link" href="{{ url_for('devices.new') }}"><i class="fas fa-plus"></i> New</a>
-        </li>
-        <li style="width:25%;"class="nav-item">
-          <a class="nav-link" href="{{ url_for('devices.compatibility') }}"><i class="fas fa-exchange-alt"></i> Upgrade</a>
-        </li>
-        <li style="width:25%;"class="nav-item">
-          <a class="nav-link" href="{{ url_for('devices.finder') }}"><i class="fas fa-search"></i> Search</a>
-        </li>
-      </ul>
+        {% if current_user.allowed(2) %}
+          <ul style="text-align: center;" class="nav nav-tabs">
+            <li style="width:25%;"class="nav-item">
+              <a class="nav-link active" href="{{ url_for('devices.home') }}"><i class="fas fa-home"></i> Home</a>
+            </li>
+            <li style="width:25%;"class="nav-item">
+              <a class="nav-link" href="{{ url_for('devices.new') }}"><i class="fas fa-plus"></i> New</a>
+            </li>
+            <li style="width:25%;"class="nav-item">
+              <a class="nav-link" href="{{ url_for('devices.compatibility') }}"><i class="fas fa-exchange-alt"></i> Upgrade</a>
+            </li>
+            <li style="width:25%;"class="nav-item">
+              <a class="nav-link" href="{{ url_for('devices.finder') }}"><i class="fas fa-search"></i> Search</a>
+            </li>
+          </ul>
+          {% endif %}
       {% endif %}
       {% for mess in get_flashed_messages() %}
         <div class="alert alert-info alert-dismissible fade show" role="alert">
@@ -80,15 +77,10 @@
         </div>
       {% endfor %}
 
-      <div style="min-height:70vh;"class="container">
+
       {% block content %}
 
       {% endblock %}
-      </div>
-      {% block main %}
-
-      {% endblock %}
-
 
       <footer id="myFooter">
           <div class="container">
@@ -100,7 +92,7 @@
                       <h5>Get started</h5>
                       <ul>
                           <li><a href="{{ url_for('core.index')}}">Home</a></li>
-                          <li><a href="{{ user_manager.USER_REGISTER_URL }}">Sign up</a></li>
+                          <li><a href="{{ url_for('users.register') }}">Sign up</a></li>
                       </ul>
                   </div>
                   <div class="col-sm-2">

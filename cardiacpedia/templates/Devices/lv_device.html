@@ -1,6 +1,7 @@
 {% extends 'base.html' %}
 
 {% block content %}
+<div class="container">
 <div class="jumbotron">
   <h1 class="display-4">{{device.model_number}} : {{device.name}}</h1>
   <p class="lead">Manufactured by: {{device.manufacturer}}</p>
@@ -12,5 +13,6 @@
   <p><b>Placement: </b>{{device.placement}}</p>
   <p><b>Outer Insulation: </b>{{device.insulation}}</p>
   <p><b>Location: </b>{{device.location}}</p>
+</div>
 </div>
 {% endblock %}

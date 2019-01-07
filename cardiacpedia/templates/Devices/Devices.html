@@ -2,6 +2,9 @@
 {% from 'bootstrap/form.html' import render_field %}
 
 {% block content %}
+<div class="container">
+
+
   <h1>{{page_title}}</h1>
 
   {% if f_type == '1' %}
@@ -55,4 +58,5 @@
      folder[i].addEventListener("mouseout", function(){ this.classList.remove('fa-folder-open'); this.classList.add('fa-folder'); })
    }
    </script>
+</div>
 {% endblock %}

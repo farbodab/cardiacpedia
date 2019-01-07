@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container centre">
+<form style="width: 50%" action="/charge" method="post">
+  <div style="text-align: center;"class="">
+    <i class="fas fa-lock fa-3x"></i>
+    <h3>Set up your payment.</h3>
+    <p>No commitments.</p>
+    <p>CardiacBook costs $9.99 only!</p>
+    <p>Click the button below to be redirected to a secure page.</p>
+  </div>
+  <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+          data-key="{{ key }}"
+          data-amount="999"
+          data-name="CardiacBook"
+          data-image="https://cardiacbook.com/static/favicon.ico"
+          data-locale="auto"
+          data-zip-code="true"
+          data-currency="cad">
+    </script>
+    <script>
+       // Hide default stripe button, be careful there if you
+       // have more than 1 button of that class
+       document.getElementsByClassName("stripe-button-el")[0].style.display = 'none';
+   </script>
+   <button type="submit" class="btn-primary btn-lg btn-block">Pay Now</button>
+    <div style="text-align: center;"class="">
+          <i class="pay fab fa-cc-visa fa-3x"></i>
+          <i class="pay fab fa-cc-amex fa-3x"></i>
+          <i class="pay fab fa-cc-mastercard fa-3x"></i>
+    </div>
+    </div>
+  </div>
+</form>
+</div>
+
+{% endblock %}

@@ -1,32 +1,150 @@
-from flask import render_template, url_for, flash, redirect, request, Blueprint, render_template_string
-from cardiacpedia import db
-from cardiacpedia.models import user_manager
+from flask import render_template, url_for, flash, redirect, request, Blueprint, render_template_string, session
+from cardiacpedia import db, requires_access_level
 from werkzeug.security import generate_password_hash,check_password_hash
-from cardiacpedia.models import User, Role, UserRoles
-from cardiacpedia.users.forms import Remove_User_Roles, Add_User_Roles, Add_Roles, Remove_Roles, Remove_Users
-from flask_user import current_user, login_required, roles_required, UserManager, UserMixin
+from cardiacpedia.models import *
+from cardiacpedia.users.forms import *
+from flask_login import login_user, current_user, logout_user, login_required
+import stripe
+
+
+stripe_keys = {
+  'secret_key': 'sk_test_sUBjEZ7otbSikPzwk3HPVZb0',
+  'publishable_key': 'pk_test_dtOoNU1AqHUdKNcjSaL7iZ7m'
+}
+
+stripe.api_key = stripe_keys['secret_key']
+
 
 users = Blueprint('users', __name__)
 
+@users.route('/youraccount')
+@login_required
+def account():
+    return render_template('account.html', page_title="CardiacBook")
 
+@users.route('/email', methods=['GET','POST'])
+@login_required
+def email():
+    form = EmailForm()
+    if form.validate_on_submit():
+        current_user.email = form.email.data
+        db.session.commit()
+        flash('User Account Updated')
+        return redirect(url_for('users.account'))
+    return render_template('email.html', page_title="CardiacBook", form=form)
+
+@users.route('/password', methods=['GET', 'POST'])
+@login_required
+def password():
+    form = PasswordForm()
+    if form.validate_on_submit():
+        current_user.password_hash = generate_password_hash(form.new_password.data)
+        db.session.commit()
+        flash('Password Updated')
+        return redirect(url_for('users.account'))
+    return render_template('password.html', page_title="CardiacBook", form=form)
+
+
+@users.route('/register', methods=['GET', 'POST'])
+def register():
+    form = RegistrationForm()
+
+    if form.validate_on_submit():
+        user = User(email=form.email.data,
+                    password=form.password.data)
+
+        db.session.add(user)
+        db.session.commit()
+        login_user(user)
+        return redirect(url_for('users.pay'))
+    return render_template('/Users/register.html', form=form)
+
+@users.route('/pay')
+@login_required
+def pay():
+    if current_user.allowed(2):
+        return redirect(url_for('devices.home'))
+    else:
+        return render_template('Users/pay.html', key=stripe_keys['publishable_key'])
+
+@users.route('/charge', methods=['POST'])
+@login_required
+def charge():
+    # Amount in cents
+    amount = 999
+
+    customer = stripe.Customer.create(
+        email=current_user.email,
+        source=request.form['stripeToken']
+    )
+
+    charge = stripe.Charge.create(
+        customer=customer.id,
+        amount=amount,
+        currency='cad',
+    )
+    current_user.customer_id = customer.id
+    current_user.access = 2
+    db.session.commit()
+    flash('Welcome to CardiacBook!')
+    return redirect(url_for('devices.home'))
+
+
+@users.route('/login', methods=['GET', 'POST'])
+def login():
+
+    form = LoginForm()
+    if form.validate_on_submit():
+        # Grab the user from our User Models table
+        user = User.query.filter_by(email=form.email.data).first()
+
+        # Check that the user was supplied and the password is right
+        # The verify_password method comes from the User object
+        # https://stackoverflow.com/questions/2209755/python-operation-vs-is-not
+
+        if user.check_password(form.password.data) and user is not None:
+            #Log in the user
+
+            login_user(user)
+            flash('Logged in successfully.')
+
+            # If a user was trying to visit a page that requires a login
+            # flask saves that URL as 'next'.
+            next = request.args.get('next')
+
+            # So let's now check if that next exists, otherwise we'll go to
+            # the welcome page.
+            if next == None or not next[0]=='/':
+                next = url_for('core.index')
+
+            return redirect(next)
+    return render_template('/Users/login.html', form=form)
+
+@users.route("/logout")
+def logout():
+    logout_user()
+    return redirect(url_for('core.index'))
 
 ################################################################################
 ##############################View Users########################################
 ################################################################################
 @users.route('/admin/users/view_users')
-@roles_required('Admin')    # Use of @roles_required decorator
+@requires_access_level(ACCESS['admin'])
 def admin_users_view_users():
-    """
-    Allows the admin to view all users in the system
-    """
-    users = User.query.order_by(User.id, User.email, User.first_name, User.last_name).all()
-    return render_template('/Admin/view_users.html', users=users, page_title='View Users')
+    if current_user:
+        """
+        Allows the admin to view all users in the system
+        """
+        users = User.query.order_by(User.id, User.email).all()
+        return render_template('/Admin/view_users.html', users=users, page_title='View Users')
+    else:
+        flash('You do not have permission to access this page!')
 
 ################################################################################
 ##############################Remove Users########################################
 ################################################################################
 @users.route('/admin/users/remove_users', methods=['GET', 'POST'])
-@roles_required('Admin')    # Use of @roles_required decorator
+@requires_access_level(ACCESS['admin'])
 def admin_users_remove_users():
 
     form = Remove_Users()
@@ -39,98 +157,22 @@ def admin_users_remove_users():
 
     return render_template('/Admin/remove_users.html', form=form, page_title='Remove Users')
 
-################################################################################
-##############################View Roles########################################
-################################################################################
-
-@users.route('/admin/users/view_roles')
-@roles_required('Admin')    # Use of @roles_required decorator
-def admin_users_view_roles():
-    """
-    Allows the admin to view all roles in the system
-    """
-    roles = Role.query.order_by(Role.id, Role.name).all()
-    return render_template('/Admin/view_roles.html', roles=roles, page_title='View Roles')
-
-
-################################################################################
-##############################Add Roles########################################
-################################################################################
-
-@users.route('/admin/users/add_roles', methods=['GET', 'POST'])
-@roles_required('Admin')    # Use of @roles_required decorator
-def admin_users_add_roles():
-
-    form = Add_Roles()
-
-
-    if form.validate_on_submit() and not Role.query.filter_by(name=form.role_name.data).first():
-        roles = Role(
-            name=form.role_name.data,
-        )
-        db.session.add(roles)
-        db.session.commit()
-        flash('Roles have been added.')
-        return redirect(url_for('users.admin_users_view_roles'))
-
-    return render_template('/Admin/add_roles.html', form=form, page_title='Add Roles')
-
-################################################################################
-##############################Remve Roles########################################
-################################################################################
-@users.route('/admin/users/remove_roles', methods=['GET', 'POST'])
-@roles_required('Admin')    # Use of @roles_required decorator
-def admin_users_remove_roles():
-
-    form = Remove_Roles()
-
-    if form.validate_on_submit():
-        Role.query.filter_by(id=form.role_id.data).delete()
-        db.session.commit()
-        flash('Roles has been removed.')
-        return redirect(url_for('users.admin_users_view_roles'))
-
-    return render_template('/Admin/remove_roles.html', form=form, page_title='Remove Roles')
-
 
 ################################################################################
 ##############################Add User Roles#####################################
 ################################################################################
 
 @users.route('/admin/users/add_user_roles', methods=['GET', 'POST'])
-@roles_required('Admin')    # Use of @roles_required decorator
+@requires_access_level(ACCESS['admin'])
 def admin_users_add_user_roles():
 
     form = Add_User_Roles()
 
     if form.validate_on_submit():
-        user_roles_new = UserRoles(
-            user_id=form.user_id.data,
-            role_id = form.role_id.data,
-        )
-        db.session.add(user_roles_new)
+        user = User.query.get(form.user_id.data)
+        user.access = form.role_id.data
         db.session.commit()
-        flash('Roles have been added to the user.')
+        flash('Roles have been changed for this user.')
         return redirect(url_for('users.admin_users_view_users'))
 
     return render_template('/Admin/add_user_roles.html', form=form, page_title='Add User Roles')
-
-
-
-################################################################################
-##############################Remove User Roles#################################
-################################################################################
-
-@users.route('/admin/users/remove_user_roles', methods=['GET', 'POST'])
-@roles_required('Admin')    # Use of @roles_required decorator
-def admin_users_remove_user_roles():
-
-    form = Remove_User_Roles()
-
-    if form.validate_on_submit():
-        UserRoles.query.filter_by(user_id=form.user_id.data, role_id=form.role_id.data).delete()
-        db.session.commit()
-        flash('Roles has been removed from the user.')
-        return redirect(url_for('users.admin_users_view_users'))
-
-    return render_template('/Admin/remove_user_roles.html', form=form, page_title='Remove User Roles')
