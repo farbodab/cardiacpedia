@@ -3,6 +3,7 @@ from cardiacpedia import db, requires_access_level
 from werkzeug.security import generate_password_hash,check_password_hash
 from cardiacpedia.models import *
 from cardiacpedia.users.forms import *
+from cardiacpedia.core.forms import *
 from flask_login import login_user, current_user, logout_user, login_required
 import stripe
 import json
@@ -30,6 +31,32 @@ def account():
     else:
         return render_template('account.html', page_title="CardiacBook")
 
+@users.route('/register', methods=['GET','POST'])
+def register():
+    return render_template('step1.html', page_title="CardiacBook")
+
+@users.route('/plans', methods=['GET','POST'])
+def plans():
+    if request.method == 'GET':
+        return redirect(url_for('users.register'))
+    form = Plan()
+    return render_template('plan.html', page_title="CardiacBook", form=form)
+
+@users.route('/setup', methods=['POST'])
+def setup():
+    form = Plan()
+    if form.validate_on_submit():
+        if form.monthly.data:
+            session['Plan'] = 'First Timer'
+        elif form.three.data:
+            session['Plan'] = 'Pro'
+        else:
+            session['Plan'] = 'Platinum'
+        return render_template('step2.html', page_title="CardiacBook")
+    else:
+        return redirect(url_for('users.register'))
+
+
 @users.route('/email', methods=['GET','POST'])
 @login_required
 def email():
@@ -53,13 +80,13 @@ def password():
     return render_template('password.html', page_title="CardiacBook", form=form)
 
 
-@users.route('/register', methods=['GET', 'POST'])
-def register():
+@users.route('/account', methods=['GET', 'POST'])
+def new_account():
     form = RegistrationForm()
-
     if form.validate_on_submit():
+        plan = session['Plan']
         user = User(email=form.email.data,
-                    password=form.password.data)
+                    password=form.password.data, plan=plan)
 
         db.session.add(user)
         db.session.commit()
@@ -73,7 +100,14 @@ def pay():
     if current_user.allowed(2):
         return redirect(url_for('devices.home'))
     else:
-        return render_template('Users/pay.html', key=stripe_keys['publishable_key'])
+        plan = current_user.plan
+        if plan == 'Pro':
+            amount = 2499
+        elif plan == 'Platinum':
+            amount = 9999
+        else:
+            amount = 999
+        return render_template('Users/pay.html', key=stripe_keys['publishable_key'], plan=plan, amount=amount)
 
 @users.route('/charge', methods=['POST'])
 @login_required

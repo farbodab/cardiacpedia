@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container centre">
+<form style="width: 50%" action="/plans" method="post">
+  <div style="text-align: center;"class="">
+    <i class="pay far fa-check-circle fa-3x"></i>
+    <p>STEP <b>1</b> OF <b>3</b></p>
+    <h3>Choose your plan.</h3>
+  </div>
+    <ul>
+      <li>You won't be charged untill after your free week.</li>
+      <li>We'll remind you three days before your trial ends.</li>
+      <li>No commitments, cancel anytime.</li>
+    </ul>
+   <button type="submit" class="btn-primary btn-lg btn-block">SEE THE PLANS</button>
+</form>
+</div>
+
+{% endblock %}

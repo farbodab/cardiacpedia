@@ -9,3 +9,8 @@ class Contact(FlaskForm):
     email = StringField('Email *', validators=[DataRequired(message='Please enter your email'), Email(message='Please enter a valid email')])
     comment = TextField('Please enter your comments here *', validators=[DataRequired('This field cannot be left blank')])
     submit = SubmitField('Send Message')
+
+class Plan(FlaskForm):
+    monthly = SubmitField('CONTINUE')
+    three = SubmitField('CONTINUE')
+    yearly = SubmitField('CONTINUE')
