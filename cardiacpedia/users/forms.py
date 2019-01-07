@@ -43,8 +43,6 @@ class PasswordForm(FlaskForm):
     confirm_password = PasswordField('Confirm new password', validators=[DataRequired(message='Confirm new password cannot be left blank'), EqualTo('new_password', message='Passwords Must Match!')])
     submit = SubmitField('Save')
 
-
-
 class RegistrationForm(FlaskForm):
     email = StringField('Email', validators=[DataRequired(message='Email cannot be left blank'),Email(message='Please enter a valid email address')])
     password = PasswordField('Password', validators=[DataRequired(message='Password cannot be left blank'), Length(min=6, max=30, message='Password must be longer than 6 characters')])
