@@ -5,20 +5,20 @@ def ipg():
     df = pd.read_csv('Devices/IPG.csv', encoding = "ISO-8859-1")
     for index, row in df.iterrows():
         device = IPG(
-        manufacturer=row['Manufacturer'],
-        model_number=row['Model Number'],
-        name=row['Name'],
-        nbg_code=row['NBG Code'],
-        x_ray=row['X-ray/Serial ID'],
-        ra=row['Sense / Pace Connector RA'],
-        rv=row['Sense / Pace Connector RV'],
-        detach=row['Detach Tools'],
-        n_bos=row['Non MAG Rate BOS'],
-        n_rrt=row['Non MAG Rate RRT/EOS'],
-        m_bos=row['MAG Rate BOS'],
-        m_rrt=row['MAG Rate RRT/EOS'],
-        rrt_behaviour=row['RRT/EOS Behavior'],
-        rrt_longevity=row['RRT/EOS Longetivity'],
+        manufacturer=string(row['Manufacturer']),
+        model_number=string(row['Model Number']),
+        name=string(row['Name']),
+        nbg_code=string(row['NBG Code']),
+        x_ray=string(row['X-ray/Serial ID']),
+        ra=string(row['Sense / Pace Connector RA']),
+        rv=string(row['Sense / Pace Connector RV']),
+        detach=string(row['Detach Tools']),
+        n_bos=string(row['Non MAG Rate BOS']),
+        n_rrt=string(row['Non MAG Rate RRT/EOS']),
+        m_bos=string(row['MAG Rate BOS']),
+        m_rrt=string(row['MAG Rate RRT/EOS']),
+        rrt_behaviour=string(row['RRT/EOS Behavior']),
+        rrt_longevity=string(row['RRT/EOS Longetivity']),
         )
         db.session.add(device)
     db.session.commit()
@@ -28,22 +28,22 @@ def crtp():
     df = pd.read_csv('Devices/CRTP.csv', encoding = "ISO-8859-1")
     for index, row in df.iterrows():
         device = CRTP(
-        manufacturer=row['Manufacturer'],
-        model_number=row['Model Number'],
-        name=row['Model Name'],
-        nbg_code=row['NBG Code'],
-        x_ray=row['X-ray ID'],
-        ra=row['Sense/Pace Connectors RA'],
-        la=row['Sense/Pace Connectors LA'],
-        rv=row['Sense/Pace Connectors RV'],
-        lv=row['Sense/Pace Connectors LV'],
-        detach=row['Detach Tool'],
-        n_bol=row['Non MAG Rate BOL'],
-        n_eri=row['Non MAG Rate ERI/EOL'],
-        m_bol=row['MAG Rate BOL'],
-        m_eri=row['MAG Rate ERI/EOL'],
-        eri_behaviour=row['ERI EOL Behavior'],
-        longevity=row['Longetivity'],
+        manufacturer=string(row['Manufacturer']),
+        model_number=string(row['Model Number']),
+        name=string(row['Model Name']),
+        nbg_code=string(row['NBG Code']),
+        x_ray=string(row['X-ray ID']),
+        ra=string(row['Sense/Pace Connectors RA']),
+        la=string(row['Sense/Pace Connectors LA']),
+        rv=string(row['Sense/Pace Connectors RV']),
+        lv=string(row['Sense/Pace Connectors LV']),
+        detach=string(row['Detach Tool']),
+        n_bol=string(row['Non MAG Rate BOL']),
+        n_eri=string(row['Non MAG Rate ERI/EOL']),
+        m_bol=string(row['MAG Rate BOL']),
+        m_eri=string(row['MAG Rate ERI/EOL']),
+        eri_behaviour=string(row['ERI EOL Behavior']),
+        longevity=string(row['Longetivity']),
         )
         db.session.add(device)
     db.session.commit()
@@ -53,18 +53,18 @@ def icd():
     df = pd.read_csv('Devices/ICD.csv', encoding = "ISO-8859-1")
     for index, row in df.iterrows():
         device = ICD(
-        manufacturer=row['Manufacturer'],
-        model_number=row['Model Number'],
-        name=row['Model Name'],
-        nbg_code=row['NBD Code'],
-        x_ray=row['X-ray ID'],
-        serial=row['Serial ID'],
-        ra=row['Connectors RA'],
-        rv=row['Connectors RV'],
-        hv=row['Connectors HV'],
-        detach=row['Detach Tool'],
-        wave=row['HV Waveform'],
-        replacement=row['Replacement Indicator'],
+        manufacturer=string(row['Manufacturer']),
+        model_number=string(row['Model Number']),
+        name=string(row['Model Name']),
+        nbg_code=string(row['NBD Code']),
+        x_ray=string(row['X-ray ID']),
+        serial=string(row['Serial ID']),
+        ra=string(row['Connectors RA']),
+        rv=string(row['Connectors RV']),
+        hv=string(row['Connectors HV']),
+        detach=string(row['Detach Tool']),
+        wave=string(row['HV Waveform']),
+        replacement=string(row['Replacement Indicator']),
         )
         db.session.add(device)
     db.session.commit()
@@ -74,19 +74,19 @@ def CRTD_m():
     df = pd.read_csv('Devices/CRTD.csv', encoding = "ISO-8859-1")
     for index, row in df.iterrows():
         device = CRTD(
-        manufacturer=row['Manufacturer'],
-        model_number=row['Model Number'],
-        name=row['Model Name'],
-        nbg_code=row['NBD Code'],
-        x_ray=row['X-ray ID'],
-        serial=row['Serial ID'],
-        ra=row['Connectors RA'],
-        rv=row['Connectors RV'],
-        lv=row['Connectors LV'],
-        hv=row['Connectors HV'],
-        detach=row['Detach Tool'],
-        wave=row['HV Waveform'],
-        replacement=row['Replacement Indicator'],
+        manufacturer=string(row['Manufacturer']),
+        model_number=string(row['Model Number']),
+        name=string(row['Model Name']),
+        nbg_code=string(row['NBD Code']),
+        x_ray=string(row['X-ray ID']),
+        serial=string(row['Serial ID']),
+        ra=string(row['Connectors RA']),
+        rv=string(row['Connectors RV']),
+        lv=string(row['Connectors LV']),
+        hv=string(row['Connectors HV']),
+        detach=string(row['Detach Tool']),
+        wave=string(row['HV Waveform']),
+        replacement=string(row['Replacement Indicator']),
         )
         db.session.add(device)
     db.session.commit()
@@ -96,16 +96,16 @@ def LV_m():
     df = pd.read_csv('Devices/LV.csv', encoding = "ISO-8859-1")
     for index, row in df.iterrows():
         device = LV(
-        manufacturer=row['Manufacturer'],
-        model_number=row['Model Number'],
-        name=row['Model Name'],
-        serial=row['Serial ID'],
-        sense=row['Connectors Sense/Pace'],
-        polarity=row['Polarity'],
-        fixation=row['Fixation'],
-        placement=row['Placement'],
-        insulation=row['Outer Insulation'],
-        location=row['Location'],
+        manufacturer=string(row['Manufacturer']),
+        model_number=string(row['Model Number']),
+        name=string(row['Model Name']),
+        serial=string(row['Serial ID']),
+        sense=string(row['Connectors Sense/Pace']),
+        polarity=string(row['Polarity']),
+        fixation=string(row['Fixation']),
+        placement=string(row['Placement']),
+        insulation=string(row['Outer Insulation']),
+        location=string(row['Location']),
         )
         db.session.add(device)
     db.session.commit()
@@ -116,17 +116,17 @@ def HV_m():
     df = pd.read_csv('Devices/HV.csv', encoding = "ISO-8859-1")
     for index, row in df.iterrows():
         device = HV(
-        manufacturer=row['Manufacturer'],
-        model_number=row['Model Number'],
-        name=row['Name'],
-        serial=row['Serial ID'],
-        sense=row['Connectors Sense/Pace'],
-        high=row['High Voltage'],
-        sensing=row['Sensing Configurations'],
-        lead=row['Lead Polarity'],
-        placement=row['Placement'],
-        fixation=row['Fixation'],
-        insulation=row['Insultation'],
+        manufacturer=string(row['Manufacturer']),
+        model_number=string(row['Model Number']),
+        name=string(row['Name']),
+        serial=string(row['Serial ID']),
+        sense=string(row['Connectors Sense/Pace']),
+        high=string(row['High Voltage']),
+        sensing=string(row['Sensing Configurations']),
+        lead=string(row['Lead Polarity']),
+        placement=string(row['Placement']),
+        fixation=string(row['Fixation']),
+        insulation=string(row['Insultation']),
         )
         db.session.add(device)
     db.session.commit()
