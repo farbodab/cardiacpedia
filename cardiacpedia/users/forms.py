@@ -39,7 +39,7 @@ def check_password(form,field):
 
 class PasswordForm(FlaskForm):
     curr_password = PasswordField('Current password', validators=[check_password, DataRequired(message='Current password cannot be left blank'), Length(min=6, max=30, message='Password must be longer than 6 characters')])
-    new_password = PasswordField('New password', validators=[DataRequired(message='New password cannot be left blank'),EqualTo('confirm_password', message='Passwords Must Match!', Length(min=6, max=30, message='Password must be longer than 6 characters'))])
+    new_password = PasswordField('New password', validators=[DataRequired(message='New password cannot be left blank'),EqualTo('confirm_password', message='Passwords Must Match!'), Length(min=6, max=30, message='Password must be longer than 6 characters')])
     confirm_password = PasswordField('Confirm new password', validators=[DataRequired(message='Confirm new password cannot be left blank'), EqualTo('new_password', message='Passwords Must Match!')])
     submit = SubmitField('Save')
 
