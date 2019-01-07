@@ -21,7 +21,7 @@ class LoginForm(FlaskForm):
     password = PasswordField('Password', validators=[DataRequired(message='Password cannot be left blank')])
     submit = SubmitField('Log In')
     def check_password(self,field):
-        user = User.query.filter_by(email=field.data).first():
+        user = User.query.filter_by(email=field.data).first()
         if not user or not user.check_password(field.data):
             raise ValidationError('The entered information did not match our records!')
 
