@@ -5,7 +5,7 @@ from cardiacpedia.models import *
 from cardiacpedia.users.forms import *
 from flask_login import login_user, current_user, logout_user, login_required
 import stripe
-
+import json
 
 stripe_keys = {
   'secret_key': 'sk_test_sUBjEZ7otbSikPzwk3HPVZb0',
@@ -20,7 +20,15 @@ users = Blueprint('users', __name__)
 @users.route('/youraccount')
 @login_required
 def account():
-    return render_template('account.html', page_title="CardiacBook")
+    if current_user.customer_id:
+        customer = stripe.Customer.retrieve(current_user.customer_id)
+        customer_json = str(customer)
+        customer_params = json.loads(customer_json)
+        last4 = customer_params['sources']['data'][0]["last4"]
+        brand = customer_params['sources']['data'][0]["brand"]
+        return render_template('account.html', page_title="CardiacBook", last4=last4, brand=brand)
+    else:
+        return render_template('account.html', page_title="CardiacBook")
 
 @users.route('/email', methods=['GET','POST'])
 @login_required

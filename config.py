@@ -3,7 +3,8 @@ import os
 class Config(object):
     basedir = os.path.abspath(os.path.dirname(__file__))
     SECRET_KEY = os.environ.get('SECRET_KEY') or str(os.urandom(32))
-    SQLALCHEMY_DATABASE_URI = 'mysql+pymysql://admin:Kalimdor1996@localhost/cardiacbook'
+    #SQLALCHEMY_DATABASE_URI = 'mysql+pymysql://admin:Kalimdor1996@localhost/cardiacbook'
+    SQLALCHEMY_DATABASE_URI = 'sqlite:///' + os.path.join(basedir, 'data.sqlite')
     SQLALCHEMY_TRACK_MODIFICATIONS = False
     MAIL_SERVER = 'mbox.freehostia.com'
     MAIL_PORT = 465

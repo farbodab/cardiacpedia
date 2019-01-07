@@ -20,8 +20,29 @@
   <div class="col-sm">
     <a href="{{url_for('users.password')}}">Change password</a>
   </div>
+
 </div>
 <hr>
+{% if current_user.access == '2' or current_user.access == '3' %}
+{% if last4 %}
+<div class="row">
+  <div class="col-sm">
+    {% if brand == 'Visa' %}
+      <i class="pay fab fa-cc-visa"></i>
+    {% elif brand == 'MasterCard' %}
+      <i class="pay fab fa-cc-mastercard"></i>
+    {% elif brand == 'American Express' %}
+      <i class="pay fab fa-cc-amex"></i>
+    {% endif %}
+    **** **** **** {{last4}}
+  </div>
+  <div class="col-sm">
+    <a href="#">Update payment info</a>
+  </div>
+</div>
+<hr>
+{% endif %}
+{% endif %}
 <div class="row">
 	<div class="col-sm">
 	  Plan Details:
