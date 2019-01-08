@@ -23,14 +23,15 @@ class User(db.Model, UserMixin):
         access = db.Column(db.String(5))
         customer_id = db.Column(db.String(255))
         plan = db.Column(db.String(255))
+        plan_id = db.Column(db.String(255))
 
-
-        def __init__(self, email, password, access=ACCESS['unpaid'], customer_id='', plan=''):
+        def __init__(self, email, password, access=ACCESS['unpaid'], customer_id='', plan='', plan_id=''):
             self.email = email
             self.password_hash = generate_password_hash(password)
             self.access = access
             self.customer_id = customer_id
             self.plan = plan
+            self.plan_id = plan_id
 
         def check_password(self,password):
             return check_password_hash(self.password_hash,password)

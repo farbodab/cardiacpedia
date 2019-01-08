@@ -5,12 +5,13 @@
 <form style="width: 50%" action="/charge" method="post">
   <div style="text-align: center;"class="">
     <i class="fas fa-lock fa-3x"></i>
+    <p>STEP <b>3</b> OF <b>3</b></p>
     <h3>Set up your payment.</h3>
-    <p>Cancel before<b> XX/XX/XX to not be charged.</b></p>
+    <p>Cancel before<b> {{trial}} to not be charged.</b></p>
     <p>As a reminder, <b>we'll email you 3 days before.</b></p>
     <p><b>No commitments.<br>Cancel online at anytime.</b></p>
     <p>Click the button below to be redirected to a secure page.</p>
-    <p>Your plan: {{plan}}</p>
+    <p>Your plan: {{plan}} <a style="font-size: smaller;" href="{{url_for('users.change_plan')}}">(Change your plan)</a></p>
   </div>
   <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
           data-key="{{ key }}"
@@ -20,14 +21,15 @@
           data-locale="auto"
           data-zip-code="true"
           data-currency="cad"
-          data-email={{current_user.email}}>
+          data-email={{current_user.email}}
+          data-panel-label="Start">
     </script>
     <script>
        // Hide default stripe button, be careful there if you
        // have more than 1 button of that class
        document.getElementsByClassName("stripe-button-el")[0].style.display = 'none';
    </script>
-   <button type="submit" class="btn-primary btn-lg btn-block">Pay Now</button>
+   <button type="submit" class="btn-primary btn-lg btn-block">Credit or Debit</button>
     <div style="text-align: center;"class="">
           <i class="pay fab fa-cc-visa fa-3x"></i>
           <i class="pay fab fa-cc-amex fa-3x"></i>

@@ -1,0 +1,65 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<form class="" method="POST">
+  {{ form.hidden_tag() }}
+<div style="min-height: 70vh" class="container">
+  <br>
+  <h3>Choose a plan that's right for you.</h3>
+  <p>Downgrade or upgrade at any time</p>
+  <div class="card-deck mb-3 text-center centre">
+    <div style="height:100%" class="card mb-4 shadow-sm">
+      <div class="card-header">
+        <h4 class="my-0 font-weight-normal">First Timer</h4>
+      </div>
+      <div  class="card-body">
+        <h1 class="card-title pricing-card-title">$9.99 CAD</h1><h3><small class="text-muted">/ mo</small></h3>
+        <ul class="list-unstyled mt-3 mb-4">
+          <br>
+          <li>Find new implants instantly</li>
+          <li>Find compatible devices</li>
+          <li>Get all device information for follow ups</li>
+          <li>Cancel anytime</li>
+          <li>First week free</li>
+        </ul>
+        {{ form.monthly(class="btn-primary btn-lg btn-block") }}
+      </div>
+    </div>
+    <div class="card mb-4 shadow-sm">
+      <div class="card-header">
+        <h4 class="my-0 font-weight-normal">Pro</h4>
+      </div>
+      <div class="card-body">
+        <h1 class="card-title pricing-card-title">$24.99 CAD</h1><h3><small class="text-muted">/ 3 mo</small></h3>
+        <ul class="list-unstyled mt-3 mb-4">
+          <li>Save <b>15%</b></li>
+          <li>Find new implants instantly</li>
+          <li>Find compatible devices</li>
+          <li>Get all device information for follow ups</li>
+          <li>Cancel anytime</li>
+          <li>First week free</li>
+        </ul>
+        {{ form.three(class="btn-primary btn-lg btn-block") }}
+      </div>
+    </div>
+    <div class="card mb-4 shadow-sm">
+      <div class="card-header">
+        <h4 class="my-0 font-weight-normal">Platinum</h4>
+      </div>
+      <div  class="card-body">
+        <h1 class="card-title pricing-card-title">$89.99 CAD</h1><h3><small class="text-muted">/ year</small></h3>
+        <ul class="list-unstyled mt-3 mb-4">
+          <li>Save <b>25%</b></li>
+          <li>Find new implants instantly</li>
+          <li>Find compatible devices</li>
+          <li>Get all device information for follow ups</li>
+          <li>Cancel anytime</li>
+          <li>First week free</li>
+        </ul>
+        {{ form.yearly(class="btn-primary btn-lg btn-block") }}
+      </div>
+    </div>
+  </div>
+</div>
+</form>
+{% endblock %}

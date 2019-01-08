@@ -16,14 +16,16 @@ class Remove_Users(FlaskForm):
     user_id = IntegerField('User ID', validators=[DataRequired(message='Role name cannot be left blank')])
     submit = SubmitField('Remove User')
 
+def check_password(form,field):
+    user = User.query.filter_by(email=form.email.data).first()
+    if not user or not user.check_password(field.data):
+        raise ValidationError('The entered information did not match our records!')
+
 class LoginForm(FlaskForm):
     email = StringField('Email', validators=[DataRequired(message='Email cannot be left blank'), Email(message='Please enter a valid email address')])
-    password = PasswordField('Password', validators=[DataRequired(message='Password cannot be left blank')])
+    password = PasswordField('Password', validators=[check_password,DataRequired(message='Password cannot be left blank')])
     submit = SubmitField('Log In')
-    def check_password(self,field):
-        user = User.query.filter_by(email=field.data).first()
-        if not user or not user.check_password(field.data):
-            raise ValidationError('The entered information did not match our records!')
+
 
 class EmailForm(FlaskForm):
     email = StringField('New email', validators=[DataRequired(message='Email cannot be left blank'), Email(message='Please enter a valid email address')])

@@ -7,6 +7,7 @@ from cardiacpedia.core.forms import *
 from flask_login import login_user, current_user, logout_user, login_required
 import stripe
 import json
+import datetime
 
 stripe_keys = {
   'secret_key': 'sk_test_sUBjEZ7otbSikPzwk3HPVZb0',
@@ -56,6 +57,69 @@ def setup():
     else:
         return redirect(url_for('users.register'))
 
+@users.route('/cancelplan', methods=['GET','POST'])
+@login_required
+def cancel_plan():
+    subscription = stripe.Subscription.retrieve(current_user.plan_id)
+    subscription.delete()
+    current_user.access = '1'
+    current_user.plan = 'Free'
+    current_user.customer_id = ''
+    current_user.plan_id = ''
+    db.session.commit()
+    flash('We are sad to see you go. Your subscription has been cancelled effective immediately')
+    return redirect(url_for('core.index'))
+
+@users.route('/changeplan', methods=['GET','POST'])
+@login_required
+def change_plan():
+    form = Plan()
+    if form.validate_on_submit():
+        if form.monthly.data:
+            current_user.plan = 'First Timer'
+        elif form.three.data:
+            current_user.plan = 'Pro'
+        else:
+            current_user.plan = 'Platinum'
+        db.session.commit()
+        if current_user.plan_id:
+            if form.monthly.data:
+                subscription = stripe.Subscription.retrieve(current_user.plan_id)
+                stripe.Subscription.modify(current_user.plan_id,
+                  cancel_at_period_end=False,
+                  items=[{
+                    'id': subscription['items']['data'][0].id,
+                    'plan': 'plan_EIZlCcrHyKftHU',
+                  }]
+                  )
+                current_user.plan = 'First Timer'
+            elif form.three.data:
+                subscription = stripe.Subscription.retrieve(current_user.plan_id)
+                stripe.Subscription.modify(current_user.plan_id,
+                  cancel_at_period_end=False,
+                  items=[{
+                    'id': subscription['items']['data'][0].id,
+                    'plan': 'plan_EIZlzeL9IipfX9',
+                  }]
+                  )
+                current_user.plan = 'Pro'
+            else:
+                subscription = stripe.Subscription.retrieve(current_user.plan_id)
+                stripe.Subscription.modify(current_user.plan_id,
+                  cancel_at_period_end=False,
+                  items=[{
+                    'id': subscription['items']['data'][0].id,
+                    'plan': 'plan_EIbSjTIV9tP1Q1',
+                  }]
+                  )
+                current_user.plan = 'Platnium'
+            db.session.commit()
+            flash('Your plan has been updated')
+            return redirect(url_for('users.account'))
+        else:
+            return redirect(url_for('users.pay'))
+    return render_template('plan_special.html', page_title="CardiacBook", form=form)
+
 
 @users.route('/email', methods=['GET','POST'])
 @login_required
@@ -100,6 +164,8 @@ def pay():
     if current_user.allowed(2):
         return redirect(url_for('devices.home'))
     else:
+        now = datetime.datetime.now()
+        week_now = now + datetime.timedelta(days=7)
         plan = current_user.plan
         if plan == 'Pro':
             amount = 2499
@@ -107,26 +173,42 @@ def pay():
             amount = 9999
         else:
             amount = 999
-        return render_template('Users/pay.html', key=stripe_keys['publishable_key'], plan=plan, amount=amount)
+        return render_template('Users/pay.html', key=stripe_keys['publishable_key'], plan=plan, amount=amount, trial=week_now.strftime("%Y-%m-%d"))
 
 @users.route('/charge', methods=['POST'])
 @login_required
 def charge():
     # Amount in cents
-    amount = 999
+    plan = current_user.plan
+
 
     customer = stripe.Customer.create(
         email=current_user.email,
         source=request.form['stripeToken']
     )
 
-    charge = stripe.Charge.create(
-        customer=customer.id,
-        amount=amount,
-        currency='cad',
-    )
+    if plan == 'Pro':
+        subscription = stripe.Subscription.create(
+          customer=customer.id,
+          items=[{'plan': 'plan_EIZlzeL9IipfX9',}],
+          trial_period_days=7
+        )
+    elif plan == 'Platinum':
+        subscription = stripe.Subscription.create(
+          customer=customer.id,
+          items=[{'plan': 'plan_EIbSjTIV9tP1Q1',}],
+          trial_period_days=7
+        )
+    else:
+        subscription = stripe.Subscription.create(
+          customer=customer.id,
+          items=[{'plan': 'plan_EIZlCcrHyKftHU',}],
+          trial_period_days=7
+        )
+
     current_user.customer_id = customer.id
     current_user.access = 2
+    current_user.plan_id = subscription.id
     db.session.commit()
     flash('Welcome to CardiacBook!')
     return redirect(url_for('devices.home'))
