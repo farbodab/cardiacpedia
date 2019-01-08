@@ -42,7 +42,25 @@
       **** **** **** {{last4}}
     </div>
     <div class="col-sm">
-      <a href="#">Update payment info</a>
+      <form action="/changepayement" method="post">
+        <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                data-key="{{ key }}"
+                data-amount="{{ amount }}"
+                data-name="CardiacBook"
+                data-image="https://cardiacbook.com/static/favicon.ico"
+                data-locale="auto"
+                data-zip-code="true"
+                data-currency="cad"
+                data-email={{current_user.email}}
+                data-panel-label="Update">
+          </script>
+          <script>
+             // Hide default stripe button, be careful there if you
+             // have more than 1 button of that class
+             document.getElementsByClassName("stripe-button-el")[0].style.display = 'none';
+         </script>
+         <button style="color:#cc6452;"type="submit" class="btn btn-link">Update payment info</button>
+       </form>
     </div>
   </div>
 {% endif %}

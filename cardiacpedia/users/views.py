@@ -28,9 +28,24 @@ def account():
         customer_params = json.loads(customer_json)
         last4 = customer_params['sources']['data'][0]["last4"]
         brand = customer_params['sources']['data'][0]["brand"]
-        return render_template('account.html', page_title="CardiacBook", last4=last4, brand=brand)
+        subscription = stripe.Subscription.retrieve(current_user.plan_id)
+        subscription_json = str(subscription)
+        subscription_params = json.loads(subscription_json)
+        amount = subscription_params['items']['data'][0]["plan"]["amount"]
+        return render_template('account.html', page_title="CardiacBook", last4=last4, brand=brand, amount=amount, key=stripe_keys['publishable_key'])
     else:
         return render_template('account.html', page_title="CardiacBook")
+
+
+@users.route('/changepayement', methods=['POST'])
+@login_required
+def change_payement():
+    token = request.form['stripeToken']
+    stripe.Customer.modify(current_user.customer_id,
+     source=token,
+    )
+    flash('Payment updated')
+    return redirect(url_for('users.account'))
 
 @users.route('/register', methods=['GET','POST'])
 def register():
